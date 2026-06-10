@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "description": "Maps raw source snapshots and sweep artifacts to compiled wiki pages, staging digests, and lifecycle decisions. Markdown remains the source of truth; this file is an audit aid.",
+  "sources": [
+    {
+      "id": "raw/intentional/pasted/2026-06-10-first-second-brain-ingestion-test-ai-gtm-opportunities-and-l.md",
+      "title": "First second-brain ingestion test: AI GTM opportunities and links",
+      "url": "Unknown",
+      "source_type": "pasted",
+      "trust_lane": "intentional",
+      "capture_quality": "complete",
+      "raw_path": "raw/intentional/pasted/2026-06-10-first-second-brain-ingestion-test-ai-gtm-opportunities-and-l.md",
+      "staging_path": null,
+      "status": "compiled",
+      "wiki_paths": [
+        "wiki/gtm-sales/ai-gtm-opportunity-leads.md",
+        "wiki/gtm-sales/warm-intro-pathfinding-with-ai.md",
+        "wiki/personal-systems/agent-goals-and-dynamic-workflows.md"
+      ],
+      "staging_paths": [],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: complete/verbatim capture."
+    },
+    {
+      "id": "staging/incomplete-captures/web/2026-06-10-elevenlabs-gtm-chief-of-staff-role-lead.md",
+      "title": "ElevenLabs GTM Chief of Staff role lead",
+      "url": "https://www.glassdoor.sg/job-listing/gtm-chief-of-staff-elevenlabs-JV_IC3235921_KO0,18_KE19,29.htm?jl=1010157918084&utm_source=jobalert&utm_medium=email&utm_content=ja-jobpos4-age2d-1010157918084&utm_campaign=jobAlertAlert&tgt=GD_JOB_VIEW&src=GD_JOB_AD&uido=475A7BF85CBB1F4DC5EBA29D84BBA96E&ao=1136043&jrtk=5-pdx1-0-1jqgfq52iit6t800-4983463ff55e53d3&cs=1_9f9212a4&s=224&t=JA&pos=104&ja=314872852&guid=0000019ea0f491e4b253bd888b2ce500&jobListingId=1010157918084&vt=e&cb=1780817401074&ctt=1780882611604&srs=EMAIL_JOB_ALERT&gdir=1",
+      "source_type": "web",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/web/2026-06-10-elevenlabs-gtm-chief-of-staff-role-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/web/2026-06-10-elevenlabs-gtm-chief-of-staff-role-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    },
+    {
+      "id": "staging/incomplete-captures/web/2026-06-10-linkedin-agents-post-lead.md",
+      "title": "LinkedIn agents post lead",
+      "url": "https://www.linkedin.com/posts/building-sales-marketing-or-hiring-agents-share-7468719445214126080-9F0V/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFklzP8BjEopwFb3X1DpQIoGPgEdps-D5rc",
+      "source_type": "web",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/web/2026-06-10-linkedin-agents-post-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/web/2026-06-10-linkedin-agents-post-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    },
+    {
+      "id": "staging/incomplete-captures/web/2026-06-10-linkedin-marcus-cheu-founding-bd-lead.md",
+      "title": "LinkedIn Marcus Cheu founding BD lead",
+      "url": "https://www.linkedin.com/in/marcuscheu/",
+      "source_type": "web",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/web/2026-06-10-linkedin-marcus-cheu-founding-bd-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/web/2026-06-10-linkedin-marcus-cheu-founding-bd-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    },
+    {
+      "id": "staging/incomplete-captures/web/2026-06-10-notion-sessions-singapore-event-lead.md",
+      "title": "Notion Sessions Singapore event lead",
+      "url": "https://events.notion.com/notion-sessions-singapore?utm_source=Salesforce-Marcus&utm_medium=Sales&utm_campaign=EV_2026-06-09_EPD+Leaders+Event+Singapore_ROAPAC",
+      "source_type": "web",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/web/2026-06-10-notion-sessions-singapore-event-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/web/2026-06-10-notion-sessions-singapore-event-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    },
+    {
+      "id": "staging/incomplete-captures/web/2026-06-10-sierra-agent-strategist-role-article-lead.md",
+      "title": "Sierra Agent Strategist role article lead",
+      "url": "https://sierra.ai/blog/agent-strategist-your-phd-in-applied-ai?twclid=26rtnqyqkdu5e0npe397ax3ump&utm_source=x&utm_medium=paid-social&utm_campaign=fy27_engagement_global",
+      "source_type": "web",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/web/2026-06-10-sierra-agent-strategist-role-article-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/web/2026-06-10-sierra-agent-strategist-role-article-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    },
+    {
+      "id": "raw/intentional/x/2061907337154367865-trq212-a-harness-for-every-task-dynamic-workflows-in-claude-code-last-week-we-released-dyn.md",
+      "title": "X post by @trq212 2061907337154367865",
+      "url": "https://x.com/trq212/status/2061907337154367865",
+      "source_type": "x",
+      "trust_lane": "intentional",
+      "capture_quality": "complete",
+      "raw_path": "raw/intentional/x/2061907337154367865-trq212-a-harness-for-every-task-dynamic-workflows-in-claude-code-last-week-we-released-dyn.md",
+      "staging_path": null,
+      "status": "compiled",
+      "wiki_paths": [
+        "wiki/personal-systems/agent-goals-and-dynamic-workflows.md"
+      ],
+      "staging_paths": [],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T14:38:02Z",
+      "notes": "Captured through Last30Days authenticated Bird/TweetDetail path and compiled into Agent Goals And Dynamic Workflows."
+    },
+    {
+      "id": "raw/intentional/x/2062650378089594955-dkundel-a-guide-to-goal-we-launched-the-goal-mode-or-goal-as-a-way-to-help-you-have-codex.md",
+      "title": "X post by @dkundel 2062650378089594955",
+      "url": "https://x.com/dkundel/status/2062650378089594955",
+      "source_type": "x",
+      "trust_lane": "intentional",
+      "capture_quality": "complete",
+      "raw_path": "raw/intentional/x/2062650378089594955-dkundel-a-guide-to-goal-we-launched-the-goal-mode-or-goal-as-a-way-to-help-you-have-codex.md",
+      "staging_path": null,
+      "status": "compiled",
+      "wiki_paths": [
+        "wiki/personal-systems/agent-goals-and-dynamic-workflows.md"
+      ],
+      "staging_paths": [],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T14:38:03Z",
+      "notes": "Captured through Last30Days authenticated Bird/TweetDetail path and compiled into Agent Goals And Dynamic Workflows."
+    },
+    {
+      "id": "raw/intentional/x/2063865685558903149-mvanhorn-wtf-is-a-loop-peter-steinberger-vs-boris-cherny-the-most-repeated-sentence-in-ai.md",
+      "title": "X post by @mvanhorn 2063865685558903149",
+      "url": "https://x.com/mvanhorn/status/2063865685558903149",
+      "source_type": "x",
+      "trust_lane": "intentional",
+      "capture_quality": "complete",
+      "raw_path": "raw/intentional/x/2063865685558903149-mvanhorn-wtf-is-a-loop-peter-steinberger-vs-boris-cherny-the-most-repeated-sentence-in-ai.md",
+      "staging_path": null,
+      "status": "compiled",
+      "wiki_paths": [
+        "wiki/personal-systems/agent-goals-and-dynamic-workflows.md"
+      ],
+      "staging_paths": [],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T14:38:04Z",
+      "notes": "Captured through Last30Days authenticated Bird/TweetDetail path and compiled into Agent Goals And Dynamic Workflows."
+    },
+    {
+      "id": "raw/intentional/x/2063948602313965580-jumperz-peter-is-right-in-other-words-you-have-to-know-how-to-coordinate-and-give-the-righ.md",
+      "title": "X post by @jumperz 2063948602313965580",
+      "url": "https://x.com/jumperz/status/2063948602313965580",
+      "source_type": "x",
+      "trust_lane": "intentional",
+      "capture_quality": "complete",
+      "raw_path": "raw/intentional/x/2063948602313965580-jumperz-peter-is-right-in-other-words-you-have-to-know-how-to-coordinate-and-give-the-righ.md",
+      "staging_path": null,
+      "status": "compiled",
+      "wiki_paths": [
+        "wiki/personal-systems/agent-goals-and-dynamic-workflows.md"
+      ],
+      "staging_paths": [],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T14:28:09Z",
+      "notes": "Captured through Last30Days authenticated Bird/TweetDetail path."
+    },
+    {
+      "id": "staging/incomplete-captures/youtube/2026-06-10-youtube-playlist-watch-lead.md",
+      "title": "YouTube playlist watch lead",
+      "url": "https://www.youtube.com/playlist?list=PLzaYMdbJMZW2to9W0NNPwvYFPy64HpJB9",
+      "source_type": "youtube",
+      "trust_lane": "incomplete",
+      "capture_quality": "partial",
+      "raw_path": null,
+      "staging_path": "staging/incomplete-captures/youtube/2026-06-10-youtube-playlist-watch-lead.md",
+      "status": "partial",
+      "wiki_paths": [],
+      "staging_paths": [
+        "staging/incomplete-captures/youtube/2026-06-10-youtube-playlist-watch-lead.md"
+      ],
+      "created_at": "2026-06-10T12:04:39Z",
+      "updated_at": "2026-06-10T12:04:39Z",
+      "notes": "Strict raw rerun: staged because full verbatim source text was not confirmed."
+    }
+  ]
+}

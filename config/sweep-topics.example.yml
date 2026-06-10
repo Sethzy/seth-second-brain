@@ -1,0 +1,14 @@
+# Future Last30Days/watchlist topic definitions.
+# Keep sweep topics separate from intentional captures.
+
+topics:
+  - slug: ai-coding-agents
+    query: "AI coding agents context engineering evals"
+    cadence: weekly
+    promote_policy: staged_only
+
+  - slug: scraping-revops
+    query: "scraping enrichment revenue operations GTM automation"
+    cadence: weekly
+    promote_policy: staged_only
+

@@ -1,0 +1,36 @@
+global_context: "This is Seth's retrieval-first second brain. Search both raw source snapshots and compiled wiki pages. If a query sounds like source recall, prefer raw. If it asks what Seth knows or believes, prefer wiki and use raw for supporting detail."
+
+collections:
+  wiki:
+    path: /Users/sethlim/Documents/Seth Second Brain/wiki
+    pattern: "**/*.md"
+    context:
+      "/": "Compiled durable knowledge articles and the global index/log."
+
+  intentional:
+    path: /Users/sethlim/Documents/Seth Second Brain/raw/intentional
+    pattern: "**/*.md"
+    context:
+      "/": "Full immutable source snapshots intentionally saved by Seth. Best for finding remembered links, phrases, posts, authors, and exact source material."
+
+  sweeps:
+    path: /Users/sethlim/Documents/Seth Second Brain/raw/sweeps
+    pattern: "**/*.md"
+    context:
+      "/": "Automated or semi-automated research outputs, including Last30Days. Treat as candidate intelligence, not durable memory."
+
+  staging:
+    path: /Users/sethlim/Documents/Seth Second Brain/staging
+    pattern: "**/*.md"
+    context:
+      "/": "Digests and promotion candidates waiting to be compiled into the wiki."
+
+setup_commands:
+  - qmd collection add wiki
+  - qmd collection add raw/intentional
+  - qmd collection add raw/sweeps
+  - qmd collection add staging
+  - qmd context add qmd://wiki/ "Compiled durable knowledge articles, index, log, and archived query answers for Seth Second Brain."
+  - qmd context add qmd://intentional/ "Full immutable source snapshots intentionally saved by Seth, including exact X links, web articles, YouTube transcripts, papers, books, and pasted text."
+  - qmd context add qmd://sweeps/ "Automated or semi-automated recent-signal research outputs, especially Last30Days raw runs. Treat as candidate intelligence, not durable knowledge."
+  - qmd context add qmd://staging/ "Review queue for Last30Days digests, promotion candidates, proposed merges, proposed prunes, and other material waiting before wiki compilation."
