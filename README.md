@@ -20,6 +20,7 @@ queries              -> search wiki + raw, answer with links back to both
 - [.agents/skills/qmd/SKILL.md](.agents/skills/qmd/SKILL.md) - local retrieval/search skill.
 - [docs/architecture.md](docs/architecture.md) - v1 architecture and decisions.
 - [docs/workflows.md](docs/workflows.md) - capture, query, Last30Days, and lint workflows.
+- [docs/qmd-auto-refresh.md](docs/qmd-auto-refresh.md) - repo-local QMD refresh and automation pattern.
 - [wiki/index.md](wiki/index.md) - compiled knowledge index.
 - [wiki/log.md](wiki/log.md) - append-only operation log.
 
@@ -77,6 +78,12 @@ scripts/last30days-to-sweeps.sh --x-profile3 "AI coding agents" --search x,web,y
 # scaffold a staging digest from a Last30Days raw output
 scripts/stage-last30days-digest.sh raw/sweeps/last30days/<file>.md
 
-# generate a proposed maintenance/pruning report
+# generate a concrete wiki health report
+scripts/wiki-health-report.sh
+
+# generate a non-destructive raw-only X organization proposal
+scripts/wiki-organize.sh --propose --limit 100
+
+# compatibility alias for the health report
 scripts/maintenance-report.sh
 ```

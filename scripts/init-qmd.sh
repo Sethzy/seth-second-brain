@@ -9,10 +9,14 @@ if ! command -v qmd >/dev/null 2>&1; then
   exit 1
 fi
 
+if [[ ! -f .qmd/index.yml && ! -f .qmd/index.yaml ]]; then
+  qmd init
+fi
+
 ensure_collection() {
   local name="$1"
   local path="$2"
-  if qmd collection list | grep -q "^$name "; then
+  if qmd collection show "$name" >/dev/null 2>&1; then
     echo "collection exists: $name"
   else
     qmd collection add "$path"
@@ -22,7 +26,9 @@ ensure_collection() {
 ensure_context() {
   local name="$1"
   local summary="$2"
-  if qmd context list | grep -q "^$name$"; then
+  local contexts
+  contexts="$(qmd context list)"
+  if grep -q "^$name$" <<<"$contexts"; then
     echo "context exists: $name"
   else
     qmd context add "qmd://$name/" "$summary"

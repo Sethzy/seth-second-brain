@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
-.qmd/
+.qmd/*.sqlite
+.qmd/*.sqlite-*
 .playwright-mcp/
 .herenow/
 tmp/

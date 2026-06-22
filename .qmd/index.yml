@@ -1,0 +1,26 @@
+global_context: "This is Seth's retrieval-first second brain. Search both immutable raw source snapshots and compiled wiki pages. Prefer raw for exact source recall, wiki for durable synthesis, sweeps for noisy recent-signal research, and staging for incomplete or unpromoted material."
+collections:
+  wiki:
+    path: /Users/sethlim/Documents/Seth Second Brain/wiki
+    pattern: "**/*.md"
+    context:
+      "": "Compiled durable knowledge articles, index, log, and archived query answers for Seth Second Brain."
+  intentional:
+    path: /Users/sethlim/Documents/Seth Second Brain/raw/intentional
+    pattern: "**/*.md"
+    context:
+      "": "Full immutable source snapshots intentionally saved by Seth, including exact X links, web articles, YouTube transcripts, papers, books, and pasted text."
+  sweeps:
+    path: /Users/sethlim/Documents/Seth Second Brain/raw/sweeps
+    pattern: "**/*.md"
+    context:
+      "": "Automated or semi-automated recent-signal research outputs, especially Last30Days raw runs. Treat as candidate intelligence, not durable knowledge."
+  staging:
+    path: /Users/sethlim/Documents/Seth Second Brain/staging
+    pattern: "**/*.md"
+    context:
+      "": "Review queue for Last30Days digests, promotion candidates, proposed merges, proposed prunes, and other material waiting before wiki compilation."
+models:
+  embed: hf:ggml-org/embeddinggemma-300M-GGUF/embeddinggemma-300M-Q8_0.gguf
+  generate: hf:tobil/qmd-query-expansion-1.7B-gguf/qmd-query-expansion-1.7B-q4_k_m.gguf
+  rerank: hf:ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF/qwen3-reranker-0.6b-q8_0.gguf

@@ -97,17 +97,40 @@ If the answer is reusable, ask whether to file it into the wiki. Use `templates/
 Run Last30Days from this repo with the sweep save directory:
 
 ```bash
-LAST30DAYS_MEMORY_DIR="$PWD/raw/sweeps/last30days" \
-python3 /Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/last30days.py "<topic>"
+scripts/last30days-to-sweeps.sh "<topic>" --search x,web,youtube
 ```
 
 If X browser auth via the GTM wrapper is desired:
 
 ```bash
-cd /Users/sethlim/Documents/gtm-workspace
-LAST30DAYS_MEMORY_DIR="/Users/sethlim/Documents/Seth Second Brain/raw/sweeps/last30days" \
-scripts/last30days-x-profile3.sh "<topic>" --search x,web,youtube
+scripts/last30days-to-sweeps.sh --x-profile3 "<topic>" --search x,web,youtube
 ```
+
+The wrapper passes `--save-dir raw/sweeps/last30days` to the upstream Last30Days CLI. Do not rely on `LAST30DAYS_MEMORY_DIR` alone for persistence.
+
+## People Watchlist Sweeps
+
+Use this when Seth wants periodic checks on high-signal people rather than broad topics.
+
+People live in:
+
+```text
+config/people-watchlist.json
+```
+
+Run all configured people:
+
+```bash
+scripts/run-people-watchlist.sh
+```
+
+Run selected people:
+
+```bash
+scripts/run-people-watchlist.sh matt-pocock nicbstme
+```
+
+This uses Last30Days with `--x-handle <handle>` and saves each run under `raw/sweeps/last30days/`, then scaffolds a digest under `staging/last30days/`. Treat outputs as noisy watchlist signal. Promote only after manual capture or explicit approval.
 
 After the run, create a staging digest from the saved raw file using `templates/last30days-digest-template.md`.
 
@@ -141,10 +164,12 @@ The lint is intentionally basic in v1: required files, expected folders, broken 
 For periodic self-improvement and pruning proposals:
 
 ```bash
+scripts/wiki-health-report.sh
+scripts/wiki-organize.sh --propose --limit 100
 scripts/maintenance-report.sh
 ```
 
-This creates a proposed report under `staging/maintenance/`. Agents can then use the upstream LLM wiki lint rules to merge duplicate pages, propose missing synthesis pages, and flag stale or contradictory claims. Raw files remain immutable.
+These create proposed reports under `staging/maintenance/`. `wiki-health-report.sh` reports raw-only counts, source-map hygiene, duplicate staging records, stale/orphan/large pages, and ranked next actions. `wiki-organize.sh --propose` creates a conservative proposal for clustering raw-only captures into existing medium synthesis pages before creating new wiki pages. Agents can then use the upstream LLM wiki lint rules to merge duplicate pages, propose missing synthesis pages, and flag stale or contradictory claims. Raw files remain immutable.
 
 ## qmd Retrieval
 
