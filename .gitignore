@@ -4,5 +4,6 @@ __pycache__/
 .qmd/*.sqlite-*
 .playwright-mcp/
 .herenow/
+**/.herenow/
 tmp/
 raw/intentional/pasted/archive-2026-06-11/09-cute-idea-for-my-app.md
