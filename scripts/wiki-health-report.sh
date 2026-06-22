@@ -4,4 +4,4 @@ set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
 
-scripts/wiki-health-report.sh "$@"
+python3 scripts/wiki_maintenance.py health "$@"

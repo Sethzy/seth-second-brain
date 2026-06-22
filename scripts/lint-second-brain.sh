@@ -75,6 +75,8 @@ for path in root.rglob("*.md"):
         continue
     if "templates" in path.parts:
         continue
+    if "raw" in path.parts:
+        continue
     text = path.read_text(errors="replace")
     for match in link_re.finditer(text):
         target = match.group(1).strip()
@@ -104,17 +106,35 @@ if not isinstance(state, dict) or not isinstance(state.get("sources"), list):
     print("state/source-map.json must be an object with a sources list.")
     sys.exit(1)
 
-for raw_path in sorted((root / "raw").rglob("*.md")):
+complete_raw_paths = {
+    item.get("raw_path")
+    for item in state.get("sources", [])
+    if item.get("capture_quality") == "complete" and item.get("raw_path")
+}
+captures = state.get("captures", {})
+if isinstance(captures, dict):
+    for raw_path, capture in captures.items():
+        if isinstance(capture, dict) and capture.get("trust_lane", "intentional") == "intentional":
+            complete_raw_paths.add(raw_path)
+
+for raw_path in sorted((root / "raw" / "intentional").rglob("*.md")):
     text = raw_path.read_text(errors="replace")
-    if "capture_quality: complete" not in text:
-        errors.append(f"{raw_path.relative_to(root)}: raw files must declare capture_quality: complete")
+    rel = raw_path.relative_to(root).as_posix()
+    if "capture_quality: complete" not in text and rel not in complete_raw_paths:
+        errors.append(
+            f"{rel}: intentional raw files must declare capture_quality: complete "
+            "or have a complete source-map entry"
+        )
 
 for item in state.get("sources", []):
     quality = item.get("capture_quality")
+    source_type = item.get("source_type")
     raw_path = item.get("raw_path")
     staging_path = item.get("staging_path")
-    if quality == "complete" and not raw_path:
+    if quality == "complete" and not raw_path and source_type != "manifest":
         errors.append(f"state/source-map.json: complete source missing raw_path -> {item.get('id')}")
+    if quality == "complete" and source_type == "manifest" and not staging_path:
+        errors.append(f"state/source-map.json: manifest source missing staging_path -> {item.get('id')}")
     if quality in {"partial", "failed"} and raw_path:
         errors.append(f"state/source-map.json: incomplete source must not have raw_path -> {item.get('id')}")
     if quality in {"partial", "failed"} and not staging_path:
