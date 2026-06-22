@@ -1,0 +1,63 @@
+---
+type: raw_capture
+source_type: x
+url: https://x.com/tszzl/status/2056075312988066296
+original_url: https://x.com/tszzl/status/2056075312988066296
+author: "roon"
+handle: tszzl
+status_id: 2056075312988066296
+captured_at: 2026-06-19T22:46:02+08:00
+published_at: "Sun May 17 18:12:09 +0000 2026"
+capture_quality: complete
+status: raw
+trust_lane: intentional
+metrics:
+  replies: 69
+  reposts: 24
+  likes: 898
+---
+
+# X post by @tszzl
+
+## Source
+
+- Original: [https://x.com/tszzl/status/2056075312988066296](https://x.com/tszzl/status/2056075312988066296)
+- Canonical: [https://x.com/tszzl/status/2056075312988066296](https://x.com/tszzl/status/2056075312988066296)
+- Author: roon (@tszzl)
+
+## Verbatim Text
+
+a large part of the current bundle of knowledge work tasks consist of “convincing people of stuff”. marketing to drive sales, making a deck to get investment, designing products that people want to use, etc. superpersuasion is on the hot path of knowledge work tools
+
+## Quoted Post
+
+- URL: https://x.com/dwarkesh_sp/status/2056061133765890156
+- Author: Dwarkesh Patel (@dwarkesh_sp)
+
+# The mistake of conflating intelligence and power
+
+I had an interesting discussion recently. Someone asked me, what is intelligence? I said, the ability to achieve your goals across a wide range of domains. Okay, he says, then by that definition isn’t Donald Trump the intelligent person in the world, followed in quick succession by Xi Jinping and Vladimir Putin?
+
+To be clear, these people are obviously very competent and clever. But when you think of ASI, you don’t think of Trump, but more so. 
+
+The person who kept pressing this question was correctly pointing out that I basically defined intelligence as power. And by this definition, Stalin was the most intelligent person who ever lived.
+
+Now, of course, you could change the definition of intelligence to something more like, manipulate abstract concepts and rotate shapes. 
+
+But notice that the most powerful people in the world do not max out this quantity. The correlation between extreme power and this kind of intelligence might be even weaker than the correlation between extreme power and height. The physicists are not running the world.
+
+We tend to conflate power-seeking AI and superintelligent (in science and tech) AI. I’m not denying that AI can be power-seeking. Whatever skills and drives Donald Trump has could be embodied in a digital mind. I’m simply pointing out that the way AI systems are currently becoming smarter (by getting trained to be to be really good at specific economically valuable tasks like coding) is not that strongly correlated with power.
+
+We often talk about power in this way that misunderstands how it is actually derived in our world. Our intuitions are primed by games like Diplomacy or Go, which are designed to isolate and reward a g loaded kind of strategic reasoning. 
+
+But in the real world, power is more the product of having the authority and trust to get lots of people to collaborate with you, rather than some galaxy brain scheming capability. Trump is not powerful because his brain, considered in isolation, is the most effective optimization engine on Earth. He is powerful because the government which hundreds of millions of people consider legitimate gives him a lot of authority.
+
+A group versus individual level analysis is useful here. As @GarettJones has written a lot about, individual IQ is only modestly correlated with individual income, but national IQ is strongly correlated with national outcomes. This is because intelligence has a lot of spillover effects - smarter societies cooperate more, save more, and can coordinate to build things like space shuttles and semiconductors. 
+
+Richard Trevithick, who invented the high-pressure steam engine, died in poverty, buried in an unmarked pauper’s grave. But the fact that 18th and 19th century Britain had lots and lots of people like Trevithick contributed to Britain being able to set up a global empire and outcompete lots of backwards principalities around the world.
+
+It seems to me that the right mental model is that automated firms will outcompete everyone else in normal capitalist ways, rather than a single AI outthinking everyone else.
+
+## Capture Note
+
+TweetDetail returned complete normal-post text.

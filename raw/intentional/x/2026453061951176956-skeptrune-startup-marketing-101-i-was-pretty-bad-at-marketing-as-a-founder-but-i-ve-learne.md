@@ -1,0 +1,108 @@
+---
+type: raw_capture
+source_type: x
+url: https://x.com/skeptrune/status/2026453061951176956
+original_url: https://x.com/skeptrune/status/2026453061951176956
+author: "Nick Khami"
+handle: skeptrune
+status_id: 2026453061951176956
+captured_at: 2026-06-19T21:23:48+08:00
+published_at: "Wed Feb 25 00:23:54 +0000 2026"
+capture_quality: complete
+status: raw
+trust_lane: intentional
+metrics:
+  replies: 114
+  reposts: 104
+  likes: 1462
+---
+
+# X post by @skeptrune
+
+## Source
+
+- Original: [https://x.com/skeptrune/status/2026453061951176956](https://x.com/skeptrune/status/2026453061951176956)
+- Canonical: [https://x.com/skeptrune/status/2026453061951176956](https://x.com/skeptrune/status/2026453061951176956)
+- Author: Nick Khami (@skeptrune)
+
+## Verbatim Text
+
+Startup Marketing 101
+
+I was pretty bad at marketing as a founder, but I've learned a few things since.
+
+Everyone in startups has heard the advice: “don’t tunnel vision on product, make sure you do marketing.” If advice were a horse, that one would have been beaten dead a decade ago. Some version of it appears on my X feed every single day.
+
+I heard this constantly while founding my previous startup [Trieve](https://www.ycombinator.com/companies/trieve), and I bought into it. You can find old [TikTok posts](https://www.tiktok.com/@trieveai?lang=en) from August 2023, four months before we raised funding or got into YC. Then, ironically, some switch flipped once we became venture backed. The posting stopped. We turned inward and focused on product. It saddens me in hindsight, because our product was getting a whole lot better at exactly the moment we went quiet.
+
+## What Changed?
+
+Startup media and accelerator programs create an expectation of a “launch” event, think of [TechCrunch Disrupt in the Silicon Valley TV show](https://www.youtube.com/watch?v=Qp-AwObTrvE), Supabase’s infamous [“launch week”](https://supabase.com/launch-week), and of course the OG themselves - [ProductHunt](https://www.producthunt.com/launch).
+
+I’m kind of an idiot and let being “post-fundraise” change my mindset. We felt like we had the capital to just burn money on ads when it made sense and therefore went heads down building in silence for some number of weeks to then pop our heads out once or twice a month and do a big launch event. That was, without question, horrendous strategy and terrible CEOing on my part.
+
+The best comparison I can think of is composing a song out of nothing but thirty-second rests and cymbal crashes. People tune you out. Good marketing should feel more like an EDM track: a steady beat with the occasional drop. You want consistent content that people can engage with, punctuated every so often by a big announcement that gets them excited.
+
+## Executing the Slow Drip Launch
+
+You can post and launch all of the small things you ship along the way to the final product. Get the login page working? Post about it. Add the ability to invite users into your org? Post about it. Put new actionable insights in the dashboard? Post about it.
+
+Each of these is a chance to build awareness and improve your yapping abilities, so once your product is finally stable and working, you have the skillset and audience necessary to get a base of people familiar with it and excited to share.
+
+The alternative is to put all your eggs in one basket and wait until you have a big announcement to make. This is the strategy that most startups follow, and it is a high-risk, low-reward play. If your launch goes viral, you can get a huge boost in awareness and users, but content on social media is rarely evergreen and gets buried in feeds quickly.
+
+Your best case scenario is a couple days of electricity in return for weeks or months’ worth of work. And, worst case, your launch falls flat and you get literally nothing out of it.
+
+## Tactic #1: Personal Brands
+
+I hate to quote Roy Lee, but he’s not wrong when he says [“most of u tech ppl are doomed to be ngmi forever on x. ur just not funny or sarcastic or arrogant enough for this place”](https://x.com/im_roy_lee/status/2009677516701565112?s=20). Founders, including myself, are typically nerdy software-engineer type folks who are boring to the extent that building a personal brand on X or elsewhere is going to be a struggle.
+
+However, I’m here to tell you that with enough failure, any skill issue can be overcome. It takes a lot more effort than being naturally interesting, but you absolutely can activitymax your way into an audience by posting a lot, replying, and engaging with people active in your niche online.
+
+That’s not to say you can post terrible content nobody likes and succeed, you definitely do still have to aim to entertain, but you can pick that up as a skill over time. You just have to be comfortable posting into the void for a while until you start to figure it out. Failure is part of the process with marketing the same way it is with everything else.
+
+The light at the end of the tunnel is that success on social media tends to compound. While it’s true that social media feeds are more competitive than ever and [no longer show your content consistently to followers](https://www.milkkarten.net/p/social-media-followers-feed), there will be some people who consistently engage with your content and see it day after day.
+
+Their engagement kind of serves as a core that makes your content count as a live shot on goal, so the platform you’re posting on at least tests if your content resonates with a wider audience. The size of that “test group” gets bigger as your following grows, and you therefore start to more consistently go viral over time.
+
+Finally, I want to note that you should endeavor to not do this alone. Ideally you hire people or have co-founders and you all have different angles and audiences, so you can test different messaging and content styles to see what resonates as you build.
+
+Imagine you have a classical cast - engineer, designer, and businessperson. Engineer can post knee-high sock photos about how you’re using Rust btw, the designer can share overdone figmas nobody’s ever going to build, and the businessperson can complain about how they were rejected by 67 VCs before getting their mom to finally write the first check.
+
+Over time each person’s social graph will grow in different directions and you’ll be able to test product marketing messaging with different hooks and audiences to see what resonates the most so you can double down on the best possible angle for the big launch. Think jackass for startup marketing.
+
+## Tactic #2: Field Marketing
+
+Host an event once you know what you’re building. If you put some money behind an open bar and a DJ and message some people an invite, you can usually get a pretty good turnout. You want to do your best to get people who you think have the problem your product solves to show up, but even if you just get a bunch of friends, it’s usually worth it.
+
+At some point, probably about a third of the way through the event, grab a mic and talk for a few minutes about what you’re building. Don’t bother with a demo or presentation or video, just talk naturally about why you decided to nuke your future career prospects and work 996 for a 1% shot at building something people want. If you can get a few laughs and make it feel like a fun story, people will be more likely to remember it and share it with their friends.
+
+Use something like [Partiful](https://www.partiful.com/) to manage RSVPs and send reminders, and make sure to collect contact information from attendees so you can follow up with them after the event. Auto-enroll people who show up in your product newsletter and send them once a week updates about your progress. If you have a launch date, make sure to send them a reminder a few days before so they can be ready to support you on launch day.
+
+I like this one because it’s pretty earnest and doesn’t require being funny or clever to execute well. If you can throw a good party and tell a good story, you can get a lot of mileage out of this tactic. Hosting “VIP Dinners” also tends to be a pretty good lead funnel and functions in the same way.
+
+## Tactic #3: Capitalizing on Trends
+
+I think founders, including myself, are often stubborn when it comes to trend-driven marketing. We tend to feel like adding product features purely for the sake of “going viral” is a sellout move, and that we should only build things that are directly related to our product vision. While I do think it’s important to stay true to your vision, I also think it’s important to be flexible and adapt to trends when they make sense.
+
+On that note, I think competitive surfing rounds are a reasonable proxy metaphor for how to think about this. When you’re in a surf competition, you’re only going to be allowed to be out in the water for a certain amount of time, so you have to be strategic about which waves you choose to ride. You want to pick the waves that are going to get you the most points, but you also want to make sure you’re not hesitating too long and missing out on rides that could be good but aren’t perfect.
+
+You’re always under similar time pressure in startups, if you miss a growth goal for a single quarter or sometimes even month then it can be a huge problem for your employee retention and fundraising prospects. Therefore, you can’t afford to be too picky about which trends you choose to ride. If there’s a meme or topic that’s relevant to your product and has the potential to get you a lot of attention, you should probably jump on it and ship even if it’s not perfectly aligned with your vision.
+
+On a lower level, my recommendation to get started on this is turning on post notifications for accounts in your niche that are good at this and more or less copying what they do. Reply to the same things they reply to, post about the same topics, and use the same formats. You can add your own twist to it and actually make product changes over time as you get more comfortable with the format and start to understand what resonates with your audience.
+
+## I’m Begging You to Post
+
+If you take nothing else away from this, please for all that’s holy, just post. It increases your odds of getting lucky and making it by orders of magnitude. And, odds are nobody’s even going to see your content anyways, so stop worrying about embarrassing yourself.
+
+## X Article Metadata
+
+- Title: Startup Marketing 101
+- Preview: I was pretty bad at marketing as a founder, but I've learned a few things since.
+Everyone in startups has heard the advice: “don’t tunnel vision on product, make sure you do marketing.” If advice were
+
+Note: X Article metadata is not the full article body.
+
+## Capture Note
+
+TweetDetail returned full X Article text through article field toggles.
