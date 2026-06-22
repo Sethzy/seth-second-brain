@@ -1,0 +1,1464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zhao OrderOps | Workflow Automation Brief</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111a4a'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='22' font-family='Arial,sans-serif' font-weight='700' fill='white'%3EZO%3C/text%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="A product brief and workflow map for Zhao OrderOps: multi-channel order intake, SKU matching, warehouse picklists, driver route sheets, and ERP handoff."
+    />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+      :root {
+        --paper: #f6f6f8;
+        --card: #ffffff;
+        --wash: #fbfbfc;
+        --ink: #011821;
+        --carbon: #12161e;
+        --slate: #5d6470;
+        --fog: #8f949e;
+        --mist: #e3e4e8;
+        --line: #d8dbe2;
+        --graphite: #3b3e47;
+        --indigo: #111a4a;
+        --orange: #ec652b;
+        --teal: #167e6c;
+        --teal-deep: #023247;
+        --cyan: #c1e8ef;
+        --mint: #44b48b;
+        --sky: #7ea7e9;
+        --lavender: #9f7aee;
+        --shadow-hairline: 0 0 0 1px rgba(17, 26, 74, 0.08);
+        --shadow-raised: 0 1px 3px rgba(17, 26, 74, 0.1), 0 10px 24px rgba(17, 26, 74, 0.06);
+        --shadow: var(--shadow-hairline), var(--shadow-raised);
+        --shadow-sm: var(--shadow-hairline), 0 1px 2px rgba(17, 26, 74, 0.06);
+        --radius: 8px;
+        --max: 1200px;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 1px 1px, rgba(17, 26, 74, 0.045) 1px, transparent 0) 0 0 / 24px 24px,
+          linear-gradient(180deg, #f9f9fb 0%, var(--paper) 42%, #f2f4f7 100%);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+        font-synthesis-weight: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ::selection {
+        background: rgba(193, 232, 239, 0.85);
+        color: var(--ink);
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--teal);
+        outline-offset: 3px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .site-shell {
+        min-height: 100vh;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid rgba(227, 228, 232, 0.86);
+        background: rgba(246, 246, 248, 0.94);
+        backdrop-filter: blur(18px);
+      }
+
+      .topbar-inner {
+        max-width: var(--max);
+        height: 72px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: var(--radius);
+        background: var(--indigo);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        box-shadow: 0 1px 2px rgba(17, 26, 74, 0.16);
+      }
+
+      .brand-text {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--slate);
+        font-size: 13px;
+      }
+
+      .nav a {
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        padding: 9px 11px;
+        transition:
+          color 180ms var(--ease),
+          background-color 180ms var(--ease),
+          border-color 180ms var(--ease);
+      }
+
+      .nav a:hover {
+        border-color: var(--mist);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+      }
+
+      main {
+        overflow: hidden;
+      }
+
+      .section {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+
+      .section[id] {
+        scroll-margin-top: 96px;
+      }
+
+      .hero {
+        position: relative;
+        padding-top: 76px;
+        padding-bottom: 52px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 42px -120px auto auto;
+        width: min(720px, 72vw);
+        height: 420px;
+        opacity: 0.56;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at center, var(--orange) 0 1.6px, transparent 1.9px) 0 0 / 17px 17px,
+          radial-gradient(circle at center, var(--sky) 0 1.3px, transparent 1.8px) 8px 10px / 21px 21px,
+          radial-gradient(circle at center, var(--mint) 0 1.2px, transparent 1.7px) 12px 2px / 25px 25px;
+        mask-image: radial-gradient(ellipse at 60% 40%, #000 0 50%, transparent 72%);
+      }
+
+      .hero-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+        gap: 48px;
+        align-items: center;
+      }
+
+      .eyebrow,
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        border-radius: 999px;
+        background: var(--cyan);
+        color: var(--teal);
+        padding: 6px 12px;
+        font-size: 11px;
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        line-height: 1;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+      }
+
+      h1 {
+        max-width: 780px;
+        margin-top: 24px;
+        font-size: clamp(42px, 5.2vw, 60px);
+        font-weight: 300;
+        line-height: 1.05;
+      }
+
+      .muted-headline {
+        color: var(--fog);
+      }
+
+      .hero-copy {
+        max-width: 660px;
+        margin-top: 24px;
+        color: var(--slate);
+        font-size: 17px;
+        line-height: 1.64;
+        text-wrap: pretty;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 44px;
+        border-radius: var(--radius);
+        border: 1px solid var(--mist);
+        padding: 0 16px;
+        font-size: 14px;
+        font-weight: 600;
+        transition:
+          transform 180ms var(--ease),
+          color 180ms var(--ease),
+          background-color 180ms var(--ease),
+          border-color 180ms var(--ease),
+          box-shadow 180ms var(--ease);
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        border: 0;
+        background: var(--indigo);
+        color: #fff;
+        box-shadow: 0 1px 2px rgba(17, 26, 74, 0.16), 0 8px 16px rgba(17, 26, 74, 0.1);
+      }
+
+      .button.primary:hover {
+        background: #0d153f;
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+      }
+
+      .button.secondary:hover {
+        border-color: var(--line);
+        background: #fff;
+      }
+
+      .hero-panel {
+        position: relative;
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+        padding: 24px;
+      }
+
+      .panel-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--mist);
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+      }
+
+      .panel-title {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--mint);
+        box-shadow: 0 0 0 5px rgba(68, 180, 139, 0.12);
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .metric-card {
+        border-radius: var(--radius);
+        padding: 16px;
+        background: linear-gradient(180deg, #fff, var(--wash));
+        box-shadow: var(--shadow-hairline);
+      }
+
+      .metric-label {
+        color: var(--slate);
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .metric-value {
+        margin-top: 8px;
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: -0.02em;
+      }
+
+      .orange-card {
+        margin-top: 12px;
+        border-radius: var(--radius);
+        background: var(--orange);
+        color: #fff;
+        padding: 18px;
+        min-height: 126px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 112px;
+        gap: 16px;
+        align-items: end;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+      }
+
+      .orange-card strong {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      .orange-card span {
+        display: block;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 12px;
+      }
+
+      .spark {
+        height: 76px;
+        width: 100%;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(300px, 0.55fr);
+        gap: 48px;
+        align-items: start;
+        margin-bottom: 28px;
+      }
+
+      .section-head h2 {
+        margin-top: 18px;
+        max-width: 720px;
+        font-size: clamp(31px, 3.7vw, 44px);
+        font-weight: 300;
+        line-height: 1.1;
+      }
+
+      .section-head > p {
+        margin: 42px 0 0;
+        color: var(--slate);
+        font-size: 16px;
+        line-height: 1.6;
+        quotes: "“" "”";
+        text-wrap: pretty;
+      }
+
+      .section-head > p::before {
+        content: open-quote;
+      }
+
+      .section-head > p::after {
+        content: close-quote;
+      }
+
+      .section-subtitle {
+        max-width: 680px;
+        margin: 12px 0 0;
+        color: var(--slate);
+        font-size: 21px;
+        line-height: 1.38;
+        letter-spacing: -0.01em;
+        text-wrap: balance;
+      }
+
+      .section-subtitle strong {
+        color: var(--fog);
+        font-weight: 400;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        align-items: start;
+      }
+
+      .feature-card,
+      .diagram-card,
+      .text-card,
+      .story-card,
+      .image-card {
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .feature-card {
+        min-height: 0;
+        padding: 16px 18px 18px;
+      }
+
+      .feature-index {
+        width: 28px;
+        height: 28px;
+        border-radius: var(--radius);
+        display: grid;
+        place-items: center;
+        background: var(--paper);
+        color: var(--indigo);
+        font-size: 12px;
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        box-shadow: inset 0 0 0 1px rgba(17, 26, 74, 0.06);
+      }
+
+      .feature-card h3 {
+        margin-top: 16px;
+        font-size: 19px;
+        line-height: 1.25;
+      }
+
+      .feature-card p {
+        margin: 10px 0 0;
+        color: var(--slate);
+        font-size: 13.5px;
+        line-height: 1.5;
+      }
+
+      .diagram-stack {
+        display: grid;
+        gap: 20px;
+      }
+
+      .diagram-card {
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .diagram-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 0;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--mist);
+        background: linear-gradient(180deg, #fff 0%, var(--wash) 100%);
+      }
+
+      .diagram-title h3 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .diagram-title span {
+        color: var(--slate);
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        font-size: 11px;
+      }
+
+      .mermaid {
+        position: relative;
+        min-height: 280px;
+        width: 100%;
+        background:
+          radial-gradient(circle at 1px 1px, rgba(126, 167, 233, 0.12) 1px, transparent 0) 0 0 / 18px 18px,
+          linear-gradient(180deg, #fff 0%, var(--wash) 100%);
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        padding: 24px;
+        overflow-x: auto;
+      }
+
+      .mermaid svg {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0 auto;
+      }
+
+      .mermaid .node rect,
+      .mermaid .node polygon,
+      .mermaid .node circle,
+      .mermaid .node ellipse {
+        filter: drop-shadow(0 1px 1px rgba(17, 26, 74, 0.04));
+      }
+
+      .mermaid .edgePath .path {
+        stroke-width: 1.4px;
+      }
+
+      .mermaid .edgeLabel {
+        color: var(--slate);
+      }
+
+      .mermaid .cluster rect {
+        rx: 8px;
+      }
+
+      .mermaid .label,
+      .mermaid .nodeLabel {
+        line-height: 1.35;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.68fr);
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .text-card {
+        padding: 24px;
+        height: 100%;
+      }
+
+      .text-card h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+
+      .text-card p,
+      .text-card li {
+        color: var(--slate);
+        font-size: 15px;
+        line-height: 1.62;
+      }
+
+      .text-card ul,
+      .text-card ol {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      .text-card li + li {
+        margin-top: 7px;
+      }
+
+      .quote {
+        margin-top: 18px;
+        border: 1px solid rgba(236, 101, 43, 0.22);
+        border-radius: var(--radius);
+        background: rgba(236, 101, 43, 0.075);
+        padding: 16px 18px;
+        color: var(--ink);
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow-sm);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 820px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--mist);
+        padding: 14px 16px;
+        text-align: left;
+        vertical-align: top;
+        font-size: 14px;
+      }
+
+      th {
+        background: var(--wash);
+        color: var(--ink);
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      td {
+        color: var(--slate);
+      }
+
+      td:first-child {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .artifact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .image-card {
+        overflow: hidden;
+      }
+
+      .image-card img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        background: #eef0f3;
+        filter: saturate(0.96) contrast(1.02);
+      }
+
+      .image-caption {
+        border-top: 1px solid var(--mist);
+        background: var(--wash);
+        padding: 14px 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        color: var(--slate);
+        font-size: 13px;
+      }
+
+      .footer {
+        border-top: 1px solid var(--mist);
+        padding: 34px 24px 48px;
+        color: var(--slate);
+      }
+
+      .footer-inner {
+        max-width: var(--max);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
+
+      .mono {
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+      }
+
+      .section-spacer {
+        height: 20px;
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid,
+        .section-head,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .card-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .hero-panel {
+          max-width: 680px;
+        }
+
+        .mermaid svg {
+          width: 1120px;
+          max-width: none;
+          min-width: 1120px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .topbar-inner {
+          height: auto;
+          min-height: 64px;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 14px;
+          padding: 16px 20px;
+        }
+
+        .brand-mark {
+          width: 32px;
+          height: 32px;
+          font-size: 14px;
+        }
+
+        .brand-text {
+          font-size: 15px;
+        }
+
+        .nav {
+          width: 100%;
+          flex-wrap: wrap;
+          gap: 6px;
+          overflow: visible;
+          padding-bottom: 0;
+          font-size: 13px;
+          line-height: 1;
+        }
+
+        .nav a {
+          background: rgba(255, 255, 255, 0.66);
+          border-color: rgba(216, 219, 226, 0.82);
+          padding: 9px 10px;
+        }
+
+        .section {
+          padding: 48px 20px;
+        }
+
+        .section-head > p {
+          margin-top: 0;
+        }
+
+        h1 {
+          max-width: 560px;
+          font-size: 40px;
+          line-height: 1.06;
+        }
+
+        .hero {
+          padding-top: 46px;
+          padding-bottom: 38px;
+        }
+
+        .hero::before {
+          inset: 74px -160px auto auto;
+          width: 420px;
+          height: 260px;
+          opacity: 0.24;
+        }
+
+        .hero-grid {
+          gap: 34px;
+        }
+
+        .eyebrow,
+        .pill {
+          max-width: 100%;
+          white-space: normal;
+          line-height: 1.2;
+        }
+
+        .hero-copy {
+          margin-top: 18px;
+          font-size: 16px;
+          line-height: 1.58;
+        }
+
+        .hero-actions {
+          gap: 10px;
+          margin-top: 24px;
+        }
+
+        .button {
+          width: 100%;
+          min-height: 48px;
+          padding: 0 14px;
+        }
+
+        .hero-panel {
+          padding: 18px;
+        }
+
+        .panel-header {
+          align-items: flex-start;
+        }
+
+        .metric-value {
+          font-size: 26px;
+        }
+
+        .card-grid,
+        .artifact-grid,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-card {
+          min-height: 154px;
+        }
+
+        .orange-card {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        .mermaid {
+          min-height: 240px;
+          padding: 14px;
+          overflow-x: auto;
+        }
+
+        .diagram-title,
+        .image-caption,
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .section {
+          padding-inline: 18px;
+        }
+
+        h1 {
+          max-width: 12ch;
+          font-size: 36px;
+        }
+
+        .section-head h2 {
+          font-size: 31px;
+        }
+
+        .hero-copy,
+        .section-head > p {
+          font-size: 15px;
+        }
+
+        .section-subtitle {
+          font-size: 17px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 1ms !important;
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="#top" aria-label="Zhao OrderOps home">
+            <span class="brand-mark">ZO</span>
+            <span class="brand-text">Zhao OrderOps</span>
+          </a>
+          <nav class="nav" aria-label="Sections">
+            <a href="#workflow">Workflow</a>
+            <a href="#diagrams">Diagrams</a>
+            <a href="#prd">PRD</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#evidence">Evidence</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="section hero">
+          <div class="hero-grid">
+            <div>
+              <span class="eyebrow">Workflow automation brief</span>
+              <h1>
+                From messy phone orders to
+                <span class="muted-headline">route-ready fulfillment.</span>
+              </h1>
+              <p class="hero-copy">
+                A review-first order operations system for Zhao: capture WhatsApp, WeChat, SMS, and voice orders;
+                map customer phrasing to inventory; then generate warehouse picklists, driver day books, and ERP-ready
+                invoice records.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#diagrams">View workflow diagrams <span aria-hidden="true">→</span></a>
+                <a class="button secondary" href="#prototype">See first prototype scope <span aria-hidden="true">›</span></a>
+              </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="OrderOps operating snapshot">
+              <div class="panel-header">
+                <div>
+                  <div class="metric-label">Operating model</div>
+                  <div class="panel-title">Review-first black box between customers and ERP</div>
+                </div>
+                <span class="status-dot" aria-hidden="true"></span>
+              </div>
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <div class="metric-label">Channels</div>
+                  <div class="metric-value">4</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Core outputs</div>
+                  <div class="metric-value">3</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Prep window</div>
+                  <div class="metric-value">04:00</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Safety mode</div>
+                  <div class="metric-value">Human</div>
+                </div>
+              </div>
+              <div class="orange-card">
+                <div>
+                  <strong>Order line</strong>
+                  <span>Raw customer message becomes SKU, pack size, quantity, delivery date, route, and invoice line.</span>
+                </div>
+                <svg class="spark" viewBox="0 0 120 80" fill="none" role="img" aria-label="Workflow sparkline">
+                  <path d="M4 62C16 58 19 42 31 42C43 42 43 20 56 20C70 20 68 46 82 46C96 46 99 18 116 14" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <path d="M4 70H116" stroke="rgba(255,255,255,.35)" stroke-width="1" />
+                </svg>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="workflow" class="section">
+          <div class="section-head">
+            <div>
+              <span class="pill">Deciphered workflow</span>
+              <h2>
+                The workflow is not ordering.
+                <span class="muted-headline">It is translation.</span>
+              </h2>
+            </div>
+            <p>
+              Customers already know how to order. The business pain is translating informal, multilingual,
+              multi-channel requests into the exact product, pack, route, loading, and invoice records that operations trust.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="feature-card">
+              <div class="feature-index">01</div>
+              <h3>Capture every channel</h3>
+              <p>WhatsApp, WeChat or similar text, SMS, and hotline calls flow into one order inbox without forcing customers into a new app.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">02</div>
+              <h3>Normalize messy language</h3>
+              <p>Product nicknames, mixed languages, delivery dates, pack sizes, carton counts, and shorthand become structured order lines.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">03</div>
+              <h3>Review ambiguity</h3>
+              <p>Low-confidence SKU, unit, date, duplicate, or inventory matches go to an admin queue instead of silently becoming fulfillment mistakes.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">04</div>
+              <h3>Generate ops outputs</h3>
+              <p>Approved lines become warehouse picklists, route-aware driver sheets, loading sequence, confirmations, and ERP-ready invoice records.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="diagrams" class="section">
+          <div class="section-head">
+            <div>
+              <span class="pill">Mermaid diagrams</span>
+              <h2>
+                A practical system map
+                <span class="muted-headline">from message to invoice.</span>
+              </h2>
+            </div>
+            <p>
+              These diagrams are implementation-facing but readable by an operator. The key decision is to keep humans in the loop wherever confidence is low.
+            </p>
+          </div>
+
+          <div class="diagram-stack">
+            <article class="diagram-card">
+              <div class="diagram-title">
+                <h3>1. Multi-channel order intake</h3>
+                <span>customer channels to ops outputs</span>
+              </div>
+              <pre class="mermaid">
+flowchart LR
+    subgraph Channels["Customer order channels"]
+        A["WhatsApp\nmajority"]
+        B["WeChat / text"]
+        C["SMS"]
+        D["Voice / hotline\n10-15% est."]
+    end
+
+    subgraph OrderOps["Review-first OrderOps layer"]
+        direction LR
+        Intake["OrderOps\nintake"]
+        Intake --> Parse["Parse\nmessage / call"]
+        Parse --> Normalize["Normalize\norder fields"]
+        Normalize --> Match["SKU and inventory\nmatch"]
+        Match --> Review{"Confidence\nhigh?"}
+        Review -->|"No"| Admin["Admin exception review"]
+        Admin --> Generate["Generate\nops outputs"]
+        Review -->|"Yes"| Generate
+    end
+
+    subgraph Outputs["Controlled operational outputs"]
+        direction TB
+        Picklist["Warehouse\npicklist"]
+        RouteSheet["Driver\nroute sheet"]
+        ERP["ERP / invoice\ndraft"]
+        CustomerService["Customer\nconfirmation"]
+    end
+
+    A --> Intake
+    B --> Intake
+    C --> Intake
+    D --> Intake
+
+    Generate --> Picklist
+    Generate --> RouteSheet
+    Generate --> ERP
+    Generate --> CustomerService
+
+    classDef channel fill:#f6f6f8,stroke:#d8dbe2,color:#011821;
+    classDef process fill:#ffffff,stroke:#d8dbe2,color:#011821;
+    classDef core fill:#111a4a,stroke:#111a4a,color:#ffffff;
+    classDef decision fill:#c1e8ef,stroke:#167e6c,color:#023247;
+    classDef review fill:#fff3ec,stroke:#ec652b,color:#011821;
+    classDef output fill:#ffffff,stroke:#167e6c,color:#023247;
+    class A,B,C,D channel;
+    class Intake core;
+    class Parse,Normalize,Match,Generate process;
+    class Review decision;
+    class Admin review;
+    class Picklist,RouteSheet,ERP,CustomerService output;
+              </pre>
+            </article>
+
+            <article class="diagram-card">
+              <div class="diagram-title">
+                <h3>2. Product and SKU resolution</h3>
+                <span>free text to trusted order line</span>
+              </div>
+              <pre class="mermaid">
+flowchart LR
+    Order["Incoming order\nBelly slice 10kg\n1.5mm, tomorrow"] --> Extract["Extract entities"]
+    Extract --> Fields["Field set\ncustomer, date, product,\nvariant, quantity, unit,\npack size, route"]
+    Fields --> SKU["SKU matcher"]
+    SKU --> Inv{"Inventory\nmatch?"}
+    Inv -->|"Exact or high confidence"| Line["Structured\norder line"]
+    Inv -->|"Ambiguous product / unit"| Exception["Exception queue"]
+    Exception --> Admin["Admin chooses correct SKU\nor asks customer"]
+    Admin --> Line
+
+    subgraph Outputs["Trusted downstream tasks"]
+        direction TB
+        Pick["Warehouse\npick task"]
+        Driver["Driver\ndelivery task"]
+        Invoice["Invoice\nline"]
+    end
+
+    Line --> Pick
+    Line --> Driver
+    Line --> Invoice
+
+    classDef input fill:#f6f6f8,stroke:#d8dbe2,color:#011821;
+    classDef process fill:#ffffff,stroke:#d8dbe2,color:#011821;
+    classDef decision fill:#c1e8ef,stroke:#167e6c,color:#023247;
+    classDef review fill:#fff3ec,stroke:#ec652b,color:#011821;
+    classDef output fill:#ffffff,stroke:#167e6c,color:#023247;
+    class Order input;
+    class Extract,Fields,SKU,Line process;
+    class Inv decision;
+    class Exception,Admin review;
+    class Pick,Driver,Invoice output;
+              </pre>
+            </article>
+
+            <article class="diagram-card">
+              <div class="diagram-title">
+                <h3>3. Route sequencing and loading</h3>
+                <span>first delivery, last load</span>
+              </div>
+              <pre class="mermaid">
+flowchart LR
+    subgraph Plan["Route plan"]
+        Orders["Approved\norders"] --> R1["Customer A1,\nA2, D, E, F"]
+        R1 --> Drop["Delivery order\nfirst to last"]
+        Drop --> Load["Load order\nlast delivery first"]
+    end
+
+    subgraph Prep["Warehouse prep"]
+        Picklist["Picklist grouped by route,\ncustomer, SKU, quantity"]
+        Warehouse["Warehouse team\n04:00-04:30 prep window"]
+        Check["Picked / short / substituted status"]
+        Picklist --> Warehouse --> Check
+    end
+
+    subgraph Deliver["Driver and ERP"]
+        DriverBook["Driver day book\nordered stops + order lines"]
+        Delivery["Deliver and\nrecord result"]
+        ERP["ERP invoice\nfinal record"]
+        DriverBook --> Delivery --> ERP
+    end
+
+    Load --> Picklist
+    Load --> DriverBook
+    Check --> DriverBook
+
+    classDef input fill:#f6f6f8,stroke:#d8dbe2,color:#011821;
+    classDef process fill:#ffffff,stroke:#d8dbe2,color:#011821;
+    classDef timing fill:#c1e8ef,stroke:#167e6c,color:#023247;
+    classDef output fill:#ffffff,stroke:#167e6c,color:#023247;
+    class Orders input;
+    class R1,Drop,Load,Picklist,DriverBook,Check,Delivery process;
+    class Warehouse timing;
+    class ERP output;
+              </pre>
+            </article>
+
+            <article class="diagram-card">
+              <div class="diagram-title">
+                <h3>4. Order state machine</h3>
+                <span>control points and exception states</span>
+              </div>
+              <pre class="mermaid">
+flowchart LR
+    Start((Start)) --> Captured["Captured"]
+    Captured --> Parsed["Parsed"]
+    Parsed -->|"high confidence"| Matched["Matched"]
+    Parsed -->|"low confidence or ambiguity"| NeedsReview["Needs review"]
+    NeedsReview -->|"admin resolves"| Matched
+    NeedsReview -->|"missing date / SKU / quantity"| CustomerClarification["Customer clarification"]
+    CustomerClarification --> Parsed
+
+    Matched --> Approved["Approved"]
+    Approved --> PicklistGenerated["Picklist generated"]
+    PicklistGenerated --> Picked["Picked"]
+    Picked --> Loaded["Loaded"]
+    Loaded --> Delivered["Delivered"]
+    Delivered --> Invoiced["Invoiced"]
+    Picked -->|"inventory issue"| ShortOrSubstitution["Short or substitution"]
+    ShortOrSubstitution -->|"admin confirms substitute"| Approved
+
+    classDef start fill:#111a4a,stroke:#111a4a,color:#ffffff;
+    classDef state fill:#ffffff,stroke:#d8dbe2,color:#011821;
+    classDef review fill:#fff3ec,stroke:#ec652b,color:#011821;
+    classDef output fill:#ffffff,stroke:#167e6c,color:#023247;
+    class Start start;
+    class Captured,Parsed,Matched,Approved,PicklistGenerated,Picked,Loaded,Delivered state;
+    class NeedsReview,CustomerClarification,ShortOrSubstitution review;
+    class Invoiced output;
+              </pre>
+            </article>
+          </div>
+        </section>
+
+        <section id="prd" class="section">
+          <div class="section-head">
+            <div>
+              <span class="pill">Product requirements</span>
+              <h2>
+                Build the smallest reliable bridge
+                <span class="muted-headline">between chat and operations.</span>
+              </h2>
+            </div>
+            <p>
+              The first version should prove the transformation from raw order to operational paperwork, without replacing the ERP or removing human review.
+            </p>
+          </div>
+
+          <div class="two-col">
+            <article class="text-card">
+              <h3>Problem statement</h3>
+              <p>
+                Zhao's team receives orders through multiple informal channels and manually converts them into the correct operational records. Product mapping is complicated, early processing is time consuming, long-term night-shift staffing is hard, and miscommunication can create wrong product, quantity, date, route, or invoice outcomes.
+              </p>
+              <div class="quote">
+                The hard part is not taking an order. The hard part is converting messy customer language into warehouse, driver, and ERP truth.
+              </div>
+            </article>
+
+            <article class="text-card">
+              <h3>Solution</h3>
+              <p>
+                A review-first OrderOps layer ingests customer messages and voice transcripts, parses them into structured order lines, maps product phrases to inventory, flags ambiguity, and generates picklists, route sheets, confirmations, and invoice-ready exports.
+              </p>
+              <ul>
+                <li>Keep the ERP as the financial system of record.</li>
+                <li>Use admin review for low-confidence lines.</li>
+                <li>Capture aliases and corrections so the system improves over time.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="section-spacer" aria-hidden="true"></div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Decision</th>
+                  <th>Why it matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Order intake</td>
+                  <td>Capture WhatsApp, WeChat/text, SMS, and call transcripts in one review queue.</td>
+                  <td>Customers should not need to change behavior for the system to be useful.</td>
+                </tr>
+                <tr>
+                  <td>SKU matching</td>
+                  <td>Use customer aliases, product dictionary, pack rules, and confidence scoring.</td>
+                  <td>Wrong product or unit mappings are the highest-risk failure mode.</td>
+                </tr>
+                <tr>
+                  <td>Human review</td>
+                  <td>Route ambiguous lines to admin with the reason attached.</td>
+                  <td>The first version should build trust before automation expands.</td>
+                </tr>
+                <tr>
+                  <td>Fulfillment</td>
+                  <td>Generate warehouse picklists and driver day books from approved orders only.</td>
+                  <td>Operational documents must be treated as controlled outputs.</td>
+                </tr>
+                <tr>
+                  <td>ERP handoff</td>
+                  <td>Export invoice-ready records and preserve raw-message audit trails.</td>
+                  <td>Finance needs traceability from message to billed line.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="prototype" class="section">
+          <div class="section-head">
+            <div>
+              <span class="pill">First prototype</span>
+              <h2>Prototype scope</h2>
+              <p class="section-subtitle">
+                The demo should prove one narrow thing: <strong>trusted translation.</strong>
+              </p>
+            </div>
+            <p>
+              Start with a self-contained prototype using sample customer orders and a small product dictionary. Then connect real channels only after the review queue is trustworthy.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="feature-card">
+              <div class="feature-index">A</div>
+              <h3>Sample inbox</h3>
+              <p>Paste or import sample WhatsApp, text, SMS, and call-note orders into a unified order inbox.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">B</div>
+              <h3>Structured output</h3>
+              <p>Show parsed customer, SKU, pack size, quantity, unit, delivery date, route, and confidence.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">C</div>
+              <h3>Exception review</h3>
+              <p>Let admin resolve ambiguous product or quantity lines and save the corrected alias.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-index">D</div>
+              <h3>Ops documents</h3>
+              <p>Generate a warehouse picklist, driver sheet, and ERP export preview from approved lines.</p>
+            </article>
+          </div>
+
+          <div class="section-spacer" aria-hidden="true"></div>
+
+          <div class="two-col">
+            <article class="text-card">
+              <h3>Acceptance tests</h3>
+              <ol>
+                <li>Given a raw order, the system produces the expected structured line or a clear exception.</li>
+                <li>Given ambiguous product language, the system does not guess silently.</li>
+                <li>Given approved orders, the warehouse picklist groups by route, SKU, pack, and quantity.</li>
+                <li>Given a route sequence, the driver sheet reflects delivery order and loading constraints.</li>
+                <li>Every output line links back to the raw message and admin edits.</li>
+              </ol>
+            </article>
+            <article class="text-card">
+              <h3>Clarify with Zhao</h3>
+              <ul>
+                <li>What does each channel abbreviation mean, especially "W.E"?</li>
+                <li>What are the top 30 recurring products and aliases?</li>
+                <li>Which fields does the ERP require?</li>
+                <li>How are routes and loading order decided today?</li>
+                <li>What must be ready by the 04:00-04:30 prep window?</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="evidence" class="section">
+          <div class="section-head">
+            <div>
+              <span class="pill">Source evidence</span>
+              <h2>
+                Original sketches preserved
+                <span class="muted-headline">for traceability.</span>
+              </h2>
+            </div>
+            <p>
+              The artifact is based on two handwritten workflow sketches. Some channel labels, product terms, and route locations remain assumptions until confirmed.
+            </p>
+          </div>
+
+          <div class="artifact-grid">
+            <figure class="image-card">
+              <img src="./assets/zhao-1.jpg" alt="Zhao workflow sketch 1" loading="lazy" decoding="async" />
+              <figcaption class="image-caption">
+                <span>Zhao sketch 1</span>
+                <span class="mono">raw evidence</span>
+              </figcaption>
+            </figure>
+            <figure class="image-card">
+              <img src="./assets/zhao-2.jpg" alt="Zhao workflow sketch 2" loading="lazy" decoding="async" />
+              <figcaption class="image-caption">
+                <span>Zhao sketch 2</span>
+                <span class="mono">raw evidence</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <span>Zhao OrderOps workflow automation brief</span>
+          <span class="mono">Drafted 2026-06-15 from handwritten workflow sketches</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        securityLevel: "loose",
+        theme: "base",
+        flowchart: {
+          curve: "basis",
+          htmlLabels: true,
+          nodeSpacing: 42,
+          rankSpacing: 54,
+          padding: 18,
+          useMaxWidth: true
+        },
+        state: {
+          useMaxWidth: true
+        },
+        themeVariables: {
+          background: "transparent",
+          primaryColor: "#ffffff",
+          primaryTextColor: "#011821",
+          primaryBorderColor: "#d8dbe2",
+          lineColor: "#111a4a",
+          secondaryColor: "#c1e8ef",
+          tertiaryColor: "#f6f6f8",
+          mainBkg: "#ffffff",
+          secondBkg: "#f6f6f8",
+          tertiaryBkg: "#fbfbfc",
+          nodeBorder: "#d8dbe2",
+          clusterBkg: "#f6f6f8",
+          clusterBorder: "#d8dbe2",
+          noteBkgColor: "#ffffff",
+          noteTextColor: "#011821",
+          edgeLabelBackground: "#ffffff",
+          titleColor: "#011821",
+          fontFamily: "Inter, ui-sans-serif, system-ui",
+          fontSize: "14px"
+        },
+        themeCSS: `
+          .label, .nodeLabel, .edgeLabel, .cluster-label {
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          }
+          .nodeLabel, .cluster-label {
+            color: #011821;
+          }
+          .edgeLabel {
+            color: #5d6470;
+            font-size: 11px;
+          }
+          .edgeLabel rect {
+            fill: #ffffff;
+            opacity: 0.92;
+          }
+          .cluster rect {
+            fill: #f6f6f8;
+            stroke: #d8dbe2;
+          }
+          .cluster-label {
+            font-weight: 600;
+          }
+          .node rect, .node polygon, .node circle, .node ellipse {
+            stroke-width: 1.1px;
+          }
+          .flowchart-link {
+            stroke-width: 1.35px;
+          }
+        `
+      });
+    </script>
+  </body>
+</html>
