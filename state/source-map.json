@@ -18578,15 +18578,15 @@
       "captured_at": "2026-06-11"
     },
     {
-      "id": "raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv",
+      "id": "local-only/raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv",
       "title": "Sunder sync data: CEASalespersonsPropertyTransactionRecordsresidential.csv",
       "url": "file:///Users/sethlim/Documents/sunder-next-migration-20260225/data/cea/CEASalespersonsPropertyTransactionRecordsresidential.csv",
       "source_type": "data",
       "trust_lane": "intentional",
-      "capture_quality": "complete",
-      "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv",
-      "staging_path": null,
-      "status": "compiled",
+      "capture_quality": "local_only_oversized",
+      "raw_path": null,
+      "staging_path": "staging/sunder-sync/2026-06-11-data-files-manifest.json",
+      "status": "local_only_ignored",
       "wiki_paths": [
         "wiki/archive/2026-06-11-sunder-sync-source-captures.md",
         "wiki/gtm-sales/agentic-gtm-campaign-workflows.md"
@@ -18603,7 +18603,9 @@
         "source_relpath": "data/cea/CEASalespersonsPropertyTransactionRecordsresidential.csv",
         "category": "gtm-sales",
         "sha256": "a11f1b31f2c84a3cb2415fe5a07609374aedf5e3794325f1e4656a3f35a3b301",
-        "size": 122247095
+        "size": 122247095,
+        "local_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv",
+        "git_tracking": "ignored because the file exceeds GitHub's 100 MB blob limit; restored locally but not committed"
       },
       "captured_at": "2026-06-11"
     },
