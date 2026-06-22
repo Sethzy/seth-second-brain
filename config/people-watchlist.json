@@ -1,0 +1,26 @@
+{
+  "description": "People Seth wants swept periodically. Runs are noisy Last30Days sweeps, not durable wiki truth.",
+  "defaults": {
+    "cadence": "daily",
+    "search": "x,youtube",
+    "promote_policy": "staged_only"
+  },
+  "people": [
+    {
+      "slug": "matt-pocock",
+      "name": "Matt Pocock",
+      "x_handle": "mattpocockuk",
+      "youtube_query": "Matt Pocock TypeScript",
+      "topic": "Matt Pocock TypeScript React AI coding recent posts",
+      "why_follow": "High-signal TypeScript/React educator and tool-builder."
+    },
+    {
+      "slug": "nicbstme",
+      "name": "Nic",
+      "x_handle": "nicbstme",
+      "youtube_query": "",
+      "topic": "Nic nicbstme AI coding agents Claude Code recent posts",
+      "why_follow": "Seth marked this X account as a high-signal person to track."
+    }
+  ]
+}

@@ -21,7 +21,7 @@ mkdir -p "$OUT"
 if [[ "${1:-}" == "--x-profile3" ]]; then
   shift
   cd /Users/sethlim/Documents/gtm-workspace
-  LAST30DAYS_MEMORY_DIR="$OUT" scripts/last30days-x-profile3.sh "$@"
+  LAST30DAYS_MEMORY_DIR="$OUT" scripts/last30days-x-profile3.sh "$@" --save-dir "$OUT"
 else
-  LAST30DAYS_MEMORY_DIR="$OUT" python3 /Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/last30days.py "$@"
+  LAST30DAYS_MEMORY_DIR="$OUT" python3 /Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/last30days.py "$@" --save-dir "$OUT"
 fi
