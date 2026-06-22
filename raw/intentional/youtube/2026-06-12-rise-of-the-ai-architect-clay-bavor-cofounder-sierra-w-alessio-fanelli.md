@@ -1,0 +1,98 @@
+---
+type: raw_capture
+source_type: youtube
+title: "Rise of the AI Architect — Clay Bavor, Cofounder, Sierra w/ Alessio Fanelli"
+url: "https://www.youtube.com/watch?v=C3geUfBR2js"
+collected_at: 2026-06-12T00:00:00Z
+published_at: 2025-07-24
+capture_quality: complete
+status: raw
+trust_lane: intentional
+---
+
+# Rise of the AI Architect — Clay Bavor, Cofounder, Sierra w/ Alessio Fanelli
+
+Source: https://www.youtube.com/watch?v=C3geUfBR2js
+
+## Metadata
+
+- Uploader: AI Engineer
+- Channel: AI Engineer
+- Duration: 18:55
+- Published: 2025-07-24
+- Video ID: C3geUfBR2js
+- Caption source: C3geUfBR2js.en-orig.vtt
+
+## Transcript
+
+[Music] So, welcome. Uh, I I know a lot of people might be familiar familiar with you and especially all the amazing work you've done at Google in the past and with Sierra Sierra overall, but maybe just give a one minute intro on what Sierra is, who you serve, the scale of it. >> Yeah. Uh so Sierra in a nutshell we help businesses build better more human customer experiences with AI and uh concretely what we're trying to do is bridge this age-old gap between businesses wanting to provide great care customer service customer experience on the one hand and the impossibility of doing that on the other hand because of cost.
+
+And I think we've all been there just like being on hold. was like 000000 or uh I was walking into work a couple weeks ago and there was a dude uh on a call holding his iPhone with AirPods in yelling representative representative and um like I'm not sure what circle of hell involves you know waiting on hold and trying to get a problem solved but I'm sure it's one and we're trying to uh bridge that gap and so uh concretely you know we're a year in change after launch we have hundreds of customers we'll serve hundreds of millions of consumers this year Um, uh, we work with folks like ADT, the largest home security company in the country, built an AI for them.
+
+If any of you have a SiriusXM subscription, and contact them. You'll speak with Harmony, an AI agent that we built with and for them who picks up the phone and can help you uh, get back up and running, including sending a satellite signal from space um, to to get your radio up and running again. We work with uh, one of the largest mortgage originators in the country and then a lot of uh, local tech companies that you would have heard about.
+
+And so um that's that's what we do in in a nutshell. And um uh what excites us is we think that every company in the future is going to have an agent, its own uh branded customerf facing agent and we think it's what comes after the website, what comes after the mobile app and we want to help the the great companies of the world build their own and do it well. >> So talking about AI architect, I would say the killer use cases of AI are coding and customer support today.
+
+um the coding I would guess vibe coding and some of these ideas are kind of t taking hold >> on the customer support side you know Brett mentioned this idea of the AI architect where instead of managing software you're almost like the personality coach and like really thinking through what's the vibe that the agent should have how does it integrate so what is an AI architect >> so around the emergence of the internet and the web there was this role of web master right and you don't really hear web master thrown around a lot these days, but it was someone who was creating a company's in essence digital storefront, right?
+
+If if they're a business and thinking about not only the technology, right? Uh uh are you building an ASP or you have static pages or or whatever in the dark ages of the web. Uh but also it's like what does it look like, what does it feel like and so on. So I think the AI architect I would say is kind of the AI era and AI agent version of the web master in a way. And it's um it's actually Brett shared on the podcast, it's a role that uh we've seen emerge organically across a set of our customers.
+
+And we heard it first from one of our largest customers where the the team of folks who are responsible for managing, coaching, improving, building their agent came to calling themselves the AI architect. And I think there are three parts to it. One is you got to understand the the technology, have a little bit of a feel for what agents can do. And so doesn't mean that you've, you know, pre-trained a a trillion parameter model or uh even been hands-on with a lang chain or um even vibe coding, but having a feel for the capabilities number one.
+
+Number two is and a pattern we've seen we some interesting things is a company's agent needs to not only manifest the functional capabilities of the company but also be something of a brand ambassador right what's the voice what are the values what's the tone how do you come across how do you create a connection with the customer so there's a real I would say aesthetic and taste element to it how should it sound uh does it have a persona right some of our customers agents are the ex company virtual agent Uh, in contrast, we work with a company called Chubbies.
+
+Uh, they make great very short shorts, uh, that I am not cool enough to wear. Um, their agent is named Duncan Smothers and will tell kind of irreverent broy jokes and so on and speak in a a really funny tone. So, making decisions about that and and many other ways that the agent comes across is the second part of it. And then third, ultimately a business wants to in engaging with its customers drive business outcomes. So what business outcomes are you driving towards?
+
+So it's this three hats. It's technology, it's experience and aesthetics and design and it's business and I I think it will be one of the fastest growing job types in the next 5 years and from what I've seen you know a front row seat on this one of the most interesting as well. >> Where most of them already in the customer support org or are some of these people coming from more technical teams and kind of like creating this blend of a role?
+
+All of the above. But the the area I've been most excited about is seeing individuals in customer experience teams and you know engineering teams are often celebrated and held up and so on. Your your CX team less often. So uh but what's emerged are people who really do have a feel for what a great customer experience looks like and are hands-on with the technology enough and have a sense for what the business is trying to do. So the answer is folks emerge from all of those teams.
+
+I would say the most common and the one I'm most excited about are the folks who have been close to the customer in service support care retailing settings and so on who uh kind of put this badge on and and become the AI architect or one of the AI architects for their for their business. >> I'm sure there's a lot of people in the audience that have been tasked to figure out the AI strategy of their company, whatever whatever that means.
+
+>> The board says we need an really angry. Um, so when you think about all the AI architects that you work with, what are like some of the traits of the most successful one? Are they really curious? Do they try a lot of products? Are they very structured in how they evaluate? Are they maybe more bite- based on how they think about what tools to use? >> I mean, there's a lot in what what has made customers we've worked with successful in developing an AI strategy and actually applying it.
+
+I I think um broadly across the businesses we work with the most successful have not let perfect be the enemy of the good. You think about large language models and agents these are probabilistic pieces of software that could say or do anything and so necessary in adopting them is some amount of risk tolerance and being willing to you know step into the pond and and try things out. So a spirit of exploration, trying new things and taking some risk uh is is number one.
+
+Number two is a deep uh focus on actually solving customer problems and real business problems. I think uh too often there's this hey let's apply some AI to that and we'll have you know emerge from that our AI strategy. No no no no like start with a concrete valuable problem to solve and it can be very narrow. Uh, you know, we to give you a sense for like where we and one of our customers started was something as simple as processing a single return.
+
+And like we celebrated and they celebrated when their AI picked up the phone and successfully drop shipped someone a new pair of shoes and printed and gave them a shipping label to print, right? It is not, you know, the pinnacle of complexity and so on, but you start somewhere um and and learn and grow from there. And then the last thing I would say is uh not shoehorning the way you've built teams in the past or done things in the past into the AI era.
+
+And so our most successful uh customers and partners have actually rearchitected their customer experience and customer service teams around supporting the AI agent in being and doing better. So there's a set of people for instance at one of our customers who will review a couple hundred conversations a day and basically coach and refine the agent on how to do it better, how to say it better, how to make better decisions, how to have greater empathy, how to have better judgment. And that was not a team that has existed, you know, anywhere into the past.
+
+And so really thinking from first principles and and not just trying to translate naively the old to the new would be a third element of it. you know architect that's kind of like a enter technical connotation in enterprises like hey you're like the software architect. What were some of the build versus buy fallacies that you've seen working with customers where you maybe have the customer support team that just wants something today and the engineering team is like, "Oh, we can just build this.
+
+It's just going to take three times as long and cost twice as much as buying." >> The multiples are more than that, but yes. Yeah. So, it's such an important question and uh we get the oh, we're going to build our own uh you know, why should we work with you all the time? And it's funny, we we have a slide, we call it the agent iceberg, where I think technical teams think, oh, awesome. We're going to choose our language model.
+
+Should we Langraph or Langchain, take it off the shelf? Uh, you know, what uh what embeddings model will we use? Uh what vector database? And you know, maybe we'll integrate some tools. You know, we're we're done. And then you put on your scuba tank and you kind of you go under the surface of the ocean like, oh my god, you know, there there are hundreds of things from how do you do regression testing and unit testing? How do you do model migration and model upgrades?
+
+Uh in voice, it gets just shockingly complicated where how do you separate primary from secondary speaker, handle interruptions and a thousand other things in the agent development life cycle. And so um we we come to our customers with uh what we call agent OS, our platform for building agents. And it's it's a very sophisticated toolkit for incode building very sophisticated customer-f facing agents. Now the the architect right there's this whole other side to building excellent customerf facing agents which is the experiential the the brand the market.
+
+So paired with that we have a set of noode tools that enable nontechnical users to build refine coach edit update their agent and importantly these two seamlessly interoperate and and so I think when folks approach us and say hey we're just going to roll our own they look at oh my goodness all of the things under the surface of the iceberg the problems that we have spent you know the better part of two years uh running into and then solving and pulling together in a very coherent platform to build these scaled customerf facing agents that can pick up the chat, pick up the phone um and handle a high degree of complexity and the set of tools for non-technical users to contribute uh to to the agent as well.
+
+And that rings quite true and where we have had um companies we've interact with go down the path of build your own. We've had many of them come back nine months later and it's like hey uh it was deeper and darker than we expected under there you know can we talk? So uh that's kind of the journey and the the pattern that we see. >> Yeah. What's the agent building iteration process like when people are building on Sierra or when you're seeing people build agents like how should people think about how to push the envelope and you can also do things like you couldn't AB test a customer support person before now with Sierra you can kind of have different personalities like do you see people be very creative with that >> it's a couple levels one uh we've had to essentially event invent a new software development life cycle we call it the agent development life cycle where you have this non-deterministic piece of software So, how do you test it?
+
+Well, one of the things we've discovered is the solution to most problems with AI is more AI. And so, when you're testing a company's agent, how do you do that? You can't just put in a single input and hope you get the the right output. We've built a whole user simulation testing harness where we can create dozens of different personas with simulated accounts uh even simulated devices that they're troubleshooting and you know the amber light is on or off and and so on.
+
+And so first and foremost have had to think through all of the parts of the software development life cycle. Um, with that as the foundation, you then have this approach to building out every business's agent, which starts with deeply understanding what they're trying to do with their customers. What are the key customer journeys? And then we have a variety of techniques for modeling those in code uh in a way that is very expressive uh and lets the agent simultaneously kind of hit the curve balls and flex.
+
+If someone comes in on one topic and goes to another, do that. But then when it matters right be you know down to fully deterministic where needed like there's no hallucinating you know compliance regula uh compliance language that that you want. >> From there uh we we then use uh the uh simulations testing harness to in essence have tens or hundreds of thousands of conversations with the agent before it's live for the first time. And from there we can tell oh you know it doesn't know enough about this part or it needs to be able to handle this corner case better and so on.
+
+And then um it it really gets interesting when we go live and we have a a set of tools that give CX teams and engineering teams deep insight into where does the agent realize like oh like I'm I'm beyond my abilities on this. I'm going to hand off to to a person. Uh and then we have this closed loop uh set of tools where the agent can learn from its past mistakes. It can be coached. It can be improved and you end up with this kind of upward spiral of performance and capability.
+
+>> Yeah. You mentioned beyond my ability. What's your process for like staying up to date on the ability of the models? I think there's a lot of people that try a model or try an app and it's like it doesn't work but then it works a month later because the models improve so quickly. Uh what what's your process for staying up to date on it? >> Yeah. >> Well, first of all, if you feel like things are changing faster than they ever have before, it's because they are.
+
+Um I I I feel like whether it's I don't know Dance Dance Revolution or Beat Saber just like new models, new agent frameworks, uh uh new benchmarks and so on are just coming down the pike at at an incredible and increasingly fast rate. So I think one thing is I think fairly typical I think we all do dipping into Twitter acts uh reading the latest research papers and and really trying to just immerse oneself in things that are even adjacent to what specifically you're doing.
+
+So we don't yet use video models but gosh what the you know V3 models are cap capable of and uh what's emerging in like okay it gives it gives you a hint of what's going to be around the corner maybe in the area that that you're directly uh working in and then I just think there is no substitute for hands-on and using it and so uh really being handson with the tools whether or not right again you're directly applying them in in your work or what it is you're I think is so important and I I would argue that uh understanding where things are going is even more important than understanding where things are today.
+
+So the first derivative is more important than kind of the absolute uh state of capability. an example of a decision we made early on was like we had a strong sense when we started the company that the uh cost per token was going to plummet that model capabilities were going to expand and and so you want to be building to where the puck is going as opposed to where it currently is and so almost having a ritual where on a cadence you're checking in with the capabilities of the model I keep in a Google doc some problems that were too hard right for GBT T4 to solve, but you know 01 or 03 because can 03 mini do it?
+
+Um and uh you're you're checking in on the capabilities of these models to basically plot again the slope so that you can understand cool if we start building this now this will intercept you know at this period of time and we could have this level of model capability but with this latency and I think that's that's how you build truly great products that are at the frontier. It's by anticipating the frontier. >> Yep. Um I know we only got a minute and a half left, but you spent 18 years at Google.
+
+You kind of started the ARVR projects. You started the lens project. What What do you think about the next interface for AI? So we had text, now we have voice, obviously video coming. Do you see the glasses are going to do you think the glasses are going to work? Is it more ambient agents? Like any thoughts? >> Yeah, I first of all, I think how we interact with AI and agents is going to look super different from today. Today it's like mushed into what looks like AOL instant messenger, right?
+
+A chat a chat interface or it's a voice call. I think agents are going to look like shape shifters that can summon text, voice, video, imagery, user interface, and more. And you're going to interact with uh every uh sense and mechanism that that you have. As for the hardware, uh look, I spent 10 years of my life uh building uh in AR and VR. My strong view is that uh glasses and wearables will be the ultimate vehicle for the trusted personal AI that is with you.
+
+Something that can see what you see, hear what you hear, uh that can whisper in your ear or, you know, nudge you that way uh visually. I I just think we're on this path to every one of us having an omniresent uh omniapable uh AI assistant that can help us navigate the world uh lead better and healthier lives uh be smarter than we are on our own. And I think, you know, going into your pocket or purse or bag to retrieve the, you know, rectangle of glass and metal and, you know, swipe up and uh whatever it is, I I just I think for such an important capability that will feel in time like an extension of ourselves, you want that to be with you throughout the day.
+
+And so I think wearables, I think glasses will be a a central part of that. And uh it's something I'm I'm super excited to see emerge. >> Awesome. Thank you, Clay. Thank you so much. Thank you. Thanks everyone. [Music]
