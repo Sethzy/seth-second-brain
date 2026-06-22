@@ -1,0 +1,1079 @@
+start	end	text
+0	2000	I will be free.
+4000	6000	I will be back, but I should be okay.
+6000	11000	Okay, okay. Maybe just a quick call up just to find the specification and stuff.
+18000	28000	To structure other lines, map product, the inventory, ambiguity, generate, speed, disruptions, confirmation, trading, response.
+30000	34000	Transcript.
+50000	52000	You just want to dig on Kennedy, I think.
+52000	55000	It should be enough to visualize the...
+55000	63000	I mean, it's a accurate and very simplified version of what we went through with Mobin.
+63000	65000	Yeah, so I guess the...
+65000	69000	What I want to know is, if...
+69000	71000	Like, what is the complexity?
+71000	74000	And like, what do you really want?
+74000	77000	Because if you want to do a small slice, right, it's quite simple.
+77000	81000	If you want to do like a whole zheng ERP system, right, that's a different story.
+81000	85000	No, I don't think we'll be getting an ERP system for this.
+85000	88000	Because we'll be using our ERP system for a very long time, really.
+88000	90000	So everyone got you very used to this.
+90000	92000	I mean, I'm not saying that it shouldn't change.
+92000	93000	It should change.
+93000	97000	But I think it should be a ramp up from stage one.
+97000	105000	So instead of telling you what I need, right, I think you captured my pain points for the whole thing,
+105000	111000	which is that it is very time consuming, very tedious, very manual to think all this right now.
+111000	116000	So human, human reliance, prone to error and things like that, standard thing.
+116000	120000	So I want to make things easier for the night shift.
+120000	123000	I'm not cancelling the night shift job position permanently,
+123000	128000	because there are still like hotlines, hardlines, you know, coming through.
+128000	134000	But I want to simplify its workflow to make sure that whatever that's been captured and sent by our customers
+134000	138000	are accurate enough for the morning ops to draw the inventory.
+138000	141000	So that's the number one and most important thing.
+141000	144000	That is quite simple, to be honest.
+144000	147000	Like, I'm your bro, right? I'm not going to lie to you, right?
+147000	149000	It's actually quite simple.
+149000	151000	Like, most of it is WhatsApp, right?
+151000	154000	That's what, you know what, the handwriting, then tweet.
+154000	156000	Luckily, yeah, I can read.
+156000	164000	I mean, like, I don't think it is difficult to capture text.
+164000	175000	I think it's very difficult to capture, first of all, dialects, you know, accents, different mixture of singlish, you know, that kind of thing.
+175000	178000	And oversimplified all this.
+178000	183000	Like, I explained to Marvin, for example, you say, hey, I want pork, five kilos.
+183000	184000	I want to be very low, okay?
+184000	187000	But the pork, just that one more, right?
+187000	191000	It can be, like, hundreds of possibilities in our inventory.
+191000	197000	So I need to map whatever he says according to his historical data and what's in our system.
+197000	199000	That kind of thing.
+199000	201000	That is the difficult part.
+201000	208000	Okay, so, like, I guess, the dialect part, right, it shouldn't be too hard, okay?
+208000	213000	The hard part is, like, verifying against a source of truth to create, like, some sort of rule set.
+213000	217000	So that when something comes in, right, you validate whether it hits all the criteria.
+217000	221000	So, like, pork, weight, which exact pork, like, you know what I mean, right?
+221000	224000	Then the question is, like, where does that source of truth live?
+224000	229000	Because you can connect it to, once you have that source of truth somewhere, right?
+229000	233000	Once you pull that data into, you know, the LOM brain, right?
+233000	236000	Then you can actually validate the incoming with the rules.
+236000	239000	Then you say, like, fuck you, insufficient.
+239000	240000	I need more information, right?
+240000	243000	That's basically the triage that needs to happen, right?
+243000	248000	I, let's just do, like, a stupid man job, okay?
+248000	253000	I can provide you guys with the, for example, Murphy's ordering items.
+253000	255000	One to a hundred, okay?
+255000	257000	This is everything he's going to order.
+257000	260000	That's everything he's going to need for his daily ops, okay?
+260000	266000	I'm able to provide to you the whole list of items that our sales has confirmed with him.
+266000	268000	This is all the items that you need.
+268000	273000	So when he says something or when he inputs something, it can be matched.
+273000	278000	Yeah, and then the idea is that, like, is this a source of truth, right?
+278000	280000	Is it Excel, I guess?
+280000	283000	Or is it like a random PDF?
+283000	284000	Not really important, but I'm just kind of curious.
+284000	286000	And how often is it updated?
+288000	290000	That's the good question.
+290000	293000	So it is being updated in our ERP system.
+293000	298000	But our ERP system have a three-month validity of historical orders.
+298000	303000	So if you order this thing, like, on the 1st of January and you never order for three months,
+303000	309000	so from the 1st of April, it will be, like, pushed down, like, away, pushed away from the order history.
+309000	310000	Yeah.
+310000	314000	So I can generate, I hope I can.
+314000	317000	I'll call the IT site to double-check.
+317000	319000	I can generate that for you guys.
+319000	327000	But the most stupid way is to actually the product descriptions in the WhatsApp group itself.
+327000	330000	The WhatsApp group itself meaning, like…
+330000	341000	Like, usually our SOPs, whatever sales close with the customer, right, they will create a WhatsApp group from involving the ops, the finance, the customer, and sales, and blah, blah, blah.
+341000	350000	And the sales will actually input all the products, information, and specs inside the group chat description.
+350000	353000	So this is to check against…
+353000	357000	This is for the night shift guys to check against when they don't know what…
+357000	358000	Like, exactly what happened.
+358000	359000	Hey, pork.
+359000	360000	What pork?
+360000	363000	You know, then he will open up the group chat description and say,
+363000	364000	Oh, actually, he only…
+364000	365000	We order one kind of pork.
+365000	368000	Then you just write down that pork.
+368000	370000	But slowly and slowly, surely,
+370000	374000	He doesn't need that anymore because the moment he sees this customer, he knows already,
+374000	376000	Oh, this fucker, only the same thing again.
+376000	378000	But he just gonna say pork.
+378000	380000	Yup, yup, okay.
+380000	382000	So, I guess…
+382000	385000	So you have your description written.
+385000	388000	The WhatsApp group description doesn't get outdated, ah?
+388000	389000	Sometimes I guess you will…
+389000	390000	Oh…
+390000	391000	Yeah, go ahead.
+391000	396000	I mean, they will miss out, but it's the job of sales to keep on updating whenever there are changes.
+396000	400000	But usually there won't be significant updates to them.
+400000	402000	Oh, I would say 90% of the items.
+402000	404000	Only like miscellaneous.
+404000	408000	For example, like, oh, I actually have one pork belly, one cm.
+408000	410000	But, ah…
+410000	412000	Last month I ordered like…
+412000	414000	Well, I told you I confirmed like 0.1 cm.
+414000	416000	You know that kind of thing.
+416000	417000	Okay, okay.
+417000	418000	The nuance, ah?
+418000	419000	The…
+419000	420000	Yeah.
+420000	421000	So the pain is…
+421000	422000	The…
+422000	423000	In the day you don't have problems, ah?
+423000	424000	Is it?
+424000	426000	Because your staff is on duty, ah?
+426000	427000	Is that what I'm hearing?
+427000	428000	Yes, correct.
+428000	429000	So…
+429000	430000	So what I'm…
+430000	432000	Why the job gets easier in the daytime?
+432000	433000	Because when they are trying…
+433000	435000	For example, ah…
+435000	436000	Let's say Mervin plays a…
+436000	439000	Is a customer, plays an order at the night shift.
+439000	441000	He's supposed to order one cm thickness.
+441000	442000	Okay.
+442000	443000	But, ah…
+443000	445000	The night shift just wrote 0.1.
+445000	446000	Okay.
+446000	451000	So, in the daytime, I mean, when I'm keying in the order into my ERP system to generate an invoice,
+451000	453000	I was like, hey, cannot be.
+453000	455000	He has been ordering…
+455000	461000	The correct one, but he's now saying that he needs a 0.1.
+461000	465000	So, I will manual correct, or I will go and check with the customer.
+465000	466000	Hey, you yesterday ordered 0.1, is it?
+466000	467000	But you are actually…
+467000	468000	What you've been ordering for months, ah?
+468000	469000	It's 1 cm.
+469000	470000	That kind of thing.
+470000	474000	So, this mistake goes away with the double authentication.
+474000	475000	With your staff, lah?
+475000	476000	Yes.
+476000	477000	And all the…
+477000	478000	All the history.
+478000	483000	When they check, hey, the order history don't have, you know, this spec.
+483000	484000	So, they will check.
+484000	486000	They will message, they will call.
+486000	487000	Okay, okay.
+487000	488000	So, I mean, the…
+488000	489000	The only…
+489000	491000	The thing that it hinges on, right?
+491000	492000	Is your ERP is built by who?
+492000	494000	I know you use some dev shop in India, right?
+494000	496000	That's what I last remember.
+496000	497000	Yup.
+497000	499000	Then, there's the ERP API.
+499000	500000	No, right?
+500000	501000	It's a…
+501000	503000	I guess you can only export, right?
+503000	504000	Uh…
+504000	505000	I…
+505000	506000	A…
+506000	507000	I…
+507000	509000	Think can export.
+509000	510000	But because…
+510000	511000	Oh, yeah.
+511000	513000	One of the thing is that, you know, this kind of, like…
+513000	514000	They show in India.
+514000	518000	When you are adding something to the system built by them, right?
+518000	519000	It's easy.
+519000	520000	Because they…
+520000	521000	They want to earn that money, man.
+521000	522000	So, when you…
+522000	525000	Get a third party to try to add something to…
+525000	529000	What they have done, and they are not earning the money, they create a lot of problems.
+529000	530000	For…
+530000	531000	For everyone.
+531000	535000	He, this cannot, that cannot, wrong data, you know, push wrong, pull wrong, you know, that…
+535000	536000	That kind of shit.
+536000	537000	So, we tried a few times, then…
+537000	538000	All failed because of this.
+538000	539000	Yeah, yeah.
+539000	540000	Makes sense.
+540000	541000	So, actually…
+541000	542000	Cooling data shouldn't be an issue.
+542000	543000	Yeah, but you want to take the stupidest version, right?
+543000	544000	That will solve your problem, right?
+544000	545000	Is that, you just export whatever.
+545000	546000	Like, you SKU lists, right?
+546000	547000	And then, uh…
+547000	560000	Like, if you can export the order history of the customer, it would be even better,
+560000	561000	but I guess it's optional.
+561000	567000	Then you just match that with the WhatsApp order that comes in, right?
+567000	571000	And then, if you can have the order history exported as well, you just match that with…
+571000	574000	And then flag any discrepancy and say like, okay, how come most of the time it's like this,
+574000	575000	then now this is different.
+575000	581000	Then you just flag it as like, oh, you should probably look out for this because it's…
+581000	586000	Firstly, uh, doesn't fit any of the SKUs that we have listed, and secondly, or it doesn't
+586000	589000	fit the pass order experience that we had with this client.
+589000	593000	Then your day shift will just come in and report saying like, okay, fuck, WhatsApp came
+593000	597000	in last night, but we flagged these two things and then can you go chase?
+597000	600000	But the rest of it should be, if it's all clear, right, it can be a straight-through pass
+600000	601000	la.
+601000	602000	Does that make sense?
+602000	603000	Yes.
+603000	604000	Yes.
+604000	605000	That can be one of the…
+605000	608000	I mean, that's the ideal situation.
+608000	616000	So, I'm not sure how physical is this, but maybe you can request for like, weekly pooling
+616000	622000	of data from my current ERP system to sync with whatever that you guys are doing, the
+622000	623000	order histories.
+623000	630000	So, I don't need to be like daily update because I don't know how strenuous it is on the cloud
+630000	632000	and servers and things like that.
+632000	639000	But, I think weekly or something like that, once in a fortnight, pooling data just to
+639000	644000	double, just to update, would be nice also.
+644000	646000	Yeah, and there are two ways to do it, right?
+646000	648000	One is like, you can do the dummy way, right?
+648000	652000	Which is that if your ERP has a big export button, which is export everything, and you
+652000	656000	just store everything in like, literally a container in the cloud, right?
+656000	661000	And then I can just pull from there, and then once you export again, then you override that
+661000	662000	one, you know what I mean?
+662000	663000	That's the manual way, right?
+663000	666000	But if you want to get fancy, you can do automatic pull, but I don't think it's necessary.
+666000	669000	If you're saying weekly basis, then it's, you know what I mean?
+669000	674000	You just click one button once a week, then everything comes out, and just pull from there.
+674000	675000	You know what I mean?
+675000	678000	That's like the real MVP sort of…
+678000	679000	Yeah.
+679000	680000	Yeah.
+680000	682000	Then it's not that deep, you know what I mean?
+682000	686000	Then you actually, what you really need to solve is the WhatsApp automation layer.
+686000	689000	How about this way?
+689000	699000	When you guys are building or designing this, give me like, like access to modify the order
+699000	703000	history within your app itself.
+703000	709000	So that for example, if this, suddenly I need, I don't know if I need, I need donkey, okay?
+709000	712000	I need donkey meat today and see something new.
+712000	716000	But when they try to order today, they won't be able to see from the order history because
+716000	718000	that will be the first time that they are doing that.
+718000	724000	So when this kind of thing happened, I can only imagine is that, okay, I will let my guys, okay,
+724000	731000	can you go to whatever that you guys are building, just input donkey, you know, as create like a,
+731000	735000	like a pseudo order history like that so that it's able to capture.
+735000	736000	Yeah.
+736000	738000	Why would donkey come up?
+738000	742000	I mean, we brought in new products, okay?
+742000	745000	First wave, like the, like the pig's blood, okay?
+745000	748000	It just came to Singapore literally just weeks.
+748000	750000	So a lot of customers are new to this.
+750000	753000	They are starting their first order as pig's blood, new.
+753000	759000	Then when they order and they didn't sink in time with my ERP system or whichever cloud,
+759000	762000	then it creates a big jam, right?
+762000	763000	I suppose.
+763000	764000	But these are exceptions, right?
+764000	765000	These are not the rule, right?
+765000	767000	They're not going to be super frequent, right?
+767000	768000	Yeah.
+768000	778000	I mean, with a daily order of 200 something, I'm not sure how many new items are being discussed
+778000	780000	every day, you know, that's the thing.
+780000	781000	Yeah, yeah.
+781000	784000	So the, the, I mean, the way you can think of it, right, is that you, what you want to do
+784000	786000	is first cut all the bulk volume first.
+786000	787000	You don't want a perfect solution, right?
+787000	790000	You cut the 250 standard things first.
+790000	792000	Then you show the 50 things.
+792000	793000	I don't know what the ratio is, right?
+793000	796000	And say like, okay, for now we'll do a manual.
+796000	798000	I mean, you still need some guy in the morning to check it, right?
+798000	800000	You still have someone doing the night shift.
+800000	801000	You say you're not going to fire the guy, right?
+801000	806000	So the guy can handle the exceptions, but at least he knows like the bulk stuff is being
+806000	807000	cleared, right?
+807000	811000	And then the, the exceptions can be cleared manually, right?
+811000	814000	Then that's the, that's the V1, the, the bare minimum.
+814000	815000	Then actually that's the most lift.
+815000	817000	You'll solve a lot of pain with that, right?
+817000	822000	Then you can slowly turn the system to sort of, you know, take the exceptions and start solving
+822000	824000	them one by one, right?
+824000	825000	And then there's more work.
+825000	829000	But if you want to do like, let's say you want to solve the problem today, it's not that
+829000	830000	hard, right?
+830000	834000	And I think why I always think, yeah, just solve the big problem first, then you just
+834000	835000	follow the stuff.
+835000	836000	You can just clear up after that, right?
+836000	837000	One by one.
+837000	838000	You know what I mean, right?
+838000	839000	Yeah.
+839000	842000	And I guess like the big problem is really that you have how many WhatsApp groups?
+842000	843000	Like 200, 300?
+843000	844000	Like thousands.
+844000	845000	Huh?
+845000	846000	Say again?
+846000	847000	Thousands.
+847000	848000	Thousands, right?
+848000	849000	Yeah.
+849000	852000	So the hard part is actually tracking the thousands of WhatsApp and figuring out like what the hell
+852000	857000	is coming in every night, making sure that everything is like, like the stuff that is easily
+857000	858000	solved is solved, right?
+858000	859000	Then I think 80% of your pain will go away.
+859000	860000	No?
+860000	861000	Yes.
+861000	873000	So I think what I can try to map out on my end is actually the export API from my current
+873000	874000	ERP system.
+874000	883000	So I'll generate, I'll ask the team to try to generate customer names with address with order
+883000	884000	history.
+884000	885000	Yeah.
+885000	886000	That'll be perfect.
+886000	887000	Then SKU list, right?
+887000	888000	Yeah.
+888000	889000	Pack them together.
+889000	890000	Yeah.
+890000	891000	You pack them together into one single source of truth, right?
+891000	892000	And this can be synced weekly for now, right?
+892000	897000	We can always move it to daily in future because if your dev shop in India is like anywhere close
+897000	898000	to being competent, right?
+898000	899000	They can get this done in five minutes, I think.
+899000	900000	But let's just do weekly first because like don't talk to them, right?
+900000	901000	You really know how it's going to go, right?
+901000	902000	You do that weekly.
+902000	903000	Once you have that, then what I can do for you is your thousand WhatsApp groups, everything,
+903000	904000	whenever the message comes in, right?
+904000	905000	You automatically cross references that source of truth, right?
+905000	912000	And it comes up with a preliminary answer, which says that, okay, based on the rules that you
+912000	916000	say, this order is missing information or it is fucking an exception.
+916000	917000	It's not in the sink right now, in the source of truth, right?
+917000	926000	But these two things will reflect for either the person, you can also automate the back
+926000	931000	and forth, but for now it will reflect to a person and the person will just go to the
+931000	933000	guy and say, hey, bro, you're already missing something, bro.
+933000	934000	You're already missing something, bro.
+934000	935000	You're already missing something, right?
+935000	936000	You're already missing something, right?
+936000	937000	You're already missing something, right?
+937000	938000	You're already missing something, right?
+938000	939000	You're already missing something, right?
+939000	940000	You're already missing something, right?
+940000	941000	You're already missing something, right?
+941000	942000	You're missing something, right?
+942000	943000	You're missing something, right?
+943000	944000	You're missing something, right?
+944000	945000	You're already missing something, right?
+945000	946000	You're already missing something, right?
+946000	947000	You're already missing something, right?
+947000	948000	You're already missing something, right?
+948000	949000	You're missing something, right?
+949000	952000	And with an exception, then the person will just take over and check the ERP manually and
+952000	955000	say like, okay, actually, we actually do have this order.
+955000	956000	Does it make sense?
+956000	961000	Then the bulk cases will be cleared and your team should be quite happy with that.
+961000	965000	That's usually how it goes with, I mean, I've done this a few times already, but you
+965000	967000	don't try to solve the whole thing at once, you know?
+967000	968000	You kill yourself off.
+968000	969000	Yeah.
+969000	973000	So actually from the WhatsApp side of things, right, it's quite straightforward.
+973000	974000	I know how to do it, right?
+974000	978000	And then if you sync everything into an Excel for now, right, it's actually probably good
+978000	979000	enough.
+979000	980000	You don't need to build a fancy dashboard.
+980000	983000	I mean, you can, but I don't think it's necessary.
+983000	985000	Just put it in an Excel nicely, right?
+985000	987000	Everyday you get one sheet, right?
+987000	990000	And the sheet will be color coded with like, okay, this is fucked up.
+990000	991000	This is not fucked up.
+991000	992000	Can't really.
+992000	993000	Can't really.
+993000	994000	That's one thing, right?
+994000	995000	Then it's printable.
+995000	996000	Second.
+996000	1001000	So I do have some requirements on the format.
+1001000	1004000	First of all, it needs to be a printable thing.
+1004000	1005000	All right.
+1005000	1008000	So because after it's being segregated into different routes and things like that, right,
+1008000	1013000	they need to print this shit out and hand over to the inventory team for them to draw
+1013000	1017000	according to the list, according to the sequence of the jobs.
+1017000	1018000	Okay.
+1018000	1019000	This is point number one.
+1019000	1024000	Second, there are certain format I want it to be printed.
+1024000	1029000	For example, like how much space actually you should leave behind every line.
+1029000	1032000	What's the spacing on all these items?
+1032000	1035000	They're very miscellaneous, small, small things, but this is something that actually
+1035000	1039000	is quite important and critical in my operation.
+1039000	1040000	Okay.
+1040000	1042000	This one, 100% can be done.
+1042000	1044000	All I need, okay, what format is it?
+1044000	1046000	PDF or is it a, what do you normally print?
+1046000	1047000	I need a Word Dog.
+1047000	1048000	PDF.
+1048000	1050000	PDF would be okay.
+1050000	1051000	Yup.
+1051000	1052000	Yup.
+1052000	1055000	And then all the exact specifications, the minutiae, right, can be done because like,
+1055000	1060000	you can think of it as like, when you use a computer to do it, everything becomes guaranteed
+1060000	1061000	formatting, right?
+1061000	1063000	You know, human beings make mistakes formatting, right?
+1063000	1064000	Computers don't, because it's rule-based.
+1064000	1065000	You know what I mean?
+1065000	1068000	You write a script and the script will always put it in this format, right?
+1068000	1073000	So the key part here is like, firstly, you need to show me one example, right?
+1073000	1078000	Then I will infer all the formatting that you want and I confirm with you.
+1078000	1084000	And after that, you should always be shut out in the same way every single time in any format
+1084000	1085000	you want.
+1085000	1089000	Because turning Excel into anything is a trivial task, but let's put it this way.
+1089000	1090000	Yeah.
+1090000	1091000	Let me show you something.
+1091000	1092000	Sure.
+1092000	1093000	It should be something like that.
+1093000	1094000	You sign on what?
+1094000	1095000	What's that?
+1095000	1096000	Oh, Tele.
+1096000	1097000	Tele, you say.
+1097000	1098000	Yeah, yeah, yeah, yeah.
+1098000	1099000	No, no, no, no.
+1099000	1100000	But, so how do you normally do this today actually?
+1100000	1101000	That's what I'm curious about.
+1101000	1117000	Because this is actually a prototype from the current, current, current, current, current
+1117000	1118000	IT company.
+1118000	1125000	But we do face a lot of resistance because it's all built in one from ordering all the
+1125000	1128000	way until inventory drawing.
+1128000	1135000	So, but the tricky part is that the customer needs to access to links and passwords and things
+1135000	1136000	like that.
+1136000	1140000	So, a lot of these fuckers are just too lazy to operate on their own.
+1140000	1142000	So, this just dies off.
+1142000	1145000	So, what we are doing now is physical writing.
+1145000	1152000	Like when they take call and take message, they are physically writing items on the list.
+1152000	1155000	Oh, but you, you, the one you sent me is not written, right?
+1155000	1156000	It's printed, right?
+1156000	1157000	This is, this is printed.
+1157000	1158000	This is printed.
+1158000	1161000	Which is the prototype that we are not using.
+1161000	1162000	Oh, okay, okay, okay.
+1162000	1163000	And why are you not using it?
+1163000	1164000	It's because the...
+1164000	1167000	Because, if you try a...
+1167000	1169000	For example, me and Movin are two different customers.
+1169000	1175000	Each of us will have a different unique link for us to access, to place orders.
+1175000	1178000	They need to go into the link and place orders.
+1178000	1180000	But, they are too lazy to do that.
+1180000	1185000	They just want to send like a voice message to make their job easier and make our job hard.
+1185000	1188000	So, that's the, that's the g's of it.
+1188000	1190000	Okay, voice message also can do actually.
+1190000	1191000	That one is under the...
+1191000	1192000	Anything WhatsApp input, right?
+1192000	1193000	Is solvable basically.
+1193000	1194000	As long as it comes in...
+1194000	1195000	WeChat?
+1195000	1196000	WeChat, I'll log into it.
+1196000	1197000	How, how much of it is WeChat?
+1197000	1201000	About WhatsApp, I know, weChat can be done, but I need to go research.
+1201000	1202000	It's the same idea.
+1202000	1203000	You know what I mean?
+1203000	1205000	You, you get the file format.
+1205000	1206000	I think.
+1206000	1207000	Yeah.
+1207000	1208000	But what's the ratio?
+1208000	1212000	I think I would say like a 50-50 or 60 on WeChat, 40 on WhatsApp.
+1212000	1213000	Okay, now I know WeChat.
+1213000	1216000	WeChat confirm that China API is very good one.
+1216000	1221000	WhatsApp is the one that is normally a headache because they are quite anti-automation.
+1221000	1222000	I don't know if you...
+1222000	1223000	Yeah, anyway.
+1223000	1225000	But long story short, both can be done.
+1225000	1226000	It's not a guarantee you, right?
+1226000	1230000	But then, I guess the idea is that you want this form filled up, just without...
+1230000	1231000	Yes.
+1231000	1235000	But then, but in that case, then do you need the password link or all that crap?
+1235000	1236000	No need, right?
+1236000	1237000	No need, no need, no need, no need.
+1237000	1241000	This one is, is, is, is, it need to be plugged into the phone, right?
+1241000	1245000	Or somehow connected to a phone number that we're using.
+1245000	1250000	Or the number, or whichever WhatsApp WeChat account that we need to be linked up.
+1250000	1253000	So, I don't need the customer to access the system.
+1253000	1256000	It's just like auto-capture and generates on the back end.
+1256000	1258000	That, that should do the job.
+1258000	1263000	Okay, then, then like a super simple flow would just be, WhatsApp comes in, right?
+1263000	1265000	You get shared into an Excel sheet.
+1265000	1267000	Your team approves.
+1267000	1271000	Once they approve, it gets shared into a PDF in this format.
+1271000	1272000	Yeah?
+1272000	1276000	That, that would be the, the most basic, you know, without over-engineering or overthinking it, right?
+1276000	1278000	That would probably solve the problem, right?
+1278000	1279000	Yeah.
+1279000	1282000	Then you would just get a very clean PDF in.
+1282000	1284000	I assume you have a template, right?
+1284000	1285000	Just give me a template, though.
+1285000	1286000	Yeah.
+1286000	1287000	And then some examples.
+1287000	1289000	And then, I think that's the entire scope, right?
+1289000	1290000	Yeah.
+1290000	1292000	Cause, I don't know why I even quote you 100K, right?
+1292000	1295000	But that, that is, dude, this is, this is not like that deep, you know what I mean?
+1295000	1298000	It's, if you solve the problem, it's not that deep.
+1298000	1300000	But if you want to go on to expand beyond this, right?
+1300000	1301000	Then it'll be a lot harder, la.
+1301000	1302000	It doesn't make sense, right?
+1302000	1303000	Yeah, bro, it's not code, la.
+1303000	1305000	Because I think you want to do something fancy.
+1305000	1306000	You want to create a platform, la.
+1306000	1307000	Yeah.
+1307000	1308000	So, I mean, these three things, right?
+1308000	1309000	One, what's that in?
+1309000	1312000	Verify against your source of truth, which is the export on a weekly basis of both the
+1312000	1314000	SKU inventory and the customer history, right?
+1314000	1315000	Excel will flag the things that are exceptions.
+1315000	1318000	So, either missing information from the order that is not matching with the SKU, or weird shit
+1318000	1319000	that comes up that doesn't match with the order history.
+1319000	1320000	And then exceptions, which is your blood meat, or your pig blood, right?
+1320000	1321000	That one will just come up as like, okay, not identified.
+1321000	1322000	Then your team will manually do it.
+1322000	1323000	Then once they clean up in the morning, they will just review the Excel.
+1323000	1326000	Then basically they click a button and then it will shit up the correct invoices and
+1326000	1327000	then you can take it from there.
+1327000	1328000	Right?
+1328000	1329000	The correct PDF.
+1329000	1330000	I think that's the flow, right?
+1330000	1331000	Yes, correct.
+1331000	1332000	Okay.
+1332000	1333000	I think that's the flow, right?
+1333000	1334000	Yes, correct.
+1334000	1335000	Okay.
+1335000	1336000	Okay.
+1336000	1337000	Okay.
+1337000	1338000	Okay.
+1338000	1339000	Okay.
+1339000	1340000	Okay.
+1340000	1341000	Okay.
+1341000	1342000	Okay.
+1342000	1343000	Okay.
+1343000	1344000	Okay.
+1344000	1345000	Okay.
+1345000	1346000	Okay.
+1346000	1347000	Okay.
+1347000	1348000	Okay.
+1348000	1348000	
+1348000	1349000	Okay.
+1349000	1350000	Okay.
+1350000	1351000	Okay.
+1351000	1352000	Okay.
+1352000	1353000	Okay.
+1353000	1354000	Okay.
+1354000	1355000	Okay.
+1355000	1356000	Okay.
+1356000	1357000	Okay.
+1357000	1358000	Okay.
+1358000	1359000	Okay.
+1359000	1360000	Okay.
+1360000	1361000	Okay.
+1361000	1362000	Okay.
+1362000	1363000	Okay.
+1363000	1364000	Okay.
+1364000	1365000	Okay.
+1365000	1366000	Okay.
+1366000	1367000	Okay.
+1367000	1368000	Okay.
+1368000	1369000	Okay.
+1369000	1370000	Okay.
+1370000	1371000	Okay.
+1371000	1372000	Okay.
+1372000	1373000	Okay.
+1373000	1374000	Okay.
+1374000	1375000	Okay.
+1375000	1376000	Okay.
+1376000	1377000	Okay.
+1377000	1378000	Okay.
+1378000	1378000	
+1378000	1379000	Okay.
+1379000	1380000	Okay.
+1380000	1381000	Okay.
+1381000	1382000	Okay.
+1382000	1383000	Okay.
+1383000	1384000	Okay.
+1384000	1385000	Okay.
+1385000	1386000	Okay.
+1386000	1387000	Okay.
+1387000	1387000	
+1387000	1388000	Okay.
+1388000	1389000	Okay.
+1389000	1390000	Okay.
+1390000	1390000	
+1390000	1391000	Okay.
+1391000	1391000	
+1391000	1392000	Okay.
+1392000	1392000	
+1392000	1393000	Okay.
+1393000	1393000	
+1393000	1394000	Okay.
+1394000	1394000	
+1394000	1395000	Okay.
+1395000	1395000	
+1395000	1396000	Okay.
+1396000	1397000	Okay.
+1397000	1398000	Okay.
+1398000	1399000	Okay.
+1399000	1400000	Okay.
+1400000	1401000	Okay.
+1401000	1402000	Okay.
+1402000	1403000	Okay.
+1403000	1404000	Okay.
+1404000	1405000	Okay.
+1405000	1406000	Okay.
+1406000	1406000	
+1406000	1407000	Okay.
+1407000	1408000	Okay.
+1408000	1408000	
+1408000	1409000	Okay.
+1409000	1410000	Okay.
+1410000	1410000	
+1410000	1411000	Okay.
+1411000	1411000	
+1411000	1412000	Okay.
+1412000	1413000	Okay.
+1413000	1414000	Okay.
+1414000	1415000	Okay.
+1415000	1416000	Okay.
+1416000	1416000	
+1416000	1417000	Okay.
+1417000	1417000	
+1417000	1418000	Okay.
+1418000	1419000	Okay.
+1419000	1420000	Okay.
+1420000	1421000	Okay.
+1421000	1422000	Okay.
+1422000	1423000	Okay.
+1423000	1424000	Okay.
+1424000	1425000	Okay.
+1425000	1426000	Okay.
+1426000	1427000	Okay.
+1427000	1428000	Okay.
+1428000	1429000	Okay.
+1429000	1429000	
+1429000	1430000	Okay.
+1430000	1430000	
+1430000	1431000	Okay.
+1431000	1431000	
+1431000	1432000	Okay.
+1432000	1432000	
+1432000	1433000	Okay.
+1433000	1433000	
+1433000	1434000	Okay.
+1434000	1435000	Okay.
+1435000	1435000	
+1435000	1436000	Okay.
+1436000	1437000	Okay.
+1437000	1437000	
+1437000	1438000	Okay.
+1438000	1439000	Okay.
+1439000	1439000	
+1439000	1440000	Okay.
+1440000	1441000	Okay.
+1441000	1442000	Okay.
+1442000	1443000	Okay.
+1443000	1444000	Okay.
+1444000	1445000	Okay.
+1445000	1446000	Okay.
+1446000	1447000	Okay.
+1447000	1448000	Okay.
+1448000	1449000	Okay.
+1449000	1450000	Okay.
+1450000	1451000	Okay.
+1451000	1452000	Okay.
+1452000	1453000	Okay.
+1453000	1454000	Okay.
+1454000	1455000	Okay.
+1455000	1456000	Okay.
+1456000	1457000	Okay.
+1457000	1458000	Okay.
+1458000	1459000	Okay.
+1459000	1460000	Okay.
+1460000	1461000	Okay.
+1461000	1462000	Okay.
+1462000	1463000	Okay.
+1463000	1464000	Okay.
+1464000	1465000	Okay.
+1465000	1466000	Okay.
+1466000	1467000	Okay.
+1467000	1468000	Okay.
+1468000	1469000	Okay.
+1469000	1470000	Okay.
+1470000	1471000	Okay.
+1471000	1472000	Okay.
+1472000	1473000	Okay.
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1473000	
+1473000	1474000	Okay.
+1474000	1480000	So if you give me two kilos of donkey, two kilos of horsey, you know, that kind of thing.
+1480000	1481000	Okay.
+1481000	1482000	Okay.
+1482000	1483000	Horsey.
+1483000	1484000	Okay.
+1484000	1485000	Then you'll be like, what the fuck is a horsey?
+1485000	1490000	So are you able to give me a prompt back to the customer and say, can you clarify what's
+1490000	1491000	!
+1491000	1494000	That thing that you're asking if it doesn't really understand instead of just capturing
+1494000	1495000	and interpreting it on its own.
+1495000	1496000	Yeah.
+1496000	1497000	So I think two things can add, right?
+1497000	1498000	Which is quite simple.
+1498000	1502000	One is that for every order that is captured, we will include the verbatism.
+1502000	1507000	The verbatim transcript or the, what was said.
+1507000	1508000	You know what I mean?
+1508000	1510000	Next to the Excel sheet, you know, in the Excel sheet, there are columns, right?
+1510000	1511000	We'll put in the order.
+1511000	1514000	Then we'll put in the verbatim so that your team can easily scan and say like, oh, actually,
+1514000	1517000	this was the verbatim, right?
+1517000	1522000	Then we can also put the clarifying prompt next to it so that your team can manually feedback.
+1522000	1526000	You can automate this but like, it's not worth it until you see the volume, I guess.
+1526000	1531000	If there's a lot of errors, then you can start saying like, okay, then we want to make a back and forth automation, right?
+1531000	1532000	But, you know what I mean?
+1532000	1540000	I think it would be better for example, I give you like, for example, I ordered 10 items on the list, right?
+1540000	1542000	Then, all done, okay?
+1542000	1547000	Your system captures everything, register everything linked up with the history and blah, blah, blah.
+1547000	1549000	Send a confirmation response.
+1549000	1551000	This is what you ordered.
+1551000	1554000	Then, that's also doable.
+1554000	1559000	Yeah, that will actually eliminate a lot of the back end issues in the morning as well.
+1559000	1564000	So the customer confirms, confirms, like, okay, you confirm really then, like, don't talk about it when it's wrong.
+1564000	1568000	So I think this will help with the whole flow as well.
+1568000	1577000	So basically like a order place, locks in the sheet, sends confirmation in a nice bullet point saying like, you ordered this, this, this, this, this, right?
+1577000	1583000	And then, yeah, with the correct, with the correct decision from my system.
+1583000	1591000	For example, they just say, POC, I'll say, okay, from, is this, POC automatically generate the confirmation, POC barely wants CM cut.
+1591000	1592000	Okay, something like that.
+1592000	1593000	I see.
+1593000	1594000	Okay, okay.
+1594000	1600000	Then, then the only question is like, do you want your team to review first or do you want to automatically send the confirmation?
+1600000	1602000	That's the, they still need to review.
+1602000	1607000	They still need to review, but they, you need to double confirm with the customer.
+1607000	1611000	So sometimes it's like, oh, no, no, no, no, actually I don't want the 1 CM, I changed my mind.
+1611000	1613000	I need 1.5 today.
+1613000	1614000	You know, that kind of thing.
+1614000	1619000	So, but when they see the confirmation, they actually know what they ordered and what they, whichever they said.
+1619000	1620000	I see, I see.
+1620000	1623000	But like, as in, my point is like, you know, the order comes in, right?
+1623000	1631000	Do you want to automatically immediately confirm or do you want to let your team wake up in the morning, check through, and then send the confirmation message if they approve?
+1631000	1636000	Actually, in my operation, this, the moment they place order and my team checks through is confirmed already.
+1636000	1644000	So the really, really confirmation stage, confirm and nail is when they issue invoice, which is the second step of confirmation.
+1644000	1654000	So the first confirmation, I'll put it as a soft confirmation to the customer that we are, we capture your order as such, but this is not what you'll be getting.
+1654000	1656000	For example, some item may be out of stock.
+1656000	1658000	Some item may be missing.
+1658000	1660000	So it's like an auto confirmation.
+1660000	1664000	So the moment they place, they will get a, this is the order that you confirmed.
+1664000	1666000	My team will let you know.
+1666000	1672000	That is the message that we send, immediately after they send something, the customer order something, right?
+1672000	1674000	Yeah, let them check first.
+1674000	1675000	Got it.
+1675000	1678000	Then your team can look at the spreadsheet in the morning and double confirm.
+1678000	1679000	Yes.
+1679000	1681000	Okay, that's just a straight forward.
+1681000	1683000	Because that one will be no risk, you know what I mean?
+1683000	1684000	Because it's just a...
+1684000	1685000	Yeah.
+1685000	1688000	Yeah, okay, okay, makes sense, makes sense.
+1689000	1690000	Yeah.
+1690000	1691000	Yeah.
+1691000	1692000	So yeah, la.
+1692000	1694000	Fuck la, this is giving me a lot of feedback.
+1694000	1697000	Actually why la, is it, is it so much volume is it, or is it like...
+1697000	1703000	Yeah, the, uh, first of all, training a night shift fucker is not easy.
+1703000	1707000	Because he's not, his only job right is actually the night shift.
+1707000	1712000	I cannot fucking work him 20 hours a day by involving him in the day ops.
+1712000	1717000	So, the knowledge that he has is everything on the freaking small screen.
+1717000	1719000	Okay, whichever customer orders, right?
+1719000	1721000	It's just on the screen, he takes it.
+1721000	1722000	He takes the word for it.
+1722000	1729000	So sometimes it's very, very difficult to educate the night shift guys on what the major changes happen during the day.
+1729000	1734000	You know, then he will copy the wrong thing, he will link to the wrong route, you know.
+1734000	1738000	He will, he will, he will, he will commit a lot of mistakes here and there.
+1738000	1743000	So that's, that's, uh, actually some of the mistakes are very, very difficult to...
+1743000	1744000	And why not?
+1744000	1745000	Yeah.
+1745000	1746000	Yeah.
+1746000	1748000	Okay, okay, no, cool.
+1748000	1750000	Then actually, without curiosity, right?
+1750000	1752000	Night shift is like, what time is what time?
+1752000	1753000	I don't know.
+1753000	1755000	But how come your order is at 3am, huh?
+1755000	1758000	Bro, it's 7 to 4.30am.
+1758000	1764000	The last order that they actually cut off is actually when the drivers and the warehouse teams in the office to draw,
+1764000	1766000	then they will cut off the order from there.
+1766000	1767000	So it's about 4 something.
+1767000	1772000	Because they, they, they get off, the, all the, all the chefs get off work around 12 or 1am, right?
+1772000	1773000	Right?
+1773000	1777000	After the cleanup, then they'll start to send order to, they will check in the fridge or whatever missing,
+1777000	1779000	then order for tomorrow's delivery.
+1779000	1781000	So that's why it's all very, very late.
+1781000	1784000	So actually most of your orders come at night, is what I'm hearing.
+1784000	1787000	Yes, most of the order comes at night.
+1787000	1793000	But the daytime orders also quite a bit, also quite a bit, but it's, I would say like 45% comes in the day.
+1793000	1795000	60% comes in the night.
+1795000	1799000	Oh, okay no la, I was just wondering if it's better actually doing something useful, no?
+1799000	1802000	Cause like, bro, if you tell me like you get 10 orders a night, right?
+1802000	1803000	I tell you, just.
+1803000	1807000	No, I easily put me on the orders, yeah.
+1807000	1809000	Per night, okay la, okay la, then worth solving.
+1809000	1814000	Okay la, okay la, then I think it's worth solving la, I mean,
+1814000	1817000	I mean, the, what I can do for you is like a minimal version.
+1817000	1822000	Cause, I mean, unless, actually how much you willing to pay la, out of curiosity.
+1823000	1832000	I, to be honest, I'm, I'm open for offers la, because this kind of thing, I must match whatever that you guys are giving me as a quotation,
+1832000	1836000	versus, uh, the reality check from the finance side.
+1836000	1838000	So I will try to find a middle ground.
+1838000	1842000	But we are not be, we will not be eligible for any grants la, just, just for your information.
+1842000	1872000	No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no
+1872000	1881160	From all my competitors actually, he did a full scale tech solution for F&B companies all the way until routes and things like that
+1881160	1889560	But it's also subscription basis, it's close to a thousand dollar per, I think 900 something, 900 something per month
+1889560	1893840	So if I want to say this, I would say, let's say 30, 40
+1893840	1900280	That's actually, that's actually what Ivan was trying to do for David
+1900280	1901800	To create a whole system
+1901800	1905900	So for this alone, right, how much are you willing to pay?
+1906180	1908480	What's what I'm trying to figure out?
+1909320	1912120	I'll say, let's cap it in 50
+1912120	1920740	50, yeah, okay, okay, I mean, look, 50 is gonna be extremely high for what I think it should be, right?
+1920980	1922140	I'll definitely touch you less
+1922140	1925840	Yeah, I mean, Seth, I think it's gonna be
+1925840	1929700	I thought to you what the competitor is doing, it's actually quite detailed
+1929700	1933720	It's like a full solution, including inventory management and everything
+1933720	1938600	I told Marvin, the reason why I'm not using them is because I told the
+1938600	1940660	I'm quite close with the owner
+1940660	1944380	I told him that your system, really, if I'm gonna use it, right
+1944380	1946960	It's gonna benefit me tremendously
+1946960	1949140	But you are my competitor
+1949140	1955400	You know, you get access to all my data, all my historical data, all my customer data and everything like that
+1955400	1960040	I don't, I will not be able to sleep well at night if I'm able to, if I use your system
+1960040	1964980	And although they say, oh, PTBA or whatever, but I don't trust that
+1964980	1968200	So that's the only issue
+1968200	1974880	So I would say, if you quit your distribution and food trading business, I'll onboard with you immediately
+1974880	1975940	But it's impossible
+1975940	1985840	Yeah, I think, I think like, this is going to be, like if you want everything on your own like servers, right
+1985840	1990900	It's quite, it's doable, but the only thing you cannot do is subscribe to someone else's platform, which is
+1990900	1993340	I guess where this project comes in, right
+1993340	1997600	Everything will be on your own like, own like hosted AWS instance, right
+1997600	1998600	Yeah
+1998600	1999600	Then you can sleep well at night, though
+1999600	2000600	I think that's the
+2000600	2006600	Unless, unless you tell me that always, why is by, uh, Entropic or Alibaba, you know, that kind of thing
+2006600	2011600	Okay, I'm able to subscribe, fuck it, that is okay, but, eh, not him, no
+2011600	2018600	Okay, then the last thing is, is like, so wait, I tell you first, ah, say real, right
+2018600	2022600	I have time now, but I don't know about time like in two months, right
+2022600	2025600	Are you willing to do it like now-ish?
+2025600	2029600	Like, how, how, what is your procurement process, ah, is it going to be very long, la
+2029600	2059600	No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no
+2059600	2063480	I put time for you
+2063480	2065840	How about this
+2065840	2068360	Today after this call
+2068360	2069720	You give me
+2069720	2072280	What you need
+2072280	2074280	What you guys will be doing
+2074280	2075840	In a little bit more detail
+2075840	2077640	And also revise your code
+2077640	2079200	Let me know how much it is
+2079200	2080660	I will try to work on it
+2080660	2081820	By this week
+2081820	2083620	Okay, okay, sounds good
+2083620	2085660	The proposal right is that
+2085660	2087180	If let's say you start on the project
+2087180	2088380	Then there's maintenance everything
+2088380	2089840	Then you got no time, right?
+2090100	2091720	Then it's okay, I can get DC deal to do
+2091720	2095360	Maintenance, I'm less worried about that
+2095360	2095820	Because
+2095820	2098340	Yeah, it's a back end work, nothing much
+2098340	2099800	Anyone can do that job, actually
+2099800	2103060	I also don't think there'll be that much maintenance
+2103060	2104260	At least for this scope
+2104260	2105280	You know what I mean
+2105280	2107940	The system should run by itself
+2107940	2109260	After we finish all the iterations
+2109260	2110160	If that makes sense
+2110160	2111560	Unless you change your entire business
+2111560	2112640	Then that's a different story
+2112640	2114600	But it should be
+2114600	2116400	Relatively self-serving
+2116400	2117220	You know what I mean
+2117220	2119420	I don't want to be like
+2119420	2120060	That guy, you know
+2120060	2121260	Who's like fucking three months later
+2121260	2122320	And think break and fuck
+2122320	2124820	Bro, it needs to work la
+2124820	2126680	That's the TRD la
+2126680	2127820	Okay, I think let's do
+2127820	2128440	Go ahead
+2128440	2130300	So I think
+2130300	2131880	I also agree with you that
+2131880	2134440	Maintenance, well actually
+2134440	2136240	I'm not sure how
+2136240	2138440	How regular this is servicing
+2138440	2139020	But
+2139020	2140760	I just want to keep
+2140760	2142840	The first phase of this project
+2142840	2144060	As simple as it is
+2144060	2144600	So that
+2144600	2145520	Like you said
+2145520	2147380	It's more or less automatic on its own
+2147380	2148860	And without much
+2148860	2151000	Too much of processing needed
+2151000	2151840	At the back end
+2151840	2153700	So it doesn't have a lot of cock-ups
+2153700	2154520	Hopefully la
+2154520	2156040	Yeah la
+2156040	2157140	Keep it simple
+2157140	2157900	Keep it light
+2157900	2159160	But make it very useful
+2159160	2160220	And then like
+2160220	2160800	Maintenance
+2160800	2162840	I don't plan to charge you any recurring fee la
+2162840	2164980	Unless you really really really want me to
+2164980	2166380	It should just work
+2166380	2169420	It's a one-off fee
+2169420	2170940	And then it's called a day la
+2170940	2171260	Right
+2171260	2172000	And
+2172000	2173840	Then basically the iteration
+2173840	2174900	Until we call a day
+2174900	2176080	Is unlimited la
+2176080	2177160	Until you feel like
+2177160	2177820	It's like
+2177820	2178160	You know
+2178160	2180260	Right on point with what you're expecting
+2180260	2181140	From your workflow
+2181140	2182260	I think that's kind of like
+2182260	2183460	Normally how I do these kind of things
+2183460	2184520	You know what I mean
+2184520	2185100	So
+2185100	2185820	Fixed fee
+2185820	2186540	Unlimited
+2186540	2187600	Iterations
+2187600	2187900	But
+2187900	2188680	When we cut off
+2188680	2189180	And say like
+2189180	2189740	Okay fuck it
+2189740	2191120	This is working right
+2191120	2192840	Then I don't expect the charge of substitution
+2192840	2194240	Okay
+2194240	2195380	Yeah that's kind of like
+2195380	2196300	What I'm thinking
+2196300	2196740	Because
+2196740	2197860	If I charge subscription
+2197860	2198280	Then
+2198280	2199060	Wow
+2199060	2200420	There's a full ballpark of problems
+2200420	2200900	That come with it
+2200900	2201220	You know what I mean
+2201220	2201880	Which is like
+2201880	2203080	Hey success
+2203080	2203920	I want to upgrade la
+2203920	2204900	Then I'll be fuck you
+2204900	2206340	I mean
+2206340	2208280	If it works well
+2208280	2209440	Of course it will be
+2209440	2210940	I want to upgrade in the future
+2210940	2211340	Correct
+2211340	2212560	Then there will be another scope la
+2212560	2212980	Case by case la
+2212980	2214020	Yeah case by case la
+2214020	2214720	Okay okay cool
+2214720	2216180	So I think that's all I need right
+2216180	2217700	And then I will send you
+2217700	2218020	What I
+2218020	2219600	The requirements that I need
+2219600	2220160	From your side
+2220160	2221540	Which is really mostly the data
+2221540	2222220	I mean
+2222220	2222800	I've been keeping
+2222800	2223360	A transcript la
+2223360	2224320	I'll just send you everything later
+2224320	2226100	Then you pass it back
+2226100	2226980	And then I take a look
+2226980	2227880	After I take a look
+2227880	2228780	I can give you a quote
+2228780	2229200	And then
+2229200	2231000	If it's okay right
+2231000	2232000	Then I can start work like
+2232000	2233020	Basically immediately
+2233020	2235160	Cause I got time
+2235160	2237900	Yeah and you'll be doing me a favor also la
+2237900	2239000	Because I'm damn bored dude
+2239000	2239580	Holy shit
+2239580	2241580	Fuck
+2241580	2243020	I'm applying for a job
+2243020	2243580	But I didn't see you
+2243580	2244040	Fuck
+2244040	2245720	Cause it will take at least like
+2245720	2246880	One two months for me to
+2246880	2248980	Land a good job right
+2248980	2250020	So
+2250020	2250620	Yeah la
+2250620	2251660	Come on and drink la
+2251660	2252180	No choice la
+2252180	2253140	Yeah la
+2253140	2253600	But I mean
+2253600	2254500	Don't wanna drink so much la
+2254500	2254800	So
+2254800	2255860	Do some work la
+2255860	2256920	Okay
+2256920	2257740	Okay okay
+2257740	2258440	We work in the day
+2258440	2259220	And night we come out
+2259220	2260220	Okay okay okay
+2260220	2260740	Okay cool
+2260740	2261180	See you
+2261180	2262060	Alright
+2262060	2262320	Bye
+2262320	2262560	Bye bye
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2262560	
+2262560	2263060	Bye bye
+2263060	2263560	Bye bye
+2263560	2263560	
+2263560	2263560	
+2263560	2263560	
+2263560	2264560	Bye bye
+2264560	2264560	
+2264560	2264880	Bye bye
+2264880	2265460	Bye bye
+2265460	2265460	
+2265460	2265940	Bye bye
+2265940	2266480	Bye bye
+2266480	2267060	Bye bye
+2267060	2267060	
+2267060	2267520	Bye bye
+2267520	2267520	
+2267520	2268220	Bye bye
+2268220	2268520	Bye bye
+2268520	2268520	
+2268520	2269020	Bye bye
+2269020	2269020	
+2269020	2269020	
+2269020	2269400	Bye bye
+2269400	2270020	Bye bye
+2270020	2270520	Bye bye
+2270520	2270520	
+2270520	2271020	Bye bye
+2271020	2271020	
+2271020	2271020	

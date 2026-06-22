@@ -1,0 +1,1078 @@
+I will be free.
+I will be back, but I should be okay.
+Okay, okay. Maybe just a quick call up just to find the specification and stuff.
+To structure other lines, map product, the inventory, ambiguity, generate, speed, disruptions, confirmation, trading, response.
+Transcript.
+You just want to dig on Kennedy, I think.
+It should be enough to visualize the...
+I mean, it's a accurate and very simplified version of what we went through with Mobin.
+Yeah, so I guess the...
+What I want to know is, if...
+Like, what is the complexity?
+And like, what do you really want?
+Because if you want to do a small slice, right, it's quite simple.
+If you want to do like a whole zheng ERP system, right, that's a different story.
+No, I don't think we'll be getting an ERP system for this.
+Because we'll be using our ERP system for a very long time, really.
+So everyone got you very used to this.
+I mean, I'm not saying that it shouldn't change.
+It should change.
+But I think it should be a ramp up from stage one.
+So instead of telling you what I need, right, I think you captured my pain points for the whole thing,
+which is that it is very time consuming, very tedious, very manual to think all this right now.
+So human, human reliance, prone to error and things like that, standard thing.
+So I want to make things easier for the night shift.
+I'm not cancelling the night shift job position permanently,
+because there are still like hotlines, hardlines, you know, coming through.
+But I want to simplify its workflow to make sure that whatever that's been captured and sent by our customers
+are accurate enough for the morning ops to draw the inventory.
+So that's the number one and most important thing.
+That is quite simple, to be honest.
+Like, I'm your bro, right? I'm not going to lie to you, right?
+It's actually quite simple.
+Like, most of it is WhatsApp, right?
+That's what, you know what, the handwriting, then tweet.
+Luckily, yeah, I can read.
+I mean, like, I don't think it is difficult to capture text.
+I think it's very difficult to capture, first of all, dialects, you know, accents, different mixture of singlish, you know, that kind of thing.
+And oversimplified all this.
+Like, I explained to Marvin, for example, you say, hey, I want pork, five kilos.
+I want to be very low, okay?
+But the pork, just that one more, right?
+It can be, like, hundreds of possibilities in our inventory.
+So I need to map whatever he says according to his historical data and what's in our system.
+That kind of thing.
+That is the difficult part.
+Okay, so, like, I guess, the dialect part, right, it shouldn't be too hard, okay?
+The hard part is, like, verifying against a source of truth to create, like, some sort of rule set.
+So that when something comes in, right, you validate whether it hits all the criteria.
+So, like, pork, weight, which exact pork, like, you know what I mean, right?
+Then the question is, like, where does that source of truth live?
+Because you can connect it to, once you have that source of truth somewhere, right?
+Once you pull that data into, you know, the LOM brain, right?
+Then you can actually validate the incoming with the rules.
+Then you say, like, fuck you, insufficient.
+I need more information, right?
+That's basically the triage that needs to happen, right?
+I, let's just do, like, a stupid man job, okay?
+I can provide you guys with the, for example, Murphy's ordering items.
+One to a hundred, okay?
+This is everything he's going to order.
+That's everything he's going to need for his daily ops, okay?
+I'm able to provide to you the whole list of items that our sales has confirmed with him.
+This is all the items that you need.
+So when he says something or when he inputs something, it can be matched.
+Yeah, and then the idea is that, like, is this a source of truth, right?
+Is it Excel, I guess?
+Or is it like a random PDF?
+Not really important, but I'm just kind of curious.
+And how often is it updated?
+That's the good question.
+So it is being updated in our ERP system.
+But our ERP system have a three-month validity of historical orders.
+So if you order this thing, like, on the 1st of January and you never order for three months,
+so from the 1st of April, it will be, like, pushed down, like, away, pushed away from the order history.
+Yeah.
+So I can generate, I hope I can.
+I'll call the IT site to double-check.
+I can generate that for you guys.
+But the most stupid way is to actually the product descriptions in the WhatsApp group itself.
+The WhatsApp group itself meaning, like…
+Like, usually our SOPs, whatever sales close with the customer, right, they will create a WhatsApp group from involving the ops, the finance, the customer, and sales, and blah, blah, blah.
+And the sales will actually input all the products, information, and specs inside the group chat description.
+So this is to check against…
+This is for the night shift guys to check against when they don't know what…
+Like, exactly what happened.
+Hey, pork.
+What pork?
+You know, then he will open up the group chat description and say,
+Oh, actually, he only…
+We order one kind of pork.
+Then you just write down that pork.
+But slowly and slowly, surely,
+He doesn't need that anymore because the moment he sees this customer, he knows already,
+Oh, this fucker, only the same thing again.
+But he just gonna say pork.
+Yup, yup, okay.
+So, I guess…
+So you have your description written.
+The WhatsApp group description doesn't get outdated, ah?
+Sometimes I guess you will…
+Oh…
+Yeah, go ahead.
+I mean, they will miss out, but it's the job of sales to keep on updating whenever there are changes.
+But usually there won't be significant updates to them.
+Oh, I would say 90% of the items.
+Only like miscellaneous.
+For example, like, oh, I actually have one pork belly, one cm.
+But, ah…
+Last month I ordered like…
+Well, I told you I confirmed like 0.1 cm.
+You know that kind of thing.
+Okay, okay.
+The nuance, ah?
+The…
+Yeah.
+So the pain is…
+The…
+In the day you don't have problems, ah?
+Is it?
+Because your staff is on duty, ah?
+Is that what I'm hearing?
+Yes, correct.
+So…
+So what I'm…
+Why the job gets easier in the daytime?
+Because when they are trying…
+For example, ah…
+Let's say Mervin plays a…
+Is a customer, plays an order at the night shift.
+He's supposed to order one cm thickness.
+Okay.
+But, ah…
+The night shift just wrote 0.1.
+Okay.
+So, in the daytime, I mean, when I'm keying in the order into my ERP system to generate an invoice,
+I was like, hey, cannot be.
+He has been ordering…
+The correct one, but he's now saying that he needs a 0.1.
+So, I will manual correct, or I will go and check with the customer.
+Hey, you yesterday ordered 0.1, is it?
+But you are actually…
+What you've been ordering for months, ah?
+It's 1 cm.
+That kind of thing.
+So, this mistake goes away with the double authentication.
+With your staff, lah?
+Yes.
+And all the…
+All the history.
+When they check, hey, the order history don't have, you know, this spec.
+So, they will check.
+They will message, they will call.
+Okay, okay.
+So, I mean, the…
+The only…
+The thing that it hinges on, right?
+Is your ERP is built by who?
+I know you use some dev shop in India, right?
+That's what I last remember.
+Yup.
+Then, there's the ERP API.
+No, right?
+It's a…
+I guess you can only export, right?
+Uh…
+I…
+A…
+I…
+Think can export.
+But because…
+Oh, yeah.
+One of the thing is that, you know, this kind of, like…
+They show in India.
+When you are adding something to the system built by them, right?
+It's easy.
+Because they…
+They want to earn that money, man.
+So, when you…
+Get a third party to try to add something to…
+What they have done, and they are not earning the money, they create a lot of problems.
+For…
+For everyone.
+He, this cannot, that cannot, wrong data, you know, push wrong, pull wrong, you know, that…
+That kind of shit.
+So, we tried a few times, then…
+All failed because of this.
+Yeah, yeah.
+Makes sense.
+So, actually…
+Cooling data shouldn't be an issue.
+Yeah, but you want to take the stupidest version, right?
+That will solve your problem, right?
+Is that, you just export whatever.
+Like, you SKU lists, right?
+And then, uh…
+Like, if you can export the order history of the customer, it would be even better,
+but I guess it's optional.
+Then you just match that with the WhatsApp order that comes in, right?
+And then, if you can have the order history exported as well, you just match that with…
+And then flag any discrepancy and say like, okay, how come most of the time it's like this,
+then now this is different.
+Then you just flag it as like, oh, you should probably look out for this because it's…
+Firstly, uh, doesn't fit any of the SKUs that we have listed, and secondly, or it doesn't
+fit the pass order experience that we had with this client.
+Then your day shift will just come in and report saying like, okay, fuck, WhatsApp came
+in last night, but we flagged these two things and then can you go chase?
+But the rest of it should be, if it's all clear, right, it can be a straight-through pass
+la.
+Does that make sense?
+Yes.
+Yes.
+That can be one of the…
+I mean, that's the ideal situation.
+So, I'm not sure how physical is this, but maybe you can request for like, weekly pooling
+of data from my current ERP system to sync with whatever that you guys are doing, the
+order histories.
+So, I don't need to be like daily update because I don't know how strenuous it is on the cloud
+and servers and things like that.
+But, I think weekly or something like that, once in a fortnight, pooling data just to
+double, just to update, would be nice also.
+Yeah, and there are two ways to do it, right?
+One is like, you can do the dummy way, right?
+Which is that if your ERP has a big export button, which is export everything, and you
+just store everything in like, literally a container in the cloud, right?
+And then I can just pull from there, and then once you export again, then you override that
+one, you know what I mean?
+That's the manual way, right?
+But if you want to get fancy, you can do automatic pull, but I don't think it's necessary.
+If you're saying weekly basis, then it's, you know what I mean?
+You just click one button once a week, then everything comes out, and just pull from there.
+You know what I mean?
+That's like the real MVP sort of…
+Yeah.
+Yeah.
+Then it's not that deep, you know what I mean?
+Then you actually, what you really need to solve is the WhatsApp automation layer.
+How about this way?
+When you guys are building or designing this, give me like, like access to modify the order
+history within your app itself.
+So that for example, if this, suddenly I need, I don't know if I need, I need donkey, okay?
+I need donkey meat today and see something new.
+But when they try to order today, they won't be able to see from the order history because
+that will be the first time that they are doing that.
+So when this kind of thing happened, I can only imagine is that, okay, I will let my guys, okay,
+can you go to whatever that you guys are building, just input donkey, you know, as create like a,
+like a pseudo order history like that so that it's able to capture.
+Yeah.
+Why would donkey come up?
+I mean, we brought in new products, okay?
+First wave, like the, like the pig's blood, okay?
+It just came to Singapore literally just weeks.
+So a lot of customers are new to this.
+They are starting their first order as pig's blood, new.
+Then when they order and they didn't sink in time with my ERP system or whichever cloud,
+then it creates a big jam, right?
+I suppose.
+But these are exceptions, right?
+These are not the rule, right?
+They're not going to be super frequent, right?
+Yeah.
+I mean, with a daily order of 200 something, I'm not sure how many new items are being discussed
+every day, you know, that's the thing.
+Yeah, yeah.
+So the, the, I mean, the way you can think of it, right, is that you, what you want to do
+is first cut all the bulk volume first.
+You don't want a perfect solution, right?
+You cut the 250 standard things first.
+Then you show the 50 things.
+I don't know what the ratio is, right?
+And say like, okay, for now we'll do a manual.
+I mean, you still need some guy in the morning to check it, right?
+You still have someone doing the night shift.
+You say you're not going to fire the guy, right?
+So the guy can handle the exceptions, but at least he knows like the bulk stuff is being
+cleared, right?
+And then the, the exceptions can be cleared manually, right?
+Then that's the, that's the V1, the, the bare minimum.
+Then actually that's the most lift.
+You'll solve a lot of pain with that, right?
+Then you can slowly turn the system to sort of, you know, take the exceptions and start solving
+them one by one, right?
+And then there's more work.
+But if you want to do like, let's say you want to solve the problem today, it's not that
+hard, right?
+And I think why I always think, yeah, just solve the big problem first, then you just
+follow the stuff.
+You can just clear up after that, right?
+One by one.
+You know what I mean, right?
+Yeah.
+And I guess like the big problem is really that you have how many WhatsApp groups?
+Like 200, 300?
+Like thousands.
+Huh?
+Say again?
+Thousands.
+Thousands, right?
+Yeah.
+So the hard part is actually tracking the thousands of WhatsApp and figuring out like what the hell
+is coming in every night, making sure that everything is like, like the stuff that is easily
+solved is solved, right?
+Then I think 80% of your pain will go away.
+No?
+Yes.
+So I think what I can try to map out on my end is actually the export API from my current
+ERP system.
+So I'll generate, I'll ask the team to try to generate customer names with address with order
+history.
+Yeah.
+That'll be perfect.
+Then SKU list, right?
+Yeah.
+Pack them together.
+Yeah.
+You pack them together into one single source of truth, right?
+And this can be synced weekly for now, right?
+We can always move it to daily in future because if your dev shop in India is like anywhere close
+to being competent, right?
+They can get this done in five minutes, I think.
+But let's just do weekly first because like don't talk to them, right?
+You really know how it's going to go, right?
+You do that weekly.
+Once you have that, then what I can do for you is your thousand WhatsApp groups, everything,
+whenever the message comes in, right?
+You automatically cross references that source of truth, right?
+And it comes up with a preliminary answer, which says that, okay, based on the rules that you
+say, this order is missing information or it is fucking an exception.
+It's not in the sink right now, in the source of truth, right?
+But these two things will reflect for either the person, you can also automate the back
+and forth, but for now it will reflect to a person and the person will just go to the
+guy and say, hey, bro, you're already missing something, bro.
+You're already missing something, bro.
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're missing something, right?
+You're missing something, right?
+You're missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're already missing something, right?
+You're missing something, right?
+And with an exception, then the person will just take over and check the ERP manually and
+say like, okay, actually, we actually do have this order.
+Does it make sense?
+Then the bulk cases will be cleared and your team should be quite happy with that.
+That's usually how it goes with, I mean, I've done this a few times already, but you
+don't try to solve the whole thing at once, you know?
+You kill yourself off.
+Yeah.
+So actually from the WhatsApp side of things, right, it's quite straightforward.
+I know how to do it, right?
+And then if you sync everything into an Excel for now, right, it's actually probably good
+enough.
+You don't need to build a fancy dashboard.
+I mean, you can, but I don't think it's necessary.
+Just put it in an Excel nicely, right?
+Everyday you get one sheet, right?
+And the sheet will be color coded with like, okay, this is fucked up.
+This is not fucked up.
+Can't really.
+Can't really.
+That's one thing, right?
+Then it's printable.
+Second.
+So I do have some requirements on the format.
+First of all, it needs to be a printable thing.
+All right.
+So because after it's being segregated into different routes and things like that, right,
+they need to print this shit out and hand over to the inventory team for them to draw
+according to the list, according to the sequence of the jobs.
+Okay.
+This is point number one.
+Second, there are certain format I want it to be printed.
+For example, like how much space actually you should leave behind every line.
+What's the spacing on all these items?
+They're very miscellaneous, small, small things, but this is something that actually
+is quite important and critical in my operation.
+Okay.
+This one, 100% can be done.
+All I need, okay, what format is it?
+PDF or is it a, what do you normally print?
+I need a Word Dog.
+PDF.
+PDF would be okay.
+Yup.
+Yup.
+And then all the exact specifications, the minutiae, right, can be done because like,
+you can think of it as like, when you use a computer to do it, everything becomes guaranteed
+formatting, right?
+You know, human beings make mistakes formatting, right?
+Computers don't, because it's rule-based.
+You know what I mean?
+You write a script and the script will always put it in this format, right?
+So the key part here is like, firstly, you need to show me one example, right?
+Then I will infer all the formatting that you want and I confirm with you.
+And after that, you should always be shut out in the same way every single time in any format
+you want.
+Because turning Excel into anything is a trivial task, but let's put it this way.
+Yeah.
+Let me show you something.
+Sure.
+It should be something like that.
+You sign on what?
+What's that?
+Oh, Tele.
+Tele, you say.
+Yeah, yeah, yeah, yeah.
+No, no, no, no.
+But, so how do you normally do this today actually?
+That's what I'm curious about.
+Because this is actually a prototype from the current, current, current, current, current
+IT company.
+But we do face a lot of resistance because it's all built in one from ordering all the
+way until inventory drawing.
+So, but the tricky part is that the customer needs to access to links and passwords and things
+like that.
+So, a lot of these fuckers are just too lazy to operate on their own.
+So, this just dies off.
+So, what we are doing now is physical writing.
+Like when they take call and take message, they are physically writing items on the list.
+Oh, but you, you, the one you sent me is not written, right?
+It's printed, right?
+This is, this is printed.
+This is printed.
+Which is the prototype that we are not using.
+Oh, okay, okay, okay.
+And why are you not using it?
+It's because the...
+Because, if you try a...
+For example, me and Movin are two different customers.
+Each of us will have a different unique link for us to access, to place orders.
+They need to go into the link and place orders.
+But, they are too lazy to do that.
+They just want to send like a voice message to make their job easier and make our job hard.
+So, that's the, that's the g's of it.
+Okay, voice message also can do actually.
+That one is under the...
+Anything WhatsApp input, right?
+Is solvable basically.
+As long as it comes in...
+WeChat?
+WeChat, I'll log into it.
+How, how much of it is WeChat?
+About WhatsApp, I know, weChat can be done, but I need to go research.
+It's the same idea.
+You know what I mean?
+You, you get the file format.
+I think.
+Yeah.
+But what's the ratio?
+I think I would say like a 50-50 or 60 on WeChat, 40 on WhatsApp.
+Okay, now I know WeChat.
+WeChat confirm that China API is very good one.
+WhatsApp is the one that is normally a headache because they are quite anti-automation.
+I don't know if you...
+Yeah, anyway.
+But long story short, both can be done.
+It's not a guarantee you, right?
+But then, I guess the idea is that you want this form filled up, just without...
+Yes.
+But then, but in that case, then do you need the password link or all that crap?
+No need, right?
+No need, no need, no need, no need.
+This one is, is, is, is, it need to be plugged into the phone, right?
+Or somehow connected to a phone number that we're using.
+Or the number, or whichever WhatsApp WeChat account that we need to be linked up.
+So, I don't need the customer to access the system.
+It's just like auto-capture and generates on the back end.
+That, that should do the job.
+Okay, then, then like a super simple flow would just be, WhatsApp comes in, right?
+You get shared into an Excel sheet.
+Your team approves.
+Once they approve, it gets shared into a PDF in this format.
+Yeah?
+That, that would be the, the most basic, you know, without over-engineering or overthinking it, right?
+That would probably solve the problem, right?
+Yeah.
+Then you would just get a very clean PDF in.
+I assume you have a template, right?
+Just give me a template, though.
+Yeah.
+And then some examples.
+And then, I think that's the entire scope, right?
+Yeah.
+Cause, I don't know why I even quote you 100K, right?
+But that, that is, dude, this is, this is not like that deep, you know what I mean?
+It's, if you solve the problem, it's not that deep.
+But if you want to go on to expand beyond this, right?
+Then it'll be a lot harder, la.
+It doesn't make sense, right?
+Yeah, bro, it's not code, la.
+Because I think you want to do something fancy.
+You want to create a platform, la.
+Yeah.
+So, I mean, these three things, right?
+One, what's that in?
+Verify against your source of truth, which is the export on a weekly basis of both the
+SKU inventory and the customer history, right?
+Excel will flag the things that are exceptions.
+So, either missing information from the order that is not matching with the SKU, or weird shit
+that comes up that doesn't match with the order history.
+And then exceptions, which is your blood meat, or your pig blood, right?
+That one will just come up as like, okay, not identified.
+Then your team will manually do it.
+Then once they clean up in the morning, they will just review the Excel.
+Then basically they click a button and then it will shit up the correct invoices and
+then you can take it from there.
+Right?
+The correct PDF.
+I think that's the flow, right?
+Yes, correct.
+Okay.
+I think that's the flow, right?
+Yes, correct.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+Okay.
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+Okay.
+
+Okay.
+Okay.
+
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+
+Okay.
+Okay.
+
+Okay.
+Okay.
+
+Okay.
+Okay.
+
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Okay.
+So if you give me two kilos of donkey, two kilos of horsey, you know, that kind of thing.
+Okay.
+Okay.
+Horsey.
+Okay.
+Then you'll be like, what the fuck is a horsey?
+So are you able to give me a prompt back to the customer and say, can you clarify what's
+!
+That thing that you're asking if it doesn't really understand instead of just capturing
+and interpreting it on its own.
+Yeah.
+So I think two things can add, right?
+Which is quite simple.
+One is that for every order that is captured, we will include the verbatism.
+The verbatim transcript or the, what was said.
+You know what I mean?
+Next to the Excel sheet, you know, in the Excel sheet, there are columns, right?
+We'll put in the order.
+Then we'll put in the verbatim so that your team can easily scan and say like, oh, actually,
+this was the verbatim, right?
+Then we can also put the clarifying prompt next to it so that your team can manually feedback.
+You can automate this but like, it's not worth it until you see the volume, I guess.
+If there's a lot of errors, then you can start saying like, okay, then we want to make a back and forth automation, right?
+But, you know what I mean?
+I think it would be better for example, I give you like, for example, I ordered 10 items on the list, right?
+Then, all done, okay?
+Your system captures everything, register everything linked up with the history and blah, blah, blah.
+Send a confirmation response.
+This is what you ordered.
+Then, that's also doable.
+Yeah, that will actually eliminate a lot of the back end issues in the morning as well.
+So the customer confirms, confirms, like, okay, you confirm really then, like, don't talk about it when it's wrong.
+So I think this will help with the whole flow as well.
+So basically like a order place, locks in the sheet, sends confirmation in a nice bullet point saying like, you ordered this, this, this, this, this, right?
+And then, yeah, with the correct, with the correct decision from my system.
+For example, they just say, POC, I'll say, okay, from, is this, POC automatically generate the confirmation, POC barely wants CM cut.
+Okay, something like that.
+I see.
+Okay, okay.
+Then, then the only question is like, do you want your team to review first or do you want to automatically send the confirmation?
+That's the, they still need to review.
+They still need to review, but they, you need to double confirm with the customer.
+So sometimes it's like, oh, no, no, no, no, actually I don't want the 1 CM, I changed my mind.
+I need 1.5 today.
+You know, that kind of thing.
+So, but when they see the confirmation, they actually know what they ordered and what they, whichever they said.
+I see, I see.
+But like, as in, my point is like, you know, the order comes in, right?
+Do you want to automatically immediately confirm or do you want to let your team wake up in the morning, check through, and then send the confirmation message if they approve?
+Actually, in my operation, this, the moment they place order and my team checks through is confirmed already.
+So the really, really confirmation stage, confirm and nail is when they issue invoice, which is the second step of confirmation.
+So the first confirmation, I'll put it as a soft confirmation to the customer that we are, we capture your order as such, but this is not what you'll be getting.
+For example, some item may be out of stock.
+Some item may be missing.
+So it's like an auto confirmation.
+So the moment they place, they will get a, this is the order that you confirmed.
+My team will let you know.
+That is the message that we send, immediately after they send something, the customer order something, right?
+Yeah, let them check first.
+Got it.
+Then your team can look at the spreadsheet in the morning and double confirm.
+Yes.
+Okay, that's just a straight forward.
+Because that one will be no risk, you know what I mean?
+Because it's just a...
+Yeah.
+Yeah, okay, okay, makes sense, makes sense.
+Yeah.
+Yeah.
+So yeah, la.
+Fuck la, this is giving me a lot of feedback.
+Actually why la, is it, is it so much volume is it, or is it like...
+Yeah, the, uh, first of all, training a night shift fucker is not easy.
+Because he's not, his only job right is actually the night shift.
+I cannot fucking work him 20 hours a day by involving him in the day ops.
+So, the knowledge that he has is everything on the freaking small screen.
+Okay, whichever customer orders, right?
+It's just on the screen, he takes it.
+He takes the word for it.
+So sometimes it's very, very difficult to educate the night shift guys on what the major changes happen during the day.
+You know, then he will copy the wrong thing, he will link to the wrong route, you know.
+He will, he will, he will, he will commit a lot of mistakes here and there.
+So that's, that's, uh, actually some of the mistakes are very, very difficult to...
+And why not?
+Yeah.
+Yeah.
+Okay, okay, no, cool.
+Then actually, without curiosity, right?
+Night shift is like, what time is what time?
+I don't know.
+But how come your order is at 3am, huh?
+Bro, it's 7 to 4.30am.
+The last order that they actually cut off is actually when the drivers and the warehouse teams in the office to draw,
+then they will cut off the order from there.
+So it's about 4 something.
+Because they, they, they get off, the, all the, all the chefs get off work around 12 or 1am, right?
+Right?
+After the cleanup, then they'll start to send order to, they will check in the fridge or whatever missing,
+then order for tomorrow's delivery.
+So that's why it's all very, very late.
+So actually most of your orders come at night, is what I'm hearing.
+Yes, most of the order comes at night.
+But the daytime orders also quite a bit, also quite a bit, but it's, I would say like 45% comes in the day.
+60% comes in the night.
+Oh, okay no la, I was just wondering if it's better actually doing something useful, no?
+Cause like, bro, if you tell me like you get 10 orders a night, right?
+I tell you, just.
+No, I easily put me on the orders, yeah.
+Per night, okay la, okay la, then worth solving.
+Okay la, okay la, then I think it's worth solving la, I mean,
+I mean, the, what I can do for you is like a minimal version.
+Cause, I mean, unless, actually how much you willing to pay la, out of curiosity.
+I, to be honest, I'm, I'm open for offers la, because this kind of thing, I must match whatever that you guys are giving me as a quotation,
+versus, uh, the reality check from the finance side.
+So I will try to find a middle ground.
+But we are not be, we will not be eligible for any grants la, just, just for your information.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no
+From all my competitors actually, he did a full scale tech solution for F&B companies all the way until routes and things like that
+But it's also subscription basis, it's close to a thousand dollar per, I think 900 something, 900 something per month
+So if I want to say this, I would say, let's say 30, 40
+That's actually, that's actually what Ivan was trying to do for David
+To create a whole system
+So for this alone, right, how much are you willing to pay?
+What's what I'm trying to figure out?
+I'll say, let's cap it in 50
+50, yeah, okay, okay, I mean, look, 50 is gonna be extremely high for what I think it should be, right?
+I'll definitely touch you less
+Yeah, I mean, Seth, I think it's gonna be
+I thought to you what the competitor is doing, it's actually quite detailed
+It's like a full solution, including inventory management and everything
+I told Marvin, the reason why I'm not using them is because I told the
+I'm quite close with the owner
+I told him that your system, really, if I'm gonna use it, right
+It's gonna benefit me tremendously
+But you are my competitor
+You know, you get access to all my data, all my historical data, all my customer data and everything like that
+I don't, I will not be able to sleep well at night if I'm able to, if I use your system
+And although they say, oh, PTBA or whatever, but I don't trust that
+So that's the only issue
+So I would say, if you quit your distribution and food trading business, I'll onboard with you immediately
+But it's impossible
+Yeah, I think, I think like, this is going to be, like if you want everything on your own like servers, right
+It's quite, it's doable, but the only thing you cannot do is subscribe to someone else's platform, which is
+I guess where this project comes in, right
+Everything will be on your own like, own like hosted AWS instance, right
+Yeah
+Then you can sleep well at night, though
+I think that's the
+Unless, unless you tell me that always, why is by, uh, Entropic or Alibaba, you know, that kind of thing
+Okay, I'm able to subscribe, fuck it, that is okay, but, eh, not him, no
+Okay, then the last thing is, is like, so wait, I tell you first, ah, say real, right
+I have time now, but I don't know about time like in two months, right
+Are you willing to do it like now-ish?
+Like, how, how, what is your procurement process, ah, is it going to be very long, la
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no
+I put time for you
+How about this
+Today after this call
+You give me
+What you need
+What you guys will be doing
+In a little bit more detail
+And also revise your code
+Let me know how much it is
+I will try to work on it
+By this week
+Okay, okay, sounds good
+The proposal right is that
+If let's say you start on the project
+Then there's maintenance everything
+Then you got no time, right?
+Then it's okay, I can get DC deal to do
+Maintenance, I'm less worried about that
+Because
+Yeah, it's a back end work, nothing much
+Anyone can do that job, actually
+I also don't think there'll be that much maintenance
+At least for this scope
+You know what I mean
+The system should run by itself
+After we finish all the iterations
+If that makes sense
+Unless you change your entire business
+Then that's a different story
+But it should be
+Relatively self-serving
+You know what I mean
+I don't want to be like
+That guy, you know
+Who's like fucking three months later
+And think break and fuck
+Bro, it needs to work la
+That's the TRD la
+Okay, I think let's do
+Go ahead
+So I think
+I also agree with you that
+Maintenance, well actually
+I'm not sure how
+How regular this is servicing
+But
+I just want to keep
+The first phase of this project
+As simple as it is
+So that
+Like you said
+It's more or less automatic on its own
+And without much
+Too much of processing needed
+At the back end
+So it doesn't have a lot of cock-ups
+Hopefully la
+Yeah la
+Keep it simple
+Keep it light
+But make it very useful
+And then like
+Maintenance
+I don't plan to charge you any recurring fee la
+Unless you really really really want me to
+It should just work
+It's a one-off fee
+And then it's called a day la
+Right
+And
+Then basically the iteration
+Until we call a day
+Is unlimited la
+Until you feel like
+It's like
+You know
+Right on point with what you're expecting
+From your workflow
+I think that's kind of like
+Normally how I do these kind of things
+You know what I mean
+So
+Fixed fee
+Unlimited
+Iterations
+But
+When we cut off
+And say like
+Okay fuck it
+This is working right
+Then I don't expect the charge of substitution
+Okay
+Yeah that's kind of like
+What I'm thinking
+Because
+If I charge subscription
+Then
+Wow
+There's a full ballpark of problems
+That come with it
+You know what I mean
+Which is like
+Hey success
+I want to upgrade la
+Then I'll be fuck you
+I mean
+If it works well
+Of course it will be
+I want to upgrade in the future
+Correct
+Then there will be another scope la
+Case by case la
+Yeah case by case la
+Okay okay cool
+So I think that's all I need right
+And then I will send you
+What I
+The requirements that I need
+From your side
+Which is really mostly the data
+I mean
+I've been keeping
+A transcript la
+I'll just send you everything later
+Then you pass it back
+And then I take a look
+After I take a look
+I can give you a quote
+And then
+If it's okay right
+Then I can start work like
+Basically immediately
+Cause I got time
+Yeah and you'll be doing me a favor also la
+Because I'm damn bored dude
+Holy shit
+Fuck
+I'm applying for a job
+But I didn't see you
+Fuck
+Cause it will take at least like
+One two months for me to
+Land a good job right
+So
+Yeah la
+Come on and drink la
+No choice la
+Yeah la
+But I mean
+Don't wanna drink so much la
+So
+Do some work la
+Okay
+Okay okay
+We work in the day
+And night we come out
+Okay okay okay
+Okay cool
+See you
+Alright
+Bye
+Bye bye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bye bye
+Bye bye
+
+
+
+Bye bye
+
+Bye bye
+Bye bye
+
+Bye bye
+Bye bye
+Bye bye
+
+Bye bye
+
+Bye bye
+Bye bye
+
+Bye bye
+
+
+Bye bye
+Bye bye
+Bye bye
+
+Bye bye
+
+
