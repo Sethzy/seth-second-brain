@@ -87,7 +87,8 @@ while [[ -e "$target" ]]; do
   n=$((n + 1))
 done
 
-cat > "$target" <<EOF
+{
+cat <<EOF
 ---
 type: $([[ "$quality" == "complete" ]] && echo "raw_capture" || echo "incomplete_capture")
 source_type: $lane
@@ -106,8 +107,9 @@ Source: $url
 
 ## Capture Text
 
-$body
 EOF
+printf '%s\n' "$body"
+} > "$target"
 
 python3 - "$ROOT/state/source-map.json" "$target" "$url" "$lane" "$title" "$quality" "$trust_lane" <<'PY'
 import json

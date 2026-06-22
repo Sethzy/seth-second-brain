@@ -72,7 +72,12 @@ for (const queryId of await client.getTweetDetailQueryIds()) {
       lastError = 'Tweet not found in TweetDetail instructions.';
       continue;
     }
-    process.stdout.write(JSON.stringify({ tweet: mapped, conversation }, null, 2));
+    await new Promise((resolve, reject) => {
+      process.stdout.write(JSON.stringify({ tweet: mapped, conversation }, null, 2), (error) => {
+        if (error) reject(error);
+        else resolve();
+      });
+    });
     process.exit(0);
   } catch (error) {
     lastError = error?.message || String(error);
