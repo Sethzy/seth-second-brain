@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Engineering: Six-Month Progression</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #142027;
+      --muted: #637077;
+      --paper: #f7f1e8;
+      --surface: #fffdf8;
+      --line: #d7d0c2;
+      --line-strong: #aeb8b3;
+      --teal: #13766f;
+      --blue: #315e9a;
+      --amber: #a8701a;
+      --red: #9b4a3f;
+      --green: #3f7351;
+      --violet: #675696;
+      --slate: #27333a;
+      --shadow: 0 18px 48px rgba(20, 32, 39, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(20, 117, 111, 0.055) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(49, 94, 154, 0.045) 1px, transparent 1px),
+        var(--paper);
+      background-size: 44px 44px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.44;
+    }
+
+    a { color: inherit; text-decoration-color: rgba(19, 118, 111, 0.4); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    a:hover { color: var(--teal); text-decoration-color: currentColor; }
+
+    .page { width: min(1220px, calc(100% - 32px)); margin: 0 auto; padding: 30px 0 68px; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 26px; align-items: end; padding: 36px 0 24px; }
+    .eyebrow { display: inline-flex; flex-wrap: wrap; width: max-content; max-width: 100%; align-items: center; gap: 4px 8px; margin-bottom: 18px; padding: 6px 10px; border: 1px solid rgba(19, 118, 111, 0.28); border-radius: 999px; background: rgba(255, 253, 248, 0.84); color: #334d50; font-size: 0.78rem; font-weight: 850; letter-spacing: 0; text-transform: uppercase; }
+    h1 { margin: 0; max-width: 840px; font-size: 5.9rem; line-height: 0.9; letter-spacing: 0; }
+    .subtitle { max-width: 780px; margin: 22px 0 0; color: #3e4b52; font-size: 1.12rem; overflow-wrap: break-word; }
+
+    .readout { align-self: stretch; display: grid; align-content: end; gap: 18px; padding-bottom: 6px; }
+    .readout-copy { max-width: 470px; color: #45545a; font-size: 1rem; }
+    .readout-copy strong { color: var(--ink); }
+    .metric-row { display: flex; flex-wrap: wrap; gap: 10px 18px; padding-top: 15px; border-top: 1px solid rgba(20, 32, 39, 0.16); }
+    .metric { min-width: 84px; }
+    .metric strong { display: block; font-size: 1.5rem; line-height: 1; }
+    .metric span { display: block; margin-top: 5px; color: var(--muted); font-size: 0.78rem; }
+
+    .era-rail { margin: 10px 0 26px; padding: 15px 0 2px; border-top: 1px solid rgba(20, 32, 39, 0.14); border-bottom: 1px solid rgba(20, 32, 39, 0.14); }
+    .era-track { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; min-height: 86px; }
+    .era-track::before { content: ""; position: absolute; left: 0; right: 0; top: 18px; height: 3px; border-radius: 999px; background: linear-gradient(90deg, var(--teal), var(--blue), var(--amber), var(--green)); }
+    .era { position: relative; padding: 36px 18px 0 0; }
+    .era::before { content: ""; position: absolute; top: 10px; left: 0; width: 18px; height: 18px; border: 4px solid var(--paper); border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 1px rgba(20, 32, 39, 0.2); }
+    .era:nth-child(2)::before { background: var(--blue); }
+    .era:nth-child(3)::before { background: var(--amber); }
+    .era:nth-child(4)::before { background: var(--green); }
+    .era b { display: block; color: var(--muted); font-size: 0.78rem; text-transform: uppercase; }
+    .era span { display: block; margin-top: 5px; max-width: 230px; color: #2f3d44; font-size: 0.95rem; font-weight: 780; }
+
+    .controls { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 22px; padding: 10px 0; border-bottom: 1px solid rgba(20, 32, 39, 0.14); background: rgba(247, 241, 232, 0.92); backdrop-filter: blur(12px); }
+    .filter-group { display: flex; flex-wrap: wrap; gap: 8px; }
+    button.filter { min-height: 32px; border: 1px solid rgba(20, 32, 39, 0.16); border-radius: 999px; background: rgba(255, 253, 248, 0.88); color: #26343b; cursor: pointer; font: inherit; font-size: 0.82rem; font-weight: 760; padding: 5px 10px; }
+    button.filter[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: #ffffff; }
+    .ledger-link { color: #3f4e56; font-size: 0.9rem; font-weight: 760; white-space: nowrap; }
+
+    .section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; margin: 34px 0 10px; }
+    .section-title h2 { margin: 0; font-size: 0.9rem; letter-spacing: 0; text-transform: uppercase; }
+    .section-title p { max-width: 650px; margin: 0; color: var(--muted); }
+
+    .timeline { position: relative; margin-top: 18px; padding: 6px 0 12px; }
+    .timeline::before { content: ""; position: absolute; left: 168px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--teal), var(--blue) 28%, var(--amber) 50%, var(--violet) 68%, var(--green) 82%, var(--slate)); opacity: 0.88; }
+    .milestone { --accent: var(--teal); position: relative; display: grid; grid-template-columns: 128px 78px minmax(0, 1fr); gap: 0; padding: 30px 0 36px; border-bottom: 1px solid rgba(20, 32, 39, 0.12); }
+    .milestone.hidden { display: none; }
+    .milestone[data-category="model"] { --accent: var(--teal); }
+    .milestone[data-category="surface"] { --accent: var(--blue); }
+    .milestone[data-category="open"] { --accent: var(--amber); }
+    .milestone[data-category="harness"] { --accent: var(--violet); }
+    .milestone[data-category="workflow"] { --accent: var(--green); }
+    .milestone[data-category="context"] { --accent: var(--teal); }
+    .milestone[data-category="verify"] { --accent: var(--red); }
+    .milestone[data-category="governance"] { --accent: var(--slate); }
+    .time { padding-right: 18px; text-align: right; }
+    .time b { display: block; color: var(--ink); font-size: 1.05rem; letter-spacing: 0; }
+    .time span { display: block; margin-top: 5px; color: var(--muted); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; }
+    .node { position: relative; min-height: 1px; }
+    .node::before { content: ""; position: absolute; left: 30px; top: 3px; width: 22px; height: 22px; border: 5px solid var(--paper); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px rgba(20, 32, 39, 0.22), 0 8px 20px rgba(20, 32, 39, 0.16); }
+    .node::after { content: ""; position: absolute; left: 52px; top: 13px; width: 45px; height: 1px; background: linear-gradient(90deg, var(--accent), rgba(20, 32, 39, 0.12)); }
+    .story { max-width: 860px; padding-left: 22px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 9px; }
+    .pill { display: inline-flex; align-items: center; min-height: 23px; border: 1px solid rgba(20, 32, 39, 0.14); border-radius: 999px; background: rgba(255, 253, 248, 0.9); color: #344249; font-size: 0.74rem; font-weight: 830; padding: 3px 8px; white-space: nowrap; }
+    .pill.core { border-color: rgba(63, 115, 81, 0.3); background: rgba(63, 115, 81, 0.1); color: #244a31; }
+    .pill.emerging { border-color: rgba(168, 112, 26, 0.3); background: rgba(168, 112, 26, 0.1); color: #5b3c16; }
+    .story h3 { margin: 0; max-width: 780px; font-size: 1.62rem; line-height: 1.08; letter-spacing: 0; }
+    .story p { margin: 12px 0 0; max-width: 800px; color: #33434a; font-size: 1rem; }
+    .examples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0 0; padding: 0; list-style: none; }
+    .examples li { position: relative; padding-top: 10px; color: #45545a; font-size: 0.9rem; }
+    .examples li::before { content: ""; position: absolute; top: 0; left: 0; width: 34px; height: 2px; background: var(--accent); }
+    .source-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+    .source-chip { display: inline-flex; align-items: center; max-width: 100%; min-height: 27px; border: 1px solid rgba(20, 32, 39, 0.12); border-radius: 999px; background: rgba(255, 253, 248, 0.78); color: #304047; font-size: 0.76rem; font-weight: 760; padding: 5px 8px; text-decoration: none; white-space: normal; }
+
+    .takeaway { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; margin-top: 34px; padding-top: 24px; border-top: 1px solid rgba(20, 32, 39, 0.14); }
+    .note h2 { margin: 0 0 10px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0; }
+    .note ul { margin: 0; padding-left: 20px; color: #405056; }
+    .note li + li { margin-top: 8px; }
+    footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid rgba(20, 32, 39, 0.14); color: #56656a; font-size: 0.9rem; }
+
+    @media (max-width: 1040px) {
+      h1 { font-size: 4.9rem; }
+      .hero, .takeaway { grid-template-columns: 1fr; }
+      .examples { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 820px) {
+      .era-track { grid-template-columns: 1fr; gap: 16px; }
+      .era-track::before { left: 8px; right: auto; top: 0; bottom: 0; width: 3px; height: auto; background: linear-gradient(180deg, var(--teal), var(--blue), var(--amber), var(--green)); }
+      .era { padding: 0 0 0 36px; min-height: 48px; }
+      .era::before { top: 0; left: 0; }
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 1220px); padding-top: 14px; }
+      .hero > * { min-width: 0; }
+      .eyebrow { width: 100%; white-space: normal; }
+      h1 { font-size: 3rem; max-width: 100%; }
+      .subtitle { font-size: 1.02rem; }
+      .controls { position: static; }
+      .timeline::before { left: 18px; }
+      .milestone { grid-template-columns: 44px minmax(0, 1fr); padding: 26px 0 30px; }
+      .time { grid-column: 2; padding: 0 0 8px; text-align: left; }
+      .node { grid-column: 1; grid-row: 1 / span 2; }
+      .node::before { left: 7px; top: 2px; width: 22px; height: 22px; }
+      .node::after { display: none; }
+      .story { grid-column: 2; padding-left: 0; }
+      .story h3 { font-size: 1.32rem; }
+      .metric-row { gap: 10px 14px; }
+    }
+    @media (max-width: 420px) {
+      h1 { font-size: 2.62rem; }
+      .source-chip { width: 100%; }
+    }
+    @media print {
+      body { background: #ffffff; }
+      .controls { position: static; }
+      .node::before { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <div class="eyebrow"><span>Last six months</span><span>/ progression, not release notes</span></div>
+        <h1>AI Engineering: Six-Month Progression</h1>
+        <p class="subtitle">A timeline of the industry-wide shifts: stronger agent models, Codex-style workbenches, OpenClaw-like local agent operating systems, reusable skills, harness engineering, context systems, verification loops, and production governance.</p>
+      </div>
+      <aside class="readout" aria-label="artifact summary">
+        <p class="readout-copy"><strong>Read it like a stack forming.</strong> Capability improves first, then work moves into agent surfaces, then the harness, verification, and governance layers become the real engineering discipline.</p>
+        <div class="metric-row">
+          <div class="metric"><strong id="metric-shifts">0</strong><span>milestones</span></div>
+          <div class="metric"><strong>4</strong><span>era bands</span></div>
+          <div class="metric"><strong>160</strong><span>vendor posts checked</span></div>
+          <div class="metric"><strong>0</strong><span>incomplete-source claims</span></div>
+        </div>
+      </aside>
+    </header>
+
+    <section class="era-rail" aria-label="six month overview">
+      <div class="era-track">
+        <div class="era"><b>Dec-Jan</b><span>Agents get context, specs, skills, MCP, and safety hooks.</span></div>
+        <div class="era"><b>Feb-Mar</b><span>Agent work flips from autocomplete to teammate-style execution.</span></div>
+        <div class="era"><b>Apr-May</b><span>Desktop, cloud, browser, and review surfaces become workbenches.</span></div>
+        <div class="era"><b>June</b><span>Open/local OS patterns and harness vocabulary become legible.</span></div>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="timeline filters">
+      <div class="filter-group" id="filters"></div>
+      <a class="ledger-link" href="research-ledger.md">Open source ledger</a>
+    </nav>
+
+    <section aria-labelledby="timeline-heading">
+      <div class="section-title">
+        <h2 id="timeline-heading">Progression Timeline</h2>
+        <p>Each milestone is a broad shift, placed where it became visible enough to change how AI software work felt.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="takeaway" aria-label="synthesis notes">
+      <div class="note">
+        <h2>The Arc</h2>
+        <ul>
+          <li>AI engineering moved from prompt craft to operating-system design: context, tools, memory, skills, sandbox, review, and telemetry.</li>
+          <li>The human role moved up a level: define the problem, choose the harness, judge the artifact, and improve the loop.</li>
+          <li>The big products now compete on surfaces and controls, not only model quality.</li>
+        </ul>
+      </div>
+      <div class="note">
+        <h2>Evidence Boundary</h2>
+        <ul>
+          <li>OpenClaw is treated as an emerging open/local agent-OS signal, not as the whole market.</li>
+          <li>Model examples are grouped as frontier coding-model jumps; exact model names vary across sources and vendors.</li>
+          <li>Community and sweep sources are used for salience, while official/vendor/local raw captures anchor the claims.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>Built from Seth Second Brain QMD retrieval, local raw captures, and primary source checks. Last updated 2026-06-14. Companion ledger: <a href="research-ledger.md">research-ledger.md</a>.</footer>
+  </div>
+
+  <script id="shift-data" type="application/json">{"shifts":[{"period":"Dec-Jan","sequence":"01","category":"context","confidence":"core","title":"Context became the new backend","summary":"The durable problem stopped being how to paste enough into a prompt. It became how to retrieve, compress, preserve, and route context so agents could work across large codebases and long-running sessions.","examples":["Cursor opened the window with dynamic context discovery.","OpenAI described compaction, shell work, and skill handoff for long-running work.","Claude pushed memory, compaction, structured notes, and subagents as coherence tools."],"sources":[{"label":"Cursor dynamic context","url":"https://cursor.com/blog/dynamic-context-discovery/","raw":"raw/intentional/web/2026-01-06-cursor-dynamic-context-discovery.md"},{"label":"OpenAI compaction tips","url":"https://developers.openai.com/blog/skills-shell-tips/","raw":"raw/intentional/web/2026-02-11-openai-shell-skills-compaction-tips-for-long-running-agents-that-do-real-work-o.md"},{"label":"Claude context engineering","url":"https://claude.com/blog/effective-context-engineering-for-ai-agents","raw":"raw/intentional/web/2026-06-13-effective-context-engineering-for-ai-agents.md"}]},{"period":"Feb","sequence":"02","category":"model","confidence":"core","title":"Coding models crossed into agent territory","summary":"The industry stopped treating coding models as autocomplete engines. Better instruction following, longer context, tool use, and coding-specific behavior made it practical to ask models to work through multi-step tasks and return reviewable artifacts.","examples":["Cursor framed the shift as Tab-to-agents, tied to Opus/Codex/Composer-era model improvements.","Claude's Opus/Sonnet line became substrate for long sessions, subagents, and dynamic workflows.","Model quality mattered because it unlocked new interaction patterns, not prettier snippets."],"sources":[{"label":"Cursor: third era","url":"https://cursor.com/blog/third-era/","raw":"raw/intentional/web/2026-02-26-cursor-the-third-era-of-ai-software-development.md"},{"label":"Claude Opus 4.8","url":"https://www.anthropic.com/news/claude-opus-4-8","raw":""},{"label":"Claude system cards","url":"https://www.anthropic.com/system-cards","raw":""}]},{"period":"Mar-Apr","sequence":"03","category":"surface","confidence":"core","title":"Work moved into agent surfaces","summary":"The work surface stopped being just the IDE. Agents now start from Slack, GitHub, Linear, mobile, desktop apps, browsers, cloud VMs, and local machines, then hand off artifacts humans can inspect.","examples":["Cursor 3 put local and cloud agents in one sidebar with demos and screenshots for verification.","Devin moved across web, Slack, Linear/Jira, CLI, API, PR review, playbooks, and desktop workflows.","Vercel, Browserbase, and the local corpus point toward Slack-native and browser-native agent surfaces."],"sources":[{"label":"Cursor 3","url":"https://cursor.com/blog/cursor-3/","raw":"raw/intentional/web/2026-04-02-cursor-meet-the-new-cursor.md"},{"label":"Devin Desktop","url":"https://cognition.ai/blog/introducing-devin-desktop","raw":""},{"label":"Agent platforms wiki","url":"../../wiki/personal-systems/agent-platforms-and-work-surfaces.md","raw":""}]},{"period":"April","sequence":"04","category":"harness","confidence":"core","title":"The harness became the product","summary":"The new center of gravity is the wrapper around the model: tools, filesystem, shell, browser, permissions, subagents, planning artifacts, evals, state, and observability. This is where reliability actually comes from.","examples":["Cursor published an agent-harness improvement loop around evals, keep rate, tool reliability, per-model harnesses, and subagents.","Deep Agents packaged todos, virtual filesystem, tools, sandbox execution, subagents, memory, approval, and skills.","AI Engineer talks and local wiki synthesis converge on: agent equals model plus harness."],"sources":[{"label":"Agentic engineering practices","url":"../../wiki/ai-coding/agentic-engineering-practices.md","raw":""},{"label":"Cursor agent harness","url":"https://cursor.com/blog/continually-improving-agent-harness/","raw":"raw/intentional/web/2026-04-30-cursor-continually-improving-our-agent-harness.md"},{"label":"LangChain Deep Agents","url":"https://docs.langchain.com/oss/python/deepagents/overview","raw":"raw/intentional/web/2026-06-12-langchain-deep-agents-overview.md"}]},{"period":"May","sequence":"05","category":"surface","confidence":"core","title":"Codex-style apps became workbenches","summary":"The important launch was not one feature. It was the shape of the app: goals, app context, remote computer use, browser annotations, plugins, sites, and use-case galleries made an agent feel like an operating surface for work.","examples":["Codex app added Appshots, Goal mode, remote computer use, plugin sharing, and richer browser annotations.","Codex use cases span engineering, knowledge work, inbox, UI, Slack-triggered tasks, computer use, and security remediation.","The shift: agents are places where work happens, not chat tabs beside the work."],"sources":[{"label":"Codex changelog","url":"https://developers.openai.com/codex/changelog","raw":""},{"label":"Codex use cases","url":"https://developers.openai.com/codex/use-cases","raw":"raw/intentional/web/2026-06-11-openai-codex-use-cases.md"}]},{"period":"May-Jun","sequence":"06","category":"workflow","confidence":"core","title":"Skills and workflows replaced prompting","summary":"The reusable unit shifted from prompt snippets to packaged procedures: skills, plugins, routines, dynamic workflows, playbooks, and task contracts. The point is repeatability, not prompt cleverness.","examples":["OpenAI and Claude both pushed skills as reusable capability packs with instructions, scripts, domain knowledge, and tests.","Claude Code dynamic workflows made task-specific harnesses normal.","Codex plugin sharing and Cursor marketplaces point to team distribution."],"sources":[{"label":"OpenAI skills","url":"https://developers.openai.com/blog/skills-agents-sdk/","raw":"raw/intentional/web/2026-03-09-openai-using-skills-to-accelerate-oss-maintenance-openai-developers.md"},{"label":"Claude dynamic workflows","url":"https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/","raw":"raw/intentional/web/2026-06-02-claude-a-harness-for-every-task-dynamic-workflows-in-claude-code.md"},{"label":"Codex changelog","url":"https://developers.openai.com/codex/changelog","raw":""}]},{"period":"June","sequence":"07","category":"open","confidence":"emerging","title":"OpenClaw made the local agent OS legible","summary":"OpenClaw mattered because it gave people a mental model for a local, always-on, tool-using agent stack: files as state, cron/heartbeat orchestration, multi-channel interfaces, skills, memory, browser/voice, and provider abstraction.","examples":["Clawchief turns OpenClaw into a founder/chief-of-staff OS with priority maps, task state, meeting-note policy, action policy, skills, cron jobs, and a heartbeat.","The OpenClaw deep dive frames a three-layer stack: LLM APIs, agent runtime/provider abstraction, then multi-channel application layer.","The broader signal is DIY agent infrastructure becoming discussable as an operating system, not just a clever prompt."],"sources":[{"label":"Agent platforms wiki","url":"../../wiki/personal-systems/agent-platforms-and-work-surfaces.md","raw":""},{"label":"Clawchief README","url":"https://github.com/snarktank/clawchief","raw":"raw/intentional/web/2026-06-10-clawchief-readme.md"},{"label":"OpenClaw deep dive capture","url":"../../raw/intentional/pasted/sunder-sync-2026-06-11/390-openclaw-pi-agent-vercel-sdk-deep.md","raw":"raw/intentional/pasted/sunder-sync-2026-06-11/390-openclaw-pi-agent-vercel-sdk-deep.md"}]},{"period":"June","sequence":"08","category":"verify","confidence":"core","title":"Verification moved inside the loop","summary":"The gap between demo and production is verification. The industry moved toward review bots, skill evals, test plans, screenshots, browser/computer use, trace grading, and automatic fix loops.","examples":["Cursor's Bugbot and Autofix turned code review into an agent product surface.","OpenAI's skill evals and Codex security docs make agent behavior measurable and reviewable.","Cognition sharpened the point: async agents need verified outputs, not just completed sessions."],"sources":[{"label":"Cursor Bugbot","url":"https://cursor.com/blog/building-bugbot/","raw":"raw/intentional/web/2026-01-15-cursor-building-a-better-bugbot.md"},{"label":"OpenAI skill evals","url":"https://developers.openai.com/blog/eval-skills/","raw":"raw/intentional/web/2026-06-13-testing-agent-skills-systematically-with-evals.md"},{"label":"Cognition verification","url":"https://cognition.ai/blog/testing-development","raw":""},{"label":"Codex Security docs","url":"https://developers.openai.com/codex/security/setup","raw":"raw/intentional/web/2026-06-11-openai-codex-security-setup-docs.md"}]},{"period":"Always on","sequence":"09","category":"governance","confidence":"core","title":"Governance became part of the architecture","summary":"Once agents can act through tools, files, browsers, APIs, and production systems, governance becomes part of the product. Sandboxes, scoped permissions, secure indexing, threat models, audit APIs, and Zero Trust moved into normal AI-engineering language.","examples":["Cursor hooks, secure indexing, local-agent sandboxing, and enterprise controls made platform/security teams part of the agent stack.","Claude's Zero Trust and managed-agent sandbox/MCP tunnel work framed least privilege and runtime boundaries as agent features.","Codex Security turns architecture, trust boundaries, findings, validation, and remediation PRs into an agentic security loop."],"sources":[{"label":"Cursor hooks","url":"https://cursor.com/blog/hooks-partners/","raw":"raw/intentional/web/2025-12-22-cursor-hooks-for-security-and-platform-teams.md"},{"label":"Cursor sandboxing","url":"https://cursor.com/blog/agent-sandboxing/","raw":"raw/intentional/web/2026-02-18-cursor-implementing-a-secure-sandbox-for-local-agents.md"},{"label":"Claude Zero Trust","url":"https://claude.com/blog/zero-trust-for-ai-agents/","raw":"raw/intentional/web/2026-05-27-claude-zero-trust-for-ai-agents.md"},{"label":"Codex Security docs","url":"https://developers.openai.com/codex/security/setup","raw":"raw/intentional/web/2026-06-11-openai-codex-security-setup-docs.md"}]}],"filters":[["all","All"],["model","Model jumps"],["surface","Work surfaces"],["open","Open/local OS"],["harness","Harness"],["workflow","Skills/workflows"],["context","Context"],["verify","Verification"],["governance","Governance"]]}</script>
+  <script>
+    const payload = JSON.parse(document.getElementById('shift-data').textContent);
+    const shifts = payload.shifts;
+    const filters = payload.filters;
+    const timeline = document.getElementById('timeline');
+    const filterBar = document.getElementById('filters');
+    document.getElementById('metric-shifts').textContent = String(shifts.length);
+
+    filters.forEach(([id, label], index) => {
+      const button = document.createElement('button');
+      button.className = 'filter';
+      button.type = 'button';
+      button.dataset.filter = id;
+      button.setAttribute('aria-pressed', String(index === 0));
+      button.textContent = label;
+      filterBar.appendChild(button);
+    });
+
+    function categoryLabel(value) {
+      const found = filters.find(([id]) => id === value);
+      return found ? found[1] : value;
+    }
+
+    function render() {
+      timeline.innerHTML = '';
+      shifts.forEach((item) => {
+        const article = document.createElement('article');
+        article.className = 'milestone';
+        article.dataset.category = item.category;
+        article.innerHTML = `
+          <div class="time"><b>${item.period}</b><span>${item.sequence}</span></div>
+          <div class="node" aria-hidden="true"></div>
+          <div class="story">
+            <div class="meta"><span class="pill">${categoryLabel(item.category)}</span><span class="pill ${item.confidence}">${item.confidence === 'core' ? 'Core shift' : 'Emerging signal'}</span></div>
+            <h3>${item.title}</h3>
+            <p>${item.summary}</p>
+            <ul class="examples">${item.examples.map((example) => `<li>${example}</li>`).join('')}</ul>
+            <div class="source-list">${item.sources.map((source) => `<a class="source-chip" href="${source.url}" title="${source.raw || source.url}">${source.label}</a>`).join('')}</div>
+          </div>`;
+        timeline.appendChild(article);
+      });
+    }
+
+    render();
+
+    filterBar.addEventListener('click', (event) => {
+      const button = event.target.closest('button.filter');
+      if (!button) return;
+      const selected = button.dataset.filter;
+      filterBar.querySelectorAll('button.filter').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      timeline.querySelectorAll('.milestone').forEach((item) => item.classList.toggle('hidden', selected !== 'all' && item.dataset.category !== selected));
+    });
+  </script>
+</body>
+</html>
