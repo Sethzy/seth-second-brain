@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+.qmd/
+.playwright-mcp/
+.herenow/
+tmp/
+raw/intentional/pasted/archive-2026-06-11/09-cute-idea-for-my-app.md
