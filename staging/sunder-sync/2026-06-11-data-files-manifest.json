@@ -1,0 +1,682 @@
+[
+  {
+    "index": 1,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Product/Sunder - Source of Truth/services/02-unit-economics-assumptions.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Product/Sunder - Source of Truth/services/02-unit-economics-assumptions.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/001-02-unit-economics-assumptions.csv",
+    "size": 6018,
+    "sha256": "8a32d838572c1d0baa04d1c5d075bb6def8920c8358c052d65ada9b6861e9812",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 2,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Product/Sunder - Source of Truth/services/03-unit-economics-scenarios.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Product/Sunder - Source of Truth/services/03-unit-economics-scenarios.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/002-03-unit-economics-scenarios.csv",
+    "size": 832,
+    "sha256": "23b7c365f575d3d5355efa858b52a9bb998733e4c2f51e961ce6d187d221dad3",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 3,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Product/Sunder - Source of Truth/services/04-unit-economics-service-breakdown.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Product/Sunder - Source of Truth/services/04-unit-economics-service-breakdown.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/003-04-unit-economics-service-breakdown.csv",
+    "size": 8217,
+    "sha256": "ef5861b142a10ff21b5b9ddbdce6befeeac283e6f9cbb856d8b5265b0683e5db",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 4,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/CommercialPM/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/CommercialPM/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/004-tam-companies.csv",
+    "size": 2518,
+    "sha256": "78df62a2f3dc651498a00755fab2ec8eb01eccf35398afa17742cd52a2dc3be3",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 5,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/clay-export.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/clay-export.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/005-clay-export.csv",
+    "size": 24870,
+    "sha256": "1d03642ced03540b4e16d1504274817f7740e5e54d3c8d794d93ae275a4f5f7c",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 6,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/Find-companies-Table-Default-view-export-1770012176509.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/Find-companies-Table-Default-view-export-1770012176509.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/006-find-companies-table-default-view-export-1770012176509.csv",
+    "size": 1356430,
+    "sha256": "d73b851ab1c3db1add85a1b26ebd7c1495f53cb51c80b9f640fc7ada76a501bb",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 7,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/mcf-construction-companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/mcf-construction-companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/007-mcf-construction-companies.csv",
+    "size": 28683,
+    "sha256": "0d5dc4b52aa42ef30726e958daaec4446e4d0068fd378d43cf9be302b7481ad3",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 8,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/mcf-construction-jobs.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/mcf-construction-jobs.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/008-mcf-construction-jobs.csv",
+    "size": 169843,
+    "sha256": "111f2c266281647687d939f6aa0f94e13560d97e8b55ba14294ff7b531a160a4",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 9,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/SCAL-Members.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/SCAL-Members.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/009-scal-members.csv",
+    "size": 211719,
+    "sha256": "f27f104a80ced253166c2d06a5d90a65e63624d2a501d23ca9393d14ca196852",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 10,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/010-tam-companies.csv",
+    "size": 8085145,
+    "sha256": "0378de4d5a9e179853d88eb78dfb0f1bc586849818b38aa273b954f0f9d06089",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 11,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Construction-ProgressClaims/Unified-Construction-Companies-SG-2026-02-02.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Construction-ProgressClaims/Unified-Construction-Companies-SG-2026-02-02.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/011-unified-construction-companies-sg-2026-02-02.csv",
+    "size": 3611629,
+    "sha256": "c7e9b21de14a563f2ef57efc05dca6c1c1dc984b863002967d75eb0eb70a633a",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 12,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/clay-enriched.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/clay-enriched.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/012-clay-enriched.csv",
+    "size": 3584220,
+    "sha256": "6ba1e657cf478a0fc43d298fbd3acc90e01a6cc1a52ab74c1e2a02f00075445d",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 13,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/clay-export.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/clay-export.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/013-clay-export.csv",
+    "size": 195814,
+    "sha256": "a4807f9eb3d7317c7aba4b20576154837e4c81acb97492d8ad33f3f81cef2684",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 14,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/emails-ready-to-send.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/emails-ready-to-send.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/014-emails-ready-to-send.csv",
+    "size": 3932604,
+    "sha256": "cbdf33ad14877b241d08a97695e1676d14a884184b0a082133ff623746e68105",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 15,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/Find-companies-Table-Default-view-export-1770013426348.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/Find-companies-Table-Default-view-export-1770013426348.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/015-find-companies-table-default-view-export-1770013426348.csv",
+    "size": 271632,
+    "sha256": "db1a171b1757f7a4ec581d9dadbe8e5ca954b22b6e8d367e1cee0965ca0d17a4",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 16,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/Find-companies-Table-Default-view-export-1770013627604.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/Find-companies-Table-Default-view-export-1770013627604.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/016-find-companies-table-default-view-export-1770013627604.csv",
+    "size": 267611,
+    "sha256": "37b251b451e62e060b87003b52220f153cfc96c6c8b995061e51dd12085c56de",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 17,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/mcf-distributor-pricing-companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/mcf-distributor-pricing-companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/017-mcf-distributor-pricing-companies.csv",
+    "size": 18903,
+    "sha256": "1d8a929786d9756eeab100a44badfc4bb4e23f0b7eee28975f1b8a4d454b8bd9",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 18,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/mcf-distributor-pricing-jobs.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/mcf-distributor-pricing-jobs.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/018-mcf-distributor-pricing-jobs.csv",
+    "size": 111147,
+    "sha256": "759d05b37f7199c36db08b70d0ddab85d31aa2844556161d92e26761dae7245b",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 19,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/qualified-companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/qualified-companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/019-qualified-companies.csv",
+    "size": 5571738,
+    "sha256": "a5f56ce90b5886e3f1eccd6a9cc32567a30b93135d26af3431fab4548fddce70",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 20,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/SBMSA-Members.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/SBMSA-Members.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/020-sbmsa-members.csv",
+    "size": 4663,
+    "sha256": "e5f28089bd913ee7a99f48782eb1a80b9008c00f5931ecd39bc56114615cd929",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 21,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/SG-Electronics-Directory.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/SG-Electronics-Directory.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/021-sg-electronics-directory.csv",
+    "size": 188320,
+    "sha256": "eecd8833c1b247116a53ec449431d733fd9658c73345e8fb8b380e029ee838cf",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 22,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/022-tam-companies.csv",
+    "size": 5571738,
+    "sha256": "a5f56ce90b5886e3f1eccd6a9cc32567a30b93135d26af3431fab4548fddce70",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 23,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/DistributorPricing/Unified-DistributorPricing-Companies-SG-2026-02-02.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/DistributorPricing/Unified-DistributorPricing-Companies-SG-2026-02-02.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/023-unified-distributorpricing-companies-sg-2026-02-02.csv",
+    "size": 1799044,
+    "sha256": "03c63ccd699ddd12e86c69320ce1c7c627c41e6464e83f21f819bf620f966994",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 24,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/AgriBiz-Singapore-Food-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/AgriBiz-Singapore-Food-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/024-agribiz-singapore-food-companies.csv",
+    "size": 519475,
+    "sha256": "b03bc91ed945aaa54efe0d9db9f944a207a3b9c660cd4ed785463277ade083e6",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 25,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/Archive/Snapshots/TAM-Companies-pre-2026-02-02.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/Archive/Snapshots/TAM-Companies-pre-2026-02-02.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/025-tam-companies-pre-2026-02-02.csv",
+    "size": 2923808,
+    "sha256": "da5b8fe0b39e08cd8fb167689790db62b702ba80468947e7bb8cea1a5c87029a",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 26,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/clay-enriched.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/clay-enriched.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/026-clay-enriched.csv",
+    "size": 5575757,
+    "sha256": "0080a540ec2f2813c3b74c85a437857912f6b779b451bd194b5b8daf9926f5f2",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 27,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/clay-export-combined.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/clay-export-combined.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/027-clay-export-combined.csv",
+    "size": 250153,
+    "sha256": "a8ae007a3f3f32961d5fb22fd57b12c068b7b27794456d7a2e67b9b3251314aa",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 28,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/clay-export.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/clay-export.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/028-clay-export.csv",
+    "size": 66715,
+    "sha256": "0881e6f449856ae630de6d62d1fb0f53fdb99933e2627998373280a3029536f1",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 29,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/emails-ready-to-send.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/emails-ready-to-send.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/029-emails-ready-to-send.csv",
+    "size": 7046804,
+    "sha256": "4d168573af271830476f17c8095151623e79bc46b79546aa874cabdce5993219",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 30,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/Find-companies-Table-Default-view-export-1768372929816.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/Find-companies-Table-Default-view-export-1768372929816.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/030-find-companies-table-default-view-export-1768372929816.csv",
+    "size": 579478,
+    "sha256": "da8acb2e10718c25521c9535124754dfa3f65dd7a48231ad13593356c2db23e7",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 31,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/MCF-All-Companies-722.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/MCF-All-Companies-722.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/031-mcf-all-companies-722.csv",
+    "size": 104524,
+    "sha256": "9f8d02daf53b03b3c4c7e0d5d7a449de946d300adf6f3ea13e2c4dd7af687237",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 32,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/MCF-Food-Companies-94.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/MCF-Food-Companies-94.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/032-mcf-food-companies-94.csv",
+    "size": 10134,
+    "sha256": "0b491211a351b8365d3ea7390143e68387dcfe0f6e394cd0779625b73dc94a46",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 33,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/new-qualified-batch.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/new-qualified-batch.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/033-new-qualified-batch.csv",
+    "size": 6808351,
+    "sha256": "7cac06f17cc03e4119b1cb761e480577dddf61437f7154c7232444b74858b782",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 34,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/SFMA-Singapore-Food-Manufacturers-Members.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/SFMA-Singapore-Food-Manufacturers-Members.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/034-sfma-singapore-food-manufacturers-members.csv",
+    "size": 258838,
+    "sha256": "c17f4a158a37e120c4907a7cf9783cb52fc58dac5a5c132ef8f53d4dd8c241bd",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 35,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/035-tam-companies.csv",
+    "size": 24165801,
+    "sha256": "6d7e49a96a70152474348e839f6d22ae8d915a9ca6d6c69f077fdceea97d75e3",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 36,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/TAM-People.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/TAM-People.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/036-tam-people.csv",
+    "size": 83,
+    "sha256": "9d5bf6e55442221a39b59b254571228640731183847d3a664504952458210acf",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 37,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FoodAgri/Unified-FoodAgri-Companies-SG-2026-01-15.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FoodAgri/Unified-FoodAgri-Companies-SG-2026-01-15.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/037-unified-foodagri-companies-sg-2026-01-15.csv",
+    "size": 3438964,
+    "sha256": "06233c13cd7cfc222f6167b018c2efea184d7f7e4bc14988d6e1f8465ceae1a5",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 38,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FreightForwarders/clay-enriched-regen.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FreightForwarders/clay-enriched-regen.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/038-clay-enriched-regen.csv",
+    "size": 358859,
+    "sha256": "c2c372b3c0ee3ea67e10453c5b404d12724dfe752d3bc94a17a27fddd5fafa11",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 39,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FreightForwarders/emails-ready-to-send.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FreightForwarders/emails-ready-to-send.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/039-emails-ready-to-send.csv",
+    "size": 670939,
+    "sha256": "7375a79f49afab637145600a7d5922dc48f2fb33224286abbfb24ff3c6782ac5",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 40,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FreightForwarders/emails-regenerated.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FreightForwarders/emails-regenerated.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/040-emails-regenerated.csv",
+    "size": 220412,
+    "sha256": "3d1d93d9e5dcf1e95b190b6a5a79bd68f22d5b4ea5a1f98113b73c0699bc8bf4",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 41,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FreightForwarders/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FreightForwarders/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/041-tam-companies.csv",
+    "size": 4780141,
+    "sha256": "faaefa882941d54082859f1b76ee9b563bdb1c6d4e8e2da92c121ecfdb1dce7b",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 42,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/FreightForwarders/TAM-People.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/FreightForwarders/TAM-People.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/042-tam-people.csv",
+    "size": 165661,
+    "sha256": "d064f141bbaf9081dc05e009eb0b43daadaeef7f5e4e4a1e5d4e78ffd6550f2c",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 43,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002809350.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002809350.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/043-find-companies-table-default-view-export-1770002809350.csv",
+    "size": 774913,
+    "sha256": "543ce7e706a60532d086c27ce0fdd05ea58a472a73ac81134eebf14a223f355d",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 44,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002820335.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002820335.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/044-find-companies-table-default-view-export-1770002820335.csv",
+    "size": 1697920,
+    "sha256": "a58fc333808c5979d870f44ce35eef364be63ca75a0b36cb739beeae0a18ce9e",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 45,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002829835.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002829835.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/045-find-companies-table-default-view-export-1770002829835.csv",
+    "size": 1015777,
+    "sha256": "305e32fa80e628432053e0ea12ffad2615ed22bb6e1742cb82e8fc12340341cb",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 46,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002842703.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/Find-companies-Table-Default-view-export-1770002842703.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/046-find-companies-table-default-view-export-1770002842703.csv",
+    "size": 926076,
+    "sha256": "b31c77104706f0a4b1e5e554701f1d3d3bf9d965ea17a64da97aabf0f220b2c4",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 47,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/mcf-manufacturing-companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/mcf-manufacturing-companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/047-mcf-manufacturing-companies.csv",
+    "size": 11262,
+    "sha256": "539eb699070662c76067fe594067d9c08cd778ee932cbd6c26229d28bdf2b956",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 48,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/mcf-manufacturing-jobs.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/mcf-manufacturing-jobs.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/048-mcf-manufacturing-jobs.csv",
+    "size": 54872,
+    "sha256": "b7cc2376818432cfbb736d6ef1ce0bbcb082c24731f5edebc329a3fc56699a7a",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 49,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/SMF-Committee-Members.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/SMF-Committee-Members.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/049-smf-committee-members.csv",
+    "size": 10413,
+    "sha256": "640b57000c12dd587635d52640753bbe8633400eb46fb7225809bb10fb557ee2",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 50,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/SPETA-Members-Raw.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/SPETA-Members-Raw.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/050-speta-members-raw.csv",
+    "size": 50895,
+    "sha256": "d6323ab9a7a607f9c9de47bd19b64ba7a23550dbb9ca9e3d0f9ea7469b0eaef7",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 51,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/Manufacturing/Unified-Manufacturing-Companies-SG-2026-02-02.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/Manufacturing/Unified-Manufacturing-Companies-SG-2026-02-02.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/051-unified-manufacturing-companies-sg-2026-02-02.csv",
+    "size": 9167188,
+    "sha256": "3793fceb73bbce69363e9e4a3af1e8a6813194722e0b007d22eb88421f66ffe6",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 52,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/PropertyAgencyAML/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/PropertyAgencyAML/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/052-tam-companies.csv",
+    "size": 2109,
+    "sha256": "26c360fa1ca7bde81ab8f383673c1dec1a26bf62d9e74d43a888cb5f5c1eecf1",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 53,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/02_Areas/Sales/Scraped Data/StrataManagement/TAM-Companies.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "02_Areas/Sales/Scraped Data/StrataManagement/TAM-Companies.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/053-tam-companies.csv",
+    "size": 3046,
+    "sha256": "e409db9754a1bbc3844379e3d1e908ecfd4661091c836187c683d740858ecbaf",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 54,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/extracted_content/extraction-tracker.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "extracted_content/extraction-tracker.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/054-extraction-tracker.csv",
+    "size": 4811,
+    "sha256": "8a673d50d2648f6527e22cd12241cc0b62abca5b7c24b7a9396003a2ba750021",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 55,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/revenue and pricing model .xlsx",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "revenue and pricing model .xlsx",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/055-revenue-and-pricing-model-.xlsx",
+    "size": 19143,
+    "sha256": "ad44d50cde6bf7ceb202d59b671095fca180c8bf5e5387b39c86c35b1d105592",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 56,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/scrapers/sg-insurance/output/sg_insurance_agents.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "scrapers/sg-insurance/output/sg_insurance_agents.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/056-sg-insurance-agents.csv",
+    "size": 363048,
+    "sha256": "d33c456473958d9d05798feae2a1b4ac1b640e7d37c35f6e2c59420b4e7bc245",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 57,
+    "source_file": "/Users/sethlim/Documents/Sunder Workspace/scrapers/sg-insurance/output/sg_insurance_agents_with_linkedin.csv",
+    "source_root": "Sunder Workspace",
+    "source_relpath": "scrapers/sg-insurance/output/sg_insurance_agents_with_linkedin.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/057-sg-insurance-agents-with-linkedin.csv",
+    "size": 405966,
+    "sha256": "8f3ea34c7414460315a054ee5ba2f440da186f2a0a3e564110967e1d35f16d82",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 58,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/.playwright-mcp/1776011853790-5e76e7e4-Crisk3-Default-view-export-1768369655086.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": ".playwright-mcp/1776011853790-5e76e7e4-Crisk3-Default-view-export-1768369655086.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/058-1776011853790-5e76e7e4-crisk3-default-view-export-1768369655086.csv",
+    "size": 551304,
+    "sha256": "d17529e92e7ca352c3962a78c26edfb441ea96074ae2af4657affa0f6ab6572b",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 59,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/cea/CEASalespersonInformation.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/cea/CEASalespersonInformation.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/059-ceasalespersoninformation.csv",
+    "size": 3502298,
+    "sha256": "eb45664ffb0d95883866d6b9ce10821823dc7e788aed7cd70ba587882461db1c",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 60,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/cea/CEASalespersonsPropertyTransactionRecordsresidential.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/cea/CEASalespersonsPropertyTransactionRecordsresidential.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv",
+    "size": 122247095,
+    "sha256": "a11f1b31f2c84a3cb2415fe5a07609374aedf5e3794325f1e4656a3f35a3b301",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 61,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/hdb/Resale Flat Prices (Based on Approval Date), 1990 - 1999.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/hdb/Resale Flat Prices (Based on Approval Date), 1990 - 1999.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/061-resale-flat-prices-based-on-approval-date-1990-1999.csv",
+    "size": 22635623,
+    "sha256": "2e064923f41cc96536db04c978901695aa0191022829895cf4ce177e42afad57",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 62,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/hdb/Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/hdb/Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/062-resale-flat-prices-based-on-approval-date-2000-feb-2012.csv",
+    "size": 29369945,
+    "sha256": "5f6a72bd7b9120281863beb1fc4c89aa5f4923f00b0f6c52494c4347363f2c36",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 63,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/hdb/Resale Flat Prices (Based on Registration Date), From Jan 2015 to Dec 2016.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/hdb/Resale Flat Prices (Based on Registration Date), From Jan 2015 to Dec 2016.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/063-resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016.csv",
+    "size": 3070924,
+    "sha256": "4ff7ce4a4f642fb384d2b75a42e75b0477e50005f4aaa9989591a7a92507d185",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 64,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/hdb/Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/hdb/Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/064-resale-flat-prices-based-on-registration-date-from-mar-2012-to-dec-2014.csv",
+    "size": 4160771,
+    "sha256": "6a16e2dc78f70048ec1a522b59a9727581c36e45e02022641c53e755a7657c72",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 65,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/data/hdb/Resale flat prices based on registration date from Jan-2017 onwards.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "data/hdb/Resale flat prices based on registration date from Jan-2017 onwards.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/065-resale-flat-prices-based-on-registration-date-from-jan-2017-onwards.csv",
+    "size": 22342534,
+    "sha256": "be96f6f3a331905068bfcad20f6ec405a2314eb2dbfc51ccd3a9f859ef2bc642",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 66,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/roadmap docs/Sunder - Source of Truth/services/02-unit-economics-assumptions.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "roadmap docs/Sunder - Source of Truth/services/02-unit-economics-assumptions.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/066-02-unit-economics-assumptions.csv",
+    "size": 6018,
+    "sha256": "8a32d838572c1d0baa04d1c5d075bb6def8920c8358c052d65ada9b6861e9812",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 67,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/roadmap docs/Sunder - Source of Truth/services/03-unit-economics-scenarios.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "roadmap docs/Sunder - Source of Truth/services/03-unit-economics-scenarios.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/067-03-unit-economics-scenarios.csv",
+    "size": 832,
+    "sha256": "23b7c365f575d3d5355efa858b52a9bb998733e4c2f51e961ce6d187d221dad3",
+    "source_type": "pasted-data"
+  },
+  {
+    "index": 68,
+    "source_file": "/Users/sethlim/Documents/sunder-next-migration-20260225/roadmap docs/Sunder - Source of Truth/services/04-unit-economics-service-breakdown.csv",
+    "source_root": "sunder-next-migration-20260225",
+    "source_relpath": "roadmap docs/Sunder - Source of Truth/services/04-unit-economics-service-breakdown.csv",
+    "raw_path": "raw/intentional/pasted/sunder-sync-2026-06-11-data/068-04-unit-economics-service-breakdown.csv",
+    "size": 8217,
+    "sha256": "ef5861b142a10ff21b5b9ddbdce6befeeac283e6f9cbb856d8b5265b0683e5db",
+    "source_type": "pasted-data"
+  }
+]

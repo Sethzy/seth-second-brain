@@ -1,0 +1,41 @@
+item_number,status,platform,url,filename,priority,notes
+01,complete,twitter,https://x.com/alexgilev/status/2017350372348535055,01-alexgilev-agent-intake-flow-FULL.md,done,Original batch
+02,complete,youtube,https://www.youtube.com/watch?v=EV7WhVT270Q,02-lex-fridman-state-of-ai-2026-FULL.md,done,Original batch
+03,complete,twitter,https://x.com/vaibhavsisinty/status/2017680664985014297,03-vaibhavsisinty-openclaw-deployment-FULL.md,done,Original batch
+04,complete,twitter,https://x.com/pbteja1998/status/2017662163540971756,04-pbteja-mission-control-guide-FULL.md,done,Original batch - SKIP DUPLICATE
+05,complete,twitter,https://x.com/dhravyashah/status/2017039283367137690,05-dhravyashah-FULL.md,done,Original batch
+06,complete,twitter,https://x.com/rauchg/status/2017423825152184772,06-rauchg-FULL.md,done,Original batch
+07,complete,twitter,https://x.com/nityeshaga/status/2017128005714530780,07-nityeshaga-FULL.md,done,Original batch
+08,complete,twitter,https://x.com/dani_avila7/status/2017096001232781477,08-dani_avila7-FULL.md,done,Original batch
+09,complete,twitter,https://x.com/ashpreetbedi/status/2017348867159679184,09-ashpreetbedi-FULL.md,done,Original batch
+10,complete,twitter,https://x.com/nummanali/status/2017194574158925866,10-nummanali-FULL.md,done,Original batch
+11,complete,twitter,https://x.com/jesseprovo/status/2016280574684758507,11-jesseprovo-FULL.md,done,Original batch
+12,complete,twitter,https://x.com/scottbelsky/status/2017436989604192505,12-scottbelsky-FULL.md,done,Original batch
+13,complete,twitter,https://x.com/jarrodwatts/status/2017062528917131562,13-jarrodwatts-FULL.md,done,Original batch
+14,complete,twitter,https://x.com/trq212/status/2017024445244924382,14-trq212-FULL.md,done,Original batch
+15,complete,github,https://github.com/vercel-labs/just-bash,15-vercel-labs-just-bash-FULL.md,done,Original batch
+16,complete,twitter,https://x.com/jerryjliu0/status/2017330568359551396,16-jerryjliu0-FULL.md,done,Original batch
+17,complete,twitter-article,https://x.com/KirkMarple (article),17-kirkmarple-context-graphs-FULL.md,done,Context graphs ontology
+18,complete,github,https://github.com/BlockRunAI/ClawRouter,18-clawrouter-FULL.md,high,LLM router micropayments
+19,pending,github,https://github.com/supermemoryai/supermemory,19-supermemory-repo-FULL.md,high,Supermemory repo
+20,pending,web,https://app.usebits.com/landing-klaus,20-usebits-klaus-FULL.md,medium,Tool/app page
+21,pending,blog,https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/,21-cloudflare-moltworker-FULL.md,high,Cloudflare self-hosted agent
+22,pending,blog,https://brandon.wang/2026/clawdbot,22-brandon-wang-clawdbot-FULL.md,high,Clawdbot explainer
+23,pending,web,https://build.nvidia.com/moonshotai/kimi-k2.5/modelcard,23-nvidia-kimi-FULL.md,medium,Model card
+24,pending,web,https://openrouter.ai/openrouter/auto,24-openrouter-auto-FULL.md,medium,OpenRouter tool
+25,pending,web,https://refoundai.com/lenny-skills/playbooks/,25-refound-lenny-playbooks-FULL.md,medium,Playbooks/skills
+26,pending,web,https://www.skillboss.co/,26-skillboss-FULL.md,low,Tool website
+27,pending,linkedin,https://www.linkedin.com/posts/outboundphd_3-times-in-the-last-month-we-had-a-niche-share-7423928893520269312-O1L-,27-outboundphd-niche-FULL.md,medium,Niche segments
+28,pending,linkedin,https://www.linkedin.com/posts/outboundphd_here-are-the-5-types-of-list-building-that-share-7423941361348915200-nHVN,28-outboundphd-listbuilding-FULL.md,medium,List building
+29,pending,instagram,https://www.instagram.com/p/DUBI3iDFMvv/,29-instagram-DUBI3iDFMvv-FULL.md,low,Instagram post
+30,pending,instagram,https://www.instagram.com/p/DUc_XNjkjx6/,30-instagram-DUc_XNjkjx6-FULL.md,low,Instagram post
+31,pending,instagram,https://www.instagram.com/reel/DUHL9zlAdvL/,31-instagram-DUHL9zlAdvL-FULL.md,low,Instagram reel
+32,pending,twitter,https://x.com/0xrealdado/status/2020205261760123056,32-0xrealdado-FULL.md,low,Twitter post
+33,pending,twitter,https://x.com/0xzak/status/2018871985254617295,33-0xzak-FULL.md,low,Twitter post
+34,pending,twitter,https://x.com/AlexFinn/status/2018734948342288453,34-AlexFinn-FULL.md,low,Twitter post
+35,pending,twitter,https://x.com/AlphaSignalAI/status/2018815238829928711,35-AlphaSignalAI-FULL.md,low,Twitter post
+36,pending,twitter,https://x.com/JulianGoldieSEO/status/2018589601594851705,36-JulianGoldieSEO-FULL.md,low,Twitter post
+37,pending,twitter,https://x.com/KimiProduct/status/2018989483258183742,37-KimiProduct-FULL.md,low,Twitter post
+38,pending,twitter,https://x.com/Kimi_Moonshot/status/2017831551002939443,38-Kimi_Moonshot-FULL.md,low,Twitter post
+39,pending,twitter,https://x.com/Saboo_Shubham_/status/2018526624644546594,39-Saboo_Shubham-FULL.md,low,Twitter post
+40,pending,twitter,https://x.com/Shpigford/status/2018710065239269785,40-Shpigford-FULL.md,low,Twitter post

@@ -1,0 +1,841 @@
+---
+type: raw_capture
+source_type: x
+title: "Sunder sync: companies-hover.md"
+url: "file:///Users/sethlim/Documents/sunder-next-migration-20260225/.playwright-mcp/companies-hover.md"
+collected_at: 2026-06-11T03:10:00+08:00
+published_at: Unknown
+capture_quality: complete
+status: raw
+trust_lane: intentional
+source_file: "/Users/sethlim/Documents/sunder-next-migration-20260225/.playwright-mcp/companies-hover.md"
+source_root: "/Users/sethlim/Documents/sunder-next-migration-20260225"
+source_relpath: ".playwright-mcp/companies-hover.md"
+sha256: "6ab07f6d4140e109ea26f7f038df9a5cfe4e8974095d7f4c076a197b84d12f44"
+duplicate_of: ""
+---
+
+# Sunder sync: companies-hover.md
+
+Source file: `/Users/sethlim/Documents/sunder-next-migration-20260225/.playwright-mcp/companies-hover.md`
+
+Primary URL: file:///Users/sethlim/Documents/sunder-next-migration-20260225/.playwright-mcp/companies-hover.md
+
+Duplicate of existing source-map entry: `none`
+
+## Capture Text
+
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - img [ref=e9]
+          - generic [ref=e19]: neobot
+        - button "Search" [ref=e20]:
+          - img
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: Agent
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "Agent" [ref=e26] [cursor=pointer]:
+                - /url: /agent
+                - img [ref=e27]
+                - generic [ref=e30]: Agent
+            - listitem [ref=e31]:
+              - link "New Task" [ref=e32] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e33]
+                - generic [ref=e35]: New Task
+            - listitem [ref=e36]:
+              - link "Skills" [ref=e37] [cursor=pointer]:
+                - /url: /skills
+                - img [ref=e38]
+                - generic [ref=e41]: Skills
+            - listitem [ref=e42]:
+              - link "Tasks" [ref=e43] [cursor=pointer]:
+                - /url: /tasks
+                - img [ref=e44]
+                - generic [ref=e47]: Tasks
+            - listitem [ref=e48]:
+              - link "Automations" [ref=e49] [cursor=pointer]:
+                - /url: /automations
+                - img [ref=e50]
+                - generic [ref=e52]: Automations
+            - listitem [ref=e53]:
+              - link "Memory" [ref=e54] [cursor=pointer]:
+                - /url: /memory
+                - img [ref=e55]
+                - generic [ref=e63]: Memory
+        - generic [ref=e64]:
+          - generic [ref=e65]: Customers
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "People" [ref=e68] [cursor=pointer]:
+                - /url: /customers/people
+                - img [ref=e69]
+                - generic [ref=e74]: People
+            - listitem [ref=e75]:
+              - link "Companies" [ref=e76] [cursor=pointer]:
+                - /url: /customers/companies
+                - img [ref=e77]
+                - generic [ref=e81]: Companies
+            - listitem [ref=e82]:
+              - link "Deals" [ref=e83] [cursor=pointer]:
+                - /url: /customers/deals
+                - img [ref=e84]
+                - generic [ref=e87]: Deals
+        - generic [ref=e88]:
+          - generic [ref=e89]: Database
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Workspace" [ref=e92] [cursor=pointer]:
+                - /url: /cases
+                - img [ref=e93]
+                - generic [ref=e96]: Workspace
+            - listitem [ref=e97]:
+              - link "Channels" [ref=e98] [cursor=pointer]:
+                - /url: /channels
+                - img [ref=e99]
+                - generic [ref=e105]: Channels
+        - generic [ref=e106]:
+          - generic [ref=e107]: Sessions
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - link "CRM Pipeline Customization" [ref=e188] [cursor=pointer]:
+                - /url: /chat/11f47fc1-1fd3-4462-a8cf-be78a9d2ee29
+                - generic [ref=e189]: CRM Pipeline Customization
+              - button "More actions for CRM Pipeline Customization" [ref=e190]:
+                - img [ref=e191]
+            - listitem [ref=e195]:
+              - link "CRM Pipeline Update" [ref=e196] [cursor=pointer]:
+                - /url: /chat/4b8dd06c-bc1d-4beb-a39d-fb684c8b47fd
+                - generic [ref=e197]: CRM Pipeline Update
+              - button "More actions for CRM Pipeline Update" [ref=e198]:
+                - img [ref=e199]
+            - listitem [ref=e203]:
+              - link "CRM Pipeline Customization" [ref=e204] [cursor=pointer]:
+                - /url: /chat/e7f2d1a3-1678-4c6c-a325-120265bb46c8
+                - generic [ref=e205]: CRM Pipeline Customization
+              - button "More actions for CRM Pipeline Customization" [ref=e206]:
+                - img [ref=e207]
+            - listitem [ref=e211]:
+              - link "View All Contacts" [ref=e212] [cursor=pointer]:
+                - /url: /chat/fa51122a-ce23-47e3-a3b1-921d31f74813
+                - generic [ref=e213]: View All Contacts
+              - button "More actions for View All Contacts" [ref=e214]:
+                - img [ref=e215]
+            - listitem [ref=e219]:
+              - link "List All Contacts" [ref=e220] [cursor=pointer]:
+                - /url: /chat/6a83c56f-7092-4422-adc0-eb5c3184e3be
+                - generic [ref=e221]: List All Contacts
+              - button "More actions for List All Contacts" [ref=e222]:
+                - img [ref=e223]
+            - listitem [ref=e227]:
+              - link "Buyer Contacts List" [ref=e228] [cursor=pointer]:
+                - /url: /chat/06f785b1-d58e-4727-a19f-d3c14ab81b59
+                - generic [ref=e229]: Buyer Contacts List
+              - button "More actions for Buyer Contacts List" [ref=e230]:
+                - img [ref=e231]
+            - listitem [ref=e235]:
+              - link "Sarah Lim 88 Tanjong Pagar" [ref=e236] [cursor=pointer]:
+                - /url: /chat/5467c6bf-bbdb-4e80-95f6-386798b9c7ae
+                - generic [ref=e237]: Sarah Lim 88 Tanjong Pagar
+              - button "More actions for Sarah Lim 88 Tanjong Pagar" [ref=e238]:
+                - img [ref=e239]
+            - listitem [ref=e243]:
+              - link "Available Trigger Types" [ref=e244] [cursor=pointer]:
+                - /url: /chat/2372c191-df78-469e-9dc8-62d3615c23aa
+                - generic [ref=e245]: Available Trigger Types
+              - button "More actions for Available Trigger Types" [ref=e246]:
+                - img [ref=e247]
+            - listitem [ref=e251]:
+              - link "Current Time Inquiry" [ref=e252] [cursor=pointer]:
+                - /url: /chat/819b931f-51d8-4df3-9de7-6b68908cc171
+                - generic [ref=e253]: Current Time Inquiry
+              - button "More actions for Current Time Inquiry" [ref=e254]:
+                - img [ref=e255]
+            - listitem [ref=e259]:
+              - link "Understanding SOUL.md Contents" [ref=e260] [cursor=pointer]:
+                - /url: /chat/19b332d9-c6bb-4b7a-8c36-927f470c76ef
+                - generic [ref=e261]: Understanding SOUL.md Contents
+              - button "More actions for Understanding SOUL.md Contents" [ref=e262]:
+                - img [ref=e263]
+            - listitem [ref=e267]:
+              - link "Q1 Deal Pipeline Review" [ref=e268] [cursor=pointer]:
+                - /url: /chat/3f44ec1e-7adc-4fea-88f8-3da004062215
+                - generic [ref=e269]: Q1 Deal Pipeline Review
+              - button "More actions for Q1 Deal Pipeline Review" [ref=e270]:
+                - img [ref=e271]
+            - listitem [ref=e275]:
+              - link "Simple Math Multiple Choice" [ref=e276] [cursor=pointer]:
+                - /url: /chat/f53d8a56-2ed1-4e2e-a9aa-4dbc38fa7fb1
+                - generic [ref=e277]: Simple Math Multiple Choice
+              - button "More actions for Simple Math Multiple Choice" [ref=e278]:
+                - img [ref=e279]
+            - listitem [ref=e283]:
+              - link "Basic Math Multiple Choice" [ref=e284] [cursor=pointer]:
+                - /url: /chat/ba1e5055-6e70-45de-8494-775a8deadce2
+                - generic [ref=e285]: Basic Math Multiple Choice
+              - button "More actions for Basic Math Multiple Choice" [ref=e286]:
+                - img [ref=e287]
+            - listitem [ref=e291]:
+              - link "Two Plus Two Options" [ref=e292] [cursor=pointer]:
+                - /url: /chat/2d82ac80-fce6-463e-8733-940dfb465218
+                - generic [ref=e293]: Two Plus Two Options
+              - button "More actions for Two Plus Two Options" [ref=e294]:
+                - img [ref=e295]
+            - listitem [ref=e299]:
+              - link "Quarterly Revenue Comparison" [ref=e300] [cursor=pointer]:
+                - /url: /chat/4bdbff4c-c484-45e7-9f7e-a0dcd1c71dd8
+                - generic [ref=e301]: Quarterly Revenue Comparison
+              - button "More actions for Quarterly Revenue Comparison" [ref=e302]:
+                - img [ref=e303]
+            - listitem [ref=e307]:
+              - link "Quarterly Revenue Bar Chart" [ref=e308] [cursor=pointer]:
+                - /url: /chat/d25bb981-f185-461a-a773-9b7316fcb569
+                - generic [ref=e309]: Quarterly Revenue Bar Chart
+              - button "More actions for Quarterly Revenue Bar Chart" [ref=e310]:
+                - img [ref=e311]
+            - listitem [ref=e315]:
+              - link "Quarterly Revenue Comparison" [ref=e316] [cursor=pointer]:
+                - /url: /chat/fd8dbcd0-b31e-4eda-8ff3-fdf3c5b5d4ea
+                - generic [ref=e317]: Quarterly Revenue Comparison
+              - button "More actions for Quarterly Revenue Comparison" [ref=e318]:
+                - img [ref=e319]
+            - listitem [ref=e323]:
+              - link "AI Capabilities Overview" [ref=e324] [cursor=pointer]:
+                - /url: /chat/acf03660-24ac-4a9e-82d9-fb2e0d30e837
+                - generic [ref=e325]: AI Capabilities Overview
+              - button "More actions for AI Capabilities Overview" [ref=e326]:
+                - img [ref=e327]
+            - listitem [ref=e331]:
+              - link "How I Can Help" [ref=e332] [cursor=pointer]:
+                - /url: /chat/c1af5dc1-5488-4330-923a-2ea57e858dc1
+                - generic [ref=e333]: How I Can Help
+              - button "More actions for How I Can Help" [ref=e334]:
+                - img [ref=e335]
+            - listitem [ref=e339]:
+              - link "Three Singapore Facts" [ref=e340] [cursor=pointer]:
+                - /url: /chat/c12697db-36b3-4777-a370-ef28a2528dde
+                - generic [ref=e341]: Three Singapore Facts
+              - button "More actions for Three Singapore Facts" [ref=e342]:
+                - img [ref=e343]
+            - listitem [ref=e347]:
+              - link "Daily CRM Follow-up Automation" [ref=e348] [cursor=pointer]:
+                - /url: /chat/a8e47fd2-2668-4012-9817-13b0deef565a
+                - generic [ref=e349]: Daily CRM Follow-up Automation
+              - button "More actions for Daily CRM Follow-up Automation" [ref=e350]:
+                - img [ref=e351]
+            - listitem [ref=e355]:
+              - link "Daily CRM Morning Briefing" [ref=e356] [cursor=pointer]:
+                - /url: /chat/2e2e279c-ed6d-4bfc-8771-8ff39cafcef2
+                - generic [ref=e357]: Daily CRM Morning Briefing
+              - button "More actions for Daily CRM Morning Briefing" [ref=e358]:
+                - img [ref=e359]
+            - listitem [ref=e363]:
+              - link "CRM User Question Tool" [ref=e364] [cursor=pointer]:
+                - /url: /chat/f4c39e24-713f-441f-9332-2955fb084440
+                - generic [ref=e365]: CRM User Question Tool
+              - button "More actions for CRM User Question Tool" [ref=e366]:
+                - img [ref=e367]
+            - listitem [ref=e371]:
+              - link "CRM Data Visualization" [ref=e372] [cursor=pointer]:
+                - /url: /chat/91a43e66-d661-4b84-8851-ddf77fce4d58
+                - generic [ref=e373]: CRM Data Visualization
+              - button "More actions for CRM Data Visualization" [ref=e374]:
+                - img [ref=e375]
+            - listitem [ref=e379]:
+              - link "CRM Data Composite View" [ref=e380] [cursor=pointer]:
+                - /url: /chat/084413b5-64e2-4c3f-9ac9-01810a84e638
+                - generic [ref=e381]: CRM Data Composite View
+              - button "More actions for CRM Data Composite View" [ref=e382]:
+                - img [ref=e383]
+            - listitem [ref=e387]:
+              - link "Screenshot Content Analysis" [ref=e388] [cursor=pointer]:
+                - /url: /chat/a9a5368e-4a00-45ad-bd0a-0f10a702babe
+                - generic [ref=e389]: Screenshot Content Analysis
+              - button "More actions for Screenshot Content Analysis" [ref=e390]:
+                - img [ref=e391]
+            - listitem [ref=e395]:
+              - link "CRM Bar Chart Creation" [ref=e396] [cursor=pointer]:
+                - /url: /chat/2b6c4bd0-0713-40a7-ace7-52ce23b4f836
+                - generic [ref=e397]: CRM Bar Chart Creation
+              - button "More actions for CRM Bar Chart Creation" [ref=e398]:
+                - img [ref=e399]
+            - listitem [ref=e403]:
+              - link "Weekly Pipeline Summary" [ref=e404] [cursor=pointer]:
+                - /url: /chat/66ccd71d-8413-44f8-9b8e-51575b329a18
+                - generic [ref=e405]: Weekly Pipeline Summary
+              - button "More actions for Weekly Pipeline Summary" [ref=e406]:
+                - img [ref=e407]
+            - listitem [ref=e411]:
+              - link "Weekly Pipeline Summary" [ref=e412] [cursor=pointer]:
+                - /url: /chat/3401a9e9-a825-4cab-9fc4-d46cc95066d3
+                - generic [ref=e413]: Weekly Pipeline Summary
+              - button "More actions for Weekly Pipeline Summary" [ref=e414]:
+                - img [ref=e415]
+            - listitem [ref=e419]:
+              - link "Weekly Pipeline Summary" [ref=e420] [cursor=pointer]:
+                - /url: /chat/80c967a7-b323-488c-9712-607d47a46557
+                - generic [ref=e421]: Weekly Pipeline Summary
+              - button "More actions for Weekly Pipeline Summary" [ref=e422]:
+                - img [ref=e423]
+            - listitem [ref=e427]:
+              - link "CRM Data Visualization" [ref=e428] [cursor=pointer]:
+                - /url: /chat/c66f10a6-1f3f-4a71-a87b-3d8d6a052a8d
+                - generic [ref=e429]: CRM Data Visualization
+              - button "More actions for CRM Data Visualization" [ref=e430]:
+                - img [ref=e431]
+            - listitem [ref=e435]:
+              - link "CRM Summary and Stats" [ref=e436] [cursor=pointer]:
+                - /url: /chat/c82e6776-91c9-4dca-bd04-d2ffdf34519b
+                - generic [ref=e437]: CRM Summary and Stats
+              - button "More actions for CRM Summary and Stats" [ref=e438]:
+                - img [ref=e439]
+            - listitem [ref=e443]:
+              - link "Sales Pipeline Overview" [ref=e444] [cursor=pointer]:
+                - /url: /chat/04821058-a29a-475f-bec1-ba8ab8fb2605
+                - generic [ref=e445]: Sales Pipeline Overview
+              - button "More actions for Sales Pipeline Overview" [ref=e446]:
+                - img [ref=e447]
+            - listitem [ref=e451]:
+              - link "Sales Pipeline Overview" [ref=e452] [cursor=pointer]:
+                - /url: /chat/e8e93419-ca6c-4abb-a6a0-8a46128dd3ec
+                - generic [ref=e453]: Sales Pipeline Overview
+              - button "More actions for Sales Pipeline Overview" [ref=e454]:
+                - img [ref=e455]
+            - listitem [ref=e459]:
+              - link "CRM Health Summary" [ref=e460] [cursor=pointer]:
+                - /url: /chat/f0140206-53cb-46c3-904e-ad1a0e354088
+                - generic [ref=e461]: CRM Health Summary
+              - button "More actions for CRM Health Summary" [ref=e462]:
+                - img [ref=e463]
+            - listitem [ref=e467]:
+              - link "CRM Deal Health Summary" [ref=e468] [cursor=pointer]:
+                - /url: /chat/3e8f7032-83c8-4e43-be1e-1ddc7fb391ab
+                - generic [ref=e469]: CRM Deal Health Summary
+              - button "More actions for CRM Deal Health Summary" [ref=e470]:
+                - img [ref=e471]
+            - listitem [ref=e475]:
+              - link "ShowView CRM Data Demo" [ref=e476] [cursor=pointer]:
+                - /url: /chat/10998b6a-f929-4dab-841e-692889f849ea
+                - generic [ref=e477]: ShowView CRM Data Demo
+              - button "More actions for ShowView CRM Data Demo" [ref=e478]:
+                - img [ref=e479]
+            - listitem [ref=e483]:
+              - link "Sarah Lim Tanjong Pagar" [ref=e484] [cursor=pointer]:
+                - /url: /chat/a695f7f3-ff4a-4e37-88b3-22054b7973fb
+                - generic [ref=e485]: Sarah Lim Tanjong Pagar
+              - button "More actions for Sarah Lim Tanjong Pagar" [ref=e486]:
+                - img [ref=e487]
+            - listitem [ref=e491]:
+              - link "Contact Type Donut Chart" [ref=e492] [cursor=pointer]:
+                - /url: /chat/e6a59672-6e67-409e-aa9d-553940edf6fc
+                - generic [ref=e493]: Contact Type Donut Chart
+              - button "More actions for Contact Type Donut Chart" [ref=e494]:
+                - img [ref=e495]
+            - listitem [ref=e499]:
+              - link "Contact Type Donut Chart" [ref=e500] [cursor=pointer]:
+                - /url: /chat/3cb66db9-540f-4205-91ad-b1be22800223
+                - generic [ref=e501]: Contact Type Donut Chart
+              - button "More actions for Contact Type Donut Chart" [ref=e502]:
+                - img [ref=e503]
+            - listitem [ref=e507]:
+              - link "Contact Type Donut Chart" [ref=e508] [cursor=pointer]:
+                - /url: /chat/311e9fb7-9cea-4f18-92da-f85df0312c8b
+                - generic [ref=e509]: Contact Type Donut Chart
+              - button "More actions for Contact Type Donut Chart" [ref=e510]:
+                - img [ref=e511]
+            - listitem [ref=e515]:
+              - link "SOUL.md File Contents" [ref=e516] [cursor=pointer]:
+                - /url: /chat/9360ac33-0b37-431d-9d1e-ed4c216b0add
+                - generic [ref=e517]: SOUL.md File Contents
+              - button "More actions for SOUL.md File Contents" [ref=e518]:
+                - img [ref=e519]
+            - listitem [ref=e523]:
+              - link "Knowledge Base Documents" [ref=e524] [cursor=pointer]:
+                - /url: /chat/93a61145-89a0-4d77-8505-35f2a7f5b6a0
+                - generic [ref=e525]: Knowledge Base Documents
+              - button "More actions for Knowledge Base Documents" [ref=e526]:
+                - img [ref=e527]
+            - listitem [ref=e531]:
+              - link "Sarah Lim Tanjong Pagar Lead" [ref=e532] [cursor=pointer]:
+                - /url: /chat/28281743-56a9-46c7-a17b-2959c094656a
+                - generic [ref=e533]: Sarah Lim Tanjong Pagar Lead
+              - button "More actions for Sarah Lim Tanjong Pagar Lead" [ref=e534]:
+                - img [ref=e535]
+            - listitem [ref=e539]:
+              - link "Commission Split Calculation" [ref=e540] [cursor=pointer]:
+                - /url: /chat/2415501d-124d-4367-a6a8-23e3afb306f4
+                - generic [ref=e541]: Commission Split Calculation
+              - button "More actions for Commission Split Calculation" [ref=e542]:
+                - img [ref=e543]
+            - listitem [ref=e547]:
+              - link "Q1 Deal Pipeline Review" [ref=e548] [cursor=pointer]:
+                - /url: /chat/db463f90-64d1-477f-97c8-d4fb7bbeaf4c
+                - generic [ref=e549]: Q1 Deal Pipeline Review
+              - button "More actions for Q1 Deal Pipeline Review" [ref=e550]:
+                - img [ref=e551]
+            - listitem [ref=e555]:
+              - link "Real Estate Commission Split" [ref=e556] [cursor=pointer]:
+                - /url: /chat/3cad293a-65df-4126-b0b8-68d2d1eb9d0a
+                - generic [ref=e557]: Real Estate Commission Split
+              - button "More actions for Real Estate Commission Split" [ref=e558]:
+                - img [ref=e559]
+            - listitem [ref=e563]:
+              - link "Initial Greeting" [ref=e564] [cursor=pointer]:
+                - /url: /chat/7b411db9-0bbe-474f-9f0d-5dd42cf9cdd4
+                - generic [ref=e565]: Initial Greeting
+              - button "More actions for Initial Greeting" [ref=e566]:
+                - img [ref=e567]
+            - listitem [ref=e571]:
+              - link "Real Estate Commission Breakdown" [ref=e572] [cursor=pointer]:
+                - /url: /chat/935ba6c6-db17-4a70-bc39-efe9c6597c7e
+                - generic [ref=e573]: Real Estate Commission Breakdown
+              - button "More actions for Real Estate Commission Breakdown" [ref=e574]:
+                - img [ref=e575]
+            - listitem [ref=e579]:
+              - link "Commission Split Calculation" [ref=e580] [cursor=pointer]:
+                - /url: /chat/ef7e3902-5888-453e-b250-b3d64b0de86d
+                - generic [ref=e581]: Commission Split Calculation
+              - button "More actions for Commission Split Calculation" [ref=e582]:
+                - img [ref=e583]
+            - listitem [ref=e587]:
+              - link "Real Estate Commission Split" [ref=e588] [cursor=pointer]:
+                - /url: /chat/fe13e2cb-c13b-40a3-899e-c2a60fd10de7
+                - generic [ref=e589]: Real Estate Commission Split
+              - button "More actions for Real Estate Commission Split" [ref=e590]:
+                - img [ref=e591]
+            - listitem [ref=e595]:
+              - link "Commission Split Calculation" [ref=e596] [cursor=pointer]:
+                - /url: /chat/f2d947b8-5d11-45ac-a082-e8f4fafb0ad9
+                - generic [ref=e597]: Commission Split Calculation
+              - button "More actions for Commission Split Calculation" [ref=e598]:
+                - img [ref=e599]
+            - listitem [ref=e603]:
+              - link "Stamp Duty Calculation" [ref=e604] [cursor=pointer]:
+                - /url: /chat/cc1ac89e-4034-4aac-a064-b2dea77fea5e
+                - generic [ref=e605]: Stamp Duty Calculation
+              - button "More actions for Stamp Duty Calculation" [ref=e606]:
+                - img [ref=e607]
+            - listitem [ref=e611]:
+              - link "Stamp Duty Calculation" [ref=e612] [cursor=pointer]:
+                - /url: /chat/885ca523-8af5-43ea-9f6d-964e49843104
+                - generic [ref=e613]: Stamp Duty Calculation
+              - button "More actions for Stamp Duty Calculation" [ref=e614]:
+                - img [ref=e615]
+            - listitem [ref=e619]:
+              - link "CRM Pipeline View" [ref=e620] [cursor=pointer]:
+                - /url: /chat/e40c368e-2104-4853-9fbb-3842431fdb06
+                - generic [ref=e621]: CRM Pipeline View
+              - button "More actions for CRM Pipeline View" [ref=e622]:
+                - img [ref=e623]
+            - listitem [ref=e627]:
+              - link "Showview CRM Pipeline" [ref=e628] [cursor=pointer]:
+                - /url: /chat/b12a441b-49f5-4273-aa4a-1c697af54c59
+                - generic [ref=e629]: Showview CRM Pipeline
+              - button "More actions for Showview CRM Pipeline" [ref=e630]:
+                - img [ref=e631]
+            - listitem [ref=e635]:
+              - link "Show Pipeline Tool View" [ref=e636] [cursor=pointer]:
+                - /url: /chat/73664f82-b976-4156-a879-2580769393cf
+                - generic [ref=e637]: Show Pipeline Tool View
+              - button "More actions for Show Pipeline Tool View" [ref=e638]:
+                - img [ref=e639]
+            - listitem [ref=e643]:
+              - link "Commission and GST Calculation" [ref=e644] [cursor=pointer]:
+                - /url: /chat/b33b513a-a745-4211-9f5e-5bc99018a90b
+                - generic [ref=e645]: Commission and GST Calculation
+              - button "More actions for Commission and GST Calculation" [ref=e646]:
+                - img [ref=e647]
+            - listitem [ref=e651]:
+              - link "Show Pipeline View" [ref=e652] [cursor=pointer]:
+                - /url: /chat/d9baee9a-21c5-48d6-94bc-0e8b6a849a9f
+                - generic [ref=e653]: Show Pipeline View
+              - button "More actions for Show Pipeline View" [ref=e654]:
+                - img [ref=e655]
+            - listitem [ref=e659]:
+              - link "Real Estate Commission Split" [ref=e660] [cursor=pointer]:
+                - /url: /chat/09a73cca-431c-4ca4-81ff-b47cdd5f99b3
+                - generic [ref=e661]: Real Estate Commission Split
+              - button "More actions for Real Estate Commission Split" [ref=e662]:
+                - img [ref=e663]
+            - listitem [ref=e667]:
+              - link "Real Estate Commission Split" [ref=e668] [cursor=pointer]:
+                - /url: /chat/8c033afc-9b63-45b8-9409-339a0cb03857
+                - generic [ref=e669]: Real Estate Commission Split
+              - button "More actions for Real Estate Commission Split" [ref=e670]:
+                - img [ref=e671]
+            - listitem [ref=e675]:
+              - link "Pipeline Improvement Strategy" [ref=e676] [cursor=pointer]:
+                - /url: /chat/e031a5a8-e0a9-4a0c-99d1-a09157ed797b
+                - generic [ref=e677]: Pipeline Improvement Strategy
+              - button "More actions for Pipeline Improvement Strategy" [ref=e678]:
+                - img [ref=e679]
+            - listitem [ref=e683]:
+              - link "Singapore Property Transactions" [ref=e684] [cursor=pointer]:
+                - /url: /chat/2a0b3851-58ec-4075-b394-80e69930e686
+                - generic [ref=e685]: Singapore Property Transactions
+              - button "More actions for Singapore Property Transactions" [ref=e686]:
+                - img [ref=e687]
+            - listitem [ref=e691]:
+              - link "HDB Market Strategy Plan" [ref=e692] [cursor=pointer]:
+                - /url: /chat/b316ec41-7654-42a2-a833-0658423223fb
+                - generic [ref=e693]: HDB Market Strategy Plan
+              - button "More actions for HDB Market Strategy Plan" [ref=e694]:
+                - img [ref=e695]
+            - listitem [ref=e699]:
+              - link "Drawing a Diagram" [ref=e700] [cursor=pointer]:
+                - /url: /chat/87ff12a6-5e22-4a1a-84a2-c9efd0e049ef
+                - generic [ref=e701]: Drawing a Diagram
+              - button "More actions for Drawing a Diagram" [ref=e702]:
+                - img [ref=e703]
+            - listitem [ref=e707]:
+              - link "Property Transaction Process" [ref=e708] [cursor=pointer]:
+                - /url: /chat/a8ddf695-60b9-4e56-ad19-44287a080677
+                - generic [ref=e709]: Property Transaction Process
+              - button "More actions for Property Transaction Process" [ref=e710]:
+                - img [ref=e711]
+            - listitem [ref=e715]:
+              - link "Property Transaction Flow Visuals" [ref=e716] [cursor=pointer]:
+                - /url: /chat/51587c3c-2eb3-421d-bc91-87c2b6f25b3c
+                - generic [ref=e717]: Property Transaction Flow Visuals
+              - button "More actions for Property Transaction Flow Visuals" [ref=e718]:
+                - img [ref=e719]
+            - listitem [ref=e723]:
+              - link "Sample Linked CRM Data" [ref=e724] [cursor=pointer]:
+                - /url: /chat/290866d9-41df-4537-88ee-82957875a4a9
+                - generic [ref=e725]: Sample Linked CRM Data
+              - button "More actions for Sample Linked CRM Data" [ref=e726]:
+                - img [ref=e727]
+            - listitem [ref=e731]:
+              - link "Gmail Connection Inquiry" [ref=e732] [cursor=pointer]:
+                - /url: /chat/414a7705-ea6b-45da-8969-462b51c86c57
+                - generic [ref=e733]: Gmail Connection Inquiry
+              - button "More actions for Gmail Connection Inquiry" [ref=e734]:
+                - img [ref=e735]
+            - listitem [ref=e739]:
+              - link "Daily Morning Briefing Automation" [ref=e740] [cursor=pointer]:
+                - /url: /chat/5e70d632-28d1-4bb7-a9e8-5ea4407aef7d
+                - generic [ref=e741]: Daily Morning Briefing Automation
+              - button "More actions for Daily Morning Briefing Automation" [ref=e742]:
+                - img [ref=e743]
+            - listitem [ref=e747]:
+              - link "Add Jon Than Lead" [ref=e748] [cursor=pointer]:
+                - /url: /chat/abdfb22c-69ae-483a-826f-7b680eefaf7c
+                - generic [ref=e749]: Add Jon Than Lead
+              - button "More actions for Add Jon Than Lead" [ref=e750]:
+                - img [ref=e751]
+            - listitem [ref=e755]:
+              - link "Daily CRM Morning Briefing" [ref=e756] [cursor=pointer]:
+                - /url: /chat/d37aa5d0-6a2c-484e-a708-3eab92d8d9ae
+                - generic [ref=e757]: Daily CRM Morning Briefing
+              - button "More actions for Daily CRM Morning Briefing" [ref=e758]:
+                - img [ref=e759]
+            - listitem [ref=e763]:
+              - link "Daily CRM Pipeline Briefing" [ref=e764] [cursor=pointer]:
+                - /url: /chat/9fa75c3c-acfc-437f-b408-a6b853ffd4fa
+                - generic [ref=e765]: Daily CRM Pipeline Briefing
+              - button "More actions for Daily CRM Pipeline Briefing" [ref=e766]:
+                - img [ref=e767]
+            - listitem [ref=e771]:
+              - link "Daily CRM Morning Briefing" [ref=e772] [cursor=pointer]:
+                - /url: /chat/be42936d-cd50-4f4c-81e3-6c90edae56d8
+                - generic [ref=e773]: Daily CRM Morning Briefing
+              - button "More actions for Daily CRM Morning Briefing" [ref=e774]:
+                - img [ref=e775]
+            - listitem [ref=e779]:
+              - link "Daily CRM Pipeline Briefing" [ref=e780] [cursor=pointer]:
+                - /url: /chat/3bb39f3a-f27b-4c84-aa1c-d61314696b2a
+                - generic [ref=e781]: Daily CRM Pipeline Briefing
+              - button "More actions for Daily CRM Pipeline Briefing" [ref=e782]:
+                - img [ref=e783]
+            - listitem [ref=e787]:
+              - link "Daily CRM Morning Briefing" [ref=e788] [cursor=pointer]:
+                - /url: /chat/31117c21-4075-4e54-93bf-0e38fb691156
+                - generic [ref=e789]: Daily CRM Morning Briefing
+              - button "More actions for Daily CRM Morning Briefing" [ref=e790]:
+                - img [ref=e791]
+            - listitem [ref=e795]:
+              - link "Daily CRM Morning Briefing" [ref=e796] [cursor=pointer]:
+                - /url: /chat/0c631858-1c9d-44d5-8070-24186bac06e1
+                - generic [ref=e797]: Daily CRM Morning Briefing
+              - button "More actions for Daily CRM Morning Briefing" [ref=e798]:
+                - img [ref=e799]
+            - listitem [ref=e803]:
+              - link "GoHighLevel Web Scraping" [ref=e804] [cursor=pointer]:
+                - /url: /chat/d042589a-7f62-4b78-be7d-4b40d5b8a4f1
+                - generic [ref=e805]: GoHighLevel Web Scraping
+              - button "More actions for GoHighLevel Web Scraping" [ref=e806]:
+                - img [ref=e807]
+      - list [ref=e109]:
+        - listitem [ref=e110]:
+          - link "Settings" [ref=e111] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e112]
+            - generic [ref=e115]: Settings
+        - listitem [ref=e116]:
+          - button "L limzheyi1996@gmail.com" [ref=e117]:
+            - generic [ref=e118]: L
+            - generic [ref=e119]: limzheyi1996@gmail.com
+            - img [ref=e120]
+    - main [ref=e123]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - heading "Companies" [level=1] [ref=e130]
+            - generic [ref=e131]:
+              - button "Refresh companies" [ref=e132]:
+                - img
+              - button "More table actions" [ref=e133]:
+                - img
+              - button "Export" [ref=e134]
+          - generic [ref=e137]:
+            - button "Filters" [ref=e138]:
+              - img
+              - generic [ref=e139]: Filters
+            - button "Perspectives" [ref=e140]:
+              - img
+              - generic [ref=e141]: Perspectives
+            - generic [ref=e142]:
+              - img
+              - textbox "Search companies..." [ref=e143]
+        - table [ref=e145]:
+          - rowgroup [ref=e146]:
+            - row "Name Industry Phone Email Website Contacts Deals Updated Actions" [ref=e147]:
+              - columnheader "Name" [ref=e148]:
+                - button "Name" [ref=e149]
+              - columnheader "Industry" [ref=e150]:
+                - button "Industry" [ref=e151]
+              - columnheader "Phone" [ref=e152]:
+                - button "Phone" [ref=e153]
+              - columnheader "Email" [ref=e154]:
+                - button "Email" [ref=e155]
+              - columnheader "Website" [ref=e156]:
+                - button "Website" [ref=e157]
+              - columnheader "Contacts" [ref=e158]:
+                - button "Contacts" [ref=e159]
+              - columnheader "Deals" [ref=e160]:
+                - button "Deals" [ref=e161]
+              - columnheader "Updated" [ref=e162]:
+                - button "Updated" [ref=e163]
+              - columnheader "Actions" [ref=e164]:
+                - generic [ref=e811]: Actions
+          - rowgroup [ref=e166]:
+            - row "ERA Realty Network Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email — Edit Website 0 0 14 Mar 2026 Open row actions" [ref=e812] [cursor=pointer]:
+              - cell "ERA Realty Network" [ref=e813]:
+                - link "ERA Realty Network" [ref=e814]:
+                  - /url: /customers/companies/f10177b3-5ac8-49f5-ae5a-a552f93fef24
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e815]:
+                - generic [ref=e816]:
+                  - generic [ref=e818]: Property Agency
+                  - generic [ref=e819]:
+                    - button "Copy Industry" [ref=e820]:
+                      - img [ref=e821]
+                    - button "Edit Industry" [ref=e824]:
+                      - img [ref=e825]
+              - cell "— Edit Phone" [ref=e828]:
+                - generic [ref=e829]:
+                  - generic [ref=e830]: —
+                  - button "Edit Phone" [ref=e832]:
+                    - img [ref=e833]
+              - cell "— Edit Email" [ref=e836]:
+                - generic [ref=e837]:
+                  - generic [ref=e838]: —
+                  - button "Edit Email" [ref=e840]:
+                    - img [ref=e841]
+              - cell "— Edit Website" [ref=e844]:
+                - generic [ref=e845]:
+                  - generic [ref=e846]: —
+                  - button "Edit Website" [ref=e848]:
+                    - img [ref=e849]
+              - cell "0" [ref=e852]
+              - cell "0" [ref=e853]
+              - cell "14 Mar 2026" [ref=e854]
+              - cell "Open row actions" [ref=e855]:
+                - button "Open row actions" [ref=e858]:
+                  - generic [ref=e859]: ⋯
+            - row "ERA Realty Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email — Edit Website 0 0 13 Mar 2026 Open row actions" [ref=e860] [cursor=pointer]:
+              - cell "ERA Realty" [ref=e861]:
+                - link "ERA Realty" [ref=e862]:
+                  - /url: /customers/companies/575869fa-6aef-4a4b-a93c-a4d6edc7fde9
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e863]:
+                - generic [ref=e864]:
+                  - generic [ref=e866]: Property Agency
+                  - generic [ref=e867]:
+                    - button "Copy Industry" [ref=e868]:
+                      - img [ref=e869]
+                    - button "Edit Industry" [ref=e872]:
+                      - img [ref=e873]
+              - cell "— Edit Phone" [ref=e876]:
+                - generic [ref=e877]:
+                  - generic [ref=e878]: —
+                  - button "Edit Phone" [ref=e880]:
+                    - img [ref=e881]
+              - cell "— Edit Email" [ref=e884]:
+                - generic [ref=e885]:
+                  - generic [ref=e886]: —
+                  - button "Edit Email" [ref=e888]:
+                    - img [ref=e889]
+              - cell "— Edit Website" [ref=e892]:
+                - generic [ref=e893]:
+                  - generic [ref=e894]: —
+                  - button "Edit Website" [ref=e896]:
+                    - img [ref=e897]
+              - cell "0" [ref=e900]
+              - cell "0" [ref=e901]
+              - cell "13 Mar 2026" [ref=e902]
+              - cell "Open row actions" [ref=e903]:
+                - button "Open row actions" [ref=e906]:
+                  - generic [ref=e907]: ⋯
+            - row "Huttons Asia Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email — Edit Website 0 0 13 Mar 2026 Open row actions" [ref=e908] [cursor=pointer]:
+              - cell "Huttons Asia" [ref=e909]:
+                - link "Huttons Asia" [ref=e910]:
+                  - /url: /customers/companies/45679f3f-bbea-4f85-bb75-2d981f111045
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e911]:
+                - generic [ref=e912]:
+                  - generic [ref=e914]: Property Agency
+                  - generic [ref=e915]:
+                    - button "Copy Industry" [ref=e916]:
+                      - img [ref=e917]
+                    - button "Edit Industry" [ref=e920]:
+                      - img [ref=e921]
+              - cell "— Edit Phone" [ref=e924]:
+                - generic [ref=e925]:
+                  - generic [ref=e926]: —
+                  - button "Edit Phone" [ref=e928]:
+                    - img [ref=e929]
+              - cell "— Edit Email" [ref=e932]:
+                - generic [ref=e933]:
+                  - generic [ref=e934]: —
+                  - button "Edit Email" [ref=e936]:
+                    - img [ref=e937]
+              - cell "— Edit Website" [ref=e940]:
+                - generic [ref=e941]:
+                  - generic [ref=e942]: —
+                  - button "Edit Website" [ref=e944]:
+                    - img [ref=e945]
+              - cell "0" [ref=e948]
+              - cell "0" [ref=e949]
+              - cell "13 Mar 2026" [ref=e950]
+              - cell "Open row actions" [ref=e951]:
+                - button "Open row actions" [ref=e954]:
+                  - generic [ref=e955]: ⋯
+            - row "OrangeTee & Tie Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email — Edit Website 0 0 13 Mar 2026 Open row actions" [ref=e956] [cursor=pointer]:
+              - cell "OrangeTee & Tie" [ref=e957]:
+                - link "OrangeTee & Tie" [ref=e958]:
+                  - /url: /customers/companies/b8a106b9-41d6-4c75-9988-b9ffa5c4c7a5
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e959]:
+                - generic [ref=e960]:
+                  - generic [ref=e962]: Property Agency
+                  - generic [ref=e963]:
+                    - button "Copy Industry" [ref=e964]:
+                      - img [ref=e965]
+                    - button "Edit Industry" [ref=e968]:
+                      - img [ref=e969]
+              - cell "— Edit Phone" [ref=e972]:
+                - generic [ref=e973]:
+                  - generic [ref=e974]: —
+                  - button "Edit Phone" [ref=e976]:
+                    - img [ref=e977]
+              - cell "— Edit Email" [ref=e980]:
+                - generic [ref=e981]:
+                  - generic [ref=e982]: —
+                  - button "Edit Email" [ref=e984]:
+                    - img [ref=e985]
+              - cell "— Edit Website" [ref=e988]:
+                - generic [ref=e989]:
+                  - generic [ref=e990]: —
+                  - button "Edit Website" [ref=e992]:
+                    - img [ref=e993]
+              - cell "0" [ref=e996]
+              - cell "0" [ref=e997]
+              - cell "13 Mar 2026" [ref=e998]
+              - cell "Open row actions" [ref=e999]:
+                - button "Open row actions" [ref=e1002]:
+                  - generic [ref=e1003]: ⋯
+            - row "PropNex Realty Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email propnex.com Copy Website Edit Website 2 0 13 Mar 2026 Open row actions" [ref=e1004] [cursor=pointer]:
+              - cell "PropNex Realty" [ref=e1005]:
+                - link "PropNex Realty" [ref=e1006]:
+                  - /url: /customers/companies/e7445349-b2c9-4a25-b33a-8214a114ded2
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e1007]:
+                - generic [ref=e1008]:
+                  - generic [ref=e1010]: Property Agency
+                  - generic [ref=e1011]:
+                    - button "Copy Industry" [ref=e1012]:
+                      - img [ref=e1013]
+                    - button "Edit Industry" [ref=e1016]:
+                      - img [ref=e1017]
+              - cell "— Edit Phone" [ref=e1020]:
+                - generic [ref=e1021]:
+                  - generic [ref=e1022]: —
+                  - button "Edit Phone" [ref=e1024]:
+                    - img [ref=e1025]
+              - cell "— Edit Email" [ref=e1028]:
+                - generic [ref=e1029]:
+                  - generic [ref=e1030]: —
+                  - button "Edit Email" [ref=e1032]:
+                    - img [ref=e1033]
+              - cell "propnex.com Copy Website Edit Website" [ref=e1036]:
+                - generic [ref=e1037]:
+                  - link "propnex.com" [ref=e1039]:
+                    - /url: propnex.com
+                  - generic [ref=e1040]:
+                    - button "Copy Website" [ref=e1041]:
+                      - img [ref=e1042]
+                    - button "Edit Website" [ref=e1045]:
+                      - img [ref=e1046]
+              - cell "2" [ref=e1049]
+              - cell "0" [ref=e1050]
+              - cell "13 Mar 2026" [ref=e1051]
+              - cell "Open row actions" [ref=e1052]:
+                - button "Open row actions" [ref=e1055]:
+                  - generic [ref=e1056]: ⋯
+            - row "Sample Realty Ltd Property Agency Copy Industry Edit Industry — Edit Phone — Edit Email — Edit Website 2 1 11 Mar 2026 Open row actions" [ref=e1057] [cursor=pointer]:
+              - cell "Sample Realty Ltd" [ref=e1058]:
+                - link "Sample Realty Ltd" [ref=e1059]:
+                  - /url: /customers/companies/28cfb870-2323-42a9-a6a5-e8ca4066c492
+              - cell "Property Agency Copy Industry Edit Industry" [ref=e1060]:
+                - generic [ref=e1061]:
+                  - generic [ref=e1063]: Property Agency
+                  - generic [ref=e1064]:
+                    - button "Copy Industry" [ref=e1065]:
+                      - img [ref=e1066]
+                    - button "Edit Industry" [ref=e1069]:
+                      - img [ref=e1070]
+              - cell "— Edit Phone" [ref=e1073]:
+                - generic [ref=e1074]:
+                  - generic [ref=e1075]: —
+                  - button "Edit Phone" [ref=e1077]:
+                    - img [ref=e1078]
+              - cell "— Edit Email" [ref=e1081]:
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]: —
+                  - button "Edit Email" [ref=e1085]:
+                    - img [ref=e1086]
+              - cell "— Edit Website" [ref=e1089]:
+                - generic [ref=e1090]:
+                  - generic [ref=e1091]: —
+                  - button "Edit Website" [ref=e1093]:
+                    - img [ref=e1094]
+              - cell "2" [ref=e1097]
+              - cell "1" [ref=e1098]
+              - cell "11 Mar 2026" [ref=e1099]
+              - cell "Open row actions" [ref=e1100]:
+                - button "Open row actions" [ref=e1103]:
+                  - generic [ref=e1104]: ⋯
+        - generic [ref=e1105]:
+          - paragraph [ref=e1106]: Showing 1 to 6 of 6 results
+          - generic [ref=e1107]:
+            - button "Previous" [disabled]
+            - generic [ref=e1108]: Page 1 of 1
+            - button "Next" [disabled]
+    - generic [ref=e173]:
+      - heading "Search" [level=2] [ref=e174]
+      - paragraph [ref=e175]: Search for a command to run...
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e181] [cursor=pointer]:
+    - img [ref=e182]
+  - alert [ref=e185]
