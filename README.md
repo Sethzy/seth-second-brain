@@ -37,20 +37,45 @@ The durable rules are simple:
 
 ## Fresh Computer Setup
 
-### 1. Prerequisites
+### 1. Dependency inventory
 
-Install:
+The repository contains the Second Brain's Markdown, agent instructions, skills,
+templates, and all project-specific Bash, Python, and Node.js scripts. It does
+not vendor general-purpose runtimes, desktop applications, browser sessions, or
+third-party CLIs. Those are installed once on each computer.
 
-- Git
-- Python 3.12 or newer
-- Node.js and npm
-- QMD: `npm install -g @tobilu/qmd`
+| Dependency | Required? | Included in this repository? | What uses it |
+|---|---:|---:|---|
+| Git | Yes | No | cloning, syncing, and repository-root discovery |
+| Bash | Yes | No; macOS includes it | project shell wrappers |
+| Python 3.12+ | Yes | No | capture, provenance, maintenance, and tests |
+| Node.js 22+ and npm | Yes | No | QMD and the project `.mjs` utilities |
+| QMD CLI | Yes | No | local lexical, vector, and hybrid Markdown retrieval |
+| Homebrew SQLite | Yes on macOS for QMD | No | SQLite extensions used by QMD |
+| Codex or another Agent Skills-compatible host | Recommended | No | reads `AGENTS.md` and the bundled skills |
+| Obsidian | Optional | No | human vault browsing and editing |
+| Last30Days skill | Optional | No | recent-signal sweeps and authenticated X workflows |
+| Chrome + macOS Keychain access | Optional | No | authenticated LinkedIn and X capture |
+| `yt-dlp` | Optional | No | YouTube transcripts inside Last30Days |
+| `agent-browser` CLI | Specialized only | No | `scripts/yc-company-scan.mjs` official-directory extraction |
+| GitHub CLI (`gh`) | Optional | No | convenient GitHub login, PR, and publishing operations; no project script requires it |
 
-Optional:
+The core project scripts use the Python standard library and Node.js built-ins.
+There is no project-level `pip install` or `npm install` step and no hidden
+virtual environment or `node_modules/` directory to copy between machines.
 
-- Codex or another agent that reads repository-level `AGENTS.md` instructions
-- Obsidian for human browsing and editing
-- Chrome plus the Last30Days skill for authenticated X capture and recent-signal sweeps
+On a Mac with [Homebrew](https://brew.sh/), a practical base installation is:
+
+```bash
+xcode-select --install
+brew install python node sqlite
+npm install -g @tobilu/qmd
+```
+
+Confirm that `node --version` is 22 or newer and `python3 --version` is 3.12 or
+newer. QMD may download local models the first time semantic search is built.
+The bootstrap script checks the required commands and versions before touching
+the local index.
 
 ### 2. Clone and bootstrap
 
@@ -68,7 +93,7 @@ scripts/bootstrap-second-brain.sh
 
 The bootstrap script:
 
-1. checks Git, Python, Node/npm, and QMD;
+1. checks Git, Python 3.12+, Node.js 22+, npm, and QMD;
 2. creates a machine-local `.qmd/index.yml` using the current clone path;
 3. indexes `wiki/`, intentional captures, sweeps, and staging;
 4. optionally builds vector embeddings;
@@ -328,6 +353,23 @@ The core vault, wiki, Git sync, lint, and QMD retrieval work without Last30Days.
 - X profile timeline capture;
 - X following export.
 
+Install it globally for Codex with the Agent Skills installer:
+
+```bash
+npx skills add mvanhorn/last30days-skill -g -a codex
+```
+
+Then verify the exact installation that this repository discovers:
+
+```bash
+LAST30DAYS_DIR="$(scripts/last30days_runtime.py)"
+python3 "$LAST30DAYS_DIR/last30days.py" --preflight
+```
+
+Last30Days can use several sources without credentials and has its own setup
+wizard for optional sources and API keys. For local YouTube transcripts, install
+`yt-dlp` separately with `brew install yt-dlp`.
+
 The scripts automatically look in:
 
 1. `LAST30DAYS_SCRIPTS_DIR`;
@@ -343,6 +385,22 @@ export LAST30DAYS_SCRIPTS_DIR="/absolute/path/to/last30days/scripts"
 ```
 
 Authenticated X capture is macOS/Chrome-specific today. The first run may request Keychain access to Chrome Safe Storage. Do not export `AUTH_TOKEN`, `CT0`, or copied browser cookies into files in this repository.
+
+### Specialized browser automation
+
+Only `scripts/yc-company-scan.mjs` directly requires the external
+[`agent-browser`](https://github.com/vercel-labs/agent-browser) CLI. It is not
+part of normal capture, query, QMD, lint, or maintenance workflows. Install it
+only if that scanner is needed:
+
+```bash
+npm install -g agent-browser
+agent-browser install
+```
+
+The `gh` CLI was used to publish this repository, but no committed project
+script calls it. Ordinary `git pull` and `git push` work with either HTTPS or
+SSH GitHub authentication.
 
 ## Command Reference
 

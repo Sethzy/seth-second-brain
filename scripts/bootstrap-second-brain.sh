@@ -46,6 +46,15 @@ if sys.version_info < (3, 12):
     raise SystemExit("Python 3.12+ is required for the full capture toolchain.")
 PY
 
+node - <<'JS'
+const major = Number(process.versions.node.split('.')[0]);
+
+if (major < 22) {
+  console.error(`Node.js 22+ is required by QMD and the optional research toolchain; found ${process.version}.`);
+  process.exit(1);
+}
+JS
+
 if [[ "$embed" -eq 1 ]]; then
   scripts/qmd-refresh.sh --embed
 else
