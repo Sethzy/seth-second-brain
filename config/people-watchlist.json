@@ -21,6 +21,116 @@
       "youtube_query": "",
       "topic": "Nic nicbstme AI coding agents Claude Code recent posts",
       "why_follow": "Seth marked this X account as a high-signal person to track."
+    },
+    {
+      "slug": "alfie-carter",
+      "name": "Alfie Carter",
+      "lane": "enterprise-sales",
+      "x_handle": "alfiejcarter",
+      "topic": "Alfie Carter enterprise sales GTM systems AI sales workflows recent posts",
+      "search": "x",
+      "promote_policy": "staged_only",
+      "why_follow": "Prior enterprise-sales sweep surfaced Claude/MCP sales-skill packaging and agentic GTM campaign ideas."
+    },
+    {
+      "slug": "fivos-aresti",
+      "name": "Fivos Aresti",
+      "lane": "enterprise-sales",
+      "x_handle": "fivosaresti",
+      "topic": "Fivos Aresti ABM signal stack founder-led marketing GTM systems recent posts",
+      "search": "x",
+      "promote_policy": "staged_only",
+      "why_follow": "Prior enterprise-sales sweep surfaced ABM signal stacks, founder-led marketing, and GTM systems patterns."
+    },
+    {
+      "slug": "chris-pisarski",
+      "name": "Chris Pisarski",
+      "lane": "enterprise-sales",
+      "x_handle": "chrispisarski",
+      "topic": "Chris Pisarski enterprise sales warm paths deal momentum AI account intelligence recent posts",
+      "search": "x",
+      "promote_policy": "staged_only",
+      "why_follow": "Prior enterprise-sales sweep surfaced warm-path selling, pre-call briefs, Slack-channel signal, and deal momentum ideas."
+    },
+    {
+      "slug": "brian-lamanna",
+      "name": "Brian LaManna",
+      "lane": "enterprise-sales",
+      "x_handle": "BrianLaManna_",
+      "topic": "Brian LaManna enterprise sales whale hunting risk removal recent posts",
+      "search": "x",
+      "promote_policy": "staged_only",
+      "why_follow": "Prior enterprise-sales sweep surfaced enterprise whale hunting and risk-removal patterns."
+    },
+    {
+      "slug": "jen-abel",
+      "name": "Jen Abel",
+      "lane": "enterprise-sales",
+      "x_handle": "jjen_abel",
+      "topic": "Jen Abel enterprise sales co-authored deal craft founder energy AI sales automation recent posts",
+      "search": "x",
+      "promote_policy": "staged_only",
+      "why_follow": "Prior profile digest surfaced co-authored deal craft, founder-led enterprise sales, and automation-with-judgment cautions."
+    },
+    {
+      "slug": "nate-nasralla",
+      "name": "Nate Nasralla",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/natenasralla/",
+      "topic": "Nate Nasralla Fluint enterprise sales champion enablement business case sales writing AI GTM context recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "LinkedIn profile export surfaced champion enablement, forwardable sales writing, business-case-as-process, decision confidence, and AI GTM context-layer patterns."
+    },
+    {
+      "slug": "krysten-conner",
+      "name": "Krysten Conner",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/krystenconner/",
+      "topic": "Krysten Conner enterprise sales CFO champion enablement procurement negotiation discovery multithreading recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "LinkedIn profile export surfaced CFO/finance champion enablement, procurement deal-rescue, buyer psychology, multi-threading, discovery control, and enterprise AE coaching patterns."
+    },
+    {
+      "slug": "kyle-asay",
+      "name": "Kyle Asay",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/kyleasay",
+      "topic": "Kyle Asay sales leadership LaunchDarkly Sales Introverts pipeline generation territory management AI SDR outbound buyer confidence recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "LinkedIn profile export surfaced sales-leadership operating systems, pipeline generation plans, territory management, hiring/interview signal, buyer confidence, and AI/outbound quality guardrails."
+    },
+    {
+      "slug": "chris-orlob",
+      "name": "Chris Orlob",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/chrisorlob/",
+      "topic": "Chris Orlob enterprise sales discovery demos executive selling sales leadership recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "Fresh LinkedIn history is concentrated in discovery, demo control, executive selling, larger-deal execution, and revenue-team leadership."
+    },
+    {
+      "slug": "finn-mallery",
+      "name": "Finn Mallery",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/finnmallery/",
+      "topic": "Finn Mallery founder-led sales early startup GTM customer acquisition AI sales experimentation recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "Fresh LinkedIn history surfaced founder-led customer acquisition, early GTM playbooks, AI-native selling experiments, and startup operating lessons."
+    },
+    {
+      "slug": "armand-farrokh",
+      "name": "Armand Farrokh",
+      "lane": "enterprise-sales",
+      "linkedin_url": "https://www.linkedin.com/in/armand-farrokh/",
+      "topic": "Armand Farrokh outbound sales cold calling SDR coaching pipeline management recent posts",
+      "search": "web",
+      "promote_policy": "staged_only",
+      "why_follow": "Fresh LinkedIn history is concentrated in outbound account strategy, cold calling, SDR coaching, sales activity standards, and pipeline execution."
     }
   ]
 }

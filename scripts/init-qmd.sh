@@ -9,8 +9,24 @@ if ! command -v qmd >/dev/null 2>&1; then
   exit 1
 fi
 
+QMD_CONFIG=".qmd/index.yml"
+if [[ -f .qmd/index.yaml ]]; then
+  QMD_CONFIG=".qmd/index.yaml"
+fi
+
 if [[ ! -f .qmd/index.yml && ! -f .qmd/index.yaml ]]; then
   qmd init
+  QMD_CONFIG=".qmd/index.yml"
+fi
+
+# QMD writes absolute collection paths. A clone on another computer therefore
+# needs its local config rebuilt before the existing collection names can be
+# trusted. The config and SQLite index are intentionally ignored by git.
+if ! grep -Fq "path: $ROOT/wiki" "$QMD_CONFIG"; then
+  echo "Rebuilding QMD collection paths for $ROOT"
+  for name in wiki intentional sweeps staging; do
+    qmd collection remove "$name" >/dev/null 2>&1 || true
+  done
 fi
 
 ensure_collection() {

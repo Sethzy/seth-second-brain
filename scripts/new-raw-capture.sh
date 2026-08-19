@@ -66,7 +66,7 @@ fi
 mkdir -p "$OUT_DIR"
 
 body="$(cat)"
-if [[ -z "${body//[[:space:]]/}" ]]; then
+if ! grep -q '[^[:space:]]' <<< "$body"; then
   echo "No source body provided on stdin." >&2
   exit 1
 fi

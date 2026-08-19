@@ -1,15 +1,17 @@
 #!/usr/bin/env node
-import { TwitterClientBase } from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-base.js';
-import {
+import { importBirdModule } from './last30days-runtime.mjs';
+
+const { TwitterClientBase } = await importBirdModule('twitter-client-base.js');
+const {
   buildArticleFieldToggles,
   buildTweetDetailFeatures,
-} from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-features.js';
-import { TWITTER_API_BASE } from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-constants.js';
-import {
+} = await importBirdModule('twitter-client-features.js');
+const { TWITTER_API_BASE } = await importBirdModule('twitter-client-constants.js');
+const {
   findTweetInInstructions,
   mapTweetResult,
   parseTweetsFromInstructions,
-} from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-utils.js';
+} = await importBirdModule('twitter-client-utils.js');
 
 const tweetId = process.argv[2];
 if (!tweetId) {

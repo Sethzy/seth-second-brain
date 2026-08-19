@@ -167,6 +167,169 @@ class WikiMaintenanceTests(unittest.TestCase):
         self.assertIn("Duplicate X capture/staging records", report)
         self.assertIn("123", report)
 
+    def test_health_report_ignores_superseded_x_staging_duplicates(self):
+        write(self.root / "wiki" / "index.md", "# Knowledge Base Index\n")
+        write(self.root / "raw" / "intentional" / "x" / "123-topic.md", "# Raw X\n")
+        write(
+            self.root / "staging" / "incomplete-captures" / "x" / "2026-06-10-topic-123.md",
+            "---\nstatus: superseded\n---\n# Staged X\n",
+        )
+        write_source_map(
+            self.root,
+            [
+                {
+                    "id": "raw/intentional/x/123-topic.md",
+                    "source_type": "x",
+                    "capture_quality": "complete",
+                    "raw_path": "raw/intentional/x/123-topic.md",
+                    "status": "raw",
+                },
+            ],
+        )
+
+        report = self.wm.build_health_report(self.root, include_qmd=False)
+
+        self.assertIn("Duplicate X capture/staging records", report)
+        self.assertIn("- None detected.", report)
+
+    def test_wiki_lint_report_flags_core_structural_issues(self):
+        write(
+            self.root / "wiki" / "index.md",
+            "\n".join(
+                [
+                    "# Knowledge Base Index",
+                    "| Article | Summary | Updated |",
+                    "|---|---|---|",
+                    "| [Page One](topic/page-one.md) | One | 2026-06-01 |",
+                    "| [Missing Page](topic/missing-page.md) | Gone | 2026-06-01 |",
+                ]
+            ),
+        )
+        write(
+            self.root / "wiki" / "topic" / "page-one.md",
+            "\n".join(
+                [
+                    "---",
+                    "type: wiki_article",
+                    "title: Page One",
+                    "updated_at: 2026-06-01",
+                    "status: active",
+                    "---",
+                    "",
+                    "# Page One",
+                    "",
+                    "This links to [Missing](missing.md), [Missing Raw](../../raw/intentional/web/missing.md), and [[Ghost Note]].",
+                    "",
+                    "## Empty Section",
+                    "",
+                    "## Filled Section",
+                    "Useful content.",
+                ]
+            ),
+        )
+        write(
+            self.root / "wiki" / "topic" / "page-two.md",
+            "\n".join(
+                [
+                    "---",
+                    "type: wiki_article",
+                    "title: Page Two",
+                    "updated_at: 2026-06-01",
+                    "status: active",
+                    "tags:",
+                    "  - example",
+                    "---",
+                    "",
+                    "# Page Two",
+                    "",
+                    "> Sources: test",
+                ]
+            ),
+        )
+        write_source_map(self.root, [])
+
+        report = self.wm.build_wiki_lint_report(self.root, stale_days=999)
+
+        self.assertIn("Frontmatter Gaps", report)
+        self.assertIn("tags", report)
+        self.assertIn("Broken Links", report)
+        self.assertIn("missing.md", report)
+        self.assertIn("Ghost Note", report)
+        self.assertIn("Empty Sections", report)
+        self.assertIn("Stale Index Entries", report)
+        self.assertIn("topic/missing-page.md", report)
+        self.assertIn("Pages Missing From Index", report)
+        self.assertIn("wiki/topic/page-two.md", report)
+
+    def test_wiki_lint_report_detects_repeated_unpaged_phrase(self):
+        write(self.root / "wiki" / "index.md", "# Knowledge Base Index\n")
+        for name in ["one", "two", "three"]:
+            write(
+                self.root / "wiki" / "topic" / f"{name}.md",
+                "\n".join(
+                    [
+                        "---",
+                        "type: wiki_article",
+                        f"title: Page {name.title()}",
+                        "updated_at: 2026-06-01",
+                        "status: active",
+                        "tags:",
+                        "  - example",
+                        "---",
+                        "",
+                        f"# Page {name.title()}",
+                        "",
+                        "Acme Platform is important in this workflow.",
+                        "",
+                        "> Sources: test",
+                    ]
+                ),
+            )
+        write_source_map(self.root, [])
+
+        report = self.wm.build_wiki_lint_report(self.root, stale_days=999)
+
+        self.assertIn("Repeated Concepts / Entities Without Pages", report)
+        self.assertIn("Acme Platform", report)
+
+    def test_wiki_lint_report_detects_duplicate_overlap_candidates(self):
+        write(self.root / "wiki" / "index.md", "# Knowledge Base Index\n")
+        pages = [
+            ("ai-sales-workflows", "AI Sales Workflows"),
+            ("ai-sales-workflow-patterns", "AI Sales Workflow Patterns"),
+        ]
+        for slug, title in pages:
+            write(
+                self.root / "wiki" / "topic" / f"{slug}.md",
+                "\n".join(
+                    [
+                        "---",
+                        "type: wiki_article",
+                        f"title: {title}",
+                        "updated_at: 2026-06-01",
+                        "status: active",
+                        "tags:",
+                        "  - ai-sales",
+                        "  - workflows",
+                        "  - gtm",
+                        "---",
+                        "",
+                        f"# {title}",
+                        "",
+                        "> Sources: test",
+                        "",
+                        "Sales agents manage account research, outreach, and approval gates.",
+                    ]
+                ),
+            )
+        write_source_map(self.root, [])
+
+        report = self.wm.build_wiki_lint_report(self.root, stale_days=999)
+
+        self.assertIn("Duplicate / Overlap Candidates", report)
+        self.assertIn("ai-sales-workflows.md", report)
+        self.assertIn("ai-sales-workflow-patterns.md", report)
+
 
 if __name__ == "__main__":
     unittest.main()

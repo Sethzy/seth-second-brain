@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: OpenClaw Architecture And Operating Model
-updated_at: 2026-06-18
+updated_at: 2026-06-28
 status: active
-source_count: 12
+source_count: 14
 tags:
   - openclaw
   - clawdbot
@@ -17,8 +17,8 @@ tags:
 
 # OpenClaw Architecture And Operating Model
 
-> Sources: Nader Dabit "You Could've Invented OpenClaw", 2026-02-11; Bhanu Teja Mission Control guide, 2026-01-31; Armin/Pi/OpenClaw deep-search capture, 2026-06-11; Jordan Lyall security-first setup guide, 2026-02-06; Karan Vaidya Composio ClawdBot integration post, 2026-06-11 capture; Nicolas Camara Browser Sandbox/OpenClaw thread, 2026-02-19; Corey Ganim "Claire" OpenClaw assistant post, 2026-06-11 capture; Akshay OpenClaw/Clawdbot masterclass, 2026-02-06; Ryan Carson OpenClaw assistant X Article, 2026-04-02; Ryan Carson Clawchief v2 X post, 2026-04-04; Clawchief README captures, 2026-06-10 and 2026-06-11; live `openclaw/openclaw` GitHub/DeepWiki verification, 2026-06-18.
-> Raw: [You Could've Invented OpenClaw](../../raw/intentional/pasted/sunder-sync-2026-06-11/083-openclaw-you-couldve-invented-it-dabit3-full.md); [Mission Control guide](../../raw/intentional/pasted/sunder-sync-2026-06-11/043-49-twitter-pbteja1998-mission-control-guide-full.md); [OpenClaw/Pi deep-search capture](../../raw/intentional/pasted/sunder-sync-2026-06-11/390-openclaw-pi-agent-vercel-sdk-deep.md); [Security-first OpenClaw setup](../../raw/intentional/pasted/sunder-sync-2026-06-11/054-63-twitter-jordanlyall-security-setup-full.md); [Composio ClawdBot integration](../../raw/intentional/pasted/sunder-sync-2026-06-11/114-openclaw-clawdbot-composio-karanvaidya6.md); [Browser Sandbox/OpenClaw thread](../../raw/intentional/pasted/sunder-sync-2026-06-11/324-x-nicolas-camara-openclaw-firecrawl-browser-sandbox-full.md); [Claire OpenClaw assistant stack](../../raw/intentional/pasted/sunder-sync-2026-06-11/113-openclaw-clawdbot-claire-ganimcorey.md); [OpenClaw/Clawdbot masterclass](../../raw/intentional/pasted/sunder-sync-2026-06-11/115-openclaw-clawdbot-masterclass-akshay.md); [Ryan Carson OpenClaw assistant X Article](../../raw/intentional/x/2039786704731541903-ryancarson-how-to-turn-your-openclaw-into-the-world-s-best-assistant-i-turned-my-openclaw.md); [Ryan Carson Clawchief v2 X post](../../raw/intentional/x/2040407355905458603-ryancarson-just-shipped-v2-of-clawchief-for-openclaw-this-morning-6-000-bookmarks-700-000.md); [Clawchief README](../../raw/intentional/web/2026-06-10-clawchief-readme.md); [Clawchief README refresh](../../raw/intentional/web/2026-06-11-clawchief-readme-refresh.md)
+> Sources: Nader Dabit "You Could've Invented OpenClaw", 2026-02-11; Bhanu Teja Mission Control guide, 2026-01-31; Armin/Pi/OpenClaw deep-search capture, 2026-06-11; Jordan Lyall security-first setup guide, 2026-02-06; Karan Vaidya Composio ClawdBot integration post, 2026-06-11 capture; Nicolas Camara Browser Sandbox/OpenClaw thread, 2026-02-19; Corey Ganim "Claire" OpenClaw assistant post, 2026-06-11 capture; Akshay OpenClaw/Clawdbot masterclass, 2026-02-06; Ryan Carson OpenClaw assistant X Article, 2026-04-02; Ryan Carson Clawchief v2 X post, 2026-04-04; Clawchief README captures, 2026-06-10 and 2026-06-11; live `openclaw/openclaw` GitHub/DeepWiki verification, 2026-06-18; Omar/DAIR AI Eve X Article, 2026-06-27 capture.
+> Raw: [You Could've Invented OpenClaw](../../raw/intentional/pasted/sunder-sync-2026-06-11/083-openclaw-you-couldve-invented-it-dabit3-full.md); [Mission Control guide](../../raw/intentional/pasted/sunder-sync-2026-06-11/043-49-twitter-pbteja1998-mission-control-guide-full.md); [OpenClaw/Pi deep-search capture](../../raw/intentional/pasted/sunder-sync-2026-06-11/390-openclaw-pi-agent-vercel-sdk-deep.md); [Security-first OpenClaw setup](../../raw/intentional/pasted/sunder-sync-2026-06-11/054-63-twitter-jordanlyall-security-setup-full.md); [Composio ClawdBot integration](../../raw/intentional/pasted/sunder-sync-2026-06-11/114-openclaw-clawdbot-composio-karanvaidya6.md); [Browser Sandbox/OpenClaw thread](../../raw/intentional/pasted/sunder-sync-2026-06-11/324-x-nicolas-camara-openclaw-firecrawl-browser-sandbox-full.md); [Claire OpenClaw assistant stack](../../raw/intentional/pasted/sunder-sync-2026-06-11/113-openclaw-clawdbot-claire-ganimcorey.md); [OpenClaw/Clawdbot masterclass](../../raw/intentional/pasted/sunder-sync-2026-06-11/115-openclaw-clawdbot-masterclass-akshay.md); [Ryan Carson OpenClaw assistant X Article](../../raw/intentional/x/2039786704731541903-ryancarson-how-to-turn-your-openclaw-into-the-world-s-best-assistant-i-turned-my-openclaw.md); [Ryan Carson Clawchief v2 X post](../../raw/intentional/x/2040407355905458603-ryancarson-just-shipped-v2-of-clawchief-for-openclaw-this-morning-6-000-bookmarks-700-000.md); [Clawchief README](../../raw/intentional/web/2026-06-10-clawchief-readme.md); [Clawchief README refresh](../../raw/intentional/web/2026-06-11-clawchief-readme-refresh.md); [Omar/DAIR AI Eve X Article](../../raw/intentional/x/2070884837372703196-omarsar0-building-agents-with-vercel-s-eve-framework-vercel-recently-shipped-eve-an-open-s.md)
 
 ## Overview
 
@@ -153,6 +153,10 @@ OpenClaw's durable idea is not "chat with an AI in Telegram." It is the pattern 
 
 For Seth's own systems, OpenClaw is most useful as an architecture reference for personal/company OS experiments: session routing, file-backed memory, tool gating, cron heartbeats, and multi-agent coordination through shared state.
 
+The Eve comparison confirms the mental model but shifts the default implementation surface. OpenClaw starts from a gateway plus persistent sessions and often uses files as session memory, task state, `SOUL.md`, and coordination artifacts. Eve starts from a committed `agent/` directory and lets the framework discover instructions, tools, skills, subagents, channels, schedules, connections, evals, approvals, and sandbox config. For an AI CRM, that means "files define the agent" rather than "files store everything": contacts, deals, messages, permissions, and audit trails still belong in a CRM/database, while files hold the agent's behavior, playbooks, account briefs, generated artifacts, and reproducible review surface.
+
+The Runware capture adds a hosting lead: Runware claims free OpenClaw hosting where the user pays only for agent token usage, compared with self-hosting on a VPS or paying a managed monthly fee. Treat this as an evaluation lead, not an adoption recommendation. Seth's note pairs it with GLM, so the practical test is whether a hosted OpenClaw setup can run a GLM-backed agent with acceptable tool policy, memory persistence, logs, and cost visibility.
+
 ## Open Questions
 
 - Should Seth prototype an OpenClaw-like personal ops layer directly, or adapt the same architecture inside Codex/Slack/this Second Brain?
@@ -161,6 +165,8 @@ For Seth's own systems, OpenClaw is most useful as an architecture reference for
 - What deserves separate sessions versus separate skills inside one lead-agent session?
 - What minimum tool policy is safe for group chats, browser work, CRM updates, and email/calendar delegation?
 - Should browser work run locally, on Browserbase/Firecrawl-style remote browsers, or inside per-task sandboxes?
+- Should an AI CRM prototype use OpenClaw-style session routing, Eve-style filesystem agent definitions, or a hybrid where Vercel/eve owns deployment and the CRM database owns truth?
+- Should Seth trial Runware-hosted OpenClaw with GLM against a minimal VPS install, measuring setup time, token cost, model routing, logs, tool policy, and session persistence?
 
 ## Sources
 
@@ -176,6 +182,8 @@ For Seth's own systems, OpenClaw is most useful as an architecture reference for
 - [Ryan Carson Clawchief v2 X post](../../raw/intentional/x/2040407355905458603-ryancarson-just-shipped-v2-of-clawchief-for-openclaw-this-morning-6-000-bookmarks-700-000.md)
 - [Clawchief README](../../raw/intentional/web/2026-06-10-clawchief-readme.md)
 - [Clawchief README refresh](../../raw/intentional/web/2026-06-11-clawchief-readme-refresh.md)
+- [Omar/DAIR AI Eve X Article](../../raw/intentional/x/2070884837372703196-omarsar0-building-agents-with-vercel-s-eve-framework-vercel-recently-shipped-eve-an-open-s.md)
+- [Runware free OpenClaw hosting X post](../../raw/intentional/x/2065058964413542750-runware-free-openclaw-hosting-pay-only-for-tokens-self-hosting-openclaw-means-a-vps-and-an.md)
 
 ## See Also
 

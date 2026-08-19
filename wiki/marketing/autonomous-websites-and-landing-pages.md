@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Autonomous Websites And Landing Pages
-updated_at: 2026-06-18
+updated_at: 2026-06-25
 status: active
-source_count: 7
+source_count: 8
 tags:
   - marketing
   - landing-pages
@@ -26,6 +26,8 @@ The existing Flint captures are the strongest evidence. They describe custom pag
 
 Bryant Chou's Ploy launch adds a stronger platform-shape example. Ploy is framed as turning the company website into the operator of the growth system, not just a page generator: site, brand, CMS, CRM, campaigns, analytics, SEO, AEO, and customer data working together. The named use cases are Hex generating on-brand ABM pages at scale, Clay using its data to power programmatic SEO, and TNT Growth spinning up a landing page for each client ad. The daily-report loop is important: the system reports what it did, proposes what it wants to do next, and waits for approval before shipping.
 
+Michelle Lim's brand-governance post adds the enterprise constraint behind the page-generation thesis. Large marketing organizations do not only need Claude/Vercel-style page generation; they need a brand store: approved assets, reusable campaign/page/ad blocks, shared templates, QA before publishing, and visibility into what teams are creating. The durable lesson is that autonomous pages need brand infrastructure before scale, or they reproduce siloed off-brand pages faster.
+
 The Last30Days sweep was thin and noisy for the exact Flint/Clay query, so it should not drive detailed claims. It still confirms the category direction: AI website/landing-page generation is being discussed alongside ABM personalization and campaign automation.
 
 ## Workflow Pattern
@@ -34,6 +36,7 @@ The Last30Days sweep was thin and noisy for the exact Flint/Clay query, so it sh
 - **Context:** company/person details, pain points, offer, proof point, compliance limits, brand system, CMS data, CRM/customer data, page template, CTA, and tracking plan.
 - **Generation:** produce a page or microsite variant with copy, layout, assets, metadata, and route-specific personalization.
 - **Review:** check claims, brand, legal, tracking, links, mobile rendering, and whether the page feels useful rather than creepy.
+- **Brand store:** approved assets, page sections, ad blocks, reusable templates, and brand QA rules that every generated page must inherit.
 - **Distribution:** insert into outbound, ads, social reply, sales follow-up, QR/event path, or lifecycle message.
 - **Measurement:** track visits, conversions, pipeline influence, qualitative feedback, winning variants, SEO/AEO performance, and the system's own proposed next actions.
 
@@ -52,6 +55,7 @@ Flint captures carry the compiled claims. The sweep is retained as a staging dig
 - [Bryant Chou Ploy launch X post](../../raw/intentional/x/2026-06-18-bryant-chou-ploy-launch-x-post.md)
 - [Autonomous landing pages Last30Days raw](../../raw/sweeps/last30days/autonomous-landing-pages-ai-website-generation-flint-clay-abm-personalization-raw.md)
 - [Autonomous landing pages Last30Days digest](../../staging/last30days/2026-06-17-autonomous-landing-pages-ai-website-generation-flint-clay-abm-personalization-digest.md)
+- [Michelle Lim brand governance and brand store LinkedIn post](../../raw/intentional/web/2026-06-25-michelle-lim-brand-governance-brand-store-linkedin-post-full.md)
 
 ## Open Questions
 

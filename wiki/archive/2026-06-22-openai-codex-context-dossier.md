@@ -1,6 +1,20 @@
+---
+type: wiki_archive
+title: OpenAI And Codex Context Dossier For Strategic BDR APAC
+updated_at: 2026-07-07
+status: archived
+source_count: 8
+tags:
+  - archive
+  - openai
+  - codex
+  - job-apps
+  - enterprise-sales
+---
+
 # OpenAI And Codex Context Dossier For Strategic BDR APAC
 
-> Sources: [Vendor Agentic Engineering Blogs](../ai-coding/vendor-agentic-engineering-blogs-2026.md); [Agentic Engineering Practices](../ai-coding/agentic-engineering-practices.md); [AI Engineering Talks On Agentic Coding](../ai-coding/ai-engineering-talks-on-agentic-coding.md); [Agent Framework Landscape](../agent-frameworks/agent-framework-landscape.md); [Agent Goals And Dynamic Workflows](../personal-systems/agent-goals-and-dynamic-workflows.md); [Agentic GTM Campaign Workflows](../gtm-sales/agentic-gtm-campaign-workflows.md); [High-Signal Enterprise Sales](../gtm-sales/high-signal-enterprise-sales.md)
+> Sources: [Vendor Agentic Engineering Blogs](../ai-coding/vendor-agentic-engineering-blogs-2026.md); [Agentic Engineering Practices](../ai-coding/agentic-engineering-practices.md); [AI Engineering Talks On Agentic Coding](../ai-coding/ai-engineering-talks-on-agentic-coding.md); [Agent Framework Landscape](../agent-frameworks/agent-framework-landscape.md); [Agent Goals And Dynamic Workflows](../personal-systems/agent-goals-and-dynamic-workflows.md); [Agentic GTM Campaign Workflows](../gtm-sales/agentic-gtm-campaign-workflows.md); [High-Signal Enterprise Sales](../gtm-sales/high-signal-enterprise-sales.md); [Conference playbook reflections and guerrilla marketing tactics](../../raw/intentional/pasted/2026-07-07-conference-playbook-reflections-and-guerrilla-marketing-tact.md)
 > Archived: 2026-06-22
 
 ## Overview
@@ -139,7 +153,212 @@ The role is about turning early signal into enterprise opportunity. Strong talk 
 - Where does OpenAI want to draw the boundaries between ChatGPT, Codex, Apps, connectors, and any broader workbench surface when selling against Claude Cowork?
 - What competitive claims are acceptable against Anthropic in APAC enterprise conversations, and which should be avoided unless backed by approved internal data?
 
+## 2026-06-23 Role Reference Augmentation
+
+This augmentation pulls in the later career-ops OpenAI Strategic BDR APAC dossier and source pack, without replacing the original Codex narrative. Treat the career-ops artifacts as the application-specific execution layer and this Second Brain page as the broader OpenAI/Codex narrative layer.
+
+### Application-Specific Evidence To Carry Into Interviews
+
+- **Role source boundary:** the canonical role is [OpenAI Strategic Business Development Representative - APAC, Singapore](https://openai.com/careers/strategic-business-development-representative-apac-singapore/), with the local career-ops JD preserved at [career-ops JD](../../../career-ops/jds/openai-strategic-business-development-representative-apac.md) and raw capture at [career-ops raw JD](../../../career-ops/research/raw-jobs/openai/openai-strategic-business-development-representative-apac-2026-06-22.md).
+- **Live-page caveat:** the official OpenAI careers page blocked headless Playwright with a bot challenge on 2026-06-22, but the [Ashby mirror](https://jobs.ashbyhq.com/openai/d9696b77-5b11-49c5-8d0b-b1826bb6115c) loaded with the role title, Singapore location, and JD body in career-ops verification.
+- **Strategic BDR meaning:** the role is not generic SDR work. The JD asks for product usage, pilots, inbound demand, targeted outbound, stakeholder mapping, discovery, enterprise-readiness assessment, Account Director partnership, early competitive signals, and GPTs/Agents for prospecting and qualification.
+- **Role-specific narrative:** Seth should position as an APAC enterprise GTM operator who can turn product usage, pilots, and developer-led experimentation into high-conviction enterprise opportunities for regulated buyers.
+- **Referral boundary:** the warm path is `user-confirmed ex-boss/current OpenAI AD`. Do not name them unless Seth supplies the name. No hiring manager is confirmed.
+- **Action boundary:** no application, message, referral request, connection request, or OpenAI contact was made by the dossier workstream.
+
+### Official OpenAI References To Have At Hand
+
+| Reference | Why it matters for the Strategic BDR story | Link |
+|---|---|---|
+| OpenAI Business | Main enterprise positioning surface: OpenAI as business work platform, not only model provider. | [OpenAI Business](https://openai.com/business/) |
+| ChatGPT Enterprise | Core employee/adoption surface for governed enterprise AI. | [ChatGPT Enterprise](https://chatgpt.com/business/enterprise/) |
+| ChatGPT Business | Team/company workspace that can create product-led expansion signal. | [ChatGPT Business announcement](https://openai.com/index/introducing-chatgpt-business/) |
+| ChatGPT Edu | Institutional deployment surface; useful for public-sector/education governance analogies. | [ChatGPT Edu announcement](https://openai.com/index/introducing-chatgpt-edu/) |
+| API platform | Developer-led adoption and product-build surface named in the JD. | [OpenAI API](https://openai.com/api/) |
+| Tools guide | Shows the platform moving toward tool-using systems: web/file search, MCP, computer use, image generation, skills, shell, and tool search. | [OpenAI tools guide](https://developers.openai.com/api/docs/guides/tools) |
+| Agents SDK | Code-first agent orchestration, handoffs, guardrails, tracing, and workflows. | [Agents SDK docs](https://developers.openai.com/api/docs/guides/agents-sdk) |
+| MCP docs | Bridge from models to customer tools, data, and workflows. | [OpenAI MCP docs](https://developers.openai.com/api/docs/mcp) |
+| Codex | Proof surface for bounded, verifiable agentic work. | [OpenAI Codex](https://openai.com/codex/) |
+| Codex glossary | Clean product vocabulary for Codex surfaces, RBAC, analytics, managed configuration, compliance, and cloud/app/IDE surfaces. | [Codex glossary](https://developers.openai.com/codex/glossary) |
+| Security and privacy | Trust layer for regulated buyers. | [Security and privacy](https://openai.com/security-and-privacy/) |
+| Enterprise privacy | Data-boundary reference for enterprise conversations. | [Enterprise privacy](https://openai.com/enterprise-privacy/) |
+| Usage analytics and spend controls | Procurement, finance, and governance wedge for scaling pilots. | [Usage analytics and spend controls](https://openai.com/index/new-usage-analytics-and-updated-spend-controls-for-enterprises/) |
+| OpenAI for Singapore | First-in-Asia country partnership; local APAC credibility and public-sector signal. | [OpenAI for Singapore](https://openai.com/index/introducing-openai-for-singapore/) |
+| Samsung deployment | Enterprise proof for ChatGPT Enterprise plus Codex in a global company. | [Samsung Electronics deployment](https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/) |
+| Workspace agents | Shows ChatGPT moving toward work execution inside workplace contexts. | [Workspace agents](https://openai.com/index/introducing-workspace-agents-in-chatgpt/) |
+| Company knowledge | Internal knowledge/context story for enterprise deployments. | [Company knowledge](https://openai.com/index/introducing-company-knowledge/) |
+| Frontier | Strategic enterprise program for frontier adoption. | [OpenAI Frontier](https://openai.com/frontier/) |
+| Partner Network | Implementation/co-sell ecosystem reference. | [OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/) |
+| APAC Sales Development Leader role | Adjacent signal that APAC sales development leadership and process matter. | [APAC Sales Development Leader](https://openai.com/careers/apac-sales-development-leader-singapore/) |
+
+### Official Social References To Weave Into Conversation
+
+The career-ops sweep captured 40 @OpenAI posts and 40 @OpenAIDevs posts from 2025-12-24 to 2026-06-22. The useful narrative is not every post individually; it is the direction of travel.
+
+- **@OpenAI narrative:** health, life sciences, evaluation science, deployment simulation, beneficial behavior, alignment under pressure, ChatGPT memory, and Codex usage. For regulated APAC buyers, this supports a safety/evals/high-stakes-work narrative rather than pure productivity hype. Source: [@OpenAI sweep](../../../career-ops/research/raw-social/openai/official-x-openai-2025-12-24-to-2026-06-22.md).
+- **@OpenAIDevs narrative:** Codex workflow automation, Record & Replay, developer mode for browser use, OpenAI Developers plugin in Codex, Responses API image web search, Realtime examples, and developer-docs agent. For the role, this reinforces developer-led adoption as a first-class account signal. Source: [@OpenAIDevs sweep](../../../career-ops/research/raw-social/openai/official-x-openaidevs-2025-12-24-to-2026-06-22.md).
+
+### Interview-Useful Discovery Questions From The Added References
+
+- Which OpenAI surface created the account signal: ChatGPT Enterprise, ChatGPT Business, API usage, Codex, an inbound request, a pilot, a partner, or an executive mandate?
+- Is the buyer trying to improve employee productivity, developer velocity, customer experience, regulated research, internal knowledge access, or governance over shadow AI usage?
+- Who owns the workflow outcome, who owns the data/security boundary, who owns budget, and who would become the executive sponsor?
+- What would make this a governed deployment rather than a team-level experiment?
+- What evidence would an Account Director need to treat this as high-conviction pipeline?
+- Which competitor or substitute is already in the account: Microsoft Copilot, Claude Enterprise/Claude Code, Gemini Enterprise, AWS Bedrock, Salesforce Agentforce, ServiceNow AI Agents, internal build, or SI-led transformation?
+- Where can Codex be explained beyond engineering as the repeatable loop of goal, context, action, verification, repair, and review?
+
+### Conference Playbook Question
+
+**How do you run a conference playbook?**
+
+Note: the main conference I ran was Executive War College, held in New Orleans.
+
+Reflections / learnings to-date:
+
+Be clear on your primary goal; is it meeting current customers / partners / prospects or finding new customers / partners / leads or getting content / collateral.
+
+Most people focus on "creating leads" but that is by far the most difficult goal.
+
+We have had the most success in using conferences to create partnerships / referrals; we focus on finding conferences where our ideal partner is exhibiting because it removes the difficulty of having to pre-schedule meetings / do cold outreach; if they have a booth you can just walk up.
+
+Do not forget about that last one - content. If you have a content machine / audience already working, then the conference should generate a lot of material: "just attended xyz talk, biggest takeaways..." "here is what I am hearing at xyz" "just met with @john doe and had a great convo about xyz"; also photos of you and the team or speakers etc.
+
+Most conferences have a hashtag that people use on LinkedIn, you can use it to find attendees if you do not have the list ahead of time. Also easy to like their post and send a connection request.
+
+Relatedly, you should also post and use the hashtag, always drives a surprising amount of inbound from people doing the same.
+
+You should research all the exhibitors and sponsors and speakers ahead of time and make a target list - you can also send LI requests to all of them.
+
+In general, try to attend as few talks as possible - the value is in meeting people, not sitting and listening - but it is helpful if you have a big but cold lead that is speaking and can then call out a note from their talk in your outreach.
+
+You should use the conference to refine your messaging, to later flow into ad / web copy. Have 3-4 different crisp one-liners and see what resonates most. You are going to answer "what do you do" and "how is that different than XYZ competitor" a million times and it quickly becomes clear what is not working or confusing.
+
+Smaller, focused conferences are better than bigger conferences in general, i.e., "mental health marketing conference" vs "HLTH".
+
+The best ROI comes if you can give a talk / panel PLUS have a booth because then people will see your talk and have an easy way to find you later; just having a booth creates a bit of a cold start problem.
+
+One hack for getting to be a speaker if you have no connections is to message the organizers and say: "I am sure you are fully booked up on speakers, but if anyone drops on a panel or talk, I would be happy to sub in last minute; I am best for anything at the intersection of HIPAA and marketing."
+
+You do not have to buy a ticket; you can just set up meetings at a coffee shop or bar nearby. I found this very surprising when I first heard it, but I would say roughly 20-30% of people at a conference do not buy tickets.
+
+If you are scheduling a bunch of meetings, make sure to grab people's cell phones / give them yours; there is a ton of last minute rescheduling and it is difficult to find people without this.
+
+Hosting events can be incredibly high ROI. We have had the most success with events that are: casual, happy hour not dinner; dinners are a big commitment for people and they often will not commit; one of the best events I have seen was a happy hour at a bowling alley and was packed; cohosted with complimentary firms, where you each bring different people; pick firms that are bigger and more credible than you and sell into the same clients with a different product; half the value is then in just announcing you are hosting an event with them; scheduled early and to be minimally competitive, e.g., doing it the night before the conference starts or just in general at a time when there are not 20 other events.
+
+Many of my best connections at conferences came from when I was alone and had to knock out some work or grab a bite of food. Instead of going back to my room, I would always go find a roundtop or table or something where someone was alone and sit there; after sending a few emails / taking a few bites I would then introduce myself and we would chat casually. I never push it, but about half the time they would ask more about what we do or it would come up naturally and they often were a fantastic lead; same goes for when you are walking to the conference from your hotel, easy to meet people in the elevator or at the coffee shop if you are at all aware and open to it.
+
+Do not be pushy / obviously working a room, that just sucks for everyone involved.
+
+If you are not going to a conference, you can still get value:
+
+- Chime in on people's posts that are there.
+- Post something about going or not going with the hashtag so people find you in research.
+
+What I would do differently:
+
+Conferences have been incredibly effective for us; probably responsible for roughly 30% of our revenue in the last 6 months. That said, I think we could have gotten more from this.
+
+My strategy was low cost, slow roll, wide spread - going to 10-12 conferences, just as an attendee with the plan to then invest in a few in a big way next year.
+
+I am not sure this was necessarily correct; there is a very good argument to be made for going splashy. I think I underestimated how much partners and clients view your willingness to invest in booths / sponsorships as a sign of success and credibility.
+
+I think our credibility / speed to market would have been significantly improved by spending more money and time at one major conference; the challenge was that I did not know which one to do, but I think I could have figured this out via advisors.
+
+I also do not think I spent enough time trying to get on panels and speaking.
+
+Ditto for direct prospect outreach.
+
+Guerilla marketing tactics discussed:
+
+1. Truck advertising: rent and park a truck outside the conference; paint it with the company logo for around $3,000; cheaper alternative to official sponsorship; can use digital sides or painted exterior.
+2. Strategic location control: buy out nearby coffee shop bagels; target unclaimed real estate around conference venues; focus on areas where attendee eyeballs naturally go.
+3. Example case: Exploding Kittens placed stickers on urinals at a gaming conference, generated buzz and conversations, drove hundreds of daily visitors to their small booth, and succeeded despite limited budget.
+
+### APAC And Regulated-Industry Angles
+
+- **Singapore wedge:** OpenAI for Singapore gives Seth a locally grounded point of view: Singapore is not only a regional office location; it is a public-sector, financial-services, digital-infrastructure, and technical-talent signal market.
+- **Financial services wedge:** connect the LSEG thread, ChatGPT Enterprise/API, and the JD's Financial Services language into one account story: trusted data, permissioned workflows, auditability, and decision support.
+- **Life sciences wedge:** use the official @OpenAI health/life-sciences/evals narrative to show that OpenAI wants to be credible in high-stakes scientific and regulated workflows, not just knowledge-worker productivity.
+- **Retail wedge:** use the JD's Retail mention plus ChatGPT/agent/workflow surfaces to talk about customer experience, merchandising, support, internal knowledge, product operations, and employee enablement.
+- **Public-sector wedge:** use OpenAI for Singapore and ChatGPT Edu as institutional deployment analogies: governance, training, policy, knowledge work, and safe rollout matter as much as product excitement.
+
+### Competitive Reference Expansion
+
+The career-ops source pack adds a useful competitor/source checklist beyond the Claude-heavy comparison already in this dossier:
+
+- [Anthropic Claude Enterprise](https://www.anthropic.com/product/enterprise)
+- [Google Gemini Enterprise](https://cloud.google.com/products/gemini-enterprise)
+- [Microsoft 365 Copilot for business](https://www.microsoft.com/en-us/microsoft-365/copilot/business)
+- [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)
+- [AWS Bedrock Agents](https://aws.amazon.com/bedrock/agents/)
+- [Amazon Q Business](https://aws.amazon.com/q/business/)
+- [Databricks Mosaic AI](https://www.databricks.com/product/machine-learning)
+- [Salesforce Agentforce](https://www.salesforce.com/agentforce/)
+- [ServiceNow AI Agents](https://www.servicenow.com/products/ai-agents.html)
+
+The talk track is: do not make the competitive conversation a benchmark fight. Make it a workflow architecture conversation: adoption surface, build surface, integration surface, trust/admin layer, agent execution loop, and Account Director-ready opportunity shape.
+
 ## Source Index
+
+### Additional Interview Prep Captures Added 2026-07-07
+
+- [Conference playbook reflections and guerrilla marketing tactics](../../raw/intentional/pasted/2026-07-07-conference-playbook-reflections-and-guerrilla-marketing-tact.md)
+
+### Career-Ops OpenAI Application Artifacts
+
+- [OpenAI Strategic BDR APAC source pack](../../../career-ops/research/source-packs/openai-strategic-business-development-representative-apac-source-pack.md)
+- [OpenAI Strategic BDR APAC v5 dossier](../../../career-ops/research/jobs/openai-strategic-business-development-representative-apac-v5.md)
+- [OpenAI Strategic BDR APAC v5 HTML](../../../career-ops/research/jobs/openai-strategic-business-development-representative-apac-v5.html)
+- [OpenAI referral packet](../../../career-ops/interview-prep/applications/openai-strategic-bdr-apac-referral-packet-2026-06-22.md)
+- [OpenAI canonical JD](../../../career-ops/jds/openai-strategic-business-development-representative-apac.md)
+- [OpenAI raw JD capture](../../../career-ops/research/raw-jobs/openai/openai-strategic-business-development-representative-apac-2026-06-22.md)
+- [OpenAI official X sweep](../../../career-ops/research/raw-social/openai/official-x-openai-2025-12-24-to-2026-06-22.md)
+- [OpenAI official X sweep JSON](../../../career-ops/research/raw-social/openai/official-x-openai-2025-12-24-to-2026-06-22.json)
+- [OpenAI Developers official X sweep](../../../career-ops/research/raw-social/openai/official-x-openaidevs-2025-12-24-to-2026-06-22.md)
+- [OpenAI Developers official X sweep JSON](../../../career-ops/research/raw-social/openai/official-x-openaidevs-2025-12-24-to-2026-06-22.json)
+
+### Official OpenAI Product, APAC, And Role References Added 2026-06-23
+
+- [OpenAI careers - Strategic Business Development Representative - APAC, Singapore](https://openai.com/careers/strategic-business-development-representative-apac-singapore/)
+- [Ashby mirror for Strategic Business Development Representative - APAC](https://jobs.ashbyhq.com/openai/d9696b77-5b11-49c5-8d0b-b1826bb6115c)
+- [OpenAI Business](https://openai.com/business/)
+- [ChatGPT Enterprise](https://chatgpt.com/business/enterprise/)
+- [ChatGPT Business announcement](https://openai.com/index/introducing-chatgpt-business/)
+- [ChatGPT Edu announcement](https://openai.com/index/introducing-chatgpt-edu/)
+- [OpenAI API](https://openai.com/api/)
+- [OpenAI tools guide](https://developers.openai.com/api/docs/guides/tools)
+- [OpenAI Agents SDK docs](https://developers.openai.com/api/docs/guides/agents-sdk)
+- [OpenAI MCP docs](https://developers.openai.com/api/docs/mcp)
+- [OpenAI Codex](https://openai.com/codex/)
+- [Codex glossary](https://developers.openai.com/codex/glossary)
+- [OpenAI security and privacy](https://openai.com/security-and-privacy/)
+- [OpenAI enterprise privacy](https://openai.com/enterprise-privacy/)
+- [Usage analytics and spend controls](https://openai.com/index/new-usage-analytics-and-updated-spend-controls-for-enterprises/)
+- [OpenAI for Singapore](https://openai.com/index/introducing-openai-for-singapore/)
+- [APAC Sales Development Leader role](https://openai.com/careers/apac-sales-development-leader-singapore/)
+- [Samsung Electronics ChatGPT/Codex deployment](https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/)
+- [Workspace agents in ChatGPT](https://openai.com/index/introducing-workspace-agents-in-chatgpt/)
+- [Company knowledge in ChatGPT](https://openai.com/index/introducing-company-knowledge/)
+- [OpenAI Frontier](https://openai.com/frontier/)
+- [OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/)
+
+### Market And Competitor References Added 2026-06-23
+
+- [McKinsey State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+- [Stanford AI Index](https://aiindex.stanford.edu/report/)
+- [IDC](https://www.idc.com/)
+- [Gartner newsroom](https://www.gartner.com/en/newsroom)
+- [Menlo Ventures State of Enterprise AI](https://menlovc.com/perspective/2025-state-of-enterprise-ai/)
+- [Anthropic Claude Enterprise](https://www.anthropic.com/product/enterprise)
+- [Google Gemini Enterprise](https://cloud.google.com/products/gemini-enterprise)
+- [Microsoft 365 Copilot for business](https://www.microsoft.com/en-us/microsoft-365/copilot/business)
+- [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)
+- [AWS Bedrock Agents](https://aws.amazon.com/bedrock/agents/)
+- [Amazon Q Business](https://aws.amazon.com/q/business/)
+- [Databricks Mosaic AI](https://www.databricks.com/product/machine-learning)
+- [Salesforce Agentforce](https://www.salesforce.com/agentforce/)
+- [ServiceNow AI Agents](https://www.servicenow.com/products/ai-agents.html)
 
 ### Compiled Wiki Pages
 

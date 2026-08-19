@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "AI CRM Agent Stack",
+    "subtitle": "Vercel eve + AI SDK 7 + tools + sandbox + CRM source of truth",
+    "output": "eve-ai-crm-end-to-end.html",
+    "viewBox": [1320, 850]
+  },
+  "components": [
+    {
+      "id": "user",
+      "type": "external",
+      "label": "User / Team",
+      "sublabel": "sales, ops, founder",
+      "pos": [40, 250],
+      "size": [128, 62]
+    },
+    {
+      "id": "channels",
+      "type": "frontend",
+      "label": "Channels",
+      "sublabel": "Slack / Web / HTTP",
+      "pos": [220, 250],
+      "size": [138, 62]
+    },
+    {
+      "id": "schedules",
+      "type": "messagebus",
+      "label": "Schedules",
+      "sublabel": "cron / triggers",
+      "pos": [220, 400],
+      "size": [138, 58]
+    },
+    {
+      "id": "agent_dir",
+      "type": "backend",
+      "label": "Agent Directory",
+      "sublabel": "instructions, tools, skills",
+      "tag": "files define behavior",
+      "pos": [430, 110],
+      "size": [164, 70]
+    },
+    {
+      "id": "eve_runtime",
+      "type": "backend",
+      "label": "Eve Runtime",
+      "sublabel": "sessions + orchestration",
+      "pos": [430, 250],
+      "size": [164, 70]
+    },
+    {
+      "id": "workflows",
+      "type": "cloud",
+      "label": "Durable Sessions",
+      "sublabel": "Vercel Workflows",
+      "pos": [430, 400],
+      "size": [164, 64]
+    },
+    {
+      "id": "evals",
+      "type": "backend",
+      "label": "Evals / CI",
+      "sublabel": "real session tests",
+      "pos": [430, 560],
+      "size": [164, 60]
+    },
+    {
+      "id": "ai_sdk",
+      "type": "backend",
+      "label": "AI SDK 7 Loop",
+      "sublabel": "model calls + tool loop",
+      "pos": [670, 250],
+      "size": [164, 70]
+    },
+    {
+      "id": "approval",
+      "type": "security",
+      "label": "Approval Gate",
+      "sublabel": "send/update/publish",
+      "pos": [670, 400],
+      "size": [164, 64]
+    },
+    {
+      "id": "observability",
+      "type": "cloud",
+      "label": "Observability",
+      "sublabel": "runs, tools, tokens",
+      "pos": [670, 560],
+      "size": [164, 60]
+    },
+    {
+      "id": "gateway",
+      "type": "cloud",
+      "label": "AI Gateway",
+      "sublabel": "model routing + keys",
+      "pos": [910, 110],
+      "size": [154, 64]
+    },
+    {
+      "id": "models",
+      "type": "external",
+      "label": "Model Providers",
+      "sublabel": "OpenAI / Anthropic / etc",
+      "pos": [1130, 110],
+      "size": [154, 64]
+    },
+    {
+      "id": "tools",
+      "type": "backend",
+      "label": "Typed Tools",
+      "sublabel": "trusted app code",
+      "pos": [910, 250],
+      "size": [154, 70]
+    },
+    {
+      "id": "sandbox",
+      "type": "security",
+      "label": "Vercel Sandbox",
+      "sublabel": "isolated shell + files",
+      "tag": "code execution",
+      "pos": [910, 400],
+      "size": [154, 64]
+    },
+    {
+      "id": "artifacts",
+      "type": "database",
+      "label": "File Workspace",
+      "sublabel": "briefs, docs, reports",
+      "pos": [910, 560],
+      "size": [154, 60]
+    },
+    {
+      "id": "crm",
+      "type": "database",
+      "label": "CRM Database",
+      "sublabel": "accounts, deals, audit",
+      "tag": "source of truth",
+      "pos": [1130, 250],
+      "size": [154, 70]
+    },
+    {
+      "id": "systems",
+      "type": "external",
+      "label": "Business Systems",
+      "sublabel": "email, calls, calendar",
+      "pos": [1130, 400],
+      "size": [154, 64]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Vercel / eve agent app",
+      "wraps": ["agent_dir", "eve_runtime", "workflows", "evals", "ai_sdk", "approval", "observability", "gateway", "tools", "sandbox", "artifacts"]
+    },
+    {
+      "kind": "security-group",
+      "label": "Risk-controlled actions",
+      "wraps": ["approval", "sandbox"]
+    },
+    {
+      "kind": "region",
+      "label": "CRM and business truth",
+      "wraps": ["crm", "systems"]
+    }
+  ],
+  "connections": [
+    {
+      "from": "user",
+      "to": "channels",
+      "variant": "emphasis"
+    },
+    {
+      "from": "channels",
+      "to": "eve_runtime",
+      "label": "event",
+      "variant": "emphasis"
+    },
+    {
+      "from": "schedules",
+      "to": "eve_runtime",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "bottom"
+    },
+    {
+      "from": "agent_dir",
+      "to": "eve_runtime",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "eve_runtime",
+      "to": "workflows",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "evals",
+      "to": "eve_runtime",
+      "label": "test agent",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDx": 78
+    },
+    {
+      "from": "eve_runtime",
+      "to": "ai_sdk",
+      "label": "turn",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ai_sdk",
+      "to": "gateway",
+      "label": "model call",
+      "variant": "emphasis",
+      "fromSide": "top",
+      "toSide": "left",
+      "labelDy": -46
+    },
+    {
+      "from": "gateway",
+      "to": "models",
+      "label": "provider API",
+      "variant": "dashed"
+    },
+    {
+      "from": "ai_sdk",
+      "to": "approval",
+      "label": "risky action?",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [610, 365]
+    },
+    {
+      "from": "approval",
+      "to": "tools",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "bottom"
+    },
+    {
+      "from": "ai_sdk",
+      "to": "tools",
+      "label": "safe tool call",
+      "variant": "emphasis"
+    },
+    {
+      "from": "tools",
+      "to": "crm",
+      "label": "read / write",
+      "variant": "emphasis"
+    },
+    {
+      "from": "tools",
+      "to": "systems",
+      "label": "MCP / API",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "labelAt": [1120, 366]
+    },
+    {
+      "from": "tools",
+      "to": "sandbox",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "sandbox",
+      "to": "artifacts",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "tools",
+      "to": "artifacts",
+      "label": "briefs / drafts",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 54
+    },
+    {
+      "from": "eve_runtime",
+      "to": "observability",
+      "label": "trace",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "labelDy": 72
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Mental split",
+      "items": [
+        "Files define the agent: instructions, tools, skills, channels, schedules, evals",
+        "CRM/database owns truth: contacts, deals, messages, permissions, audit"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Sandbox rule",
+      "items": [
+        "Use typed tools for normal CRM reads/writes",
+        "Use sandbox for code, uploaded files, PDFs, spreadsheets, generated artifacts"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "End-to-end loop",
+      "items": [
+        "Channel or schedule starts a durable session",
+        "AI SDK calls models and tools",
+        "Approvals pause risky actions, traces record the run"
+      ]
+    }
+  ]
+}

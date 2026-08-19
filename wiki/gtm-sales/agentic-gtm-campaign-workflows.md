@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Agentic GTM Campaign Workflows
-updated_at: 2026-06-16
+updated_at: 2026-07-03
 status: active
-source_count: 28
+source_count: 40
 tags:
   - gtm
   - outbound
@@ -19,6 +19,11 @@ tags:
 > Sources: Seth pasted Codex maxxing/GTM bundle, 2026-06-10; Sean Wilson X post, 2026-04-28; Ayman Al-Abdullah X post, 2026-04-27; Seth pasted provider/voice/screen bundle, 2026-06-11; Shann Holmberg X post, 2026-05-02; Actively AI homepage, 2026-06-11 capture; Seth pasted Acme bundle, 2026-06-11; Roman X Article, 2026-04-18; Vercel Call Summary Agent README, 2026-06-11 capture; Vercel Lead Agent README, 2026-06-11 capture; Seth pasted Vercel templates batch, 2026-06-11; Prathit Joshi GTM agent X post, 2026-04-17; Seth pasted Browserbase/GTM agent note, 2026-06-11; Eric Siu AI Marketing Skills README, 2026-06-11 capture; AgriciDaniel Claude SEO README, 2026-06-11 capture; Eric Siu revenue skills X post, 2026-03-28; Desktop Archive GTM notes, 2026-06-11 ingest; GTM Context OS GitHub repository, 2026-06-11 partial capture
 > Raw: [Codex maxxing and GTM agent opportunity bundle](../../raw/intentional/pasted/2026-06-10-codex-maxxing-and-gtm-agent-opportunity-bundle.md); [Sean Wilson outbound campaign types X post](../../raw/intentional/x/2049202036357423303-seannywilson-most-teams-run-1-maybe-2-outbound-campaign-types-here-are-6-you-should-be-run.md); [Ayman Al-Abdullah Architect Mode X post](../../raw/intentional/x/2048854828823330857-aymanalabdul-what-a-sales-leader-used-to-have-to-do-listen-to-call-recordings-on-the-weeke.md); [provider voice screen agents skills and website revamp bundle](../../raw/intentional/pasted/2026-06-11-provider-voice-screen-agents-skills-and-website-revamp-bundle.md); [Shann Holmberg proposal agent X post](../../raw/intentional/x/2050500596839682157-shannholmberg-create-high-converting-proposals-in-under-15-minutes-save-this-blueprint-and.md); [Actively AI homepage](../../raw/intentional/web/2026-06-11-actively-ai-homepage.md); [Acme GTM OS pasted bundle](../../raw/intentional/pasted/2026-06-11-acme-gtm-os-agentic-sales-marketing-and-design-bundle.md); [Roman Claude MCP LinkedIn X Article](../../raw/intentional/x/2045580299636207650-romanbuildsaas-how-i-consistently-book-2-5-meetings-per-day-with-claude-mcp-and-linkedin-m.md); [Vercel Call Summary Agent with Sandbox README](../../raw/intentional/web/2026-06-11-vercel-call-summary-agent-with-sandbox-readme.md); [Vercel Lead Agent README](../../raw/intentional/web/2026-06-11-vercel-lead-agent-readme.md); [Vercel AI SDK sandbox templates batch](../../raw/intentional/pasted/2026-06-11-vercel-ai-sdk-sandbox-agent-templates-batch.md); [Prathit Joshi GTM agent X post](../../raw/intentional/x/2045175666719760472-prathitjoshi-i-built-a-gtm-agent-to-replace-myself-turns-out-80-of-my-job-is-just-opening.md); [Browserbase bb and GTM agent notes](../../raw/intentional/pasted/2026-06-11-browserbase-bb-and-gtm-agent-notes.md); [Eric Siu AI Marketing Skills README](../../raw/intentional/web/2026-06-11-eric-siu-ai-marketing-skills-readme.md); [AgriciDaniel Claude SEO README](../../raw/intentional/web/2026-06-11-agricidaniel-claude-seo-readme.md); [Eric Siu revenue skills X post](../../raw/intentional/x/2038039084195807570-ericosiu-open-sourced-our-skills-that-help-grow-revenues-actual-workflows-scripts-scoring.md); [Desktop Archive saved inputs digest](../archive/2026-06-11-desktop-archive-saved-inputs.md)
 > 2026-06-16 additions: [Salescraft Patrick Spychalski and Eric Nowoslawski LinkedIn posts](../../raw/intentional/pasted/2026-06-16-salescraft-patrick-spychalski-eric-nowoslawski-linkedin-posts.md); [enterprise sales X profile digest](../../staging/x-profile-digests/2026-06-16-enterprise-sales-x-profiles-digest.md); [sales plugin account-research and outreach skills](../../raw/intentional/pasted/2026-06-16-sales-plugin-account-research-and-outreach-skills.md); [GTM workspace agentic outbound and Acme OS docs](../../raw/intentional/pasted/2026-06-16-gtm-workspace-agentic-outbound-and-acme-os-docs.md); [career-ops enterprise sales playbook](../../raw/intentional/pasted/2026-06-16-career-ops-enterprise-sales-playbook.md); [enterprise sales X profile backdated digest](../../staging/x-profile-digests/2026-06-16-enterprise-sales-x-profiles-backdated-digest.md); [Alfie Carter posts 101-200](../../raw/sweeps/x/2026-06-16-alfiejcarter-posts-101-200.md); [Fivos Aresti posts 101-190](../../raw/sweeps/x/2026-06-16-fivosaresti-posts-101-190.md); [Chris Pisarski posts 101-200](../../raw/sweeps/x/2026-06-16-chrispisarski-posts-101-200.md)
+> 2026-06-24 additions: [Amanda Zhu LinkedIn profile posts JSON](../../raw/intentional/linkedin/2026-06-24-amanda-zhu-linkedin-profile-posts.json); [Amanda Zhu LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-24-amanda-zhu-sales-posts-digest.md)
+> 2026-06-26 additions: [Origami website homepage](../../raw/intentional/web/2026-06-26-origami-website-homepage.md)
+> 2026-06-27 additions: [Jen Abel X profile sweep posts 1-300](../../raw/sweeps/x/2026-06-27-jjen_abel-posts-1-300.md); [Jen Abel enterprise sales X profile digest](../../staging/x-profile-digests/2026-06-27-jjen-abel-enterprise-sales-x-profile-digest.md)
+> 2026-06-29 additions: [Nate Nasralla LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-nate-nasralla-linkedin-profile-posts.jsonl); [Nate Nasralla LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-nate-nasralla-sales-posts-digest.md); [Krysten Conner LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-krysten-conner-linkedin-profile-posts.jsonl); [Krysten Conner LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-krysten-conner-sales-posts-digest.md); [Kyle Asay LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-kyle-asay-linkedin-profile-posts.jsonl); [Kyle Asay LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-kyle-asay-sales-posts-digest.md)
+> 2026-07-03 additions: [The Signal ChatGTM Cursor Internal Sales AI](../../raw/intentional/web/2026-07-03-the-signal-chatgtm-cursor-internal-sales-ai.md)
 
 ## Overview
 
@@ -31,6 +36,8 @@ Sean Wilson's six-campaign post gives a useful operating checklist: competitor d
 The Acme bundle adds a daily operating cadence: every key account should have multiple sales angles, a first-draft deck/proposal, and one thoughtful researched outreach per day. Shann Holmberg's proposal-agent post suggests compressing proposal turnaround by running pre-call diligence plus meeting transcript context into a live proposal draft. Actively's homepage is the market analogue: per-account agents that work accounts continuously and guide sellers on next actions.
 
 Roman's Claude MCP + LinkedIn article is another version of the same loop, with Gojiberry as the execution layer: describe the ICP, find high-intent leads, enrich with job/hiring/engagement signals, generate personalized LinkedIn messages, launch campaigns, and review weekly campaign performance from the agent.
+
+Origami is the productized version of the same agentic prospecting pattern. Its homepage claims a prompt-to-qualified-lead workflow: describe the customer, have Origami search 50+ live sources such as Google Maps, LinkedIn, job boards, company sites, and the open web, verify results into a table, then use contact waterfalls for email and phone data before outreach. The new "Send" layer positions multi-channel outreach as built into the agent. Compared with Eric Nowoslawski's `coldoutboundskills` repo, Origami bundles the discovery, enrichment, validation, and sequencing loop into a hosted product; the repo keeps the same shape as an operator-owned skill/script stack.
 
 The Vercel templates add implementation skeletons for two GTM-adjacent agents. The Call Summary Agent turns Gong-style call transcripts into structured summaries, objections, tasks, and insights using Workflow DevKit plus Vercel Sandbox for file exploration. The Lead Agent starts from a contact-sales form, runs lead research, qualifies the lead with structured output, drafts an email, and asks for Slack approval before sending.
 
@@ -63,6 +70,22 @@ The four X profile sweeps add operating patterns rather than canonical facts:
 
 For Acme/eGiro, the compiled workflow is: pick a named account, verify it is inside the regulated TAM, check fresh triggers, map stakeholders and relationship paths, produce five angle drafts, select the strongest proof-proximity angle, create a deck or one-pager, and only then draft a single outbound message for review.
 
+The Amanda Zhu sales corpus adds a playbook-design constraint for campaign agents: do not automate a sales motion before the founder-led motion has been extracted. Campaign workflows should pull from approved discovery questions, demo structures, qualification rules, pricing/trial policy, stakeholder definitions, and objection handling. The useful automation unit is not "write a clever message"; it is "reuse the proven sales motion with account-specific evidence and human review."
+
+Jen Abel's profile sweep adds the complementary constraint: do not let automation strip out deal craft. Enterprise buyers often ignore generic attachments, over-polished collateral, broad product demos, and bloated "corpo" messages. The campaign agent should get shorter and more specific as it learns more: text-like emails, one-on-one stakeholder context, co-authored internal narratives, narrow proof criteria, and direct-channel follow-up. Before recommending a group demo, generated collateral, or technical executive pitch, the workflow should check whether the seller has enough buyer-side context to make that artifact useful.
+
+Nate Nasralla's LinkedIn corpus adds the artifact architecture for this. The automation unit should not be "write an email" in isolation. It should maintain a chain of customer-specific living docs: POV, account plan, demo brief, business case, leader deal brief, mutual success plan, and CS handoff. Each artifact inherits context from the previous one, gets corrected by the buyer, and becomes evidence for the next stage. A digital sales room or generated deck is weak unless the buyer can repeat the account-specific message internally in under 60 seconds.
+
+Nate's AI-specific posts also argue for a persistent GTM context layer over disposable workflow agents. Research agents, meeting-prep agents, and email agents are useful, but they are limited if they run once and forget the deal. A stronger campaign system preserves emails, calls, Slack, docs, stage outcomes, and won/lost patterns so it can answer: what has worked in situations like this, and what artifact should the seller use next? Agent impact should be measured by revenue outcomes and deal progression, not only by tool runs, usage, or token volume.
+
+Krysten Conner's LinkedIn corpus adds the seller-workflow guardrails for that context layer. AI-assisted selling should prepare the human seller and champion for the fragile parts of the deal: CFO questions, procurement give/gets, champion-risk checks, stakeholder-specific language, multithreading paths, discovery menus, and SE/demo roles. The useful automation is not only outbound copy; it is a reviewable coaching surface that asks whether the champion can survive Finance, whether procurement has business pressure behind it, and which buyer-level motive or risk the seller may be missing.
+
+Her AI/coaching posts should be interpreted narrowly: the durable pattern is making sales-leader judgment retrievable in the rep's workflow. Capture VP-level negotiation give/gets, executive evidence, objection patterns, implementation-risk language, and buyer signals, then surface them at the right moment with human review. Do not let an agent autonomously send empathy-flavored messages, promise discounts, or commit commercial terms.
+
+Kyle Asay's LinkedIn corpus adds the AI SDR quality bar. Common public signals such as funding announcements, new-job updates, and hiring can help rank the TAM, but they are usually weak outreach triggers because every automated system sees them. Campaign agents should prefer offer-specific signals: job descriptions that reveal priorities, product/pricing changes, segment expansion, public customer complaints, leadership language, website-copy shifts, or security/compliance/infrastructure investments that map directly to the product's problem.
+
+Kyle's AI posts also warn against replacing seller thinking with generated output. AI can prep research, account plans, call prep, and draft angles, but the seller still needs to understand the account, choose the relevant insight, write from real judgment, and talk to customers. The workflow test is whether automation increases judgment density, not merely message volume.
+
 ## Backdated X Sweep Addendum
 
 The second profile page adds three workflow-level ideas:
@@ -73,6 +96,16 @@ The second profile page adds three workflow-level ideas:
 
 The role shape is the "GTM engineer": TAM mapping, signal tracking, enrichment, scoring, routing, automated outbound, inbound orchestration, CRM/reporting, and campaign iteration. For Acme/eGiro this should be a function of the operating system, not a separate toy automation lane.
 
+## ChatGTM Work-Surface Addendum
+
+Brendan Short's 2026-07-02 article on Cursor's internal ChatGTM system adds a concrete mature-state example. The important pattern is not "AI writes SDR emails." ChatGTM is described as a rep work surface sitting on top of the systems of record: Salesforce, Gong, Slack, Nooks, data warehouse sources, LinkedIn, third-party data vendors, and the open web. It does not replace those tools; it queries them on demand, then turns the context into outbound plans, daily digests, call prep, org charts, business cases, forecast updates, follow-ups, and custom campaign assets.
+
+The build path matters. George Hou reportedly started by sitting with SDRs and watching the actual work: seven tabs, about 45 minutes of aggregation, and then a blank page. The system then evolved from SQL tables, scoring, copy drafting, and long-running account-research agents into a chat and feed surface that reps could use flexibly. This validates the wiki's operating rule: build from one burning workflow and one accountable metric, not from a generic "agent" demo.
+
+The most reusable design lesson is that the subject-matter experts are the reps. Cursor's sales team reportedly created hundreds of skills and automations inside ChatGTM because the product made it simple for non-technical sellers to encode how they sell. In GTM systems, "skills" should capture judgment: account-research steps, signal preferences, outreach style, manager stress tests, forecast prep, and business-case patterns. The agent should make those repeatable without removing human review.
+
+Commercially, the reported outcomes raise the bar for GTM-agent measurement: SDR qualified meetings, top-rep output, AE ramp time, sales-cycle movement, time saved, and daily active usage. Usage alone is not enough. A sales AI system should be judged by whether it changes pipeline, ramp, cycle time, deal quality, or rep preparation.
+
 ## Key Ideas
 
 - Prospeo-style filters make ICP definition more semantic: AI lookalikes, business model, pricing model, website keywords, AI attributes, compliance/certs, traffic, executive events, news, integrations, customers, Google discovery, and target-customer filters.
@@ -80,6 +113,18 @@ The role shape is the "GTM engineer": TAM mapping, signal tracking, enrichment, 
 - Buying-window triggers matter more than static personas: new executives, competitor mentions, hiring signals, funding, tech installs, and fresh website/page changes.
 - The GTM stack is splitting into "feed" tools and "build" tools. Feed tools expose data APIs to agents; build tools orchestrate campaigns, sequencing, governance, and reply handling.
 - Campaign automation should preserve dedupe, suppression lists, geo/segment splits, cost tracking, source provenance, and human approval before sending.
+- Enterprise campaign automation should preserve buyer co-authorship: one-on-one context before group demos, short direct messages, co-authored internal artifacts, and executive framing around advantage rather than technical feature detail.
+- Campaign agents should generate stage artifacts, not just copy: POV, account plan, demo brief, business case, leader deal brief, mutual success plan, and CS handoff.
+- AI-assisted seller workflows should generate CFO-question prep, champion-risk maps, procurement give/get options, multithreading paths, and discovery prompts, not only outbound copy.
+- Campaign agents should distinguish generic fit signals from offer-specific timing signals; "congrats on funding/new role" is usually crowded unless the product has a differentiated reason the event matters.
+- AI GTM workflows should preserve seller thinking muscles: the agent can prepare ingredients, but the seller must still understand, prioritize, write, and hold the buyer conversation.
+- Human review is especially important for buyer psychology and negotiation because logical business cases can stall on personal risk, missing value, or commercial give/gets.
+- Generated assets should default to concise customer-language docs when the buyer must sell internally; slides are visual aids, not the internal story.
+- Persistent GTM context is more valuable than stateless workflow execution because it lets the system compare similar deals, surface what worked, and recommend the next best artifact.
+- AI GTM measurement should connect agent actions to deal progression and revenue outcomes, not only count runs, outputs, or token usage.
+- A mature GTM agent may query live systems on demand rather than preloading all sales context into a repo; the important design question is which source of truth to call, with what permissions, freshness, latency, and provenance.
+- Reps should be able to encode repeatable sales judgment as skills or automations, because frontline sellers and managers know how the company actually sells.
+- Mature sales AI should be measured against pipeline generated, ramp time, sales-cycle movement, time saved, and quality of rep preparation, not only adoption or output volume.
 - Always-on outbound should be portfolio-based, not one campaign: competitor, case-study, web-visitor, trigger/signal, evergreen, and macro ICP motions each need different data feeds and copy logic.
 - Sales coaching can become a data loop when call transcripts, objections, winning phrases, rep behavior, and CRM outcomes are joined rather than reviewed manually after the fact.
 - AI-generated flyers, landing pages, slides, and website revamps can become campaign assets, but they need source provenance, brand checks, and approval before use.
@@ -98,9 +143,11 @@ The role shape is the "GTM engineer": TAM mapping, signal tracking, enrichment, 
 - Enterprise campaign agents should track the distinction between generic benefit, active demand, relationship path, and proof proximity before recommending a channel or cadence.
 - Content-led campaigns should be wired to CRM/account intelligence: the system should know which posts generated the engagement, which people engaged, whether they match ICP, and which route each signal deserves.
 - GTM skill libraries should start from a shared company/brand/ICP context layer so outreach, research, deck, and landing-page skills do not reinvent positioning on every run.
+- Productized agentic prospecting tools such as Origami collapse prompt -> live web search -> verified lead table -> contact waterfall -> sequencer, which is the commercial equivalent of a hand-rolled Claude Code outbound skill stack.
 
 ## Tool Leads From The Bundle
 
+- Origami: prompt-driven AI prospecting, real-time web/data-source search, verified lead tables, email/phone waterfalls, and built-in multi-channel Send sequencer.
 - CompanyEnrich: company data, lookalikes, firmographics, contact enrichment.
 - LeadsFactory: LinkedIn people search and waterfall title expansion.
 - Openmart: local business data and verified local contacts.
@@ -169,6 +216,13 @@ The role shape is the "GTM engineer": TAM mapping, signal tracking, enrichment, 
 - [Alfie Carter posts 101-200](../../raw/sweeps/x/2026-06-16-alfiejcarter-posts-101-200.md)
 - [Fivos Aresti posts 101-190](../../raw/sweeps/x/2026-06-16-fivosaresti-posts-101-190.md)
 - [Chris Pisarski posts 101-200](../../raw/sweeps/x/2026-06-16-chrispisarski-posts-101-200.md)
+- [Nate Nasralla LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-nate-nasralla-linkedin-profile-posts.jsonl)
+- [Nate Nasralla LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-nate-nasralla-sales-posts-digest.md)
+- [Krysten Conner LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-krysten-conner-linkedin-profile-posts.jsonl)
+- [Krysten Conner LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-krysten-conner-sales-posts-digest.md)
+- [Kyle Asay LinkedIn profile posts JSONL](../../raw/intentional/linkedin/2026-06-29-kyle-asay-linkedin-profile-posts.jsonl)
+- [Kyle Asay LinkedIn sales posts digest](../../staging/linkedin-profile-digests/2026-06-29-kyle-asay-sales-posts-digest.md)
+- [The Signal ChatGTM Cursor Internal Sales AI](../../raw/intentional/web/2026-07-03-the-signal-chatgtm-cursor-internal-sales-ai.md)
 
 ## See Also
 
@@ -176,5 +230,8 @@ The role shape is the "GTM engineer": TAM mapping, signal tracking, enrichment, 
 - [Browser Outreach Delegation](../scraping-revops/browser-outreach-delegation.md)
 - [AI GTM Opportunity Leads](ai-gtm-opportunity-leads.md)
 - [High-Signal Enterprise Sales](high-signal-enterprise-sales.md)
+- [Sales Leadership And Rep Operating Systems](sales-leadership-and-rep-operating-systems.md)
+- [Founder-Led Enterprise Sales Playbooks](founder-led-enterprise-sales-playbooks.md)
 - [AI-Native Account Intelligence](ai-native-account-intelligence.md)
+- [GTM Prospecting Tool Index](gtm-prospecting-tool-index.md)
 - [Vercel Agent Templates And Sandboxes](../ai-coding/vercel-agent-templates-and-sandboxes.md)

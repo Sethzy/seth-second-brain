@@ -2,30 +2,31 @@ global_context: "This is Seth's retrieval-first second brain. Search both raw so
 
 collections:
   wiki:
-    path: /Users/sethlim/Documents/Seth Second Brain/wiki
+    path: ./wiki
     pattern: "**/*.md"
     context:
       "/": "Compiled durable knowledge articles and the global index/log."
 
   intentional:
-    path: /Users/sethlim/Documents/Seth Second Brain/raw/intentional
+    path: ./raw/intentional
     pattern: "**/*.md"
     context:
       "/": "Full immutable source snapshots intentionally saved by Seth. Best for finding remembered links, phrases, posts, authors, and exact source material."
 
   sweeps:
-    path: /Users/sethlim/Documents/Seth Second Brain/raw/sweeps
+    path: ./raw/sweeps
     pattern: "**/*.md"
     context:
       "/": "Automated or semi-automated research outputs, including Last30Days. Treat as candidate intelligence, not durable memory."
 
   staging:
-    path: /Users/sethlim/Documents/Seth Second Brain/staging
+    path: ./staging
     pattern: "**/*.md"
     context:
       "/": "Digests and promotion candidates waiting to be compiled into the wiki."
 
 setup_commands:
+  - qmd init
   - qmd collection add wiki
   - qmd collection add raw/intentional
   - qmd collection add raw/sweeps

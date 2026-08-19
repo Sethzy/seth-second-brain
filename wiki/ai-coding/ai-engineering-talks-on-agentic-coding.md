@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: AI Engineering Talks On Agentic Coding
-updated_at: 2026-06-12
+updated_at: 2026-06-25
 status: draft
-source_count: 17
+source_count: 19
 tags:
   - ai-engineering
   - agentic-coding
@@ -41,6 +41,14 @@ Use this as the philosophical base: AI coding makes fundamentals more valuable, 
 The walkthrough turns the philosophy into a practical loop. Start with a tiny global prompt, avoid bloated context, and treat each coding session as explore -> implement -> test. Use `/grill-me` to reach shared understanding before planning. Convert the conversation into a PRD, then split work into vertical slices that cross the system enough to produce feedback early. Use subagents for exploration so the main context stays cleaner.
 
 The important distinction is that this is not blind specs-to-code. The spec is a destination document, but the codebase remains the battleground. The human reviews issue shape, vertical slicing, module boundaries, and feedback loops before handing work to AFK agents.
+
+### David Ondrej x Matt Pocock - Agentic Engineering Workflow
+
+The 2026-06-18 David Ondrej interview reinforces Matt's harness-first framing. The opening claim is that people obsess over model choice while underinvesting in the harness: prompts, skills, environment, and codebase shape. The practical advice is to make the codebase easier to change, use skills and better requirements to improve the environment around the model, and treat strategic programming as the human leverage point now that tactical code production is increasingly automated.
+
+### Kun Chen - L8 Principal's Agentic Engineering Workflow
+
+Kun Chen's 2026-06-20 walkthrough is a practitioner workflow for high-throughput agentic engineering. The captured description names terminal ergonomics, tmux/WezTerm/Neovim, global and project memory files, skills, voice input, agent ergonomics, interactive planning artifacts, validation, and task splitting. The useful synthesis is that agent throughput depends on the whole workspace: fast input, clean memory, narrow skills, inspectable plans, validation habits, and an environment where agents can run repeatedly without forcing the human to rebuild context.
 
 ### Anthropic - Don't Build Agents, Build Skills Instead
 
@@ -168,6 +176,13 @@ The state of the art is therefore closer to "agentic SDLC" than "AI writes code.
 - Humans still matter because they hold and verify context, act on context, and remain accountable for deployed systems.
 - Production agent work needs an agent development life cycle: observe failures, file issues, create tests, release improvements, and monitor drift.
 - The emerging human role is architect/operator: define behavior, taste, risk, business outcome, verification, and improvement loops.
+- Harness work is not abstract: terminal ergonomics, memory files, voice input, skills, and planning artifacts change how much useful work a coding agent can finish.
+- Model architecture matters, but workflow leverage often comes from the controllable layer around the model: prompts, skills, codebase shape, tests, and verification surfaces.
+
+## Sources
+
+- [David Ondrej Matt Pocock Agentic Engineering Workflow Transcript](../../raw/intentional/youtube/2026-06-25-david-ondrej-matt-pocock-agentic-engineering-workflow-transc.md)
+- [Kun Chen L8 Principal Agentic Engineering Workflow Transcript](../../raw/intentional/youtube/2026-06-25-kun-chen-l8-principal-agentic-engineering-workflow-transcrip.md)
 
 ## See Also
 
