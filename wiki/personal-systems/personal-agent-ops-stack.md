@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Personal Agent Ops Stack
-updated_at: 2026-06-11
+updated_at: 2026-06-28
 status: draft
-source_count: 15
+source_count: 19
 tags:
   - personal-agents
   - tools
@@ -39,6 +39,8 @@ smux is a local terminal workbench lead for the same personal ops stack. Its `tm
 
 The Desktop Archive personal-system notes add small retrieval hooks for AI influencers, deep research, observability/Langfuse, Obsidian commands, workflows.io, and a large "Must do tmr" backlog that includes DeepWiki MCP and Karpathy/agent-work links. These are preserved as raw notes and should be triaged into exact source captures only when they become active work.
 
+The 2026-06-25 batch adds three practical maintenance leads. undefinedKi's Claude+Obsidian guide is a public variant of this repo's core pattern: local markdown storage plus an LLM layer that files, links, and answers from the vault. Shann Holmberg's company-readiness checklist reinforces the boring prerequisite work before agents become useful: one owner per workflow, one source of truth per category, structured data, SOPs, templates, tool/subscription inventory, mapped data flows, permissions, and feedback loops. Sumanyu Sharma's LinkedIn post updates the voice-provider watchlist: voice AI is moving quickly across Bland, Cartesia, DeepL/Mixhalo, Speechmatics, Krisp, Vonage/Kiro, MiniMax/Retell, AssemblyAI, and Inworld/Mastra, so any Rev/ElevenLabs/xAI comparison should be tested against current provider docs before adoption.
+
 ## Key Ideas
 
 - The agent becomes useful when it can cross app boundaries: one fact in WhatsApp, another in Gmail, contact data in a sheet, dates in Calendar, documents in Drive.
@@ -58,6 +60,8 @@ The Desktop Archive personal-system notes add small retrieval hooks for AI influ
 - Wiki skills should bias toward synthesis over filing. The Farza gist's strongest rule is to ask what an entry means and how it connects before creating or updating articles.
 - Cloudflare is worth evaluating when an agent needs multiple primitives in one place: voice, browser, durable execution, safe code execution, memory, email, and private network access.
 - Terminal multiplexers can become personal agent infrastructure when panes are named, readable, and controllable through a narrow CLI instead of informal copy/paste.
+- A Second Brain audit should check boring retrieval infrastructure first: source lanes, one source of truth per category, QMD freshness, raw-to-wiki provenance, and whether agents can cite the evidence without rebuilding context.
+- Voice providers should be evaluated as a workflow layer, not just TTS/STT demos: accuracy, latency, diarization, multilingual/code-switching, tool calling, barge-in, fraud detection, fallback, and export format all matter.
 
 ## Candidate Seth Applications
 
@@ -100,9 +104,14 @@ The Desktop Archive personal-system notes add small retrieval hooks for AI influ
 - [Farza Karpathy LLM wiki skill gist](../../raw/intentional/web/2026-06-11-farza-karpathy-llm-wiki-skill-gist.md)
 - [ShawnPana smux README](../../raw/intentional/web/2026-06-11-shawnpana-smux-readme.md)
 - [Desktop Archive saved inputs digest](../archive/2026-06-11-desktop-archive-saved-inputs.md)
+- [undefinedKi Claude and Obsidian second-brain guide X Article](../../raw/intentional/x/2068306794116501544-undefinedki-how-to-build-an-ai-second-brain-with-claude-and-obsidian-that-gets-smarter-eve.md)
+- [Shann Holmberg AI workflow readiness checklist X Article](../../raw/intentional/x/2068816251229794671-shannholmberg-how-to-get-your-company-ready-for-ai-workflows-with-checklist-structured-dat.md)
+- [Sumanyu Sharma voice AI funding and model advancements LinkedIn post](../../raw/intentional/web/2026-06-25-sumanyu-sharma-voice-ai-funding-and-model-advancements-linke.md)
+- [Daniel Mac Understand Anything X post](../../raw/intentional/x/2068384508077105538-daniel-mac8-this-is-one-of-the-coolest-open-source-ai-agent-projects-i-ve-seen-in-a-while.md)
 
 ## See Also
 
 - [Agent Goals And Dynamic Workflows](agent-goals-and-dynamic-workflows.md)
+- [Agentic Finance Workflows](../finance-ops/agentic-finance-workflows.md)
 - [Browser Outreach Delegation](../scraping-revops/browser-outreach-delegation.md)
 - [Agent Platforms And Work Surfaces](agent-platforms-and-work-surfaces.md)

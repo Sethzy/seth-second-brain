@@ -54,6 +54,18 @@ scripts/new-raw-capture.sh <source-type> "<title>" "<url-or-Unknown>" < source.t
 
 Then compile lightly into 1-3 relevant wiki pages using the upstream wiki rules.
 
+## LinkedIn Capture
+
+When Seth asks to scrape, capture, ingest, or read LinkedIn content, use the already authenticated LinkedIn browser session:
+
+1. Use Chrome browser control first.
+2. Fall back to Computer Use when Chrome browser control is unavailable or the required interaction cannot be completed through it.
+3. Open the exact URL and expand all relevant `…more` / `see more` controls before extracting.
+4. Verify that the post or article body is complete. Preserve the author, date, headline/title, visible engagement counts, and original URL when available.
+5. Save complete captures under `raw/intentional/web/`. Save previews, truncated text, login walls, and other incomplete results under `staging/incomplete-captures/web/`.
+
+Do not use anonymous fetches or Last30Days as the first choice for exact LinkedIn URLs. Last30Days' optional LinkedIn source is useful for topic/person discovery, but it uses ScrapeCreators and Google-indexed public content rather than Seth's logged-in session. It is not a completeness guarantee.
+
 ## Exact X Links
 
 For pasted X links, use the authenticated exact-link capture lane:
@@ -68,7 +80,9 @@ This wraps:
 scripts/x-capture-authenticated.py
 ```
 
-The wrapper reuses Last30Days' Bird/TweetDetail approach with Chrome Profile 3 cookies and X Article field toggles. Complete normal posts and complete X Articles write to `raw/intentional/x/`. Title-only, preview-only, failed, or otherwise incomplete captures write to `staging/incomplete-captures/x/`.
+The wrapper reuses Last30Days' Bird/TweetDetail approach with authenticated Chrome cookies and X Article field toggles. It defaults to Chrome `Profile 3`; use `SECOND_BRAIN_X_CHROME_PROFILE` or `--chrome-profile` on another machine. Complete normal posts and complete X Articles write to `raw/intentional/x/`. Title-only, preview-only, failed, or otherwise incomplete captures write to `staging/incomplete-captures/x/`.
+
+The scripts discover Last30Days from common repo/global skill locations. If it is installed elsewhere, set `LAST30DAYS_SCRIPTS_DIR` to the skill's `scripts` directory.
 
 Legacy `x-kb-capture` notes can still be imported with `scripts/import-x-kb-captures.sh`, but new exact X captures should use this repo's authenticated wrapper.
 

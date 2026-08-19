@@ -1,10 +1,14 @@
 __pycache__/
 *.pyc
+.DS_Store
+.qmd/index.yml
+.qmd/index.yaml
 .qmd/*.sqlite
 .qmd/*.sqlite-*
 .playwright-mcp/
 .herenow/
 **/.herenow/
+.obsidian/workspace*.json
 tmp/
 raw/intentional/pasted/archive-2026-06-11/09-cute-idea-for-my-app.md
 raw/intentional/pasted/sunder-sync-2026-06-11-data/060-ceasalespersonspropertytransactionrecordsresidential.csv

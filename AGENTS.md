@@ -19,6 +19,10 @@ This repo is an augmented implementation of `Astro-Han/karpathy-llm-wiki`. Prese
 The upstream baseline is installed at `.agents/skills/karpathy-llm-wiki/`.
 The Seth-specific overlay is installed at `.agents/skills/seth-second-brain/`.
 
+## Response Style
+
+Structure responses in a MECE manner. Avoid repeating yourself unless it is necessary for clarity. Match the length of the response to the complexity of the explanation. Avoid the rhetorical pattern "it's not X, it's Y."
+
 ## Core Rules
 
 1. Raw captures are immutable verbatim evidence snapshots. Do not rewrite or replace existing raw files; create a new capture if refreshed.
@@ -73,10 +77,19 @@ For "ingest/capture this" prompts:
 
 If the capture is only URL metadata, a summary, an excerpt, an oEmbed card, a login/captcha page, or a failed fetch, put it under `staging/incomplete-captures/<source-type>/` instead of `raw/`. Do not treat incomplete captures as evidence for confident wiki claims.
 
+For LinkedIn posts, articles, and profiles:
+
+1. Default to Chrome browser control against Seth's already authenticated LinkedIn session. If Chrome browser control is unavailable or cannot complete a required UI interaction, fall back to Computer Use.
+2. Do not start with anonymous HTTP fetches, search-engine previews, oEmbed cards, or public mirrors when the signed-in browser is available.
+3. Open the exact URL, expand every relevant `…more` / `see more` control, and capture the full visible body plus the author, date, headline/title, visible engagement counts, and original URL when present.
+4. For profiles, capture only the sections needed for the request. Do not broaden a normal profile/post capture into messages, connections, contact exports, or unrelated personal data.
+5. Save verified complete LinkedIn captures under `raw/intentional/web/`. Put previews, truncated bodies, login walls, or otherwise incomplete results under `staging/incomplete-captures/web/`.
+6. Treat Last30Days LinkedIn support as a broad discovery/sweep lane only. Its LinkedIn backend uses ScrapeCreators and Google-indexed public content rather than Seth's logged-in browser session, so it does not replace authenticated browser capture for an exact URL or completeness-sensitive request.
+
 For exact X/Twitter links:
 
 1. Use `scripts/x-capture-to-raw.sh`.
-2. The wrapper uses the Last30Days/Bird TweetDetail path with Chrome Profile 3 cookies and X Article field toggles.
+2. The wrapper uses the Last30Days/Bird TweetDetail path with authenticated Chrome cookies and X Article field toggles. It defaults to Chrome `Profile 3`; use `SECOND_BRAIN_X_CHROME_PROFILE` or `--chrome-profile` on another machine.
 3. Do not use Last30Days topic sweeps for exact saved links; sweeps remain a separate noisy research lane.
 4. If the capture is partial, label it partial, keep the original URL, and do not compile claims beyond what is captured or what Seth pasted.
 

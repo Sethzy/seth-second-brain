@@ -1,7 +1,19 @@
 ---
+type: wiki_article
 title: Vendor Agentic Engineering Blogs, Last Six Months
 status: active
+updated_at: 2026-06-14
 updated: 2026-06-14
+tags:
+  - vendor-blogs
+  - agentic-engineering
+  - codex
+  - claude-code
+  - cursor
+  - skills
+  - evals
+  - harness-engineering
+  - enterprise-sdlc
 ---
 
 # Vendor Agentic Engineering Blogs, Last Six Months

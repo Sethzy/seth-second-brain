@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-24T08:52:10.865Z",
+  "primary_source": "https://yc-oss.github.io/api/companies/all.json",
+  "metadata_source": "https://yc-oss.github.io/api/meta.json",
+  "source_repo": "https://github.com/yc-oss/api",
+  "fallback_scraper_repo": "https://github.com/corralm/yc-scraper",
+  "api_last_updated": "2026-06-24T02:27:39.599Z",
+  "batches": [
+    "Winter 2024",
+    "Summer 2024",
+    "Fall 2024",
+    "Winter 2025",
+    "Spring 2025",
+    "Summer 2025",
+    "Fall 2025",
+    "Winter 2026",
+    "Spring 2026",
+    "Summer 2026"
+  ],
+  "row_count": 1642,
+  "shortlist_count": 50,
+  "s26_crosscheck": {
+    "status": "passed",
+    "method": "agent-browser official directory extraction, matching corralm/yc-scraper link-discovery behavior",
+    "directory_url": "https://www.ycombinator.com/companies?batch=Summer%202026",
+    "scraper_repo": "https://github.com/corralm/yc-scraper",
+    "api_s26_count": 28,
+    "directory_s26_count": 31,
+    "added_from_directory_count": 3,
+    "missing_from_yc_oss": [
+      "https://www.ycombinator.com/companies/insurf",
+      "https://www.ycombinator.com/companies/markov",
+      "https://www.ycombinator.com/companies/parasma"
+    ],
+    "missing_from_directory": [],
+    "supplemented_companies": [
+      {
+        "name": "Insurf",
+        "yc_url": "https://www.ycombinator.com/companies/insurf",
+        "one_liner": "The AI-Native Decision Infrastructure for Health Insurance"
+      },
+      {
+        "name": "Markov",
+        "yc_url": "https://www.ycombinator.com/companies/markov",
+        "one_liner": "Data for computer-use ai"
+      },
+      {
+        "name": "Parasma",
+        "yc_url": "https://www.ycombinator.com/companies/parasma",
+        "one_liner": "Training human brain cells for AI compute"
+      }
+    ],
+    "error": ""
+  },
+  "outputs": {
+    "csv": "staging/yc-company-scan/yc_recent_companies.csv",
+    "scan": "staging/yc-company-scan/yc_recent_companies_scan.md",
+    "shortlist": "staging/yc-company-scan/yc_shortlist.md",
+    "validation": "staging/yc-company-scan/yc_scan_validation.md"
+  }
+}

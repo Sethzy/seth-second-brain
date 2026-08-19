@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Agent Goals And Dynamic Workflows
-updated_at: 2026-06-12
+updated_at: 2026-06-25
 status: draft
-source_count: 21
+source_count: 27
 tags:
   - codex
   - goals
@@ -34,6 +34,8 @@ Lance Martin and Joao Moura add two signs that the loop is moving from "run a ta
 
 The newer loop-engineering captures sharpen the same idea into an operating model. Addy Osmani argues that the leverage point has moved from manually prompting the agent to designing a loop that finds work, hands it out, checks it, records state, and decides the next run. Sairahul breaks the loop into discovery, planning, execution, verification, and iteration, while warning that open-ended loops become token-expensive quickly and should usually start as closed loops with clear scopes. Lance Martin adds a practical reliability pattern: use independent verifier or grader contexts and cross-session memory so the same model that produced work is not the only judge of completion.
 
+The 2026-06-25 bundle turns loop engineering into concrete operating patterns Seth can reuse. Matt Van Horn's loop catalog frames loops as pasteable commands with provenance. Tom Osman's Codex prompt is the strongest app-QA loop: enumerate every feature into user stories, test each expected behavior, document errors, fix logistical/UX failures, then retest the behaviors. Shubham Saboo extends the loop concept to PM artifacts: PRD-review skills, launch checklists, research workflows, eval rubrics, and prompt templates should be improved, measured, and committed like product infrastructure. Anatoli Kopadze's Boris Cherny quote is a useful mnemonic: the jump from agents to loops may be as large as the jump from code to agents.
+
 ## Key Ideas
 
 - A goal should be a durable execution loop around an objective, with verifiable exit criteria.
@@ -56,6 +58,8 @@ The newer loop-engineering captures sharpen the same idea into an operating mode
 - Loop engineering means the human designs the recurring system that prompts agents, rather than manually prompting every turn.
 - Practical loops need discovery triggers, plans, execution slots, independent verification, memory/state, and cost controls.
 - Closed loops with explicit scopes, tests, and verifier contexts are the current pragmatic default; open-ended loops are powerful but can burn budget and drift.
+- The best current Codex loop pattern for product QA is feature inventory -> user-story table -> behavior tests -> error log -> fixes -> retest, with one canonical tracking artifact.
+- PM loops should be evaluated like engineering loops: change the artifact, run it, score output quality, keep or revert the change, and commit the learning.
 
 ## Open Questions
 
@@ -90,6 +94,12 @@ The newer loop-engineering captures sharpen the same idea into an operating mode
 - [Lance Martin loop design X Article](../../raw/intentional/x/2064397389189071163-rlancemartin-designing-loops-with-fable-5-mythos-class-models-like-claude-fable-5-have-cha.md)
 - [Addy Osmani loop engineering X Article](../../raw/intentional/x/2064127981161959567-addyosmani-loop-engineering-loop-engineering-is-replacing-yourself-as-the-person-who-promp.md)
 - [Sairahul loops X Article](../../raw/intentional/x/2064277888216555684-sairahul1-loops-what-every-ai-engineer-needs-to-know-in-2026-peter-steinberger-creator-of.md)
+- [Matt Van Horn loop catalog X Article](../../raw/intentional/x/2068426104088748331-mvanhorn-wtf-is-a-loop-part-2-the-15-loops-people-are-actually-running-and-the-commands-to.md)
+- [Tom Osman Codex user-story loop X post](../../raw/intentional/x/2068692611334893582-tomosman-this-loop-automation-is-nuts-inside-of-codex-goal-go-over-every-single-feature-in.md)
+- [ctatedev agent-loop tools X post](../../raw/intentional/x/2068841029524979777-ctatedev-the-best-agent-loops-need-the-right-tools-https-t-co-rld639yw28-verify-changes-in.md)
+- [Shubham Saboo PM loop engineering X Article](../../raw/intentional/x/2068730090457006588-saboo-shubham-loop-engineering-for-product-managers-the-next-pm-skill-is-not-prompt-engine.md)
+- [Anatoli Kopadze loops explainer X Article](../../raw/intentional/x/2068328135611822149-anatolikopadze-loops-explained-claude-gpt-mira-and-what-actually-works-ai-has-been-in-ever.md)
+- [Anatoli Kopadze Boris Cherny loops X post](../../raw/intentional/x/2068750209652560159-anatolikopadze-claude-code-creator-boris-cherny-going-from-agents-to-loops-is-as-big-a-jum.md)
 
 ## See Also
 
@@ -99,3 +109,4 @@ The newer loop-engineering captures sharpen the same idea into an operating mode
 - [Agentic Engineering Practices](../ai-coding/agentic-engineering-practices.md)
 - [Personal Agent Ops Stack](personal-agent-ops-stack.md)
 - [Agentic Artifact Surfaces](../ai-knowledge-work/agentic-artifact-surfaces.md)
+- [LLM Foundations](../llm-foundations/llm-foundations.md)

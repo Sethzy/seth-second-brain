@@ -1,0 +1,471 @@
+{
+  "audit_time": "2026-06-25T17:20:59",
+  "all_md_json_files_scanned": 3265,
+  "candidate_source_paths_found": 2105,
+  "csv_rows_before": 2158,
+  "csv_rows_after": 2751,
+  "missing_candidate_paths_before_patch": 593,
+  "rows_added": 593,
+  "added_by_lane": {
+    "local_skill": 11,
+    "local_repo": 9,
+    "docs": 1,
+    "raw_intentional": 559,
+    "raw_sweep": 4,
+    "staging": 8,
+    "wiki": 1
+  },
+  "added_examples": [
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "karpathy-llm-wiki",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/README.md",
+      "line": "3",
+      "notes": "Added by final audit; reason=path,content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Claude Code Statusline Market Scan",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/examples/2026-03-19-claude-code-statusline-landscape.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path,content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Examples from Real Wiki",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/examples/README.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "AI Coding Tools",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/examples/ai-coding-tools-index.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=path,content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Claude Code Statusline Tool Ecosystem",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/examples/claude-code-statusline-landscape.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path,content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Wiki Log",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/examples/log-sample.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "{Title}",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/references/archive-template.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "{Title}",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/references/article-template.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Knowledge Base Index",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/references/index-template.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "{Title}",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/karpathy-llm-wiki/references/raw-template.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "QMD MCP Server Setup",
+      "asset_type": "skill",
+      "source_lane": "local_skill",
+      "source_path": ".agents/skills/qmd/references/mcp-setup.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=path,content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "people watchlist",
+      "asset_type": "agent",
+      "source_lane": "local_repo",
+      "source_path": "config/people-watchlist.json",
+      "line": "22",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "QMD Auto Refresh",
+      "asset_type": "reference",
+      "source_lane": "docs",
+      "source_path": "docs/qmd-auto-refresh.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "AI Engineering Big Shifts Research Ledger",
+      "asset_type": "agent",
+      "source_lane": "local_repo",
+      "source_path": "outputs/ai-engineering-chronology/research-ledger.md",
+      "line": "21",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Bootstrapped Idea Map From TrustMRR",
+      "asset_type": "reference",
+      "source_lane": "local_repo",
+      "source_path": "outputs/bootstrap-company-atlas/2026-06-24-bootstrapped-idea-map.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "TrustMRR First-Pass Shortlist",
+      "asset_type": "reference",
+      "source_lane": "local_repo",
+      "source_path": "outputs/bootstrap-company-atlas/2026-06-24-trustmrr-first-pass-shortlist.md",
+      "line": "1",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "2026 06 24 trustmrr startups",
+      "asset_type": "workflow",
+      "source_lane": "local_repo",
+      "source_path": "outputs/bootstrap-company-atlas/2026-06-24-trustmrr-startups.json",
+      "line": "7473",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "state",
+      "asset_type": "workflow",
+      "source_lane": "local_repo",
+      "source_path": "outputs/workflow-hustle/zhao-orderops-site/.herenow/state.json",
+      "line": "3",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "2026 06 24 amanda zhu linkedin profile posts",
+      "asset_type": "prompt_template",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/linkedin/2026-06-24-amanda-zhu-linkedin-profile-posts.json",
+      "line": "10111",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "First second-brain ingestion test: AI GTM opportunities and links",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/2026-06-10-first-second-brain-ingestion-test-ai-gtm-opportunities-and-l.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Corey Ganim how to sell AI services when nobody knows you",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/2026-06-24-corey-ganim-how-to-sell-ai-services-when-nobody-knows-you.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Archive note: excalidrawexcalidraw-mcp Fast and streamable Excalidraw MCP App.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/14-excalidrawexcalidraw-mcp-fast-and-streamable-excalidraw-mcp-app.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Archive note: httpsgithub.comjamiepinevoicebox.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/24-httpsgithub-comjamiepinevoicebox.md",
+      "line": "25",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Archive note: httpsopenai.comindexharness-engineering.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/30-httpsopenai-comindexharness-engineering.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Archive note: httpswww.linkedin.comcommpulsenotebooklm-mobile-content-creation….md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/36-httpswww-linkedin-comcommpulsenotebooklm-mobile-content-creation.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Archive note: httpsx.comtrq212status2034761017771925996s=46.md",
+      "asset_type": "skill",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/55-httpsx-comtrq212status2034761017771925996s-46.md",
+      "line": "36",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Archive note: jgraphdrawio-mcp.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/archive-2026-06-11/60-jgraphdrawio-mcp.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: i-wasted-80-hours-and-800-setting-up-openclaw-so-you-don-t-have-to-twitter-jordymaui-2023421221744877903-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/001-i-wasted-80-hours-and-800-setting-up-openclaw-so-you-don-t-have-to-twitter-jordymaui-2023421221744877903-full.md",
+      "line": "50",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: latest-briefing.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/002-latest-briefing.md",
+      "line": "4",
+      "notes": "Added by final audit; reason=path"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: nicbustamante-every-saas-is-now-an-api-FULL.md",
+      "asset_type": "agent",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/007-nicbustamante-every-saas-is-now-an-api-full.md",
+      "line": "55",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: nicolasbustamante-10-years-vertical-software-selloff-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/009-nicolasbustamante-10-years-vertical-software-selloff-full.md",
+      "line": "18",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 07-nityeshaga-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/022-07-nityeshaga-full.md",
+      "line": "28",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 08-dani_avila7-FULL.md",
+      "asset_type": "agent",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/023-08-dani-avila7-full.md",
+      "line": "28",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 09-ashpreetbedi-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/024-09-ashpreetbedi-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 10-nummanali-FULL.md",
+      "asset_type": "skill",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/025-10-nummanali-full.md",
+      "line": "28",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 12-scottbelsky-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/027-12-scottbelsky-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 14-trq212-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/029-14-trq212-full.md",
+      "line": "28",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 16-jerryjliu0-FULL.md",
+      "asset_type": "workflow",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/030-16-jerryjliu0-full.md",
+      "line": "51",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 17-kirkmarple-context-graphs-FULL.md",
+      "asset_type": "agent",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/031-17-kirkmarple-context-graphs-full.md",
+      "line": "266",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 34-twitter-alexfinn-model-cost-savings-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/033-34-twitter-alexfinn-model-cost-savings-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 35-twitter-alphasignal-paperbanana-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/034-35-twitter-alphasignal-paperbanana-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 41-twitter-levelsio-vps-security-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/037-41-twitter-levelsio-vps-security-full.md",
+      "line": "28",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 44-twitter-stolinski-tailscale-remote-dev-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/040-44-twitter-stolinski-tailscale-remote-dev-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 47-twitter-davidondrej1-saas-is-dead-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/042-47-twitter-davidondrej1-saas-is-dead-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 54-twitter-tomcrawshaw01-lead-gen-disruption-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/044-54-twitter-tomcrawshaw01-lead-gen-disruption-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 56-twitter-dhh-beelink-proxmox-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/046-56-twitter-dhh-beelink-proxmox-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 62-twitter-nicbstme-aggregation-theory-FULL.md",
+      "asset_type": "slash_command",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/053-62-twitter-nicbstme-aggregation-theory-full.md",
+      "line": "44",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 65-twitter-chiwang-orion-autonomous-FULL.md",
+      "asset_type": "prompt_template",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/056-65-twitter-chiwang-orion-autonomous-full.md",
+      "line": "42",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-addition",
+      "asset_name": "Sunder sync: 66-twitter-jumperz-discord-swarm-FULL.md",
+      "asset_type": "agent",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/057-66-twitter-jumperz-discord-swarm-full.md",
+      "line": "296",
+      "notes": "Added by final audit; reason=content"
+    },
+    {
+      "priority_suggestion": "Final-audit-low-confidence",
+      "asset_name": "Sunder sync: 68-twitter-prukalpa-shared-context-FULL.md",
+      "asset_type": "reference",
+      "source_lane": "raw_intentional",
+      "source_path": "raw/intentional/pasted/sunder-sync-2026-06-11/059-68-twitter-prukalpa-shared-context-full.md",
+      "line": "11",
+      "notes": "Added by final audit; reason=heading"
+    }
+  ],
+  "unindexed_after_patch": []
+}

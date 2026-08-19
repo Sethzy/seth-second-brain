@@ -31,6 +31,29 @@ scripts/new-raw-capture.sh --quality partial web "Blocked page lead" "https://ex
 
 Then compile the raw file into the wiki using the installed `karpathy-llm-wiki` skill rules.
 
+## Capture LinkedIn Content
+
+Use this workflow whenever Seth asks to scrape, capture, ingest, or read a LinkedIn post, article, or profile.
+
+1. Use Chrome browser control with Seth's already logged-in LinkedIn session.
+2. If Chrome browser control cannot attach or complete a required interaction, use Computer Use against the logged-in browser.
+3. Open the exact URL. Expand every relevant `…more` / `see more` control and wait for any lazy-loaded content needed by the request.
+4. Capture the full visible post/article body and the available author, date, headline/title, visible engagement counts, and original URL.
+5. Verify that the saved body is not a preview or truncation.
+6. Save a complete snapshot under `raw/intentional/web/`, compile it through the normal intentional-source workflow, update `state/source-map.json`, and refresh QMD.
+
+For profile requests, capture only the requested sections. Do not inspect messages, export connections, or gather unrelated personal data unless Seth explicitly asks.
+
+If the browser still yields only a preview, login wall, truncated body, or metadata:
+
+```text
+staging/incomplete-captures/web/
+```
+
+Preserve the exact URL and explain what is missing. Do not compile incomplete text into confident wiki claims.
+
+Last30Days can be used for broad LinkedIn topic or person discovery after its LinkedIn source is configured, but it is not the exact-link capture path. Its upstream LinkedIn integration uses `SCRAPECREATORS_API_KEY` plus `--search linkedin` / `INCLUDE_SOURCES=linkedin`, searches Google-indexed public posts, and may enrich a matched person's public profile articles. It does not reuse Seth's authenticated LinkedIn session and does not guarantee a complete exact post.
+
 ## Capture Exact X Links
 
 Use the authenticated exact-link capture wrapper:
@@ -45,7 +68,13 @@ For a text blob or clipboard full of links:
 pbpaste | scripts/x-capture-to-raw.sh
 ```
 
-This uses the same auth idea as `mvanhorn/last30days-skill`: Chrome Profile 3 cookies (`AUTH_TOKEN` and `CT0`) feed Bird/TweetDetail, with X Article field toggles enabled, so exact normal posts and supported long-form X Articles can be captured with full text.
+This uses the same auth idea as `mvanhorn/last30days-skill`: Chrome cookies (`AUTH_TOKEN` and `CT0`) feed Bird/TweetDetail, with X Article field toggles enabled, so exact normal posts and supported long-form X Articles can be captured with full text. The default is `Profile 3`; set `SECOND_BRAIN_X_CHROME_PROFILE` or pass `--chrome-profile` on another machine.
+
+The Last30Days skill may live inside this repo, in `~/.agents/skills`, in `~/.codex/skills`, or in the legacy GTM workspace. If it lives elsewhere, set:
+
+```bash
+export LAST30DAYS_SCRIPTS_DIR="/absolute/path/to/last30days/scripts"
+```
 
 Complete normal posts and complete X Articles write into:
 
@@ -100,7 +129,7 @@ Run Last30Days from this repo with the sweep save directory:
 scripts/last30days-to-sweeps.sh "<topic>" --search x,web,youtube
 ```
 
-If X browser auth via the GTM wrapper is desired:
+If X browser auth is desired:
 
 ```bash
 scripts/last30days-to-sweeps.sh --x-profile3 "<topic>" --search x,web,youtube
@@ -130,7 +159,7 @@ Run selected people:
 scripts/run-people-watchlist.sh matt-pocock nicbstme
 ```
 
-This uses Last30Days with `--x-handle <handle>` and saves each run under `raw/sweeps/last30days/`, then scaffolds a digest under `staging/last30days/`. Treat outputs as noisy watchlist signal. Promote only after manual capture or explicit approval.
+This uses Last30Days with `--x-handle <handle>` when a configured X handle exists, and otherwise runs a topic/web sweep. Each run is saved under `raw/sweeps/last30days/`, then scaffolded into a digest under `staging/last30days/`. Treat outputs as noisy watchlist signal. Promote only after manual capture or explicit approval.
 
 After the run, create a staging digest from the saved raw file using `templates/last30days-digest-template.md`.
 

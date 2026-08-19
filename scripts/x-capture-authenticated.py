@@ -9,12 +9,12 @@ import json
 import os
 import re
 import subprocess
-import sys
 from pathlib import Path
+
+from last30days_runtime import extract_browser_credentials, resolve_last30days_scripts_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-GTM_SCRIPTS = Path("/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts")
 DETAIL_SCRIPT = ROOT / "scripts" / "x-bird-tweet-detail.mjs"
 URL_RE = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]+)/status/(\d+)(?:[^\s]*)?")
 
@@ -24,22 +24,10 @@ def slugify(value: str, fallback: str) -> str:
     return (slug[:90] or fallback).strip("-")
 
 
-def extract_credentials(profile: str) -> dict[str, str]:
-    sys.path.insert(0, str(GTM_SCRIPTS))
-    from lib import env  # type: ignore
-
-    creds = env.extract_browser_credentials({
-        "FROM_BROWSER": "chrome",
-        "LAST30DAYS_CHROME_PROFILE": profile,
-    })
-    if not creds.get("AUTH_TOKEN") or not creds.get("CT0"):
-        raise RuntimeError(f"Could not extract X auth cookies from Chrome {profile}.")
-    return creds
-
-
 def tweet_detail(status_id: str, creds: dict[str, str]) -> dict:
     env = os.environ.copy()
     env.update(creds)
+    env["LAST30DAYS_SCRIPTS_DIR"] = str(resolve_last30days_scripts_dir())
     result = subprocess.run(
         ["node", str(DETAIL_SCRIPT), status_id],
         text=True,
@@ -204,7 +192,10 @@ def remove_prior_incomplete(status_id: str) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Capture exact X URLs through Last30Days authenticated Bird/TweetDetail.")
     parser.add_argument("urls", nargs="*")
-    parser.add_argument("--chrome-profile", default="Profile 3")
+    parser.add_argument(
+        "--chrome-profile",
+        default=os.environ.get("SECOND_BRAIN_X_CHROME_PROFILE", "Profile 3"),
+    )
     ns = parser.parse_args()
 
     stdin_text = "" if sys.stdin.isatty() else sys.stdin.read()
@@ -213,7 +204,7 @@ def main() -> int:
         print("No X status URLs found.", file=sys.stderr)
         return 2
 
-    creds = extract_credentials(ns.chrome_profile)
+    creds = extract_browser_credentials(ns.chrome_profile)
     raw_dir = ROOT / "raw" / "intentional" / "x"
     staging_dir = ROOT / "staging" / "incomplete-captures" / "x"
     raw_dir.mkdir(parents=True, exist_ok=True)

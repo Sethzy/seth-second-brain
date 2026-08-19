@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Workflow Hustle While Job Hunting
-updated_at: 2026-06-15
+updated_at: 2026-06-28
 status: draft
-source_count: 1
+source_count: 6
 tags:
   - workflow-hustle
   - vertical-agents
@@ -11,12 +11,15 @@ tags:
   - proof-of-work
   - hermes
   - tenant-isolation
+  - ai-services
+  - ai-native-services
+  - lead-generation
 ---
 
 # Workflow Hustle While Job Hunting
 
-> Sources: Seth pasted vertical-agent startup note, 2026-06-15
-> Raw: [vertical AI agent startup and workflow hustle note](../../raw/intentional/pasted/2026-06-15-vertical-ai-agent-startup-and-workflow-hustle-while-job-hunt.md)
+> Sources: Seth pasted vertical-agent startup note, 2026-06-15; Corey Ganim X Article, 2026-02-25; AI Tools Assessment local HTML artifact, 2026-06-24; Y Combinator YouTube, Unknown; Seth pasted AI-services offer list, 2026-06-28; Corey Ganim X profile sweep, 2026-06-28
+> Raw: [vertical AI agent startup and workflow hustle note](../../raw/intentional/pasted/2026-06-15-vertical-ai-agent-startup-and-workflow-hustle-while-job-hunt.md); [Corey Ganim how to sell AI services when nobody knows you](../../raw/intentional/pasted/2026-06-24-corey-ganim-how-to-sell-ai-services-when-nobody-knows-you.md); [AI Tools Assessment blank template](../../raw/intentional/web/2026-06-24-ai-tools-assessment-template-blank.html); [How to Build an AI-Native Services Company transcript](../../raw/intentional/youtube/2026-06-25-how-to-build-an-ai-native-services-company-youtube.md); [AI services businesses actually need](../../raw/intentional/pasted/2026-06-28-ai-services-businesses-actually-need.md); [Corey Ganim posts 1-200](../../raw/sweeps/x/2026-06-28-coreyganim-posts-1-200.md)
 
 ## Overview
 
@@ -40,6 +43,8 @@ The workflow-hustle version is deliberately small:
 - Keep a daily review loop while the system is young.
 
 This is not passive "build in public." The content strategy is to become useful inside a niche: publish the shortcuts, checklists, failure modes, workflow maps, and edge cases that only an operator would know.
+
+The YC AI-native services playbook is the venture-scale extension of this operating thesis. It says the biggest opportunity is not a generic copilot, but an outcome-delivering service company where AI lets expert humans deliver more work at lower variance and better margins. The market should already have budget for outsourced outcomes, enough task-level standardization to automate, enough intelligence/regulation to create a moat, and a path toward AI operating leverage.
 
 ## Workflow Selection Criteria
 
@@ -71,6 +76,18 @@ Use this as the default loop for a new workflow experiment:
 10. Decide whether to repeat, narrow, sell, or archive.
 
 The first goal is learning density, not beautiful software. A spreadsheet plus a markdown runbook plus a rough agent loop can be enough if it proves the workflow.
+
+## Lead-Generation Wedge
+
+The AI-services lead-generation lane gives the workflow hustle a near-term way to find prospects before a product exists. Local AI meetups, door knocking, LinkedIn owner outreach, free audits to Seth's network, agency/consultant referral partnerships, coworking-space office hours, and consistent proof posts all point at the same motion: earn enough local trust to inspect one painful workflow.
+
+The [AI Services Lead Generation](ai-services-lead-generation.md) page adds a concrete audit artifact to this motion. The saved AI Tools Assessment template can become the deliverable after a short workflow call: pain, outcome, impact-effort matrix, quick wins, recommended tools, a four-day plan, financial impact, and next steps. This makes "helping local businesses with AI" less vague and turns each prospect conversation into a reusable proof-of-work artifact.
+
+The [AI-Native Services Companies](ai-native-services-companies.md) page adds the stricter company-building filter: cap early pilots, sell outcomes, watch COGS from day one, track throughput and cycle time like product metrics, and avoid humans-in-the-loop that only compensate for product gaps.
+
+The current side-hustle offer menu is practical and buyer-specific: speed-to-lead response, missing-document chasing, reminder and reschedule flows, smart intake, RFQ and quote prep, tenant-request-to-work-order conversion, candidate follow-up, onboarding sequences, review mining, and monthly proof reports. Treat each as a workflow-hustle candidate: name the buyer, map the current manual handoff, define the measurable before/after proof, and decide whether it can become a small implementation sprint.
+
+The Corey Ganim profile sweep adds a simple side-hustle starter sequence: pick one buyer group, find one expensive visible leak, sell a small audit, fix the highest-value workflow, and only then package the fix into a repeatable skill, implementation sprint, or managed retainer. For Seth, this keeps the work grounded in proof: before/after response time, quote speed, recovered appointments, revived leads, documents collected, invoices chased, or monthly proof reports delivered.
 
 ## Architecture Pattern
 
@@ -136,10 +153,18 @@ This keeps the hustle from becoming a distraction. If it works commercially, goo
 ## Sources
 
 - [Vertical AI agent startup and workflow hustle note](../../raw/intentional/pasted/2026-06-15-vertical-ai-agent-startup-and-workflow-hustle-while-job-hunt.md)
+- [Corey Ganim how to sell AI services when nobody knows you](../../raw/intentional/pasted/2026-06-24-corey-ganim-how-to-sell-ai-services-when-nobody-knows-you.md)
+- [AI Tools Assessment blank template](../../raw/intentional/web/2026-06-24-ai-tools-assessment-template-blank.html)
+- [How to Build an AI-Native Services Company transcript](../../raw/intentional/youtube/2026-06-25-how-to-build-an-ai-native-services-company-youtube.md)
+- [AI services businesses actually need](../../raw/intentional/pasted/2026-06-28-ai-services-businesses-actually-need.md)
+- [Corey Ganim posts 1-200](../../raw/sweeps/x/2026-06-28-coreyganim-posts-1-200.md)
 
 ## See Also
 
 - [Zhao OrderOps PRD](zhao-orderops-prd.md)
+- [AI GTM Ops Cleanup Starter Wedge](ai-gtm-ops-cleanup-starter-wedge.md)
+- [AI Services Lead Generation](ai-services-lead-generation.md)
+- [AI-Native Services Companies](ai-native-services-companies.md)
 - [Agent Platforms And Work Surfaces](../personal-systems/agent-platforms-and-work-surfaces.md)
 - [Agent Goals And Dynamic Workflows](../personal-systems/agent-goals-and-dynamic-workflows.md)
 - [Agentic GTM Campaign Workflows](../gtm-sales/agentic-gtm-campaign-workflows.md)

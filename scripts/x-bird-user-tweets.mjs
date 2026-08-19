@@ -1,15 +1,17 @@
 #!/usr/bin/env node
-import { TwitterClientBase } from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-base.js';
-import { withSearch } from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-search.js';
-import {
+import { importBirdModule } from './last30days-runtime.mjs';
+
+const { TwitterClientBase } = await importBirdModule('twitter-client-base.js');
+const { withSearch } = await importBirdModule('twitter-client-search.js');
+const {
   buildArticleFieldToggles,
   buildUserTweetsFeatures,
-} from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-features.js';
-import { TWITTER_API_BASE } from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-constants.js';
-import {
+} = await importBirdModule('twitter-client-features.js');
+const { TWITTER_API_BASE } = await importBirdModule('twitter-client-constants.js');
+const {
   extractCursorFromInstructions,
   parseTweetsFromInstructions,
-} from '/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts/lib/vendor/bird-search/lib/twitter-client-utils.js';
+} = await importBirdModule('twitter-client-utils.js');
 
 const SearchClient = withSearch(TwitterClientBase);
 const USER_TWEETS_FALLBACK_QUERY_IDS = ['Wms1GvIiHXAPBaCr9KblaA'];
@@ -141,6 +143,7 @@ async function fetchTimeline(client, userId, limit) {
   let cursor;
   let nextCursor;
   let pagesFetched = 0;
+  const maxPages = Math.max(12, Math.ceil(limit / 20) + 5);
 
   while (tweets.length < limit) {
     const pageCount = Math.min(20, limit - tweets.length);
@@ -168,12 +171,56 @@ async function fetchTimeline(client, userId, limit) {
     }
 
     const pageCursor = page.cursor;
-    if (!pageCursor || pageCursor === cursor || added === 0 || pagesFetched >= 12) {
+    if (!pageCursor || pageCursor === cursor || added === 0 || pagesFetched >= maxPages) {
       nextCursor = pageCursor;
       break;
     }
     cursor = pageCursor;
     nextCursor = pageCursor;
+  }
+
+  return { tweets, nextCursor };
+}
+
+async function fetchTimelineViaSearch(client, handle, limit) {
+  const tweets = [];
+  const seen = new Set();
+  let maxId;
+  let nextCursor;
+
+  while (tweets.length < limit) {
+    const remaining = limit - tweets.length;
+    const query = `from:${handle}${maxId ? ` max_id:${maxId}` : ''}`;
+    const result = await client.search(query, Math.min(40, remaining), { maxPages: 4 });
+    if (!result.success) {
+      throw new Error(result.error);
+    }
+
+    let oldestId;
+    let added = 0;
+    for (const tweet of result.tweets || []) {
+      if (tweet.author?.username?.toLowerCase() !== handle.toLowerCase()) {
+        continue;
+      }
+      if (!tweet.id || seen.has(tweet.id)) {
+        continue;
+      }
+      seen.add(tweet.id);
+      tweets.push(tweet);
+      added += 1;
+      if (!oldestId || BigInt(tweet.id) < BigInt(oldestId)) {
+        oldestId = tweet.id;
+      }
+      if (tweets.length >= limit) {
+        break;
+      }
+    }
+
+    nextCursor = result.nextCursor;
+    if (!oldestId || added === 0) {
+      break;
+    }
+    maxId = (BigInt(oldestId) - 1n).toString();
   }
 
   return { tweets, nextCursor };
@@ -194,8 +241,19 @@ try {
     quoteDepth: 1,
   });
   const userId = await resolveUserId(client, handle);
-  const timeline = await fetchTimeline(client, userId, count);
-  process.stdout.write(JSON.stringify({ handle, userId, ...timeline }, null, 2));
+  let timeline;
+  let retrievalMethod = 'UserTweets';
+  try {
+    timeline = await fetchTimeline(client, userId, count);
+  } catch (error) {
+    const message = error?.message || String(error);
+    if (!/HTTP 429|rate limit/i.test(message)) {
+      throw error;
+    }
+    timeline = await fetchTimelineViaSearch(client, handle, count);
+    retrievalMethod = 'SearchTimeline';
+  }
+  process.stdout.write(JSON.stringify({ handle, userId, retrievalMethod, ...timeline }, null, 2));
 } catch (error) {
   console.error(error?.message || String(error));
   process.exit(1);

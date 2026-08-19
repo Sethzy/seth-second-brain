@@ -9,12 +9,12 @@ import json
 import os
 import re
 import subprocess
-import sys
 from pathlib import Path
+
+from last30days_runtime import extract_browser_credentials, resolve_last30days_scripts_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-GTM_SCRIPTS = Path("/Users/sethlim/Documents/gtm-workspace/.agents/skills/last30days/scripts")
 USER_TWEETS_SCRIPT = ROOT / "scripts" / "x-bird-user-tweets.mjs"
 PROFILE_RE = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]+)(?:/?(?:\?[^\s]*)?)?$")
 HANDLE_RE = re.compile(r"^@?([A-Za-z0-9_]{1,15})$")
@@ -33,22 +33,10 @@ def parse_handle(value: str) -> tuple[str, str]:
     raise ValueError(f"Not an X profile URL or handle: {value}")
 
 
-def extract_credentials(profile: str) -> dict[str, str]:
-    sys.path.insert(0, str(GTM_SCRIPTS))
-    from lib import env  # type: ignore
-
-    creds = env.extract_browser_credentials({
-        "FROM_BROWSER": "chrome",
-        "LAST30DAYS_CHROME_PROFILE": profile,
-    })
-    if not creds.get("AUTH_TOKEN") or not creds.get("CT0"):
-        raise RuntimeError(f"Could not extract X auth cookies from Chrome {profile}.")
-    return creds
-
-
 def fetch_timeline(handle: str, count: int, offset: int, creds: dict[str, str]) -> dict:
     env = os.environ.copy()
     env.update(creds)
+    env["LAST30DAYS_SCRIPTS_DIR"] = str(resolve_last30days_scripts_dir())
     fetch_count = count + offset
     result = subprocess.run(
         ["node", str(USER_TWEETS_SCRIPT), handle, "--count", str(fetch_count)],
@@ -131,6 +119,7 @@ def render_post(index: int, tweet: dict) -> list[str]:
 def render_snapshot(handle: str, profile_url: str, requested_count: int, offset: int, payload: dict) -> str:
     tweets = payload.get("tweets") or []
     fetched_count = payload.get("fetched_count") or len(tweets)
+    retrieval_method = payload.get("retrievalMethod") or "UserTweets"
     captured_at = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="seconds")
     range_start = offset + 1
     range_end = offset + len(tweets)
@@ -147,6 +136,7 @@ def render_snapshot(handle: str, profile_url: str, requested_count: int, offset:
         f"timeline_offset: {offset}",
         f"timeline_range: {range_start}-{range_end}",
         f"fetched_for_offset_count: {fetched_count}",
+        f"retrieval_method: {retrieval_method}",
         "capture_quality: generated_profile_timeline_snapshot",
         "status: staged",
         "trust_lane: sweep",
@@ -161,7 +151,7 @@ def render_snapshot(handle: str, profile_url: str, requested_count: int, offset:
         f"- Timeline offset: {offset}",
         f"- Requested posts: {requested_count}",
         f"- Captured posts: {len(tweets)}",
-        "- Capture method: authenticated Bird/X UserTweets timeline via Chrome Profile 3 cookies.",
+        f"- Capture method: authenticated Bird/X {retrieval_method} timeline via Chrome cookies.",
         "",
         "## Capture Notes",
         "",
@@ -199,7 +189,7 @@ def update_source_map(path: Path, handle: str, profile_url: str, requested_count
         "staging_paths": [],
         "created_at": existing.get("created_at", now) if existing else now,
         "updated_at": now,
-        "notes": f"Captured {captured_count} posts from timeline offset {offset} through authenticated Bird/UserTweets profile timeline path.",
+        "notes": f"Captured {captured_count} posts from timeline offset {offset} through the authenticated Bird/X profile timeline path.",
     }
     if existing:
         existing.clear()
@@ -214,7 +204,10 @@ def main() -> int:
     parser.add_argument("profiles", nargs="+", help="X profile URLs or handles")
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--offset", type=int, default=0, help="Skip this many newest timeline posts before writing the snapshot")
-    parser.add_argument("--chrome-profile", default="Profile 3")
+    parser.add_argument(
+        "--chrome-profile",
+        default=os.environ.get("SECOND_BRAIN_X_CHROME_PROFILE", "Profile 3"),
+    )
     parser.add_argument("--dry-run", action="store_true", help="Fetch and print counts without writing files")
     ns = parser.parse_args()
 
@@ -224,7 +217,7 @@ def main() -> int:
         raise SystemExit("--offset must be non-negative")
 
     parsed = [parse_handle(value) for value in ns.profiles]
-    creds = extract_credentials(ns.chrome_profile)
+    creds = extract_browser_credentials(ns.chrome_profile)
     out_dir = ROOT / "raw" / "sweeps" / "x"
     out_dir.mkdir(parents=True, exist_ok=True)
     capture_date = dt.date.today().isoformat()

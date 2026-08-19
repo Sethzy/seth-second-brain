@@ -32,6 +32,9 @@ require_path scripts/new-raw-capture.sh
 require_path scripts/import-x-kb-captures.sh
 require_path scripts/init-qmd.sh
 require_path scripts/qmd-refresh.sh
+require_path scripts/bootstrap-second-brain.sh
+require_path scripts/last30days_runtime.py
+require_path scripts/last30days-runtime.mjs
 require_path scripts/maintenance-report.sh
 require_path scripts/stage-last30days-digest.sh
 require_path .agents/skills/karpathy-llm-wiki/SKILL.md
@@ -72,6 +75,8 @@ for path in root.rglob("*.md"):
     if ".git" in path.parts:
         continue
     if ".agents" in path.parts:
+        continue
+    if "outputs" in path.parts:
         continue
     if "templates" in path.parts:
         continue

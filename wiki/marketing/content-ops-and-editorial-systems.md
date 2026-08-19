@@ -1,9 +1,9 @@
 ---
 type: wiki_article
 title: Content Ops And Editorial Systems
-updated_at: 2026-06-19
+updated_at: 2026-06-25
 status: active
-source_count: 10
+source_count: 11
 tags:
   - marketing
   - content-ops
@@ -29,6 +29,8 @@ Corey Haines' `marketingskills` repo adds the broad content-ops skill map: produ
 The content-ops sweep reinforces that the live conversation is moving toward brand voice, editorial quality, product marketing workflows, and taste. The wiki should keep one hard line: generation without source-backed review is not an editorial system.
 
 JAZII's X content research agent is the clearest captured statement of the order of operations for social/editorial AI: research first, patterns second, writing third. The agent tracks creators and keywords, collects posts that are performing or creating strong replies, extracts hook/topic/format/emotion/reader fit, groups ideas into "post today," "save pattern," and "overused angle," then sends daily angles while the human keeps taste and final voice.
+
+The athcanft X-growth article is a social-distribution lead rather than a general content-ops source. The useful retrieval hook is that audience growth can create multiple revenue streams at once: platform payouts, consulting, sponsorships, and product sales. Do not promote its tactical claims until the full article is reviewed; keep it as a lead for future "X as distribution channel" research.
 
 ## Workflow Pattern
 
@@ -56,6 +58,7 @@ Exact examples come from Anthropic, Eric Siu, Corey Haines, `jet-seo`, SEO Machi
 - [jet-seo local project snapshot](../../raw/intentional/pasted/2026-06-17-jet-seo-atlas-seo-content-pipeline-local-project.md)
 - [TheCraigHewitt SEO Machine repository snapshot](../../raw/intentional/web/2026-06-19-thecraighewitt-seomachine-repository-snapshot.md)
 - [JAZII X content research agent article](../../raw/intentional/pasted/2026-06-19-jazii-x-content-research-agent-article.md)
+- [athcanft X growth and monetization X Article](../../raw/intentional/x/2067571218333753385-athcanft-how-to-grow-your-x-and-make-i-started-posting-on-x-about-3-months-ago-here-s-my-s.md)
 - [AI content operations Last30Days raw](../../raw/sweeps/last30days/ai-content-operations-editorial-quality-brand-voice-product-marketing-workflows-raw.md)
 - [AI content operations Last30Days digest](../../staging/last30days/2026-06-17-ai-content-operations-editorial-quality-brand-voice-product-marketing-workflows-digest.md)
 

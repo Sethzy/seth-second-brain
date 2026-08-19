@@ -2,6 +2,91 @@
 
 Append-only operation log.
 
+## 2026-08-08 | ingest | SDR Sales Onboarding Playbook
+
+- Captured complete English transcripts for nine 30 Minutes to President's Club videos covering cold calling, cold email, multichannel sequencing, rep productivity, discovery, multithreading, enterprise selling, negotiation, and sales management.
+- Staged the linked paid book as incomplete because the supplied Amazon URL exposed verified metadata and a public description, not the full copyrighted text.
+- Created: SDR Sales Onboarding Playbook.
+- Updated: High-Signal Enterprise Sales.
+- Updated: Sales Leadership And Rep Operating Systems.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## 2026-07-26 | ingest | LinkedIn Capture Completion — Aseem Asthana And David Rosenstein
+
+- Used Seth's logged-in LinkedIn session to recover the two incomplete LinkedIn sources in the July 26 batch.
+- Captured Aseem Asthana's full learning-to-sell reflection, David Rosenstein's profile snapshot, and Rosenstein's full complex-enterprise-deal-management post as immutable intentional web evidence.
+- Updated: High-Signal Enterprise Sales with cold-call discomfort as a preparation boundary and a post-selection operating plan across commercials/procurement, Legal, and IT/security.
+- Preserved the evidence boundary that Seth's accompanying “customer support on ChatGPT” note is not supported by Rosenstein's profile or the recovered post.
+- Superseded the earlier incomplete staging records, updated the source map and Knowledge Base Index, and cross-compiled sources 54 and 57 into the OpenAI Interview Prep final-round routing digest.
+
+## 2026-07-26 | ingest | Gael Tang — Selling Versus Closing A Seven-Figure Enterprise Deal
+
+- Captured Seth's pasted LinkedIn post as immutable intentional web evidence.
+- Updated: High-Signal Enterprise Sales with separate time-to-conviction and time-to-contract clocks, account-mix implications, and a boundary against treating “go bigger” as a universal rule.
+- Updated: Knowledge Base Index and source-map provenance.
+- Cross-compiled: source 58 in the OpenAI Interview Prep external-source digest and routed into Final Sales Acumen.
+
+## 2026-07-26 | ingest | Sam Altman — How to Start a Startup
+
+- Captured Seth's supplied transcript export as immutable YouTube evidence.
+- Created: Sam Altman Startup Operating Principles with a timestamped summary, reusable operating principles, source caveats, and OpenAI interview relevance.
+- Updated: Agent, Design, Sales, And OpenAI Saved Links so the `ti_morse` watchlist row now resolves to the captured talk and compiled page.
+- Updated: OpenAI Enterprise Product Framing with Altman's account of the Codex strategic bet and explicit attribution boundaries.
+- Updated: Dogfooding And AI-Native Compounding with the deep-use trend test and the distinction between AI-native operating change and superficial tool adoption.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## 2026-07-21 | decision | Select APIYI for Seedance 2
+
+- Decision: use APIYI as the primary Seedance 2 provider for the cinematic homepage project.
+- Kept the choice reversible through a provider adapter and retained the official route as the production fallback.
+- Kept CCAPI limited to synthetic price and behavior benchmarking.
+- APIYI remains blocked from prospect-facing or sensitive inputs until it passes the documented technical, billing, retention, isolation, and operator-approval gates.
+- Updated: Seedance 2 API Provider Selection and Knowledge Base Index.
+- Source-map unchanged because no raw source lifecycle changed.
+
+## 2026-07-21 | query | Seedance 2 API provider selection
+
+- Created: Seedance 2 API Provider Selection as a Workflow Hustle decision reference for cinematic homepage generation.
+- Recorded: official route, APIYI, CCAPI, 302.AI, KIE, Yunwu, Seedance2.ai, Tikdek, API Atlas, and long-tail Chinese relay findings.
+- Distinguished: documented behavior, vendor claims, calculations, shared-upstream inferences, unknowns, and project guardrails.
+- Current recommendation: test APIYI first for the legitimacy-to-accessibility balance and use CCAPI only as a synthetic low-cost benchmark; production selection remains pending.
+- Updated: Knowledge Base Index.
+- Source-map unchanged because no new immutable raw capture was created or compiled.
+
+## 2026-07-07 | ingest | MEDDICC champion-led enterprise motion
+
+- Captured Seth's MEDDICC/champion-led enterprise-motion conversation and public source links as an intentional pasted raw source.
+- Updated: High-Signal Enterprise Sales with a MEDDICC, Champions, And Hybrid Enterprise Motion section distinguishing sales champions, adoption champions, economic buyers, buying committees, and operator-led/champion-enabled enterprise motion.
+- Updated: Knowledge Base Index.
+
+## 2026-07-06 | ingest | Phos-style AI implementation consulting company
+
+- Captured Seth's pasted Phos AI Labs LinkedIn excerpt and founder/company profile links as intentional pasted raw evidence.
+- Created: AI Implementation Consulting Company as a workflow-hustle page for an operation-first AI implementation consultancy.
+- Updated: AI Services Lead Generation with the Phos-style proof-led audit-to-deployed-agent pattern.
+- Updated: AI-Native Services Companies with the small agency bridge between local audits and venture-scale AI-native services.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## 2026-07-03 | ingest | Towards AI Claude Code with Deep Agents
+
+- Captured Sreejith Sreejayan's Towards AI/Medium article "Build Your Own Claude Code Using Langchin" as complete raw web evidence.
+- Updated: Harness Engineering And Runtime Control with the Deep Agents build pattern for loop, tools, planning, context, subagents, interrupts, sandbox/backend, and memory.
+- Updated: Agent Framework Landscape with Deep Agents as a practical Claude Code-like harness starter rather than a complete product platform.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## 2026-07-02 | ingest | Artem Zhutov QMD article and hybrid retrieval note
+
+- Captured Artem Zhutov's complete X Article "Grep Is Dead: How I Made Claude Code Actually Remember Things" through the authenticated exact-X lane.
+- Captured Seth's pasted GBrain embeddings note as an intentional pasted raw source.
+- Updated: LLM Foundations with a hybrid retrieval section explaining BM25/keyword search, embedding/semantic search, metadata filters, reranking, citations, evals, and why RAG should not be described as embeddings alone.
+- Updated: Knowledge Base Index.
+- Updated source-map provenance for both raw captures.
+
+## 2026-06-28 | lint | Vendor blog metadata hygiene
+
+- Added missing tags to Vendor Agentic Engineering Blogs, Last Six Months so the wiki lint frontmatter check has no critical metadata gap for that page.
+- No raw captures or source-map entries changed.
+
 ## 2026-06-19 | ingest | Agency Agents repository snapshot refresh
 
 - Captured a refreshed repository snapshot for `msitarzewski/agency-agents`, preserving repository URL, latest commit hash/date, GitHub metadata, tracked file tree, README, division registry, and install/convert scripts.
@@ -545,3 +630,452 @@ Append-only operation log.
 - Deleted duplicate OpenAI Cookbook Goals captures `raw/intentional/web/2026-06-10-openai-cookbook-using-goals-in-codex-2.md` and `raw/intentional/web/2026-06-10-openai-cookbook-using-goals-in-codex-3.md`.
 - Kept canonical capture `raw/intentional/web/2026-06-10-openai-cookbook-using-goals-in-codex.md`.
 - Updated source-map provenance and archive source links to reference only the canonical capture.
+
+## [2026-06-23] query | Augmented: OpenAI Strategic BDR APAC role references
+
+- Added a role-reference augmentation section to the OpenAI/Codex dossier using the career-ops OpenAI Strategic BDR APAC source pack and v5 dossier.
+- Added interview-useful references for the canonical JD, source pack, referral packet, official OpenAI product/APAC pages, official social sweeps, APAC/regulated-industry angles, discovery questions, and competitor references.
+- Updated the Knowledge Base Index archive summary.
+
+## [2026-06-24] ingest | GTM Prospecting Tool Index
+
+- Captured: ProspectingStack embedded GTM tool catalog as complete intentional web raw evidence.
+- Created: GTM Prospecting Tool Index with category index, market-map vendor groups, top-tech-stack adoption counts, vendor directory, and company-stack lookup.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-24] ingest | Founder-Led Enterprise Sales Playbooks
+
+- Captured: Amanda Zhu LinkedIn profile-post export as complete intentional raw JSON evidence.
+- Staged: Amanda Zhu LinkedIn Sales Posts Digest with 118 Amanda-authored sales/GTM posts selected from 604 Amanda-authored records in the 635-record export.
+- Created: Founder-Led Enterprise Sales Playbooks for founder-led sales, enterprise deal scaffolding, demos, qualification, pricing/trials, sales-org handoff, and account-intelligence deal state.
+- Updated: High-Signal Enterprise Sales with GTM sales-playbook organization and Amanda corpus routing.
+- Updated: Agentic GTM Campaign Workflows and AI-Native Account Intelligence with playbook extraction and deal-state implications.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-24] ingest | AI Services Lead Generation
+
+- Captured: Corey Ganim X Article paste about selling AI services without an audience as complete intentional pasted raw evidence.
+- Captured: AI Tools Assessment blank HTML template as verbatim intentional web raw evidence.
+- Created: AI Services Lead Generation under Workflow Hustle with local trust channels, AI audit offer, template-backed deliverable, qualification rules, and a 30-day execution loop.
+- Updated: Workflow Hustle While Job Hunting with the lead-generation wedge.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-25] ingest | AI agent workflow link bundle
+
+- Captured: Seth's pasted link bundle as complete intentional pasted raw evidence.
+- Captured: 26 exact X links through the authenticated exact-link capture path.
+- Captured: Anthropic Claude Code steering article, Jakub Krehel interface-polish skill page, Sumanyu Sharma voice AI LinkedIn post, Michelle Lim brand-store LinkedIn post, Kun Chen agentic-engineering workflow transcript, and David Ondrej/Matt Pocock agentic-engineering workflow transcript as intentional raw evidence.
+- Created: AI Agent Workflow Link Bundle archive router with all raw paths, Seth's inline notes, and compilation targets.
+- Updated: Agentic Engineering Practices, Agent Skill Libraries And Requirements, AI Engineering Talks On Agentic Coding, Agentic Artifact Surfaces, Agent Goals And Dynamic Workflows, Personal Agent Ops Stack, Agent Platforms And Work Surfaces, OpenClaw Architecture And Operating Model, Performance Marketing Creative Ops, Autonomous Websites And Landing Pages, and Content Ops And Editorial Systems.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-25] ingest | AI-Native Services Companies
+
+- Captured: How to Build an AI-Native Services Company YouTube transcript as complete intentional YouTube raw evidence.
+- Created: AI-Native Services Companies under Workflow Hustle with YC's market filters, founding-team requirements, product-as-operation model, pilot discipline, pricing, P&L leverage, and build-vs-buy warning.
+- Updated: Workflow Hustle While Job Hunting with the AI-native services company-building filter.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-25] query | Archived: AI GTM Ops Cleanup Starter Wedge
+
+- Created: AI GTM Ops Cleanup Starter Wedge under Workflow Hustle as a point-in-time practical side-hustle answer.
+- Preserved the simpler starter offer, candidate workflows, recommended AI GTM Ops Cleanup lane, tiny pilot package, first pricing range, and operating rules.
+- Updated: AI-Native Services Companies with the named YC examples from the transcript.
+- Updated: Knowledge Base Index.
+
+## [2026-06-26] ingest | Origami website homepage
+
+- Captured: Origami homepage as complete intentional web raw evidence.
+- Updated: Agentic GTM Campaign Workflows with Origami as the productized prompt-to-lead-list and built-in outreach version of the hand-rolled outbound skill-stack pattern.
+- Updated: GTM Prospecting Tool Index with Origami direct-capture notes, pricing snapshot, data-source claims, contact waterfalls, and Send sequencer positioning.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-27] ingest | Jen Abel enterprise sales X profile sweep
+
+- Captured: Jen Abel's X profile timeline posts 1-300 as authenticated sweep evidence under `raw/sweeps/x/`.
+- Staged: Jen Abel Enterprise Sales X Profile Digest with promotion notes and exact-capture candidates.
+- Updated: High-Signal Enterprise Sales with co-authored deal craft, group-demo sequencing, direct-channel qualification, and buyer-side internal narrative patterns.
+- Updated: Founder-Led Enterprise Sales Playbooks with founder-proxy first sales hire criteria.
+- Updated: AI-Native Account Intelligence with deal-health and red-flag fields from Jen Abel's profile sweep.
+- Updated: Agentic GTM Campaign Workflows with buyer co-authorship constraints for enterprise campaign automation.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] ingest | AI Services Offer Menu
+
+- Captured: Seth's pasted list of ten AI services businesses actually need as complete intentional pasted raw evidence.
+- Updated: AI Services Lead Generation with buyer-specific workflow offers for speed-to-lead, document chasing, appointment recovery, smart intake, quote prep, work orders, candidate follow-up, onboarding, review mining, and monthly proof reports.
+- Updated: Workflow Hustle While Job Hunting with the offer menu as side-hustle candidate workflows.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] ingest | Corey Ganim AI Services Profile Sweep
+
+- Captured: Corey Ganim's latest 200 X profile posts as authenticated sweep evidence under `raw/sweeps/x/`.
+- Staged: Corey Ganim AI Services X Profile Digest with promotion notes and exact-capture candidates.
+- Updated: AI Services Lead Generation with profile-sweep patterns for visible workflow leaks, audit-as-product packaging, revenue-linked service families, and audit-to-retainer offer ladders.
+- Updated: Workflow Hustle While Job Hunting with the one-buyer, one-leak, small-audit, highest-value-workflow starter sequence.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] ingest | JCodesMore ai-website-cloner-template
+
+- Captured: JCodesMore/ai-website-cloner-template repository snapshot at commit `8dd9cb47dde0d49fec06ee1d69bedd04840f3c95` as complete intentional web raw evidence.
+- Updated: Agent Skill Libraries And Requirements with the `clone-website` skill lead, cross-agent skill distribution pattern, extraction-first workflow, and allowed-use guardrails.
+- Updated: Vercel Agent Templates And Sandboxes with the repo-template workbench pattern for Next.js/Vercel website migration or recovery.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] maintenance | Second Brain healthcheck cleanup
+
+- Updated health tooling so deterministic markdown-link lint ignores generated `outputs/` artifacts and duplicate-X detection ignores superseded incomplete staging notes.
+- Backfilled source-map provenance for existing legacy Sunder-sync raw captures, Last30Days sweep files, and two missing staging records without rewriting raw evidence.
+- Marked five incomplete X staging notes as superseded by complete raw captures.
+- Added missing lifecycle metadata to archive-style pages and linked orphan wiki pages into relevant `See Also` sections.
+- Verified: wiki health now reports no source-map misses, no duplicate X records, no non-archive orphan pages, and no stale/missing lifecycle metadata.
+
+## [2026-06-28] ingest | Omar/DAIR AI Eve X Article
+
+- Captured: Omar/DAIR AI's complete X Article on building agents with Vercel's eve framework as intentional X raw evidence.
+- Updated: Agent Framework Landscape with the eve agent-directory versus product-database split.
+- Updated: Vercel Agent Templates And Sandboxes with eve's filesystem-first implementation shape, tool/sandbox distinction, progressive skills, evals, and AI CRM bot implications.
+- Updated: Agent Platforms And Work Surfaces with eve as a Vercel work-surface framework for Slack/CRM/company-OS agents.
+- Updated: OpenClaw Architecture And Operating Model with the Eve/OpenClaw comparison and AI CRM hybrid interpretation.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] ingest | Vercel Eve Official Docs
+
+- Captured: Vercel Eve Concepts docs as complete intentional web raw evidence.
+- Captured: Vercel Introducing Eve announcement as complete intentional web raw evidence, superseding the older partial staging capture.
+- Created: Vercel Eve Framework as the canonical local explanation of eve's agent directory, sessions/turns, Workflows durability, channels, tools, skills, subagents, connections, sandbox, observability, evals, and AI CRM interpretation.
+- Updated: Agent Framework Landscape with official eve docs and launch details.
+- Updated: Vercel Agent Templates And Sandboxes with official production mapping for Workflows, AI Gateway, Connect, Sandbox, Functions, Fluid Compute, and Observability.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-28] ingest | Sandbox Filesystem Agent Architecture
+
+- Captured: Vercel "How to build agents with filesystems and bash" as complete intentional web raw evidence.
+- Captured: LangChain "The two patterns by which agents connect sandboxes" as complete intentional web raw evidence.
+- Created: Sandbox Filesystem Agent Architecture as the canonical mental model for files-as-interface, storage-as-memory, sandbox-as-boundary, tools-as-doors, and AI CRM implementation choices.
+- Updated: Agent Framework Landscape with the agent-in-sandbox versus sandbox-as-tool split.
+- Updated: Vercel Agent Templates And Sandboxes with filesystem/bash context retrieval and the product-data versus sandbox-workspace boundary.
+- Updated: Vercel Eve Framework and Knowledge Base Index with routing links to the new architecture page.
+
+## [2026-06-28] ingest | Termsheetinator Gap Selling X Article
+
+- Captured: Termsheetinator's complete X Article on gap selling, gap tiering, status-quo cost, trust in mechanism, and proposal structure as intentional X raw evidence.
+- Updated: High-Signal Enterprise Sales with gap-selling discovery, weak-gap upgrading, problem belief versus solution belief, proposal-first business-case structure, and source-map provenance.
+- Updated: Knowledge Base Index.
+
+## [2026-06-28] routing | Deepline GTM tool index
+
+- Confirmed: Deepline already has a complete intentional web raw capture at `raw/intentional/web/2026-06-10-deepline-gtm-api-designed-for-agents.md`.
+- Updated: GTM Prospecting Tool Index with Deepline as a direct-captured agent-native GTM API and waterfall-enrichment infrastructure lead.
+- Updated: Knowledge Base Index and source-map provenance so Deepline is discoverable under GTM Sales as well as Scraping RevOps.
+
+## [2026-06-28] ingest | LLM Foundations
+
+- Captured: Seth's interview prompt/source bundle, arXiv abstract for The Hitchhiker's Guide to Agentic AI, two exact X articles, three GitHub README snapshots, and Sebastian Raschka's local coding-agent article as intentional source evidence.
+- Staged: two LinkedIn public-preview captures as incomplete source leads.
+- Created: LLM Foundations as the canonical study hub for RAG versus fine-tuning, transformer internals, adaptation methods, retrieval evals, tool use, loops, harnesses, and interview calibration.
+- Updated: Agentic Engineering Practices and Agent Goals And Dynamic Workflows with cross-links to the new foundations page.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-29] ingest | Nate Nasralla LinkedIn sales profile export
+
+- Captured: Nate Nasralla LinkedIn profile-post export as complete intentional raw JSONL evidence.
+- Added: Nate Nasralla to the enterprise-sales people watchlist.
+- Staged: Nate Nasralla LinkedIn Sales Posts Digest with 319 Nate-authored sales/GTM posts selected from 432 Nate-authored records in the 446-record export.
+- Updated: High-Signal Enterprise Sales with decision confidence, business-case-as-sales-process, executive POV, and forwardable champion-enablement artifacts.
+- Updated: AI-Native Account Intelligence with business-case, buyer-edit, internal-meeting, next-step urgency, and deal-brief fields.
+- Updated: Agentic GTM Campaign Workflows with account-specific artifact chains, docs-over-decks implications, persistent GTM context, and revenue-outcome measurement for AI sales agents.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-29] ingest | Krysten Conner LinkedIn sales profile export
+
+- Captured: Krysten Conner LinkedIn profile-post export as complete intentional raw JSONL evidence.
+- Added: Krysten Conner to the enterprise-sales people watchlist.
+- Staged: Krysten Conner LinkedIn Sales Posts Digest with 391 Krysten-authored sales/GTM posts selected from 482 Krysten-authored records in the 494-record export.
+- Updated: High-Signal Enterprise Sales with CFO/procurement champion enablement, real-champion tests, multi-threading as champion safety net, buyer psychology, and negotiation give/get patterns.
+- Updated: AI-Native Account Intelligence with finance/procurement readiness, champion-risk, buyer-psychology, demo-control, and SE role fields.
+- Updated: Agentic GTM Campaign Workflows with AI-assisted seller-workflow guardrails for CFO prep, procurement rescue, multithreading, sales-leader playbook retrieval, and human empathy review.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-29] ingest | Kyle Asay LinkedIn sales leadership profile export
+
+- Captured: Kyle Asay LinkedIn profile-post export as complete intentional raw JSONL evidence.
+- Added: Kyle Asay to the enterprise-sales people watchlist.
+- Staged: Kyle Asay LinkedIn Sales Posts Digest with 948 Kyle-authored records in the 949-record export.
+- Created: Sales Leadership And Rep Operating Systems with Kyle/LaunchDarkly-derived lessons on diagnosing before importing playbooks, pipeline-generation plans, first-call execution, territory focus, buyer confidence, multithreading credibility risk, negotiation boundaries, hiring signal, authentic rep frameworks, and AI judgment guardrails.
+- Updated: High-Signal Enterprise Sales with territory quality and activity-quality implications.
+- Updated: AI-Native Account Intelligence with offer-specific signal, territory-focus, and buyer-confidence fields.
+- Updated: Agentic GTM Campaign Workflows with AI SDR signal-specificity and AI-as-crutch guardrails.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-30] maintenance | Split Agentic Engineering Practices
+
+- Updated: Agentic Engineering Practices into a concise router for agentic SDLC, context engineering, and harness/runtime control.
+- Created: Agentic SDLC And Task Contracts.
+- Created: Context Engineering For Coding Agents.
+- Created: Harness Engineering And Runtime Control.
+- Updated: Knowledge Base Index with the new child-page routing rows.
+- Updated: source-map wiki page provenance entries.
+
+## [2026-06-30] routing | Created Voice Agents wiki section
+
+- Created: Voice Agent Stack Landscape as the dedicated router for speech-to-speech agents, phone/CX demos, telephony, Vapi/ElevenLabs/Patter/LiveKit/Pipecat tradeoffs, provider interoperability, and cost-structure questions.
+- Updated: Knowledge Base Index with the new Voice Agents domain and article route.
+- Updated: source-map wiki page provenance entry.
+
+## [2026-06-30] ingest | Vapi n8n MCP receptionist video
+
+- Captured: YouTube transcript for "I Built an AI Voice Receptionist with Vapi and n8n MCP (free template)" as complete intentional raw evidence.
+- Created: Vapi n8n MCP Receptionist Demo with the reusable build structure: Vapi voice/reasoning layer, n8n MCP deterministic backend tools, CRM lookup, appointment booking/rescheduling, knowledge-base answers, handoff, phone number, and call logging.
+- Updated: Voice Agent Stack Landscape with the compiled demo source and architecture validation.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-30] ingest | Vapi agent builder update walkthrough
+
+- Captured: YouTube transcript for "VAPI just got a massive update (Complete Walkthrough)" as complete intentional raw evidence.
+- Created: Vapi Agent Builder Update Walkthrough with the updated dashboard structure and production settings: STT/model/TTS choices, provider fallbacks, logs, tools, structured outputs, scorecards, monitors, webhook reports, turn-taking, voicemail detection, timeouts, recordings, and idle/end-call behavior.
+- Updated: Voice Agent Stack Landscape with the compiled Vapi operational-settings source.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-06-30] ingest | Singapore Voice AI CSR Thesis
+
+- Captured: Seth's Avoca-inspired Singapore voice AI CSR planning chat as complete intentional pasted raw evidence.
+- Captured: Avoca's inbound AI CSR page as complete intentional web raw evidence.
+- Created: Singapore Voice AI CSR Thesis as the small static founder memo for voice-first missed-call recovery, WhatsApp follow-up, unified inbox, Vapi beneath the hood, deterministic booking tools, escalation, and ICP questions deferred until validation.
+- Updated: Voice Agent Stack Landscape with the product-thesis route.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-02] ingest | OpenAI enterprise product framing
+
+- Captured: official OpenAI Workspace Agents launch page, Workspace Agents developer overview, Workspace Agents trigger-runs API docs, and Codex cloud docs as intentional web evidence.
+- Created: OpenAI Enterprise Product Framing as a Strategic BDR router for three enterprise motions: Codex subscriptions, Workspace Agents, and Frontier/FDE-style deployments.
+- Indexed: Workspace Agents cloud/shared/scheduled/API-triggered workflow claims, Codex cloud background task claims, and seller-safe routing questions for enterprise discovery.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-02] ingest | Geoffrey Litt agent-generated understanding artifacts
+
+- Captured: Geoffrey Litt X thread excerpt from Seth's pasted source text, attached to `https://x.com/geoffreylitt/status/2072522251300409556` without using the Bird CLI.
+- Updated: Agentic Artifact Surfaces with the learning/review pattern: agents can produce explainers, debuggers, walkthroughs, or quizzes that help humans understand the code they or another agent wrote.
+- Updated: Agentic Engineering Practices with Seth's local `explain-diff-html` skill as the concrete post-run learning loop: use the diff or PR as the curriculum, then create a self-contained HTML lesson with background, intuition, code walkthrough, diagrams, toy examples, and a quiz.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | Cursor FDE enterprise software factory
+
+- Captured: Latent.Space interview, "How Cursor deploys AI inside the enterprise," as complete intentional web evidence.
+- Updated: Agentic Engineering Practices with Cursor's FDE/AI software factory framing: long-running agents across planning, design, PRDs, demos, code, tests, review, deployment, maintenance, feedback, and cross-team standardization.
+- Updated: OpenAI Enterprise Product Framing with Cursor's software-factory story as a market analogue for FDE-style enterprise deployment discovery.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | The Signal ChatGTM Cursor internal sales AI
+
+- Captured: Brendan Short's The Signal article on Cursor's internal ChatGTM system as complete intentional web evidence.
+- Updated: Agentic GTM Campaign Workflows with ChatGTM as a mature sales work-surface example: live source queries, rep-owned skills, scheduled automations, outbound/account research, business-case artifacts, forecast prep, and pipeline/ramp/time-saved measurement.
+- Updated: AI-Native Account Intelligence with the live source-of-truth pattern: agents should know which system to query now, not only what context was previously compiled.
+- Updated: Sales Leadership And Rep Operating Systems with the leadership lesson: start from one burning workflow and accountable metric, let reps encode judgment as skills, and judge sales AI by pipeline, ramp, cycle time, and preparation quality.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | Voice as the next frontier
+
+- Captured: Vapi/Claude webinar invitation, Anthropic webinar page, Vapi Series B sources, Coval Fortune 500 deployment transcript, Coval Series A release, and Speechmatics voice-agent testing guide as intentional evidence.
+- Ran: 180-day Last30Days sweep for "voice AI agents next frontier high intent phone calls customer support enterprise" across X, YouTube, and web supplement sources; staged digest with cautions about noisy X/YouTube results.
+- Created: Voice As The Next Frontier with the argument map for high-intent calls, scripted phone-system failure, Vapi/Claude positioning, enterprise adoption proof, Coval-style simulation and observability, and voice-native testing/eval requirements.
+- Updated: Voice Agent Stack Landscape with the new market-thesis route.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] compile | Garrett Lord eval-first enterprise AI framing
+
+- Verified: Garrett Lord's evals X Article was already captured as a complete intentional raw X Article.
+- Updated: Harness Engineering And Runtime Control with the eval-first framing: production AI needs private rubrics, tool-use checks, controlled repeated runs, and measurable improvement loops rather than casual feedback or one-off human review.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | Voice AI bidirectional and speech-understanding augment
+
+- Captured: CryptoBriefing report on OpenAI's reported GPT-Bidi-1 ChatGPT voice model as complete intentional web evidence, with caveats that it was app-code/reporting evidence and not an official OpenAI launch as of June 23, 2026.
+- Captured: Voice AI Newsletter transcript with Zach Koh of Fixie AI as complete intentional web evidence.
+- Updated: Voice As The Next Frontier with bidirectional-audio/full-duplex framing, speech-understanding as the deeper model frontier, direct audio embeddings, noisy/multi-speaker dialogue, and AI collaborator use cases.
+- Updated: Voice Agent Stack Landscape with the emerging speech-understanding model/runtime bucket: UltraVox/Fixie, WebRTC, GPU/cache routing, open-source/on-prem optionality, and future native full-duplex models.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | AI live interpretation for voice support
+
+- Captured: Voice AI Newsletter article "AI Voice Translation: Breaking Language Barriers in Call Centers" as complete intentional web evidence.
+- Updated: Voice As The Next Frontier with multilingual live interpretation as a contact-center wedge, including human-interpreter cost/latency constraints, Krisp AI Live Interpreter vendor claims, and BLEU-style translation eval caveats.
+- Updated: Voice Agent Stack Landscape with a live interpretation layer separate from autonomous phone-agent orchestration and speech-understanding runtimes.
+- Updated: Singapore Voice AI CSR Thesis with an assisted live-interpretation path and a sharper multilingual/Singlish performance bar for local pilots.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | Codez five-stage LLM pipeline
+
+- Verified: Complete X Article raw capture for Codez's "How to build your own LLM from scratch in 5 Stages."
+- Updated: LLM Foundations with the reusable study map: pretraining, data, scaling laws, post-training, and evaluation/systems as the practical model-building pipeline.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-03] ingest | Thin harness, fat skills and scaffolding decay
+
+- Captured: Garry Tan/GBrain `THIN_HARNESS_FAT_SKILLS.md` and Nicolas Bustamante's "LLMs Eat Scaffolding for Breakfast" as intentional web evidence.
+- Reused: Fintool/Nicolas Bustamante "Lessons from Building AI Agents for Financial Services" from the existing Sunder sync capture for skills, lazy loading, evals, and business-owned workflow procedures.
+- Updated: Harness Engineering And Runtime Control with the thin-harness/fat-skills design rule and the lifecycle warning that models eat old scaffolding.
+- Updated: Agent Skill Libraries And Requirements with the Stage 2 takeaway: durable skills should encode SOPs, rubrics, source maps, examples, approval rules, failure modes, evals, and editable business judgment rather than burying everything in workflow glue.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-04] ingest | Own the Loop agent harness tradeoff
+
+- Captured: Aparna Dhinakaran's X Article "Own the Loop: A Field Guide to Agent Harnesses" as complete intentional X evidence.
+- Preserved: agent harness rent-versus-own matrix image under `_attachments/images/agent-harness-rent-vs-own-matrix-2026-07-04.jpeg`.
+- Updated: Harness Engineering And Runtime Control with the rent-frontier-versus-own-loop frame: model-native harnesses can maximize fit and speed, while open/model-agnostic harnesses maximize portability and control at the cost of runtime ownership.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-06] maintenance | Healthcheck provenance and orphan cleanup
+
+- Backfilled source-map provenance for six Last30Days raw sweep artifacts and their staging digests.
+- Updated: High-Signal Enterprise Sales with an inbound link to OpenAI Enterprise Product Framing.
+- Split: GTM Prospecting Tool Index into focused category, adoption, vendor-directory, vendor A-L, vendor M-Z, and company-stack reference pages.
+- Updated: Knowledge Base Index.
+
+## [2026-07-07] ingest | Conference playbook interview question
+
+- Captured: Conference playbook reflections and guerrilla marketing tactics as complete intentional pasted raw evidence.
+- Updated: OpenAI And Codex Context Dossier For Strategic BDR APAC with the interview question "How do you run a conference playbook?", preserving the source playbook nearly verbatim and noting that Seth's main conference run was Executive War College in New Orleans.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-11] ingest | Customer-verifiable early-stage exit criteria
+
+- Captured: Mark Treacy's LinkedIn post as complete intentional pasted evidence.
+- Updated: High-Signal Enterprise Sales with the Miro pattern of a customer-validated problem statement and one-page business case as early-stage qualification gates and light champion tests.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-12] ingest | Dogfooding and AI-native compounding
+
+- Captured: Nicholas Charriere's complete X Article "The Dogfood Advantage."
+- Created: Dogfooding And AI-Native Compounding, covering internal product use as a feedback and productivity flywheel, plus the AI-lab asymmetries of early access and token abundance.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-12] ingest | Jevons paradox and pluralistic AI worldview
+
+- Captured: complete X posts by swyx and Mira Murati through the authenticated exact-link lane.
+- Created: Agentic Work Demand And Jevons Paradox, treating cheaper agentic knowledge work as a potential source of higher total demand rather than fixed-volume labor substitution.
+- Created: Pluralistic AI And Human Values, preserving the claim that human values and local knowledge should not be collapsed into a single average.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-12] ingest | AI's biggest winners have the lowest margins
+
+- Captured: Daniel Kornum's complete X Article through the authenticated exact-link lane.
+- Updated: AI-Native Services Companies with the low-margin operator thesis, hidden coordination-cost target, infrastructure-over-adoption deployment pattern, and the distinction between rebuilding a service and transforming an existing operator.
+- Updated: AI Implementation Consulting Company with a P&L-linked coordination-cost audit and embedded workflow-agent offer.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-20] ingest | Codex app-server BYO-subscription product pattern
+
+- Captured: Ben Badejo's complete X post about hosting Codex app-server and authenticating product users with ChatGPT.
+- Created: Codex App Server And BYO-Subscription Products, separating the supported custom-client and user-entitlement mechanism from rate-limit, credential, hosting, transport, and commercial-policy caveats.
+- Verified: Current OpenAI app-server, authentication, ChatGPT-plan, rate-card, and Terms of Use documentation.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-20] ingest | Google LangExtract repository
+
+- Captured: Google LangExtract's complete repository README at commit `0dff5479aa51934c7d5833a7c38e2a5abba4e0c2` as intentional web evidence.
+- Reused: two existing complete X captures discussing LangExtract's structured extraction and source-grounding value.
+- Created: Auditable Structured Document Extraction with exact-span evidence, long-document strategy, schema discipline, evaluation criteria, caveats, and Second Brain applications.
+- Corrected: the social claim that LangExtract requires no API keys; cloud inference providers require credentials and impose their own pricing and limits, while suitable local-model use can avoid provider keys.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-20] ingest | Mobile app build and launch playbook
+
+- Captured: kuch's pasted X Article "How to Build an iOS App: From Idea to $30,000/Month" as complete intentional evidence; the original URL was not present in the paste.
+- Reused: Lucas Patiri's complete X Article on B2C mobile-app distribution, creator systems, hooks, direct-message funnels, and retention.
+- Created: Mobile App Build And Launch Playbook, joining idea validation, narrow product scope, AI-assisted implementation, subscriptions, testing, App Store release, distribution, funnel measurement, and product feedback into one operating loop.
+- Added: verification guardrails around generated code, Apple requirements, in-app payments, security/privacy, source-specific benchmarks, creator disclosure, and unit economics.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-21] ingest | AI assessment to Concierge offer system
+
+- Reused: the existing AI Tools Assessment blank HTML capture after confirming the newly supplied file is byte-identical by SHA-256.
+- Captured: The Mini AI Assessment Playbook, The AI Concierge Playbook, and Seth's full pasted objections/course/offer-ladder bundle as complete intentional raw evidence.
+- Created: AI Assessment To Concierge Offer System, covering the offer ladder, diagnostic logic, nine-slide assessment, Audit-Optimize-Automate delivery, Concierge operating system, objection reframes, reported-economics caveats, and minimum operating assets.
+- Created: a self-contained developer handover prompt with the exact source reading order, implementation-brief requirements, safety constraints, and smallest vertical slice.
+- Updated: AI Services Lead Generation, Knowledge Base Index, and source-map provenance.
+
+## [2026-07-23] ingest | OpenAI release and enterprise-agent wiki
+
+- Migrated: the active OpenAI Enterprise Product Framing page from GTM Sales into a dedicated OpenAI domain; preserved the older June OpenAI/Codex dossier as a point-in-time archive.
+- Captured: the canonical OpenAI technical-acumen interview pack as a verbatim internal migration snapshot, explicitly labeled as a synthesis seed rather than primary evidence.
+- Captured: official OpenAI launch pages for GPT-Live, ChatGPT Work, GPT-5.6, and OpenAI Presence.
+- Captured: official Sierra pages for the SoftBank partnership and Horizon.
+- Captured: official Wonderful pages for Singapore expansion, open architecture, and the ELTA Greek-language voice-agent deployment.
+- Created: OpenAI Release Radar, ChatGPT Work, GPT-Live And Full-Duplex Voice, OpenAI Presence, and Enterprise Agent Competitive Landscape.
+- Updated: OpenAI Enterprise Product Framing with the five-layer Work, Codex, Workspace Agents, Presence, and Frontier/FDE product map.
+- Updated: Voice As The Next Frontier and Voice Agent Stack Landscape, replacing the speculative GPT-Bidi-1 watchlist claim with the official GPT-Live launch and preserving the consumer, enterprise-workspace, and API availability boundaries.
+- Verified: OpenAI News RSS at `https://openai.com/news/rss.xml`, the unified release hub, API changelog, ChatGPT release notes, and primary-source competitive claims through 2026-07-23.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-23] lint | 0 issues found, 0 auto-fixed
+
+- Deterministic Second Brain lint passed after the OpenAI wiki migration, cascade updates, source-map changes, and QMD refresh.
+
+## [2026-07-26] ingest | Agent, design, sales, and OpenAI saved-link batch
+
+- Normalized: 56 X URL occurrences into 48 unique status IDs, split three malformed concatenations, and removed seven repeated status URLs.
+- Captured: all 48 X posts through the authenticated exact-link lane; 26 complete web captures; one complete paper; one pasted-note capture; and one companion LinkedIn document transcript.
+- Expanded: Best of Kellblog into ten separately captured Pipeline articles because the supplied note prioritized pipeline material.
+- Staged: the Aseem Asthana LinkedIn post and David Rosenstein profile as incomplete because full source text was unavailable.
+- Created: Agent-Built Interactive Experiences; Browser And Computer-Use Workflows; Pipeline Generation, Coverage, And Inspection; and the archived one-by-one saved-link router.
+- Updated: Harness Engineering And Runtime Control, Agent Skill Libraries And Requirements, Agentic Artifact Surfaces, High-Signal Enterprise Sales, Sales Leadership And Rep Operating Systems, Performance Marketing Creative Ops, ChatGPT Work, Agent Platforms And Work Surfaces, OpenAI Enterprise Product Framing, Knowledge Base Index, and source-map provenance.
+- Cross-compiled: a 76-URL summary and Lauren-final relevance artifact in the OpenAI Interview Prep vault.
+
+## [2026-07-26] ingest | InvestInAssets sales one-pager image resolution
+
+- Captured: Seth's supplied screenshot and a verbatim transcription as a new immutable pasted source, linked to the existing InvestInAssets X capture.
+- Resolved: the image text to the May 23, 2020 Hacker News comment by `goatherders`; later republications attribute the advice to Colin Dowling, but the original comment does not state his name.
+- Updated: High-Signal Enterprise Sales with problem-first, useful-first selling and explicit caveats around the source's rhetorical heuristics.
+- Cross-compiled: source 07 in the OpenAI Interview Prep external-source digest from low-relevance/link-only to a high-relevance Lauren-final takeaway.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-28] ingest | Sales, agents, and OpenAI saved-link batch
+
+- Captured: 14 complete LinkedIn posts through Seth's authenticated session, five complete exact X captures, and one complete Signal article.
+- Created: the 20-source Sales, Agents, And OpenAI Saved Links archive router.
+- Updated: High-Signal Enterprise Sales with status-quo qualification, stuck-deal re-entry, authentic outbound, and strategic executive participation.
+- Updated: Pipeline Generation, Coverage, And Inspection and Sales Leadership And Rep Operating Systems with account prioritization, explicit follow-up ownership, weekly pipeline plans, first-call execution, and sustainable leadership.
+- Updated: AI-Native Account Intelligence with Hightouch's context/coordination/memory/prompt architecture, verified CRM proposals, trusted-metric boundaries, and human approvals.
+- Updated: Harness Engineering And Runtime Control with buy-versus-build economics and the principle of renting maintained frontier machinery while owning portable context, workflows, and evals.
+- Updated: ChatGPT Work and OpenAI Enterprise Product Framing with delegated outcome execution, forward-deployed product discovery, informal culture signals, competitor positioning, and evidence caveats.
+- Cross-compiled: sources 59–78, ranked high to low with summaries and Lauren-final relevance, into the OpenAI Interview Prep external-source digest.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-28] ingest | Orchestration skill and sales-acumen integration
+
+- Captured: Eric Provencher's exact X post and the complete linked `orchestrate` skill from GitHub.
+- Reused: the existing complete Gael Tang seven-figure-deal capture instead of creating a duplicate raw source.
+- Updated: Agent Skill Libraries And Requirements with the narrow, non-overlapping delegation pattern and its coordination-cost caveat.
+- Updated: the July 28 saved-link router with both follow-up entries.
+- Cross-compiled: sources 79 and 80 into the OpenAI Interview Prep external-source digest.
+- Integrated: the external sales principles and discovery questions into the final sales-acumen pack, with a canonical question bank and targeted additions for stalled deals, procurement, and CRM approvals.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-30] capture | Sales influencer X profile baselines
+
+- Captured: 100 recent X posts each for Chris Pisarski, Jen Abel, TechSalesGuy, The Deal Director, Kyle Asay, Pete Kazanjy, Fidel CacheFlow, Ryan Walsh, Rook to Rep, Sales x SaaS, and Antinertia.
+- Stored: immutable profile snapshots under `raw/sweeps/x/` with tweet text, quoted posts, media links, engagement metrics, original URLs, and authenticated capture provenance.
+- Preserved: partial retry snapshots created while X rate-limited the primary timeline endpoint; complete 100-post snapshots supersede them for current retrieval.
+- Updated: source-map provenance and the project-local QMD lexical and vector indexes.
+
+## [2026-07-30] ingest | Geoffrey Huntley software-factory prerequisites
+
+- Captured: Geoffrey Huntley's complete X post through the authenticated exact-link lane.
+- Updated: Harness Engineering And Runtime Control with the unfinished-software-factory maturity warning and the prerequisite stack of sandboxing, monorepos, reproducible builds, CI/CD, identity and secrets, and agent-friendly DevEx.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-07-30] ingest | Math versus Drama in enterprise deals
+
+- Captured: Nate Nasralla's complete LinkedIn post, supplied verbatim by Seth, with the original URL and activity-derived publication timestamp.
+- Updated: High-Signal Enterprise Sales with the Math-versus-Drama framework for separating a quantified operating problem from stakeholder stories that preserve status, identity, prior decisions, workload narratives, or blame positions.
+- Added: deal-review questions for validating stakeholder motives and constructing truthful, face-preserving narratives that reconnect political friction to the business case.
+- Updated: Knowledge Base Index and source-map provenance.
+
+## [2026-08-07] ingest | Agentic cybersecurity and autonomous attack risk
+
+- Captured: the complete supplied transcript of the Black Hat USA 2026 talk on the reported OpenAI–Hugging Face incident as immutable intentional YouTube evidence.
+- Created: the CISO & Security wiki domain.
+- Created: Agentic Cybersecurity And Autonomous Attack Risk, covering the reported incident chain, containment failures, CISO control agenda, defensive automation loop, and board-level questions.
+- Preserved: single-source and incomplete-postmortem caveats so technical claims remain attributed to the talk until corroborating incident reports are captured.
+- Updated: Knowledge Base Index and source-map provenance.

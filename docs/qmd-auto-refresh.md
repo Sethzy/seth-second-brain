@@ -16,12 +16,16 @@ Second Brain uses a project-local QMD config at `.qmd/index.yml`. When `qmd` is 
 
 Tracked:
 
-- `.qmd/index.yml` - collection definitions and retrieval context.
+- `config/qmd-index.example.yml` - human-readable collection definitions and retrieval context.
+- `scripts/init-qmd.sh` - creates the machine-local config with paths for the current clone.
 
 Ignored:
 
+- `.qmd/index.yml` / `.qmd/index.yaml`
 - `.qmd/*.sqlite`
 - `.qmd/*.sqlite-*`
+
+QMD stores absolute collection paths in its generated config, so both the config and database must be rebuilt per clone. They are caches, not knowledge. `scripts/init-qmd.sh` detects a moved clone and rewrites its collection paths safely.
 
 The indexed collections are repo-local only:
 
@@ -50,7 +54,7 @@ The refresh script calls `scripts/init-qmd.sh` first, so a missing local `.qmd` 
 
 The GTM-style automation for this repo is `second-brain-qmd-refresh`. It should:
 
-- run from `/Users/sethlim/Documents/Seth Second Brain`;
+- run from the local clone root;
 - run `scripts/qmd-refresh.sh --embed`;
 - write only the local `.qmd` index files and QMD model/cache state;
 - not read, write, link, or sync GTM Workspace;

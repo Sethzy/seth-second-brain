@@ -31,7 +31,7 @@ fi
 
 mkdir -p "$OUT"
 
-python3 - "$CONFIG" "$@" <<'PY' | while IFS=$'\t' read -r slug name handle topic search; do
+python3 - "$CONFIG" "$@" <<'PY' | while IFS=$'\037' read -r slug name handle topic search; do
 import json
 import sys
 
@@ -39,12 +39,13 @@ config_path = sys.argv[1]
 selected = set(sys.argv[2:])
 data = json.load(open(config_path))
 default_search = data.get("defaults", {}).get("search", "x,youtube")
+sep = "\x1f"
 
 for person in data.get("people", []):
     slug = person["slug"]
     if selected and slug not in selected:
         continue
-    print("\t".join([
+    print(sep.join([
         slug,
         person.get("name", slug),
         person.get("x_handle", "").lstrip("@"),
@@ -52,20 +53,30 @@ for person in data.get("people", []):
         person.get("search") or default_search,
     ]))
 PY
-  if [[ -z "$slug" || -z "$handle" ]]; then
-    echo "Skipping invalid watchlist entry: slug=$slug handle=$handle" >&2
+  if [[ -z "$slug" || -z "$topic" ]]; then
+    echo "Skipping invalid watchlist entry: slug=$slug topic=$topic" >&2
     continue
   fi
 
   before_file="$(mktemp)"
   find "$OUT" -maxdepth 1 -type f -name "*.md" -print | sort > "$before_file"
 
-  echo "Running people watchlist sweep: $name (@$handle)"
-  "$ROOT/scripts/last30days-to-sweeps.sh" \
-    --x-profile3 "$topic" \
-    --search "$search" \
-    --x-handle "$handle" \
+  if [[ -n "$handle" ]]; then
+    echo "Running people watchlist sweep: $name (@$handle)"
+  else
+    echo "Running people watchlist sweep: $name (topic/web)"
+  fi
+
+  args=(
+    "$ROOT/scripts/last30days-to-sweeps.sh"
+    --x-profile3 "$topic"
+    --search "$search"
     --save-suffix "$slug"
+  )
+  if [[ -n "$handle" ]]; then
+    args+=(--x-handle "$handle")
+  fi
+  "${args[@]}"
 
   after_file="$(mktemp)"
   find "$OUT" -maxdepth 1 -type f -name "*.md" -print | sort > "$after_file"

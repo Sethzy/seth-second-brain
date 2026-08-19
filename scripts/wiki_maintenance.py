@@ -19,6 +19,104 @@ from pathlib import Path
 
 STATUS_ID_RE = re.compile(r"(\d{15,25})")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+WIKILINK_RE = re.compile(r"(?<!!)\[\[([^\]\n]+)\]\]")
+HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
+
+REQUIRED_WIKI_FIELDS = ["type", "title", "updated_at", "status", "tags"]
+LINT_STOP_PHRASES = {
+    "Active Threads",
+    "Agent",
+    "Agents",
+    "Article",
+    "Articles",
+    "Candidate",
+    "Candidates",
+    "Capture",
+    "Captures",
+    "Code",
+    "Compiled",
+    "Context",
+    "Draft",
+    "Evidence",
+    "Examples",
+    "File",
+    "Files",
+    "Index",
+    "Key Ideas",
+    "Markdown",
+    "My Take",
+    "Open Questions",
+    "Overview",
+    "Page",
+    "Pages",
+    "Raw",
+    "Report",
+    "Review",
+    "See Also",
+    "Source",
+    "Sources",
+    "Status",
+    "Summary",
+    "Unknown",
+    "Updated",
+    "Workflow",
+    "Workflows",
+}
+PHRASE_LEADING_STOPWORDS = {"For", "If", "Should", "That", "The", "This", "Use", "What", "When", "Where", "Why"}
+TOKEN_STOPWORDS = {
+    "about",
+    "after",
+    "agent",
+    "agents",
+    "also",
+    "and",
+    "article",
+    "based",
+    "because",
+    "brain",
+    "capture",
+    "captures",
+    "code",
+    "coding",
+    "compiled",
+    "context",
+    "data",
+    "does",
+    "from",
+    "have",
+    "into",
+    "more",
+    "note",
+    "notes",
+    "page",
+    "pages",
+    "pattern",
+    "patterns",
+    "raw",
+    "source",
+    "sources",
+    "system",
+    "systems",
+    "that",
+    "their",
+    "this",
+    "with",
+    "workflow",
+    "workflows",
+}
+REVIEW_MARKERS = [
+    "contradiction",
+    "[!contradiction]",
+    "[!gap]",
+    "[!stale]",
+    "needs source",
+    "needs verification",
+    "verify",
+    "unverified",
+    "unclear",
+    "todo",
+    "tbd",
+]
 
 
 CLUSTERS = [
@@ -213,7 +311,10 @@ def utc_now() -> str:
 
 
 def relpath(root: Path, path: Path) -> str:
-    return path.relative_to(root).as_posix()
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError:
+        return path.resolve().relative_to(root.resolve()).as_posix()
 
 
 def load_source_map(root: Path) -> list[dict]:
@@ -533,9 +634,97 @@ def frontmatter(text: str) -> dict[str, str]:
     return data
 
 
-def markdown_links(path: Path) -> list[Path]:
+def strip_frontmatter(text: str) -> str:
+    if not text.startswith("---"):
+        return text
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        return text
+    return parts[2]
+
+
+def frontmatter_block(text: str) -> str:
+    if not text.startswith("---"):
+        return ""
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        return ""
+    return parts[1]
+
+
+def frontmatter_tags(text: str) -> list[str]:
+    block = frontmatter_block(text)
+    tags = []
+    in_tags = False
+    for line in block.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("tags:"):
+            in_tags = True
+            inline = stripped.split(":", 1)[1].strip()
+            if inline.startswith("[") and inline.endswith("]"):
+                tags.extend(tag.strip().strip("\"'") for tag in inline[1:-1].split(",") if tag.strip())
+            elif inline:
+                tags.extend(tag.strip().strip("\"'") for tag in inline.split(",") if tag.strip())
+            continue
+        if in_tags and stripped.startswith("-"):
+            tag = stripped[1:].strip().strip("\"'")
+            if tag:
+                tags.append(tag)
+            continue
+        if not line.startswith((" ", "\t", "-")):
+            in_tags = False
+    return tags
+
+
+def normalize_title(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+
+
+def page_title(path: Path, text: str) -> str:
+    fm = frontmatter(text)
+    if fm.get("title"):
+        return fm["title"]
+    for line in strip_frontmatter(text).splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return path.stem.replace("-", " ").title()
+
+
+def article_lookup(root: Path, articles: list[Path], texts: dict[Path, str]) -> tuple[dict[str, list[Path]], dict[str, str]]:
+    lookup: dict[str, list[Path]] = defaultdict(list)
+    titles: dict[str, str] = {}
+    for article in articles:
+        title = page_title(article, texts[article])
+        rel = relpath(root, article)
+        titles[rel] = title
+        candidates = {
+            title,
+            article.stem,
+            article.name.removesuffix(".md"),
+            article.stem.replace("-", " "),
+        }
+        for candidate in candidates:
+            normalized = normalize_title(candidate)
+            if normalized:
+                lookup[normalized].append(article)
+    return lookup, titles
+
+
+def parse_wikilinks(text: str) -> list[str]:
+    targets = []
+    for match in WIKILINK_RE.finditer(text):
+        target = match.group(1).strip()
+        target = target.split("|", 1)[0].split("#", 1)[0].strip()
+        if target:
+            targets.append(target)
+    return targets
+
+
+def markdown_link_records(path: Path) -> list[dict[str, object]]:
     text = path.read_text(errors="replace")
-    links = []
+    records = []
     for match in MARKDOWN_LINK_RE.finditer(text):
         target = match.group(1).strip()
         if not target or "://" in target or target.startswith("#") or target.startswith("mailto:"):
@@ -543,7 +732,14 @@ def markdown_links(path: Path) -> list[Path]:
         clean = target.split("#", 1)[0]
         if not clean:
             continue
-        links.append((path.parent / clean).resolve())
+        records.append({"target": target, "clean": clean, "resolved": (path.parent / clean).resolve()})
+    return records
+
+
+def markdown_links(path: Path) -> list[Path]:
+    links = []
+    for record in markdown_link_records(path):
+        links.append(record["resolved"])
     return links
 
 
@@ -557,6 +753,10 @@ def duplicate_x_capture_records(root: Path) -> dict[str, list[str]]:
         if not directory.exists():
             continue
         for path in directory.glob("*.md"):
+            if "staging" in path.parts:
+                fm = frontmatter(path.read_text(errors="replace"))
+                if fm.get("status") in {"resolved", "superseded", "archived"}:
+                    continue
             status_id = extract_status_id(path)
             if status_id:
                 by_id[status_id].append(relpath(root, path))
@@ -616,6 +816,489 @@ def staging_promotion_candidates(root: Path) -> list[tuple[str, str]]:
     return candidates
 
 
+def section_heading_issues(text: str) -> list[tuple[str, int]]:
+    lines = strip_frontmatter(text).splitlines()
+    headings = []
+    for index, line in enumerate(lines):
+        match = HEADING_RE.match(line)
+        if not match:
+            continue
+        level = len(match.group(1))
+        if level == 1:
+            continue
+        headings.append((index, level, match.group(2).strip()))
+
+    issues = []
+    for position, (line_index, level, heading) in enumerate(headings):
+        end = len(lines)
+        for next_line, next_level, _ in headings[position + 1 :]:
+            if next_level <= level:
+                end = next_line
+                break
+        body = [
+            line.strip()
+            for line in lines[line_index + 1 : end]
+            if line.strip() and not line.strip().startswith("<!--")
+        ]
+        if not body:
+            issues.append((heading, line_index + 1))
+    return issues
+
+
+def parse_index_paths(root: Path) -> set[str]:
+    paths = set(parse_wiki_index(root).keys())
+    index = root / "wiki" / "index.md"
+    if not index.exists():
+        return paths
+    for record in markdown_link_records(index):
+        resolved = record["resolved"]
+        try:
+            rel = relpath(root, resolved)
+        except ValueError:
+            continue
+        if rel.startswith("wiki/") and rel.endswith(".md"):
+            paths.add(rel.removeprefix("wiki/"))
+    return paths
+
+
+def is_archive_page(path: Path) -> bool:
+    return "archive" in path.parts
+
+
+def parse_date(value: str | None) -> dt.date | None:
+    if not value:
+        return None
+    try:
+        return dt.date.fromisoformat(value[:10])
+    except ValueError:
+        return None
+
+
+def page_tokens(value: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", value.lower())
+        if len(token) > 2 and token not in TOKEN_STOPWORDS
+    }
+
+
+def content_tokens(text: str) -> set[str]:
+    body = strip_frontmatter(text)
+    return {
+        token
+        for token in re.findall(r"[a-z][a-z0-9-]{3,}", body.lower())
+        if token not in TOKEN_STOPWORDS
+    }
+
+
+def jaccard(left: set[str], right: set[str]) -> float:
+    if not left or not right:
+        return 0.0
+    return len(left & right) / len(left | right)
+
+
+def duplicate_page_candidates(root: Path, articles: list[Path], texts: dict[Path, str]) -> list[tuple[float, str, str, str]]:
+    metadata = []
+    for article in articles:
+        if is_archive_page(article):
+            continue
+        text = texts[article]
+        metadata.append(
+            {
+                "path": relpath(root, article),
+                "title_tokens": page_tokens(page_title(article, text)),
+                "tags": set(frontmatter_tags(text)),
+                "content_tokens": content_tokens(text),
+            }
+        )
+
+    candidates = []
+    for index, left in enumerate(metadata):
+        for right in metadata[index + 1 :]:
+            title_score = jaccard(left["title_tokens"], right["title_tokens"])
+            tag_score = jaccard(left["tags"], right["tags"])
+            content_score = jaccard(left["content_tokens"], right["content_tokens"])
+            shared_title = len(left["title_tokens"] & right["title_tokens"])
+            shared_tags = len(left["tags"] & right["tags"])
+            reason = ""
+            score = 0.0
+            if title_score >= 0.45 and shared_title >= 2:
+                score = title_score
+                reason = f"title overlap ({shared_title} shared title tokens)"
+            elif tag_score >= 0.55 and shared_tags >= 3:
+                score = tag_score
+                reason = f"tag overlap ({shared_tags} shared tags)"
+            elif content_score >= 0.35:
+                score = content_score
+                reason = "content-token overlap"
+            if reason:
+                candidates.append((score, left["path"], right["path"], reason))
+    return sorted(candidates, key=lambda item: item[0], reverse=True)[:20]
+
+
+def repeated_unpaged_phrases(root: Path, articles: list[Path], texts: dict[Path, str], title_norms: set[str]) -> list[tuple[str, list[str]]]:
+    phrase_pages: dict[str, set[str]] = defaultdict(set)
+    phrase_display: dict[str, str] = {}
+    phrase_re = re.compile(r"\b([A-Z][A-Za-z0-9]+(?:[- ][A-Z][A-Za-z0-9]+){1,5})\b")
+    for article in articles:
+        if is_archive_page(article):
+            continue
+        body = strip_frontmatter(texts[article])
+        rel = relpath(root, article)
+        for match in phrase_re.finditer(body):
+            phrase = re.sub(r"\s+", " ", match.group(1).strip())
+            first_word = phrase.split(" ", 1)[0]
+            if first_word in PHRASE_LEADING_STOPWORDS:
+                continue
+            if phrase in LINT_STOP_PHRASES:
+                continue
+            normalized = normalize_title(phrase)
+            if not normalized or normalized in title_norms:
+                continue
+            tokens = page_tokens(phrase)
+            if len(tokens) < 2:
+                continue
+            phrase_display.setdefault(normalized, phrase)
+            phrase_pages[normalized].add(rel)
+
+    candidates = []
+    for normalized, pages in phrase_pages.items():
+        if len(pages) >= 3:
+            candidates.append((phrase_display[normalized], sorted(pages)))
+    return sorted(candidates, key=lambda item: (-len(item[1]), item[0].lower()))[:25]
+
+
+def linked_article_paths(root: Path, path: Path, text: str, lookup: dict[str, list[Path]]) -> set[str]:
+    linked = set()
+    for record in markdown_link_records(path):
+        resolved = record["resolved"]
+        try:
+            rel = relpath(root, resolved)
+        except ValueError:
+            continue
+        if rel.startswith("wiki/") and rel.endswith(".md"):
+            linked.add(rel)
+    for target in parse_wikilinks(text):
+        matches = lookup.get(normalize_title(target), [])
+        for match in matches:
+            linked.add(relpath(root, match))
+    return linked
+
+
+def unlinked_title_mentions(
+    root: Path,
+    articles: list[Path],
+    texts: dict[Path, str],
+    lookup: dict[str, list[Path]],
+    titles: dict[str, str],
+) -> list[tuple[str, str]]:
+    mentions = []
+    title_items = []
+    for rel, title in titles.items():
+        tokens = page_tokens(title)
+        if len(tokens) >= 2:
+            title_items.append((rel, title, title.lower()))
+
+    for article in articles:
+        if is_archive_page(article):
+            continue
+        rel = relpath(root, article)
+        text = texts[article]
+        body_lower = strip_frontmatter(text).lower()
+        linked = linked_article_paths(root, article, text, lookup)
+        for target_rel, title, title_lower in title_items:
+            if target_rel == rel or target_rel in linked:
+                continue
+            if title_lower in body_lower:
+                mentions.append((rel, target_rel))
+    return mentions[:60]
+
+
+def review_marker_snippets(root: Path, articles: list[Path], texts: dict[Path, str]) -> list[tuple[str, int, str]]:
+    snippets = []
+    for article in articles:
+        if is_archive_page(article):
+            continue
+        for line_number, line in enumerate(texts[article].splitlines(), start=1):
+            if "../../raw/" in line or "raw/intentional/" in line or "raw/sweeps/" in line:
+                continue
+            lowered = line.lower()
+            if any(marker in lowered for marker in REVIEW_MARKERS):
+                snippets.append((relpath(root, article), line_number, line.strip()[:180]))
+    return snippets[:40]
+
+
+def build_wiki_lint_report(root: Path, stale_days: int = 30) -> str:
+    sources = load_source_map(root)
+    articles = wiki_articles(root)
+    texts = {article: article.read_text(errors="replace") for article in articles}
+    lookup, titles = article_lookup(root, articles, texts)
+    actual_rels = {relpath(root, article) for article in articles}
+
+    frontmatter_gaps = []
+    empty_sections = []
+    broken_markdown_links = []
+    broken_raw_links = []
+    dead_wikilinks = []
+    inbound = Counter()
+    raw_evidence_gaps = []
+    huge_pages = []
+    stale_or_flagged_pages = []
+    today_date = dt.date.today()
+
+    for article in articles:
+        rel = relpath(root, article)
+        text = texts[article]
+        fm = frontmatter(text)
+        missing = [field for field in REQUIRED_WIKI_FIELDS if field not in fm]
+        if missing:
+            frontmatter_gaps.append((rel, missing))
+
+        for heading, line_number in section_heading_issues(text):
+            empty_sections.append((rel, line_number, heading))
+
+        for record in markdown_link_records(article):
+            resolved = record["resolved"]
+            target = str(record["target"])
+            try:
+                target_rel = relpath(root, resolved)
+            except ValueError:
+                target_rel = ""
+            if target_rel.startswith("wiki/") and target_rel.endswith(".md"):
+                inbound[target_rel] += 1
+            if target_rel.startswith("raw/") and not resolved.exists():
+                broken_raw_links.append((rel, target))
+            elif target_rel and not resolved.exists():
+                broken_markdown_links.append((rel, target))
+
+        for target in parse_wikilinks(text):
+            matches = lookup.get(normalize_title(target), [])
+            if matches:
+                for match in matches:
+                    inbound[relpath(root, match)] += 1
+            else:
+                dead_wikilinks.append((rel, target))
+
+        words = len(text.split())
+        refs = raw_ref_count(text)
+        if not is_archive_page(article) and (words >= 2500 or refs >= 80):
+            huge_pages.append((rel, words, refs))
+        if not is_archive_page(article) and refs == 0 and "Sources:" not in text and "## Sources" not in text:
+            raw_evidence_gaps.append(rel)
+
+        updated = parse_date(fm.get("updated_at") or fm.get("updated"))
+        status = fm.get("status", "")
+        if status in {"stale", "contradicted"}:
+            stale_or_flagged_pages.append((rel, status, fm.get("updated_at") or fm.get("updated") or "<missing>"))
+        elif updated and (today_date - updated).days > stale_days and status in {"active", "draft"}:
+            stale_or_flagged_pages.append((rel, f"older than {stale_days} days", updated.isoformat()))
+        elif not updated and not is_archive_page(article):
+            stale_or_flagged_pages.append((rel, "missing updated_at", "<missing>"))
+
+    orphan_pages = [
+        rel
+        for rel in sorted(actual_rels)
+        if not rel.startswith("wiki/archive/") and inbound[rel] == 0
+    ]
+
+    index_paths = {f"wiki/{path}" if not path.startswith("wiki/") else path for path in parse_index_paths(root)}
+    index_missing_entries = sorted(rel for rel in actual_rels if rel not in index_paths and rel not in {"wiki/log.md"})
+    index_dead_entries = sorted(rel for rel in index_paths if rel not in actual_rels and rel not in {"wiki/index.md", "wiki/log.md"})
+
+    title_norms = {normalize_title(title) for title in titles.values()}
+    missing_page_candidates = repeated_unpaged_phrases(root, articles, texts, title_norms)
+    cross_ref_gaps = unlinked_title_mentions(root, articles, texts, lookup, titles)
+    duplicate_candidates = duplicate_page_candidates(root, articles, texts)
+    review_snippets = review_marker_snippets(root, articles, texts)
+    raw_missing, staging_missing = source_map_missing_paths(root, sources)
+    duplicate_x_records = duplicate_x_capture_records(root)
+
+    critical_count = (
+        len(frontmatter_gaps)
+        + len(broken_markdown_links)
+        + len(broken_raw_links)
+        + len(dead_wikilinks)
+        + len(raw_missing)
+        + len(staging_missing)
+        + len(index_dead_entries)
+    )
+    warning_count = (
+        len(orphan_pages)
+        + len(empty_sections)
+        + len(raw_evidence_gaps)
+        + len(huge_pages)
+        + len(stale_or_flagged_pages)
+        + len(duplicate_x_records)
+    )
+    suggestion_count = (
+        len(index_missing_entries)
+        + len(missing_page_candidates)
+        + len(cross_ref_gaps)
+        + len(duplicate_candidates)
+        + len(review_snippets)
+    )
+    safe_fix_count = (
+        len(frontmatter_gaps)
+        + len(broken_markdown_links)
+        + len(dead_wikilinks)
+        + len(index_missing_entries)
+        + len(index_dead_entries)
+        + len(empty_sections)
+    )
+    needs_review_count = (
+        len(orphan_pages)
+        + len(raw_evidence_gaps)
+        + len(huge_pages)
+        + len(stale_or_flagged_pages)
+        + len(missing_page_candidates)
+        + len(cross_ref_gaps)
+        + len(duplicate_candidates)
+        + len(review_snippets)
+    )
+
+    lines = [
+        "---",
+        "type: wiki_lint_report",
+        f"created_at: {utc_now()}",
+        "status: proposed",
+        f"stale_days: {stale_days}",
+        "---",
+        "",
+        f"# Second Brain Lint Report - {today()}",
+        "",
+        "This is a read-only report. Do not merge, delete, archive, or rewrite wiki pages until Seth approves the cleanup target.",
+        "",
+        "## Summary",
+        "",
+        f"- Pages scanned: {len(articles)}",
+        f"- Critical issues: {critical_count}",
+        f"- Warnings: {warning_count}",
+        f"- Suggestions: {suggestion_count}",
+        f"- Safe fix candidates: {safe_fix_count}",
+        f"- Needs-review candidates: {needs_review_count}",
+        "",
+    ]
+
+    lines.extend(["## Critical", ""])
+    if not any([frontmatter_gaps, broken_markdown_links, broken_raw_links, dead_wikilinks, raw_missing, staging_missing, index_dead_entries]):
+        lines.append("- No critical deterministic issues detected.")
+    if frontmatter_gaps:
+        lines.extend(["", "### Frontmatter Gaps", "", "| Page | Missing Fields |", "|---|---|"])
+        for rel, missing in frontmatter_gaps[:50]:
+            lines.append(f"| `{rel}` | {', '.join(missing)} |")
+    if broken_markdown_links or broken_raw_links or dead_wikilinks:
+        lines.extend(["", "### Broken Links", "", "| Page | Target | Type |", "|---|---|---|"])
+        for rel, target in broken_markdown_links[:40]:
+            lines.append(f"| `{rel}` | `{target}` | markdown |")
+        for rel, target in broken_raw_links[:40]:
+            lines.append(f"| `{rel}` | `{target}` | raw evidence |")
+        for rel, target in dead_wikilinks[:40]:
+            lines.append(f"| `{rel}` | `[[{target}]]` | wikilink |")
+    if raw_missing or staging_missing:
+        lines.extend(["", "### Source-Map Drift", ""])
+        lines.append(f"- Raw markdown files missing from source map: {len(raw_missing)}")
+        lines.append(f"- Staging markdown files missing from source map: {len(staging_missing)}")
+        for path in raw_missing[:10]:
+            lines.append(f"- Raw miss: `{path}`")
+        for path in staging_missing[:10]:
+            lines.append(f"- Staging miss: `{path}`")
+    if index_dead_entries:
+        lines.extend(["", "### Stale Index Entries", ""])
+        for rel in index_dead_entries[:40]:
+            lines.append(f"- `{rel}` is listed in `wiki/index.md` but no file exists.")
+    lines.append("")
+
+    lines.extend(["## Warnings", ""])
+    if not any([orphan_pages, empty_sections, raw_evidence_gaps, huge_pages, stale_or_flagged_pages, duplicate_x_records]):
+        lines.append("- No warning-level structural issues detected.")
+    if orphan_pages:
+        lines.extend(["", "### Orphan Pages", ""])
+        for rel in orphan_pages[:50]:
+            lines.append(f"- `{rel}` has no inbound wiki links.")
+    if empty_sections:
+        lines.extend(["", "### Empty Sections", "", "| Page | Line | Heading |", "|---|---:|---|"])
+        for rel, line_number, heading in empty_sections[:50]:
+            lines.append(f"| `{rel}` | {line_number} | {heading} |")
+    if raw_evidence_gaps:
+        lines.extend(["", "### Raw Evidence Gaps", ""])
+        for rel in raw_evidence_gaps[:40]:
+            lines.append(f"- `{rel}` has no obvious raw/source citation marker.")
+    if huge_pages:
+        lines.extend(["", "### Huge / Junk-Drawer Candidates", "", "| Page | Words | Raw Refs |", "|---|---:|---:|"])
+        for rel, words, refs in sorted(huge_pages, key=lambda item: item[1], reverse=True)[:30]:
+            lines.append(f"| `{rel}` | {words} | {refs} |")
+    if stale_or_flagged_pages:
+        lines.extend(["", "### Stale Or Flagged Pages", "", "| Page | Reason | Updated |", "|---|---|---|"])
+        for rel, reason, updated in stale_or_flagged_pages[:50]:
+            lines.append(f"| `{rel}` | {reason} | {updated} |")
+    if duplicate_x_records:
+        lines.extend(["", "### Duplicate X Capture/Staging Records", "", "| Status ID | Records |", "|---|---|"])
+        for status_id, paths in sorted(duplicate_x_records.items())[:20]:
+            joined = "<br>".join(f"`{path}`" for path in paths)
+            lines.append(f"| {status_id} | {joined} |")
+    lines.append("")
+
+    lines.extend(["## Suggestions", ""])
+    if not any([index_missing_entries, missing_page_candidates, cross_ref_gaps, duplicate_candidates, review_snippets]):
+        lines.append("- No suggestion-level knowledge-health issues detected.")
+    if index_missing_entries:
+        lines.extend(["", "### Pages Missing From Index", ""])
+        for rel in index_missing_entries[:50]:
+            lines.append(f"- `{rel}` exists but is not listed in `wiki/index.md`.")
+    if missing_page_candidates:
+        lines.extend(["", "### Repeated Concepts / Entities Without Pages", "", "| Phrase | Mentioned In |", "|---|---|"])
+        for phrase, pages in missing_page_candidates[:20]:
+            joined = "<br>".join(f"`{page}`" for page in pages[:6])
+            suffix = f"<br>... {len(pages) - 6} more" if len(pages) > 6 else ""
+            lines.append(f"| {phrase} | {joined}{suffix} |")
+    if cross_ref_gaps:
+        lines.extend(["", "### Missing Cross-Reference Candidates", "", "| Source Page | Mentioned Page |", "|---|---|"])
+        for source_rel, target_rel in cross_ref_gaps[:40]:
+            lines.append(f"| `{source_rel}` | `{target_rel}` |")
+    if duplicate_candidates:
+        lines.extend(["", "### Duplicate / Overlap Candidates", "", "| Score | Page A | Page B | Reason |", "|---:|---|---|---|"])
+        for score, left, right, reason in duplicate_candidates[:20]:
+            lines.append(f"| {score:.2f} | `{left}` | `{right}` | {reason} |")
+    if review_snippets:
+        lines.extend(["", "### Semantic Review Markers", "", "| Page | Line | Snippet |", "|---|---:|---|"])
+        for rel, line_number, snippet in review_snippets[:30]:
+            safe_snippet = snippet.replace("|", "\\|")
+            lines.append(f"| `{rel}` | {line_number} | {safe_snippet} |")
+    lines.append("")
+
+    lines.extend(
+        [
+            "## Cleanup Policy",
+            "",
+            "Safe to auto-fix after review:",
+            "- Add missing placeholder frontmatter fields.",
+            "- Repair obvious broken markdown paths when there is exactly one matching target.",
+            "- Add missing `wiki/index.md` rows for existing pages.",
+            "- Add obvious wikilinks for exact title mentions.",
+            "",
+            "Needs Seth review first:",
+            "- Merge duplicate or overlapping pages.",
+            "- Archive or delete orphan pages.",
+            "- Split huge pages.",
+            "- Resolve contradictions or stale claims.",
+            "- Compile raw-only source clusters into wiki pages.",
+            "",
+            "## Recommended Next Action",
+            "",
+        ]
+    )
+    if critical_count:
+        lines.append("1. Fix critical deterministic issues before semantic cleanup.")
+    elif huge_pages:
+        lines.append("1. Pick one huge page and decide whether to split it or tighten it in place.")
+    elif missing_page_candidates or cross_ref_gaps:
+        lines.append("1. Approve one cross-link or missing-page cluster for cleanup.")
+    else:
+        lines.append("1. No urgent cleanup. Keep the weekly lint running and compile approved raw-only clusters.")
+    lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def build_health_report(root: Path, include_qmd: bool = True) -> str:
     sources = load_source_map(root)
     raw_only = raw_only_sources(sources, None)
@@ -642,7 +1325,7 @@ def build_health_report(root: Path, include_qmd: bool = True) -> str:
         fm = frontmatter(text)
         words = len(text.split())
         refs = raw_ref_count(text)
-        if words >= 2500 or refs >= 80:
+        if not is_archive_page(article) and (words >= 2500 or refs >= 80):
             huge_pages.append((relpath(root, article), words, refs))
         if fm.get("status") in {"stale", "contradicted"} or not fm.get("updated_at"):
             stale_pages.append((relpath(root, article), fm.get("status", "<missing>"), fm.get("updated_at", "<missing>")))
@@ -756,18 +1439,23 @@ def build_health_report(root: Path, include_qmd: bool = True) -> str:
         lines.append("- No Last30Days staging digests currently say `promote`.")
     lines.append("")
 
-    lines.extend(
+    next_actions = []
+    if raw_missing or staging_missing:
+        next_actions.append("Backfill `state/source-map.json` for markdown files missing from the provenance map.")
+    if duplicates:
+        next_actions.append("Resolve duplicate X staging records after their raw captures are confirmed in source-map.")
+    next_actions.extend(
         [
-            "## Ranked Next Actions",
-            "",
-            "1. Run `scripts/wiki-organize.sh --propose --limit 100` to generate a raw-only X promotion queue.",
-            "2. Approve one proposal cluster, then compile it into existing medium wiki pages before creating new pages.",
-            "3. Resolve duplicate X staging records after their raw captures are confirmed in source-map.",
-            "4. Split or tighten huge pages only when a cluster has a clear reusable concept boundary.",
-            "5. Run `scripts/qmd-refresh.sh --embed` after approved wiki/source-map changes.",
-            "",
+            "Run `scripts/wiki-organize.sh --propose --limit 100` to generate a raw-only X promotion queue.",
+            "Approve one proposal cluster, then compile it into existing medium wiki pages before creating new pages.",
+            "Split or tighten huge pages only when a cluster has a clear reusable concept boundary.",
+            "Run `scripts/qmd-refresh.sh --embed` after approved wiki/source-map changes.",
         ]
     )
+    lines.extend(["## Ranked Next Actions", ""])
+    for index, action in enumerate(next_actions[:5], start=1):
+        lines.append(f"{index}. {action}")
+    lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -831,6 +1519,10 @@ def main() -> int:
     health.add_argument("--no-qmd", action="store_true")
     health.add_argument("--stdout", action="store_true")
 
+    lint = subparsers.add_parser("lint", help="Generate a read-only wiki lint report")
+    lint.add_argument("--stale-days", type=int, default=30)
+    lint.add_argument("--stdout", action="store_true")
+
     subparsers.add_parser("lint-raw-quality", help="Report intentional raw quality metadata errors")
 
     args = parser.parse_args()
@@ -856,6 +1548,15 @@ def main() -> int:
             print(content, end="")
             return 0
         path = write_report(root, "wiki-health-report", content)
+        print(path.relative_to(root).as_posix())
+        return 0
+
+    if args.command == "lint":
+        content = build_wiki_lint_report(root, stale_days=args.stale_days)
+        if args.stdout:
+            print(content, end="")
+            return 0
+        path = write_report(root, "wiki-lint-report", content)
         print(path.relative_to(root).as_posix())
         return 0
 
